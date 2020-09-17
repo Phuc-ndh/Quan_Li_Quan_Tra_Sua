@@ -6,5 +6,5 @@
 - Nguyễn Đình Hoàng Phúc
 - Vũ Nguyễn Minh Quân
 - Nguyễn Thanh Hưng
-## Giáo viên hướng dẫn:
+## Teacher
 - Nguyễn Tấn Toàn
