@@ -1,1 +1,10 @@
-# Quan_Li_Quan_Tra_Sua
+# Quản lý quán trà sữa
+## Description
+- Mục tiêu: Hỗ trợ chủ quán, nhân viên quản lí các hoạt động của quán trà sữa.
+- Tính năng: ...
+## Authors
+- Nguyễn Đình Hoàng Phúc
+- Vũ Nguyễn Minh Quân
+- Nguyễn Thanh Hưng
+## Giáo viên hướng dẫn:
+- Nguyễn Tấn Toàn
