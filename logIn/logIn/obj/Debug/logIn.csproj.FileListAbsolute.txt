@@ -1,0 +1,9 @@
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\bin\Debug\logIn.exe
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\bin\Debug\logIn.pdb
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.csprojAssemblyReference.cache
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.logIn.resources
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.Properties.Resources.resources
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.csproj.GenerateResource.cache
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.csproj.CoreCompileInputs.cache
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.exe
+C:\Users\HS\Documents\LTTQ\đồ án\logIn\logIn\obj\Debug\logIn.pdb
