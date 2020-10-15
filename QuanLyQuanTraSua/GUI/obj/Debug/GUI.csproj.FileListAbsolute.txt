@@ -1,0 +1,9 @@
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe.config
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.exe
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\bin\Debug\QuanLyQuanTraSua.pdb
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\GUI.csprojAssemblyReference.cache
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
+E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
