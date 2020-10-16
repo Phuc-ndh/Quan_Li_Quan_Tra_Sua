@@ -12,7 +12,7 @@ namespace DAL
     {
         public DataTable getLoginID(string username, string password)
         {
-            string query = "SELECT * FROM USERS WHERE ID ='" + username + "'AND PASS = '" + password + "'";
+            string query = "SELECT * FROM ACCOUNT WHERE USERNAME ='" + username + "'AND PASSWORD = '" + password + "'";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;

@@ -23,14 +23,17 @@ create table _Table
 (
 	id int identity not null, constraint PK_idTable primary key (id),
 	Name nvarchar(40),
-	Status nvarchar(20) default 0 --0: trống , 1: đã có người
+	Status nvarchar(20) default 0 -- 0: trống , 1: đã có người
 )
 
 create table Account
 (
 	Username nvarchar(40) not null, constraint PK_Username primary key (Username),
-	DisplayName nvarchar(100),
-	Password nvarchar(40) default 0
+	RealName nvarchar(40),
+	Password nvarchar(40) default 1,
+	Type int default 0, -- 1 = admin
+	Email nvarchar(40),
+	PhoneNumber nvarchar(40)
 )
 
 create table Bill
