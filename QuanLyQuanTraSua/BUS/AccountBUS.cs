@@ -14,16 +14,16 @@ namespace BUS
         AccountDAL accountDAL;
         public bool Login(string username, string password)
         {
-            string id = "";
-            DataTable dt = accountDAL.getLoginID(username, getHashMD5(password).ToString());
+            string Username = "";
+            DataTable dt = accountDAL.getLoginAccount(username, getHashMD5(password).ToString());
             if (dt != null)
             {
                 foreach (DataRow row in dt.Rows)
                 {
-                    id = row["ID"].ToString();
+                    Username = row["Username"].ToString();
                 }
             }
-            if (id != "")
+            if (Username != "")
                 return true;
             return false;
         }
