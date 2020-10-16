@@ -40,6 +40,8 @@ namespace DTO
             get { return _idTable; }
             set { _idTable = value; }
         }
+        public Bill()
+        { }
 
         public Bill(int idBill, string Date, int TotalPrice, int idTable)
         {

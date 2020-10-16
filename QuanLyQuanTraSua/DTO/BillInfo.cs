@@ -32,6 +32,8 @@ namespace DTO
             get { return _Quantity; }
             set { _Quantity = value; }
         }
+        public BillInfo()
+        { }
 
         public BillInfo(int idBill, int idDrink, int Quantity)
         {

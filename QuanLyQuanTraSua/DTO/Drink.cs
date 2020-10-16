@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,6 +39,9 @@ namespace DTO
             get { return _idCategory; }
             set { _idCategory = value; }
         }
+        
+        public Drink()
+        { }
 
         public Drink(int idDrink, string Name, int Price, int idCategory)
         {

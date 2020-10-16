@@ -56,6 +56,8 @@ namespace DTO
             get { return _PhoneNumber; }
             set { _PhoneNumber = value; }
         }
+        public Account()
+        { }
 
         public Account(string Username, string Password, string Realname, int Type, string Email, string PhoneNumber)
         {
