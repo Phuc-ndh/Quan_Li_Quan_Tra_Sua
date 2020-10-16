@@ -1,0 +1,6 @@
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.dll
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.pdb
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb

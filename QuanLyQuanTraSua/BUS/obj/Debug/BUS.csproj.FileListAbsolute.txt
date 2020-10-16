@@ -1,0 +1,9 @@
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.dll
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.pdb
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.dll
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.pdb
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
+D:\16-10 11-18pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
