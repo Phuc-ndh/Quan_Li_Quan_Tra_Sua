@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class Account
+    public class Account
     {
         private string _Username;
 

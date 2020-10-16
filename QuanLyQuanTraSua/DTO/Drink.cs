@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class Drink
+    public class Drink
     {
         private int _idDrink;
 

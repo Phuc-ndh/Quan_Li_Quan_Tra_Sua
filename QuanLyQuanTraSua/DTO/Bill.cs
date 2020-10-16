@@ -7,7 +7,7 @@ using System.Data;
 
 namespace DTO
 {
-    class Bill
+    public class Bill
     {
         private int _idBill;
 
