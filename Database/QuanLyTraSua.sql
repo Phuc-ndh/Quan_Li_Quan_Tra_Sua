@@ -30,7 +30,8 @@ create table Account
 (
 	Username nvarchar(40) not null, constraint PK_Username primary key (Username),
 	DisplayName nvarchar(100),
-	Password nvarchar(40) default 0
+	Password nvarchar(40) default 0,
+	Type int default 0 --1: admin
 )
 
 create table Bill
