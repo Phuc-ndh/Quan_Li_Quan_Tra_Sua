@@ -29,8 +29,18 @@ namespace DAL
             db.ExecuteNonQuery(query, value);
         }
 
+        // truy van toi username trong table Accout
+        public DataTable getPasswordByUsername(string username)
+        {
+          string query = "select Password from Account where Username = @username";
+          object[] value = new object[] {username};
+          BDConnect db = new DBConnect();
+          DataTable dt = db.ExecuteQuery(query, value);
+          return dt;
+        }
+
         // doi password tai khoan
-        public void changePassword(string username, string new_password)
+        public void changePasswordByUsername(string username, string new_password)
         {
           string query = "update ACCOUNT set Password = @password where Username = @username";
           object[] value = new object[] { new_password, username };
