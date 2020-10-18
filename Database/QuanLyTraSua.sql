@@ -32,6 +32,8 @@ create table Account
 	DisplayName nvarchar(100),
 	Password nvarchar(40) default 0,
 	Type int default 0 --1: admin
+	Phone nvarchar(15),
+	Email nvarchar(40)
 )
 
 create table Bill
