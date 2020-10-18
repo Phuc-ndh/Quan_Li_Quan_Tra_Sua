@@ -1,7 +1,16 @@
 # Quản lý quán trà sữa
 ## Description
 - Mục tiêu: Hỗ trợ chủ quán, nhân viên quản lí các hoạt động của quán trà sữa.
-- Tính năng: ...
+- Tính năng: 
+  * Chuyển bàn
+  * Xem được trạng thái bàn hiện tại
+  * Thêm món, xóa món
+  * Tính tiền với hóa đơn có các thông tin:
+    1. Tên món
+    2. Số lượng
+    3. Giá 
+    4. Thuông tin quán
+  * Thống kê thông tin bán hàng
 ## Authors
 - Nguyễn Đình Hoàng Phúc
 - Vũ Nguyễn Minh Quân
