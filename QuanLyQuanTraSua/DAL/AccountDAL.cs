@@ -34,7 +34,7 @@ namespace DAL
         {
           string query = "select Password from Account where Username = @username";
           object[] value = new object[] {username};
-          BDConnect db = new DBConnect();
+          DBConnect db = new DBConnect();
           DataTable dt = db.ExecuteQuery(query, value);
           return dt;
         }
