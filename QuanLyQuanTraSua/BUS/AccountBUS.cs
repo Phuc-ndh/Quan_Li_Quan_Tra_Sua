@@ -28,6 +28,19 @@ namespace BUS
             return false;
         }
 
+        public bool ChangePassword(string username, string new_password)
+        {
+            try
+            {
+                accountDAL.changePasswordByUsername(username, getHashMD5(new_password).ToString());
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public bool SignUp(string username, string name, string password, string phone, string email)
         {
             try
