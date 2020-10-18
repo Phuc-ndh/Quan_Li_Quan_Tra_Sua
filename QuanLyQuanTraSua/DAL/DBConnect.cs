@@ -13,7 +13,7 @@ namespace DAL
         private SqlConnection connection;
         public DBConnect()
         {
-            connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QuanLyTraSua;Integrated Security=True");
         }
         public DataTable ExecuteQuery(string query)
         {
@@ -35,6 +35,5 @@ namespace DAL
             if (connection.State == ConnectionState.Open)
                 connection.Close();
         }
-
     }
 }

@@ -1,0 +1,6 @@
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb

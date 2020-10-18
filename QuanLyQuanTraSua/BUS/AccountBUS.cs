@@ -11,7 +11,7 @@ namespace BUS
 {
     public class AccountBUS
     {
-        AccountDAL accountDAL;
+        AccountDAL accountDAL = new AccountDAL();
         public bool Login(string username, string password)
         {
             string Username = "";
@@ -27,6 +27,21 @@ namespace BUS
                 return true;
             return false;
         }
+
+        public bool SignUp(string username, string name, string password, string phone, string email)
+        {
+            try
+            {
+                accountDAL.createAccout(username, name, password, phone, email);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+        }
+
         public StringBuilder getHashMD5(string pass)
         {
             MD5 hash = MD5.Create();
