@@ -7,14 +7,14 @@ using System.Data;
 
 namespace DTO
 {
-    public class Bill
+    public class Order
     {
-        private int _idBill;
+        private int _idOrder;
 
-        public int idBill
+        public int idOrder
         {
-            get { return idBill; }
-            set { idBill = value; }
+            get { return idOrder; }
+            set { idOrder = value; }
         }
 
         private string _Date;
@@ -40,20 +40,20 @@ namespace DTO
             get { return _idTable; }
             set { _idTable = value; }
         }
-        public Bill()
+        public Order()
         { }
 
-        public Bill(int idBill, string Date, int TotalPrice, int idTable)
+        public Order(int idOrder, string Date, int TotalPrice, int idTable)
         {
-            this._idBill = idBill;
+            this._idOrder = idOrder;
             this._Date = Date;
             this._TotalPrice = TotalPrice;
             this._idTable = idTable;
         }
 
-        public Bill(DataRow r)
+        public Order(DataRow r)
         {
-            this._idBill = (int)r["idBill"];
+            this._idOrder = (int)r["idOrder"];
             this._Date = r["Date"].ToString();
             this._TotalPrice = (int)r["TotalPrice"];
             this._idTable = (int)r["idTable"];

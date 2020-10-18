@@ -23,10 +23,19 @@ namespace DAL
 
         public void InsertAccount(string username, string name, string password, string phone, string email)
         {
-            string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@username, @realname, @password, @phonenumber, @email)";        
+            string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@username, @realname, @password, @phonenumber, @email)";
             object[] value = new object[] { username, name, password, phone, email };
-            DBConnect db = new DBConnect();            
+            DBConnect db = new DBConnect();
             db.ExecuteNonQuery(query, value);
+        }
+
+        // doi password tai khoan
+        public void changePassword(string username, string new_password)
+        {
+          string query = "update ACCOUNT set Password = @password where Username = @username";
+          object[] value = new object[] { new_password, username };
+          DBConnect db = new DBConnect();
+          db.ExecuteNonQuery(query, value);
         }
     }
 }
