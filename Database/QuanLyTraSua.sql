@@ -31,7 +31,7 @@ create table Account
 	Username nvarchar(40) not null, constraint PK_Username primary key (Username),
 	RealName nvarchar(100),
 	Password nvarchar(40) default 0,
-	Type int default 0 --1: admin
+	Type int default 0, --1: admin
 	PhoneNumber nvarchar(15),
 	Email nvarchar(40)
 )
