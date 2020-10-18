@@ -14,19 +14,17 @@ namespace DAL
     {
         public DataTable getLoginAccount(string username, string password)
         {
-            string query = "SELECT * FROM ACCOUNT WHERE USERNAME ='" + username + "'AND PASSWORD = '" + password + "'";
+            string query = "select * from ACCOUNT where username = @username and password = @password";
             DBConnect db = new DBConnect();
-            DataTable dt = db.ExecuteQuery(query);
+            DataTable dt = db.ExecuteQuery(query, new object[] { username, password });
             return dt;
         }
 
-        public void createAccout(string username, string name, string password, string phone, string email)
+        public void InsertAccount(string username, string name, string password, string phone, string email)
         {
-            string query = "INSERT INTO ACCOUNT(USERNAME,REALNAME,PASSWORD,PHONENUMBER,EMAIL) VALUES '" + username +"', '" + name +"', '" 
-                + password + "', '" + phone +"', '" + email +"'; ";           
+            string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@email, @realname, @password, @phonenumber, @email)";        
             DBConnect db = new DBConnect();            
-            db.ExecuteQuery(query);
-            
+            db.ExecuteNonQuery(query, new object[] { username, name, password, phone, email });
         }
     }
 }

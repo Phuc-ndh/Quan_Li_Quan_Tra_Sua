@@ -32,7 +32,7 @@ namespace BUS
         {
             try
             {
-                accountDAL.createAccout(username, name, password, phone, email);
+                accountDAL.InsertAccount(username, name, password, phone, email);
                 return true;
             }
             catch (Exception)

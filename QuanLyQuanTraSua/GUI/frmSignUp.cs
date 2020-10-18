@@ -18,7 +18,7 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        protected AccountBUS accountBUS;
+        AccountBUS accountBUS = new AccountBUS();
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
@@ -29,11 +29,11 @@ namespace QuanLyQuanTraSua
                     MessageBox.Show("Đăng ký tài khoản thành công");
                     this.Close();
                 }
-            } else
+            } 
+            else
             {
                 MessageBox.Show("Mật khẩu không trùng khớp");
             }
-            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
