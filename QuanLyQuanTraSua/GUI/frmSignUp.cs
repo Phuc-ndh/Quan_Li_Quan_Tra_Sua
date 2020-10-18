@@ -24,7 +24,7 @@ namespace QuanLyQuanTraSua
         {
             if (txtPassword.Text == txtRePassword.Text)
             {
-                if (accountBUS.SignUp(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text))
+                if (accountBUS.insertAccount(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text))
                 {
                     MessageBox.Show("Đăng ký tài khoản thành công");
                     this.Close();

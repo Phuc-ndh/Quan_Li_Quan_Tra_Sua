@@ -28,11 +28,11 @@ namespace BUS
             return false;
         }
 
-        public bool ChangePassword(string username, string new_password)
+        public bool updatePassword(string username, string new_password)
         {
             try
             {
-                accountDAL.changePasswordByUsername(username, getHashMD5(new_password).ToString());
+                accountDAL.updatePassword(username, getHashMD5(new_password).ToString());
                 return true;
             }
             catch (Exception)
@@ -41,11 +41,11 @@ namespace BUS
             }
         }
 
-        public bool SignUp(string username, string name, string password, string phone, string email)
+        public bool insertAccount(string username, string name, string password, string phone, string email)
         {
             try
             {
-                accountDAL.InsertAccount(username, name, getHashMD5(password).ToString(), phone, email);
+                accountDAL.insertAccount(username, name, getHashMD5(password).ToString(), phone, email);
                 return true;
             }
             catch (Exception)
@@ -53,6 +53,18 @@ namespace BUS
                 return false;
             }
 
+        }
+
+        public string getPasswordByUsername(string username)
+        {
+            try
+            {
+                return accountDAL.getPasswordByUsername(username);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public StringBuilder getHashMD5(string pass)

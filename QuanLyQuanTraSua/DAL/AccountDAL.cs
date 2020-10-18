@@ -21,31 +21,33 @@ namespace DAL
             return dt;
         }
 
-        public void InsertAccount(string username, string name, string password, string phone, string email)
+        public bool insertAccount(string username, string name, string password, string phone, string email)
         {
             string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@username, @realname, @password, @phonenumber, @email)";
             object[] value = new object[] { username, name, password, phone, email };
             DBConnect db = new DBConnect();
-            db.ExecuteNonQuery(query, value);
+            return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
         // truy van toi username trong table Accout
-        public DataTable getPasswordByUsername(string username)
+        public string getPasswordByUsername(string username)
         {
-          string query = "select Password from Account where Username = @username";
-          object[] value = new object[] {username};
-          BDConnect db = new DBConnect();
-          DataTable dt = db.ExecuteQuery(query, value);
-          return dt;
+            string password;
+            string query = "select Password from Account where Username = @username";
+            object[] value = new object[] { username };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            password = dt.Rows[0].ToString();
+            return password;
         }
 
         // doi password tai khoan
-        public void changePasswordByUsername(string username, string new_password)
+        public bool updatePassword(string username, string new_password)
         {
-          string query = "update ACCOUNT set Password = @password where Username = @username";
-          object[] value = new object[] { new_password, username };
-          DBConnect db = new DBConnect();
-          db.ExecuteNonQuery(query, value);
+            string query = "update ACCOUNT set Password = @password where Username = @username";
+            object[] value = new object[] { new_password, username };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
         }
     }
 }
