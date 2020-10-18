@@ -7,3 +7,33 @@ E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\GUI.csproj.GenerateResource.
 E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.exe
 E:\LTTQ\QuanLyQuanTraSua\QuanLyQuanTraSua\obj\Debug\QuanLyQuanTraSua.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe.config
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe.config
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.dll
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.dll
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb

@@ -29,9 +29,11 @@ create table _Table
 create table Account
 (
 	Username nvarchar(40) not null, constraint PK_Username primary key (Username),
-	DisplayName nvarchar(100),
+	RealName nvarchar(100),
 	Password nvarchar(40) default 0,
-	Type int default 0 --1: admin
+	Type int default 0, --1: admin
+	PhoneNumber nvarchar(15),
+	Email nvarchar(40)
 )
 
 create table Bill
@@ -48,7 +50,7 @@ constraint FK_Bill_idTable foreign key (idTable) references _Table(idTable)
 create table BillInfo
 (
 	idBill int not null,
-	idDrink int,
+	idDrink int not null,
 	Quantity int,
 	constraint PK_BillInfo primary key (idBill, idDrink)	
 )
