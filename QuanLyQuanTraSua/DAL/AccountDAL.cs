@@ -23,7 +23,7 @@ namespace DAL
 
         public void InsertAccount(string username, string name, string password, string phone, string email)
         {
-            string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@email, @realname, @password, @phonenumber, @email)";        
+            string query = "insert into ACCOUNT(username,realname,password,phonenumber,email) values(@username, @realname, @password, @phonenumber, @email)";        
             object[] value = new object[] { username, name, password, phone, email };
             DBConnect db = new DBConnect();            
             db.ExecuteNonQuery(query, value);
