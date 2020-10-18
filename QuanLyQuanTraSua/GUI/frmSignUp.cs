@@ -26,12 +26,12 @@ namespace QuanLyQuanTraSua
             {
                 if (accountBUS.SignUp(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text))
                 {
-                    MessageBox.Show("Dang Ky thanh cong !");
+                    MessageBox.Show("Đăng ký tài khoản thành công");
                     this.Close();
                 }
             } else
             {
-                MessageBox.Show("Mat khau khong khop");
+                MessageBox.Show("Mật khẩu không trùng khớp");
             }
             
         }
