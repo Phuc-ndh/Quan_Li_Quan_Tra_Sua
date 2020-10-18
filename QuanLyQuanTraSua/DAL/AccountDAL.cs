@@ -29,8 +29,7 @@ namespace DAL
             db.ExecuteNonQuery(query, value);
         }
 
-        // doi password tai khoan
-        public void changePassword(string username, string new_password)
+        public void UpdatePassword(string username, string new_password)
         {
           string query = "update ACCOUNT set Password = @password where Username = @username";
           object[] value = new object[] { new_password, username };
