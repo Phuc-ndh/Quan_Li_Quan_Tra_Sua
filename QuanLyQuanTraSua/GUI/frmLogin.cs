@@ -14,7 +14,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmLogin : Form
     {
-        AccountBUS accountBus;
+        AccountBUS accountBus = new AccountBUS();
         public frmLogin()
         {
             InitializeComponent();
