@@ -40,7 +40,7 @@ namespace DAL
         }
 
         // doi password tai khoan
-        public void changePasswordByUsername(string username, string new_password)
+        public void updatePasswordByUsername(string username, string new_password)
         {
           string query = "update ACCOUNT set Password = @password where Username = @username";
           object[] value = new object[] { new_password, username };
