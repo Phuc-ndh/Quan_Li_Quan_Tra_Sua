@@ -30,16 +30,8 @@ namespace BUS
 
         public bool SignUp(string username, string name, string password, string phone, string email)
         {
-            try
-            {
-                accountDAL.InsertAccount(username, name, password, phone, email);
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-
+            accountDAL.InsertAccount(username, name, password, phone, email);
+            return true;
         }
 
         public StringBuilder getHashMD5(string pass)
