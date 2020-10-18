@@ -16,3 +16,12 @@ C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\b
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.dll
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.pdb
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.dll
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.pdb
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.dll
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.pdb
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
+D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb
