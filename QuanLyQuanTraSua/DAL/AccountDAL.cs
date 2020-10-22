@@ -37,7 +37,7 @@ namespace DAL
             object[] value = new object[] { username };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
-            password = dt.Rows[0].ToString();
+            password = dt.Rows[0]["password"].ToString();
             return password;
         }
 
