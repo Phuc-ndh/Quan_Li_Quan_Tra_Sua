@@ -22,7 +22,6 @@ namespace QuanLyQuanTraSua
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            accountBus.getPasswordByUsername(txtID.Text);
             if (accountBus.Login(txtID.Text, txtPassword.Text))
             {
                 this.Hide();
