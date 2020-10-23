@@ -24,7 +24,7 @@ namespace QuanLyQuanTraSua
         
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (accountBUS.getPasswordByUsername(txtUsername.Text) == accountBUS.getHashMD5(txtCurrentPassword.Text))
+            if (accountBUS.getPasswordByUsername(txtUsername.Text) == accountBUS.getHashMD5(txtCurrentPassword.Text).ToString())
             {
                 chkPass = true;
             }
