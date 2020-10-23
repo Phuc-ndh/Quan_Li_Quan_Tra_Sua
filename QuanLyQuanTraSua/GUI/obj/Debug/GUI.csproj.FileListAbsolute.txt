@@ -43,5 +43,4 @@ C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\b
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.dll
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.pdb
-C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmChangePass.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmChangeInfo.resources

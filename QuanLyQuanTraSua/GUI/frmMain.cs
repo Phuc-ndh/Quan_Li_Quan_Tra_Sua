@@ -19,7 +19,7 @@ namespace QuanLyQuanTraSua
 
         private void btnChangePass_Click(object sender, EventArgs e)
         {
-            frmChangeInfo f = frmChangeInfo();
+            frmChangeInfo f = new frmChangeInfo();
             f.ShowDialog();
         }
     }
