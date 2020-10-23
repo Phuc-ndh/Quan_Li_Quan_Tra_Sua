@@ -41,11 +41,11 @@ namespace BUS
             }
         }
 
-        public bool updateInfo(string username, string realname, string phonenumer, string email)
+        public bool updateInfo(string username, string realname, string phonenumber, string email)
         {
             try 
             {
-                accountDAL.updateInfo(username, realname, phonenumer, email);
+                accountDAL.updateInfo(username, realname, phonenumber, email);
                 return true;
             }
             catch (Exception)
