@@ -53,7 +53,7 @@ namespace DAL
         public bool updateInfo(string username, string realname, string phonenumber, string email)
         {
             string query = "update ACCOUNT set RealName = @realname, PhoneNumer = @phonenumber, Email = @email where Username = @username";
-            object[] value = new object[] { realname, phonenumber, email };
+            object[] value = new object[] { realname, phonenumber, email, username };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
