@@ -31,6 +31,7 @@ namespace QuanLyQuanTraSua
             if (chkPass){
                 accountBUS.updateInfo(txtUsername.Text, txtName.Text, txtPhone.Text, txtEmail.Text);
                 MessageBox.Show("Doi thong tin thanh cong");
+                this.Close();
             }
             else
             {
