@@ -41,6 +41,19 @@ namespace BUS
             }
         }
 
+        public bool updateInfo(string username, string realname, string phonenumer, string email)
+        {
+            try 
+            {
+                accountDAL.updateInfo(username, realname, phonenumer, email);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public bool insertAccount(string username, string name, string password, string phone, string email)
         {
             try

@@ -14,8 +14,8 @@ namespace DAL
         private SqlConnection connection;
         public DBConnect()
         {
-            //connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
-            connection = new SqlConnection(@"Data Source=LAPTOP-5ISISA5V\SQLEXPRESS;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
+            //connection = new SqlConnection(@"Data Source=LAPTOP-5ISISA5V\SQLEXPRESS;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)

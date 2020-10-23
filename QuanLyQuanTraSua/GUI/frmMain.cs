@@ -16,5 +16,11 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+
+        private void btnChangePass_Click(object sender, EventArgs e)
+        {
+            frmChangeInfo f = frmChangeInfo();
+            f.ShowDialog();
+        }
     }
 }

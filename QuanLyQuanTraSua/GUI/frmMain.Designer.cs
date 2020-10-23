@@ -60,6 +60,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnChangePass = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -79,6 +80,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,7 +103,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(139, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(701, 24);
+            this.label7.Size = new System.Drawing.Size(675, 22);
             this.label7.TabIndex = 4;
             this.label7.Text = "CHÚC BẠN CÓ MỘT NGÀY VUI VẺ  -  HÃY LUÔN TƯƠI CƯỜI VỚI KHÁCH HÀNG";
             // 
@@ -125,7 +127,7 @@
             this.txtThoiGian.Location = new System.Drawing.Point(113, 37);
             this.txtThoiGian.Name = "txtThoiGian";
             this.txtThoiGian.ReadOnly = true;
-            this.txtThoiGian.Size = new System.Drawing.Size(224, 19);
+            this.txtThoiGian.Size = new System.Drawing.Size(224, 18);
             this.txtThoiGian.TabIndex = 1;
             this.txtThoiGian.Text = "thoigian";
             // 
@@ -138,7 +140,7 @@
             this.txtTenNV.Location = new System.Drawing.Point(113, 7);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.ReadOnly = true;
-            this.txtTenNV.Size = new System.Drawing.Size(224, 19);
+            this.txtTenNV.Size = new System.Drawing.Size(224, 18);
             this.txtTenNV.TabIndex = 1;
             this.txtTenNV.Text = "nv1";
             // 
@@ -149,7 +151,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 7);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 20);
+            this.label5.Size = new System.Drawing.Size(83, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Nhân viên:";
             // 
@@ -160,7 +162,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(13, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 20);
+            this.label6.Size = new System.Drawing.Size(77, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Thời gian:";
             // 
@@ -371,7 +373,7 @@
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown1.Location = new System.Drawing.Point(144, 62);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 25);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.Value = new decimal(new int[] {
             1,
@@ -385,7 +387,7 @@
             this.txtTenMatHang.Location = new System.Drawing.Point(144, 25);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(190, 26);
+            this.txtTenMatHang.Size = new System.Drawing.Size(190, 25);
             this.txtTenMatHang.TabIndex = 3;
             // 
             // lblSoLuong
@@ -394,7 +396,7 @@
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.Location = new System.Drawing.Point(19, 66);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(74, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(72, 20);
             this.lblSoLuong.TabIndex = 1;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -404,7 +406,7 @@
             this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMatHang.Location = new System.Drawing.Point(19, 28);
             this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(111, 20);
+            this.lblTenMatHang.Size = new System.Drawing.Size(107, 20);
             this.lblTenMatHang.TabIndex = 0;
             this.lblTenMatHang.Text = "Tên mặt hàng";
             // 
@@ -414,7 +416,7 @@
             this.lblHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoaDon.Location = new System.Drawing.Point(43, 165);
             this.lblHoaDon.Name = "lblHoaDon";
-            this.lblHoaDon.Size = new System.Drawing.Size(72, 20);
+            this.lblHoaDon.Size = new System.Drawing.Size(70, 20);
             this.lblHoaDon.TabIndex = 10;
             this.lblHoaDon.Text = "Hóa đơn";
             // 
@@ -465,6 +467,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnChangePass);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
@@ -473,6 +476,16 @@
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Tất Cả";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // btnChangePass
+            // 
+            this.btnChangePass.Location = new System.Drawing.Point(23, 24);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(159, 34);
+            this.btnChangePass.TabIndex = 0;
+            this.btnChangePass.Text = "Change Info";
+            this.btnChangePass.UseVisualStyleBackColor = true;
+            this.btnChangePass.Click += new System.EventHandler(this.btnChangePass_Click);
             // 
             // tabPage7
             // 
@@ -585,6 +598,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -627,6 +641,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.FlowLayoutPanel flpDSOrder;
         private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.Button btnChangePass;
     }
 }
 

@@ -49,5 +49,13 @@ namespace DAL
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
+
+        public bool updateInfo(string username, string realname, string phonenumber, string email)
+        {
+            string query = "update ACCOUNT set RealName = @realname, PhoneNumer = @phonenumber, Email = @email where Username = @username";
+            object[] value = new object[] { realname, phonenumber, email };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
     }
 }
