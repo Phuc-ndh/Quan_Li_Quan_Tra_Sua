@@ -133,6 +133,7 @@
             this.label2.Size = new System.Drawing.Size(20, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "-";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -145,6 +146,7 @@
             this.label1.Size = new System.Drawing.Size(22, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // pictureBox1
             // 

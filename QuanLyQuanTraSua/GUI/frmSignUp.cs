@@ -399,5 +399,10 @@ namespace QuanLyQuanTraSua
             txtPhone.ForeColor = Color.White;
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
