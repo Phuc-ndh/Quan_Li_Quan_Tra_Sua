@@ -10,3 +10,9 @@ C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\o
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb

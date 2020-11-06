@@ -41,3 +41,22 @@ C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.dll
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.pdb
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain.resources
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmLogin.resources
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain.resources
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete

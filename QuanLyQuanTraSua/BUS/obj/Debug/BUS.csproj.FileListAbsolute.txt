@@ -31,3 +31,14 @@ D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreComp
 D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 D:\18-10\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.pdb
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
+D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
