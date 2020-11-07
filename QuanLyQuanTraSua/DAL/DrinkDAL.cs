@@ -10,54 +10,42 @@ namespace DAL
 {
     public class DrinkDAL
     {
-        public List<Drink> GetDrinkList()
+        public DataTable GetAllDrinks()
         {
             List<Drink> list = new List<Drink>();
             string query = "SELECT * FROM DRINK";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
-            foreach (DataRow r in dt.Rows)
-            {
-                list.Add(new Drink(r));
-            }
-            return list;
+            return dt;
         }
 
         public Drink GetDrinkByID(int idDrink)
         {
-            Drink drink = new Drink();
-            List<Drink> list = GetDrinkList();
-            foreach (Drink d in list)
-            {
-                if (d.idDrink == idDrink)
-                    drink = d;
-            }
+            string query = "SELECT * FROM DRINK WHERE IDDRINK = @IDDRINK";
+            object[] value = new object[] { idDrink };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            Drink drink = new Drink(dt.Rows[0]);
             return drink;
         }
 
-        public Drink GetDrinkByName(string Name)
+        public Drink GetDrinkByName(int name)
         {
-            Drink drink = new Drink();
-            List<Drink> list = GetDrinkList();
-            foreach (Drink d in list)
-            {
-                if (d.Name == Name)
-                    drink = d;
-            }
+            string query = "SELECT * FROM DRINK WHERE NAME = @NAME";
+            object[] value = new object[] { name };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            Drink drink = new Drink(dt.Rows[0]);
             return drink;
         }
 
-        public List<Drink> GetListByCategory(string idCategory)
+        public DataTable GetDrinksByCategory(string idCategory)
         {
             List<Drink> list = new List<Drink>();
             string query = "SELECT * FROM DRINK WHERE IDCATEGORY =" + idCategory;
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
-            foreach (DataRow r in dt.Rows)
-            {
-                    list.Add(new Drink(r));
-            }
-            return list;
+            return dt;
         }
     }
 }
