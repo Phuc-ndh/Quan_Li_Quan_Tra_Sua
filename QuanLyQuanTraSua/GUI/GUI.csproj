@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,11 +62,41 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMain1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain1.Designer.cs">
+      <DependentUpon>frmMain1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatHang.Designer.cs">
+      <DependentUpon>frmMatHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSignUp.Designer.cs">
       <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaiKhoan.Designer.cs">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTongQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTongQuan.Designer.cs">
+      <DependentUpon>frmTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +106,23 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain1.resx">
+      <DependentUpon>frmMain1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatHang.resx">
+      <DependentUpon>frmMatHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaiKhoan.resx">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTongQuan.resx">
+      <DependentUpon>frmTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,6 +134,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

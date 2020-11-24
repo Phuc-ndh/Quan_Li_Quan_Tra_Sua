@@ -42,3 +42,15 @@ D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreCompi
 D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 D:\6-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.dll
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.pdb
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.dll
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.dll
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.pdb
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.pdb
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
+D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb

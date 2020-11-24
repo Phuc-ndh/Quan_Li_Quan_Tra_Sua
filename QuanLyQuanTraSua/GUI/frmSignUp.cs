@@ -39,6 +39,9 @@ namespace QuanLyQuanTraSua
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+            //frmMain1 frmM1 = new frmMain1();
+            //frmM1.Show();
+            
         }
 
         private void txtUsername_Click(object sender, EventArgs e)

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlMove = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMove = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pnlPass = new System.Windows.Forms.Panel();
@@ -65,15 +65,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(434, 146);
             this.panel2.TabIndex = 26;
-            // 
-            // pnlMove
-            // 
-            this.pnlMove.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pnlMove.Location = new System.Drawing.Point(1, 1);
-            this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(433, 31);
-            this.pnlMove.TabIndex = 2;
-            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
             // label3
             // 
@@ -121,6 +112,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // pnlMove
+            // 
+            this.pnlMove.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.pnlMove.Location = new System.Drawing.Point(1, 1);
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.Size = new System.Drawing.Size(433, 31);
+            this.pnlMove.TabIndex = 2;
+            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
             // btnCancel
             // 
@@ -260,6 +260,7 @@
             this.Controls.Add(this.ptrPassword);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhap";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

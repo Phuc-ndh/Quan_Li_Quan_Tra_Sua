@@ -27,15 +27,20 @@ namespace QuanLyQuanTraSua
             if (accountBus.Login(txtPassword.Text, txtPassword.Text))
             {
                 this.Hide();
-                frmMain form = new frmMain();
+                frmMain1 form = new frmMain1();
                 form.ShowDialog();
                 this.Show();
+                //--
+                txtUsername.Text = "Username";
+                txtPassword.Text = "Password";
+                txtUsername.Focus();
             }
             else
             {
                 MessageBox.Show("Sai mật khẩu hoặc tài khoản");
                 txtPassword.Text = "";
-                txtPassword.Focus();
+                //txtPassword.Focus();
+                txtUsername.Focus();
             }
         }
 

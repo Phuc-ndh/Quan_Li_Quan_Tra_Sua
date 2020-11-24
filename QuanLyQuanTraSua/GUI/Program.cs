@@ -16,7 +16,9 @@ namespace QuanLyQuanTraSua
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSignUp());
+            //Application.Run(new frmMain());
+            //Application.Run(new frmMain1());
+            Application.Run(new frmLogin());
         }
     }
 }

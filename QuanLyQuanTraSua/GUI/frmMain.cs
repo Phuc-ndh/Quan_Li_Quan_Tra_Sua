@@ -16,5 +16,10 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

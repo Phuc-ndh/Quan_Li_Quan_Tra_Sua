@@ -196,6 +196,7 @@
             this.btnDangXuat.TabIndex = 1;
             this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnAdmin
             // 
