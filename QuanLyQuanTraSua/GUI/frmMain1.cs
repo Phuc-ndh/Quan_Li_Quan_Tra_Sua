@@ -132,36 +132,6 @@ namespace QuanLyQuanTraSua
             Reset();
         }
         //Menu Button_Clicks
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            //OpenChildForm(new FormDashboard());
-        }
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            //OpenChildForm(new FormOrders());
-        }
-        private void btnProduct_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-            //OpenChildForm(new FormProducts());
-        }
-        private void btnCustomer_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-            //OpenChildForm(new FormCustomers());
-        }
-        private void btnMarketing_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color5);
-            //OpenChildForm(new FormMarketing());
-        }
-        private void btnSetting_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color6);
-            //OpenChildForm(new FormSetting());
-        }
 
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
@@ -197,16 +167,6 @@ namespace QuanLyQuanTraSua
             throw new NotImplementedException();
         }
 
-        //private void btnDangXuat_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender, RGBColors.color1);
-        //    //OpenChildForm(new frmTaiKhoan());
-        //    this.Hide();
-        //    frmTaiKhoan formTK = new frmTaiKhoan();
-        //    formTK.ShowDialog();
-        //    this.Show();
-        //}
-
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
@@ -238,14 +198,7 @@ namespace QuanLyQuanTraSua
         {
             this.Close();
         }
-        //x
-        //private void btnThongKe_Click(object sender, EventArgs e)
-        //{
-        //    ActivateButton(sender, RGBColors.color6);
-        //    //OpenChildForm(new FormSetting());
-        //}
-
-
+       
         //End of Change color of button
 
     }
