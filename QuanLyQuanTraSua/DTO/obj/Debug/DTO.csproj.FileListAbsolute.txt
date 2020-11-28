@@ -24,3 +24,5 @@ D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CoreComp
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CopyComplete

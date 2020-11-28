@@ -54,3 +54,4 @@ D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreComp
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 D:\QLQTS\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\FontAwesome.Sharp.dll

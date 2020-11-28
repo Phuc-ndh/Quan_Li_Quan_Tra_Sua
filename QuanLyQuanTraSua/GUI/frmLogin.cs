@@ -24,7 +24,7 @@ namespace QuanLyQuanTraSua
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (accountBus.Login(txtPassword.Text, txtPassword.Text))
+            if (accountBus.Login(txtUsername.Text, txtPassword.Text))
             {
                 this.Hide();
                 frmMain1 form = new frmMain1();
@@ -33,6 +33,7 @@ namespace QuanLyQuanTraSua
                 //--
                 txtUsername.Text = "Username";
                 txtPassword.Text = "Password";
+                txtPassword.PasswordChar = default;
                 txtUsername.Focus();
             }
             else
@@ -65,7 +66,10 @@ namespace QuanLyQuanTraSua
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
-            txtUsername.Clear();
+            if (txtUsername.Text == "Tên Đăng Nhập")
+            {
+                txtUsername.Clear();
+            }
             ptrUsername.BackgroundImage = Properties.Resources.user1;
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
@@ -74,14 +78,19 @@ namespace QuanLyQuanTraSua
             ptrPassword.BackgroundImage = Properties.Resources.pass;
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
-            txtPassword.ForeColor = Color.White;
+            if (txtPassword.Text == "Mật Khẩu")
+                txtPassword.ForeColor = Color.Gray;
+            else
+                txtPassword.ForeColor = Color.White;
 
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
-            txtPassword.Clear();
-            txtPassword.PasswordChar = '*';
+            if (txtPassword.Text == "Mật Khẩu")
+            {
+                txtPassword.Clear();
+            }
             ptrPassword.BackgroundImage = Properties.Resources.pass1;
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
@@ -91,12 +100,14 @@ namespace QuanLyQuanTraSua
             ptrUsername.BackgroundImage = Properties.Resources.user;
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
-            txtUsername.ForeColor = Color.White;
+            if (txtUsername.Text == "Tên Đăng Nhập")
+                txtUsername.ForeColor = Color.Gray;
+            else
+                txtUsername.ForeColor = Color.White;
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            txtPassword.PasswordChar = '*';
             //ptrPassword.BackgroundImage = Properties.Resources.pass1;
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
@@ -106,11 +117,18 @@ namespace QuanLyQuanTraSua
             //ptrUsername.BackgroundImage = Properties.Resources.user;
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
-            txtPassword.ForeColor = Color.White;
+            if (txtPassword.Text == "Mật Khẩu")
+                txtPassword.ForeColor = Color.Gray;
+            else
+                txtPassword.ForeColor = Color.White;
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
+            if (!(txtPassword.Text == "Mật Khẩu" || txtPassword.Text == ""))
+            {
+                txtPassword.PasswordChar = '*';
+            }
             //ptrUsername.BackgroundImage = Properties.Resources.user1;
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
@@ -119,7 +137,10 @@ namespace QuanLyQuanTraSua
             //ptrPassword.BackgroundImage = Properties.Resources.pass;
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
-            txtUsername.ForeColor = Color.White;
+            if (txtUsername.Text == "Tên Đăng Nhập")
+                txtUsername.ForeColor = Color.Gray;
+            else
+                txtUsername.ForeColor = Color.White;
         }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -136,6 +157,22 @@ namespace QuanLyQuanTraSua
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Tên Đăng Nhập";
+            }
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Mật Khẩu";
             }
         }
     }
