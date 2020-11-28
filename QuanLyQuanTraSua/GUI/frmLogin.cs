@@ -173,6 +173,7 @@ namespace QuanLyQuanTraSua
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Mật Khẩu";
+                txtPassword.PasswordChar = default;
             }
         }
     }

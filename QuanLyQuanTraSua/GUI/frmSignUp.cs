@@ -681,6 +681,7 @@ namespace QuanLyQuanTraSua
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Mật Khẩu";
+                txtPassword.PasswordChar = default;
             }
         }
 
@@ -689,6 +690,7 @@ namespace QuanLyQuanTraSua
             if (txtRePassword.Text == "")
             {
                 txtRePassword.Text = "Nhập Lại Mật Khẩu";
+                txtRePassword.PasswordChar = default;
             }
         }
 
