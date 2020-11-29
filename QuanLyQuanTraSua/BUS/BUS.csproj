@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountBUS.cs" />
+    <Compile Include="DrinkBUS.cs" />
+    <Compile Include="DrinkCategoryBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

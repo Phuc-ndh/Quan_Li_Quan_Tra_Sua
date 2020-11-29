@@ -60,9 +60,9 @@ namespace QuanLyQuanTraSua
             this.pnlCustom.Controls.Add(this.btnThem);
             this.pnlCustom.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlCustom.Location = new System.Drawing.Point(0, 0);
-            this.pnlCustom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCustom.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCustom.Name = "pnlCustom";
-            this.pnlCustom.Size = new System.Drawing.Size(537, 982);
+            this.pnlCustom.Size = new System.Drawing.Size(728, 982);
             this.pnlCustom.TabIndex = 0;
             // 
             // cbbLoai
@@ -70,8 +70,8 @@ namespace QuanLyQuanTraSua
             this.cbbLoai.BackColor = System.Drawing.SystemColors.Window;
             this.cbbLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbLoai.FormattingEnabled = true;
-            this.cbbLoai.Location = new System.Drawing.Point(211, 201);
-            this.cbbLoai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbLoai.Location = new System.Drawing.Point(252, 201);
+            this.cbbLoai.Margin = new System.Windows.Forms.Padding(4);
             this.cbbLoai.Name = "cbbLoai";
             this.cbbLoai.Size = new System.Drawing.Size(160, 32);
             this.cbbLoai.TabIndex = 19;
@@ -79,10 +79,9 @@ namespace QuanLyQuanTraSua
             // txtGia
             // 
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(211, 249);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGia.Location = new System.Drawing.Point(252, 249);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
-            this.txtGia.ReadOnly = true;
             this.txtGia.Size = new System.Drawing.Size(252, 29);
             this.txtGia.TabIndex = 18;
             // 
@@ -90,7 +89,7 @@ namespace QuanLyQuanTraSua
             // 
             this.lblGia.AutoSize = true;
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia.Location = new System.Drawing.Point(44, 252);
+            this.lblGia.Location = new System.Drawing.Point(85, 252);
             this.lblGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGia.Name = "lblGia";
             this.lblGia.Size = new System.Drawing.Size(95, 24);
@@ -100,10 +99,9 @@ namespace QuanLyQuanTraSua
             // txtTenMatHang
             // 
             this.txtTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMatHang.Location = new System.Drawing.Point(211, 153);
-            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMatHang.Location = new System.Drawing.Point(252, 153);
+            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMatHang.Name = "txtTenMatHang";
-            this.txtTenMatHang.ReadOnly = true;
             this.txtTenMatHang.Size = new System.Drawing.Size(252, 29);
             this.txtTenMatHang.TabIndex = 15;
             // 
@@ -111,7 +109,7 @@ namespace QuanLyQuanTraSua
             // 
             this.lblLoai.AutoSize = true;
             this.lblLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoai.Location = new System.Drawing.Point(45, 204);
+            this.lblLoai.Location = new System.Drawing.Point(86, 204);
             this.lblLoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoai.Name = "lblLoai";
             this.lblLoai.Size = new System.Drawing.Size(45, 24);
@@ -122,7 +120,7 @@ namespace QuanLyQuanTraSua
             // 
             this.lblTenMatHang.AutoSize = true;
             this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenMatHang.Location = new System.Drawing.Point(44, 156);
+            this.lblTenMatHang.Location = new System.Drawing.Point(85, 156);
             this.lblTenMatHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenMatHang.Name = "lblTenMatHang";
             this.lblTenMatHang.Size = new System.Drawing.Size(127, 24);
@@ -139,11 +137,11 @@ namespace QuanLyQuanTraSua
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(292, 513);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Location = new System.Drawing.Point(486, 350);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.iconButton2.Size = new System.Drawing.Size(195, 74);
+            this.iconButton2.Size = new System.Drawing.Size(211, 92);
             this.iconButton2.TabIndex = 9;
             this.iconButton2.Text = "Xóa";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,11 +158,11 @@ namespace QuanLyQuanTraSua
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(49, 513);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Location = new System.Drawing.Point(252, 350);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.iconButton1.Size = new System.Drawing.Size(195, 74);
+            this.iconButton1.Size = new System.Drawing.Size(211, 92);
             this.iconButton1.TabIndex = 8;
             this.iconButton1.Text = "Sửa";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,17 +173,17 @@ namespace QuanLyQuanTraSua
             // 
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.IconChar = FontAwesome.Sharp.IconChar.Cube;
             this.btnThem.IconColor = System.Drawing.Color.White;
             this.btnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(292, 302);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Location = new System.Drawing.Point(13, 350);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
-            this.btnThem.Size = new System.Drawing.Size(195, 74);
+            this.btnThem.Size = new System.Drawing.Size(212, 92);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,22 +195,26 @@ namespace QuanLyQuanTraSua
             this.pnlData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(130)))), ((int)(((byte)(130)))));
             this.pnlData.Controls.Add(this.dataGridView1);
             this.pnlData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData.Location = new System.Drawing.Point(537, 0);
-            this.pnlData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlData.Location = new System.Drawing.Point(728, 0);
+            this.pnlData.Margin = new System.Windows.Forms.Padding(4);
             this.pnlData.Name = "pnlData";
-            this.pnlData.Size = new System.Drawing.Size(1387, 982);
+            this.pnlData.Size = new System.Drawing.Size(1196, 982);
             this.pnlData.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 44;
-            this.dataGridView1.Size = new System.Drawing.Size(1387, 982);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(1196, 982);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // frmMatHang
             // 
@@ -221,9 +223,10 @@ namespace QuanLyQuanTraSua
             this.ClientSize = new System.Drawing.Size(1924, 982);
             this.Controls.Add(this.pnlData);
             this.Controls.Add(this.pnlCustom);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMatHang";
             this.Text = "frmMatHang";
+            this.Load += new System.EventHandler(this.frmMatHang_Load);
             this.pnlCustom.ResumeLayout(false);
             this.pnlCustom.PerformLayout();
             this.pnlData.ResumeLayout(false);

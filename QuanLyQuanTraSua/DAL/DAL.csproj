@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AccountDAL.cs" />
     <Compile Include="DBConnect.cs" />
+    <Compile Include="DrinkCategoryDAL.cs" />
     <Compile Include="DrinkDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

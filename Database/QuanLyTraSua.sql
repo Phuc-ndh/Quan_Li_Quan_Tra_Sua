@@ -6,13 +6,12 @@ use QuanLyTraSua
 create table DrinkCategory
 (
 	idCategory int identity not null, constraint PK_idCategory primary key (idCategory),
-	Name varchar(40)
+	Name nvarchar(40)
 )
-
 create table Drink
 (
 	idDrink int identity not null, constraint PK_idDrink primary key (idDrink),
-	Name varchar(40),
+	Name nvarchar(40),
 	Price int,
 	idCategory int
 )
@@ -57,3 +56,27 @@ create table OrderDetail
 alter table OrderDetail add
 constraint FK_OrderDetail_idOrder foreign key (idOrder) references Order(idOrder),
 constraint FK_OrderDetail_idDrink foreign key (idDrink) references Drink(idDrink)
+
+--Thêm dữ liệu:
+select * from DrinkCategory
+DBCC CHECKIDENT ('DrinkCategory', RESEED, -1);
+insert into DrinkCategory(Name)
+values
+(N'Trà Sữa'),
+(N'Hồng Trà'),
+(N'Sinh Tố'),
+(N'Nước Ép')
+
+select * from Drink
+DBCC CHECKIDENT ('Drink', RESEED, -1);
+insert into Drink(Name, Price, idCategory)
+values
+(N'Sinh Tố Dâu Tây', 30000, 3),
+(N'Sinh Tố Xoài', 30000, 3),
+(N'Trà Sữa Truyền Thống', 40000, 1),
+(N'Nước Ép Dưa Hấu', 35000, 4),
+(N'Hồng Trà Đào', 35000, 2)
+
+SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory
+
+SELECT Name FROM DrinkCategory

@@ -97,7 +97,7 @@ namespace QuanLyQuanTraSua
             childForm.BringToFront();
             childForm.Show();
             //lblTitleChildForm.Text = childForm.Text;
-            switch (childForm.Text)
+            switch (childForm.Name)
             {
                 case "frmTongQuan":
                     lblTitleChildForm.Text = "Tổng Quan";
@@ -179,8 +179,11 @@ namespace QuanLyQuanTraSua
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            if (e.Button == MouseButtons.Left && e.Clicks == 1)
+            {
+                ReleaseCapture();
+                SendMessage(this.Handle, 0x112, 0xf012, 0);
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -192,7 +195,21 @@ namespace QuanLyQuanTraSua
         {
             this.Close();
         }
-       
+
+        private void panel1_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.WindowState = FormWindowState.Maximized;
+            }
+        }
+
         //End of Change color of button
 
     }

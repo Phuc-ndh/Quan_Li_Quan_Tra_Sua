@@ -1,0 +1,31 @@
+﻿using DAL;
+using DTO;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BUS
+{
+    public class DrinkBUS
+    {
+        DrinkDAL drinkDAL = new DrinkDAL();
+        public List<Drink> GetDrinkList()
+        {
+            List<Drink> listDrink = new List<Drink>();
+            DataTable dt = drinkDAL.GetAllDrinks();
+            foreach (DataRow row in dt.Rows)
+            {
+                Drink drink = new Drink(row);
+                listDrink.Add(drink);
+            }
+            return listDrink;
+        }
+        public DataTable GetAllDrinksDetailed()
+        {
+            return drinkDAL.GetAllDrinksDetailed();
+        }
+    }
+}

@@ -12,7 +12,6 @@ namespace DAL
     {
         public DataTable GetAllDrinks()
         {
-            List<Drink> list = new List<Drink>();
             string query = "SELECT * FROM DRINK";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
@@ -41,8 +40,16 @@ namespace DAL
 
         public DataTable GetDrinksByCategory(string idCategory)
         {
-            List<Drink> list = new List<Drink>();
-            string query = "SELECT * FROM DRINK WHERE IDCATEGORY =" + idCategory;
+            string query = "SELECT * FROM DRINK WHERE IDCATEGORY = @IDCATEGORY";
+            DBConnect db = new DBConnect();
+            object[] value = new object[] { idCategory };
+            DataTable dt = db.ExecuteQuery(query, value);
+            return dt;
+        }
+
+        public DataTable GetAllDrinksDetailed()
+        {
+            string query = "SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;

@@ -64,9 +64,9 @@ namespace QuanLyQuanTraSua
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(200, 916);
+            this.pnlMenu.Size = new System.Drawing.Size(267, 1055);
             this.pnlMenu.TabIndex = 4;
             // 
             // btnDangXuat
@@ -80,10 +80,11 @@ namespace QuanLyQuanTraSua
             this.btnDangXuat.IconColor = System.Drawing.Color.White;
             this.btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 400);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 493);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnDangXuat.Size = new System.Drawing.Size(200, 60);
+            this.btnDangXuat.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnDangXuat.Size = new System.Drawing.Size(267, 74);
             this.btnDangXuat.TabIndex = 14;
             this.btnDangXuat.Text = "Đăng xuất";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -102,10 +103,11 @@ namespace QuanLyQuanTraSua
             this.btnTaiKhoan.IconColor = System.Drawing.Color.White;
             this.btnTaiKhoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 340);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 419);
+            this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnTaiKhoan.Size = new System.Drawing.Size(200, 60);
+            this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(267, 74);
             this.btnTaiKhoan.TabIndex = 13;
             this.btnTaiKhoan.Text = "Thông tin TK";
             this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -124,10 +126,11 @@ namespace QuanLyQuanTraSua
             this.btnAdmin.IconColor = System.Drawing.Color.White;
             this.btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 280);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 345);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnAdmin.Size = new System.Drawing.Size(200, 60);
+            this.btnAdmin.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnAdmin.Size = new System.Drawing.Size(267, 74);
             this.btnAdmin.TabIndex = 12;
             this.btnAdmin.Text = "Đăng ký TK";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -146,10 +149,11 @@ namespace QuanLyQuanTraSua
             this.btnMatHang.IconColor = System.Drawing.Color.White;
             this.btnMatHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMatHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMatHang.Location = new System.Drawing.Point(0, 220);
+            this.btnMatHang.Location = new System.Drawing.Point(0, 271);
+            this.btnMatHang.Margin = new System.Windows.Forms.Padding(4);
             this.btnMatHang.Name = "btnMatHang";
-            this.btnMatHang.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnMatHang.Size = new System.Drawing.Size(200, 60);
+            this.btnMatHang.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnMatHang.Size = new System.Drawing.Size(267, 74);
             this.btnMatHang.TabIndex = 9;
             this.btnMatHang.Text = "Mặt hàng";
             this.btnMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,10 +172,11 @@ namespace QuanLyQuanTraSua
             this.btnThongKe.IconColor = System.Drawing.Color.White;
             this.btnThongKe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 160);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 197);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(4);
             this.btnThongKe.Name = "btnThongKe";
-            this.btnThongKe.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnThongKe.Size = new System.Drawing.Size(200, 60);
+            this.btnThongKe.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnThongKe.Size = new System.Drawing.Size(267, 74);
             this.btnThongKe.TabIndex = 7;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,10 +195,11 @@ namespace QuanLyQuanTraSua
             this.btnTongQuan.IconColor = System.Drawing.Color.White;
             this.btnTongQuan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTongQuan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTongQuan.Location = new System.Drawing.Point(0, 100);
+            this.btnTongQuan.Location = new System.Drawing.Point(0, 123);
+            this.btnTongQuan.Margin = new System.Windows.Forms.Padding(4);
             this.btnTongQuan.Name = "btnTongQuan";
-            this.btnTongQuan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnTongQuan.Size = new System.Drawing.Size(200, 60);
+            this.btnTongQuan.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
+            this.btnTongQuan.Size = new System.Drawing.Size(267, 74);
             this.btnTongQuan.TabIndex = 6;
             this.btnTongQuan.Text = "Tổng Quan";
             this.btnTongQuan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,16 +212,18 @@ namespace QuanLyQuanTraSua
             this.pnlLogo.Controls.Add(this.btnHome);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(200, 100);
+            this.pnlLogo.Size = new System.Drawing.Size(267, 123);
             this.pnlLogo.TabIndex = 5;
             // 
             // btnHome
             // 
             this.btnHome.Image = global::QuanLyQuanTraSua.Properties.Resources.bubble_tea___Copy;
-            this.btnHome.Location = new System.Drawing.Point(38, 10);
+            this.btnHome.Location = new System.Drawing.Point(51, 12);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(100, 74);
+            this.btnHome.Size = new System.Drawing.Size(133, 91);
             this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
@@ -228,10 +236,12 @@ namespace QuanLyQuanTraSua
             this.panel1.Controls.Add(this.lblTitleChildForm);
             this.panel1.Controls.Add(this.iconCurrentChildForm);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
+            this.panel1.Location = new System.Drawing.Point(267, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1464, 65);
+            this.panel1.Size = new System.Drawing.Size(1657, 80);
             this.panel1.TabIndex = 5;
+            this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnExit
@@ -242,11 +252,11 @@ namespace QuanLyQuanTraSua
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.btnExit.IconSize = 30;
-            this.btnExit.Location = new System.Drawing.Point(1428, 9);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.IconSize = 38;
+            this.btnExit.Location = new System.Drawing.Point(1609, 11);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(30, 31);
+            this.btnExit.Size = new System.Drawing.Size(40, 38);
             this.btnExit.TabIndex = 3;
             this.btnExit.TabStop = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -256,9 +266,10 @@ namespace QuanLyQuanTraSua
             this.lblTitleChildForm.AutoSize = true;
             this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(75, 26);
+            this.lblTitleChildForm.Location = new System.Drawing.Point(100, 32);
+            this.lblTitleChildForm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(45, 17);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(54, 20);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -269,9 +280,11 @@ namespace QuanLyQuanTraSua
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.DarkGoldenrod;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(25, 19);
+            this.iconCurrentChildForm.IconSize = 39;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(33, 23);
+            this.iconCurrentChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(43, 39);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
@@ -279,32 +292,35 @@ namespace QuanLyQuanTraSua
             // 
             this.pnlShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
             this.pnlShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlShadow.Location = new System.Drawing.Point(200, 65);
+            this.pnlShadow.Location = new System.Drawing.Point(267, 80);
+            this.pnlShadow.Margin = new System.Windows.Forms.Padding(4);
             this.pnlShadow.Name = "pnlShadow";
-            this.pnlShadow.Size = new System.Drawing.Size(1464, 9);
+            this.pnlShadow.Size = new System.Drawing.Size(1657, 11);
             this.pnlShadow.TabIndex = 6;
             // 
             // pnlDesktop
             // 
             this.pnlDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.Location = new System.Drawing.Point(200, 74);
+            this.pnlDesktop.Location = new System.Drawing.Point(267, 91);
+            this.pnlDesktop.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1464, 842);
+            this.pnlDesktop.Size = new System.Drawing.Size(1657, 964);
             this.pnlDesktop.TabIndex = 7;
             // 
             // frmMain1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1664, 916);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.pnlDesktop);
             this.Controls.Add(this.pnlShadow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMain1";
+            this.Text = "Main Menu";
             this.pnlMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
