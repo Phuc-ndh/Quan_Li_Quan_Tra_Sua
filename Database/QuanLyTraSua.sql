@@ -77,7 +77,7 @@ values
 (N'Nước Ép Dưa Hấu', 35000, 3),
 (N'Hồng Trà Đào', 35000, 1)
 
-SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory
+--SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory
 
-delete from Drink
-delete from DrinkCategory
+--delete from Drink
+--delete from DrinkCategory
