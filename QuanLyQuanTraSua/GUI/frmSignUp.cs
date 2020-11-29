@@ -24,7 +24,7 @@ namespace QuanLyQuanTraSua
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            Regex usernameRegex = new Regex(@"^([A-z][A-z0-9]){5,12}$");
+            Regex usernameRegex = new Regex(@"^[A-z][A-z0-9]{4,12}$");
             Regex passwordRegex = new Regex(@"^[A-z0-9]{5,12}$");
             Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
             Regex phoneRegex = new Regex(@"^[0-9]{1,12}$");
