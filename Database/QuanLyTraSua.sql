@@ -35,27 +35,27 @@ create table Account
 	Email nvarchar(40)
 )
 
-create table Order
+create table Bill
 (
-	idOrder int identity not null, constraint PK_idOrder primary key (idOrder),
+	idBill int identity not null, constraint PK_idOrder primary key (idBill),
 	Date smalldatetime,
 	TotalPrice int,
 	idTable int
 )
-alter table Order add
-constraint FK_Order_idTable foreign key (idTable) references _Table(idTable)
+alter table Bill add
+constraint FK_Bill_idTable foreign key (idTable) references _Table(idTable)
 
 
-create table OrderDetail
+create table BillInfo
 (
-	idOrder int not null,
+	idBill int not null,
 	idDrink int not null,
 	Quantity int,
-	constraint PK_OrderDetail primary key (idOrder, idDrink)	
+	constraint PK_OrderDetail primary key (idBill, idDrink)	
 )
-alter table OrderDetail add
-constraint FK_OrderDetail_idOrder foreign key (idOrder) references Order(idOrder),
-constraint FK_OrderDetail_idDrink foreign key (idDrink) references Drink(idDrink)
+alter table BillInfo add
+constraint FK_BillInfo_idBill foreign key (idBill) references Bill(idBill),
+constraint FK_BillInfo_idDrink foreign key (idDrink) references Drink(idDrink)
 
 --Thêm dữ liệu:
 select * from DrinkCategory
