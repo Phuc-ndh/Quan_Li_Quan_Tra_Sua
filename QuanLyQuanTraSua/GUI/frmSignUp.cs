@@ -712,5 +712,16 @@ namespace QuanLyQuanTraSua
                 txtEmail.Text = "Email";
             }
         }
+
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
+            {
+                if (txtPassword.PasswordChar == '*')
+                    txtPassword.PasswordChar = default;
+                else
+                    txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

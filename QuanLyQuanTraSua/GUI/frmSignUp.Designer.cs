@@ -60,6 +60,7 @@
             this.ptrName = new System.Windows.Forms.PictureBox();
             this.ptrPhone = new System.Windows.Forms.PictureBox();
             this.ptrEmail = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -74,13 +75,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ptrPass1
             // 
             this.ptrPass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
             this.ptrPass1.Location = new System.Drawing.Point(67, 261);
-            this.ptrPass1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrPass1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrPass1.Name = "ptrPass1";
             this.ptrPass1.Size = new System.Drawing.Size(53, 48);
             this.ptrPass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -92,7 +94,7 @@
             // 
             this.ptrUser1.Image = global::QuanLyQuanTraSua.Properties.Resources.user1;
             this.ptrUser1.Location = new System.Drawing.Point(67, 177);
-            this.ptrUser1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrUser1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrUser1.Name = "ptrUser1";
             this.ptrUser1.Size = new System.Drawing.Size(53, 48);
             this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +111,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(593, 180);
             this.panel2.TabIndex = 49;
@@ -158,7 +160,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(199, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(173, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +176,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(68, 807);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(440, 62);
             this.btnCancel.TabIndex = 36;
@@ -189,7 +191,7 @@
             this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.Black;
             this.btnSignUp.Location = new System.Drawing.Point(69, 722);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(440, 62);
             this.btnSignUp.TabIndex = 35;
@@ -201,7 +203,7 @@
             // 
             this.pnlEmail.BackColor = System.Drawing.Color.White;
             this.pnlEmail.Location = new System.Drawing.Point(72, 665);
-            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
             this.pnlEmail.Name = "pnlEmail";
             this.pnlEmail.Size = new System.Drawing.Size(441, 2);
             this.pnlEmail.TabIndex = 45;
@@ -210,7 +212,7 @@
             // 
             this.pnlName.BackColor = System.Drawing.Color.White;
             this.pnlName.Location = new System.Drawing.Point(71, 489);
-            this.pnlName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlName.Margin = new System.Windows.Forms.Padding(4);
             this.pnlName.Name = "pnlName";
             this.pnlName.Size = new System.Drawing.Size(441, 2);
             this.pnlName.TabIndex = 44;
@@ -219,7 +221,7 @@
             // 
             this.pnlPass.BackColor = System.Drawing.Color.White;
             this.pnlPass.Location = new System.Drawing.Point(69, 316);
-            this.pnlPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPass.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPass.Name = "pnlPass";
             this.pnlPass.Size = new System.Drawing.Size(441, 2);
             this.pnlPass.TabIndex = 43;
@@ -228,7 +230,7 @@
             // 
             this.pnlPhone.BackColor = System.Drawing.Color.White;
             this.pnlPhone.Location = new System.Drawing.Point(71, 574);
-            this.pnlPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPhone.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPhone.Name = "pnlPhone";
             this.pnlPhone.Size = new System.Drawing.Size(441, 2);
             this.pnlPhone.TabIndex = 47;
@@ -237,7 +239,7 @@
             // 
             this.pnlRetypePass.BackColor = System.Drawing.Color.White;
             this.pnlRetypePass.Location = new System.Drawing.Point(69, 405);
-            this.pnlRetypePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlRetypePass.Margin = new System.Windows.Forms.Padding(4);
             this.pnlRetypePass.Name = "pnlRetypePass";
             this.pnlRetypePass.Size = new System.Drawing.Size(441, 2);
             this.pnlRetypePass.TabIndex = 46;
@@ -246,7 +248,7 @@
             // 
             this.pnlUser.BackColor = System.Drawing.Color.White;
             this.pnlUser.Location = new System.Drawing.Point(68, 233);
-            this.pnlUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlUser.Margin = new System.Windows.Forms.Padding(4);
             this.pnlUser.Name = "pnlUser";
             this.pnlUser.Size = new System.Drawing.Size(441, 2);
             this.pnlUser.TabIndex = 48;
@@ -258,7 +260,7 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(147, 625);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(364, 27);
             this.txtEmail.TabIndex = 34;
@@ -274,7 +276,7 @@
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Gray;
             this.txtName.Location = new System.Drawing.Point(145, 449);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(364, 27);
             this.txtName.TabIndex = 32;
@@ -290,7 +292,7 @@
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone.Location = new System.Drawing.Point(147, 534);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(364, 27);
             this.txtPhone.TabIndex = 33;
@@ -306,7 +308,7 @@
             this.txtRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRePassword.ForeColor = System.Drawing.Color.Gray;
             this.txtRePassword.Location = new System.Drawing.Point(145, 366);
-            this.txtRePassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRePassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtRePassword.Name = "txtRePassword";
             this.txtRePassword.Size = new System.Drawing.Size(364, 27);
             this.txtRePassword.TabIndex = 31;
@@ -322,7 +324,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
             this.txtPassword.Location = new System.Drawing.Point(144, 277);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(364, 27);
             this.txtPassword.TabIndex = 30;
@@ -338,7 +340,7 @@
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
             this.txtUsername.Location = new System.Drawing.Point(144, 193);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(364, 27);
             this.txtUsername.TabIndex = 29;
@@ -351,7 +353,7 @@
             // 
             this.ptrPassword.Image = global::QuanLyQuanTraSua.Properties.Resources.pass;
             this.ptrPassword.Location = new System.Drawing.Point(67, 261);
-            this.ptrPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrPassword.Margin = new System.Windows.Forms.Padding(4);
             this.ptrPassword.Name = "ptrPassword";
             this.ptrPassword.Size = new System.Drawing.Size(53, 48);
             this.ptrPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -362,7 +364,7 @@
             // 
             this.ptrUsername.Image = global::QuanLyQuanTraSua.Properties.Resources.user;
             this.ptrUsername.Location = new System.Drawing.Point(67, 177);
-            this.ptrUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrUsername.Margin = new System.Windows.Forms.Padding(4);
             this.ptrUsername.Name = "ptrUsername";
             this.ptrUsername.Size = new System.Drawing.Size(53, 48);
             this.ptrUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -373,7 +375,7 @@
             // 
             this.ptrRetypePass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
             this.ptrRetypePass1.Location = new System.Drawing.Point(68, 350);
-            this.ptrRetypePass1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrRetypePass1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrRetypePass1.Name = "ptrRetypePass1";
             this.ptrRetypePass1.Size = new System.Drawing.Size(53, 48);
             this.ptrRetypePass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -385,7 +387,7 @@
             // 
             this.ptrRetypePass.Image = global::QuanLyQuanTraSua.Properties.Resources.pass;
             this.ptrRetypePass.Location = new System.Drawing.Point(68, 350);
-            this.ptrRetypePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrRetypePass.Margin = new System.Windows.Forms.Padding(4);
             this.ptrRetypePass.Name = "ptrRetypePass";
             this.ptrRetypePass.Size = new System.Drawing.Size(53, 48);
             this.ptrRetypePass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -396,7 +398,7 @@
             // 
             this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
             this.ptrName1.Location = new System.Drawing.Point(68, 433);
-            this.ptrName1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrName1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrName1.Name = "ptrName1";
             this.ptrName1.Size = new System.Drawing.Size(53, 48);
             this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -408,7 +410,7 @@
             // 
             this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
             this.ptrPhone1.Location = new System.Drawing.Point(69, 518);
-            this.ptrPhone1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrPhone1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrPhone1.Name = "ptrPhone1";
             this.ptrPhone1.Size = new System.Drawing.Size(53, 48);
             this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -420,7 +422,7 @@
             // 
             this.ptrEmail1.Image = global::QuanLyQuanTraSua.Properties.Resources.email1;
             this.ptrEmail1.Location = new System.Drawing.Point(69, 609);
-            this.ptrEmail1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrEmail1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrEmail1.Name = "ptrEmail1";
             this.ptrEmail1.Size = new System.Drawing.Size(53, 48);
             this.ptrEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -432,7 +434,7 @@
             // 
             this.ptrName.Image = global::QuanLyQuanTraSua.Properties.Resources.name;
             this.ptrName.Location = new System.Drawing.Point(68, 433);
-            this.ptrName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrName.Margin = new System.Windows.Forms.Padding(4);
             this.ptrName.Name = "ptrName";
             this.ptrName.Size = new System.Drawing.Size(53, 48);
             this.ptrName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -443,7 +445,7 @@
             // 
             this.ptrPhone.Image = global::QuanLyQuanTraSua.Properties.Resources.phone;
             this.ptrPhone.Location = new System.Drawing.Point(69, 518);
-            this.ptrPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrPhone.Margin = new System.Windows.Forms.Padding(4);
             this.ptrPhone.Name = "ptrPhone";
             this.ptrPhone.Size = new System.Drawing.Size(53, 48);
             this.ptrPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -454,12 +456,24 @@
             // 
             this.ptrEmail.Image = global::QuanLyQuanTraSua.Properties.Resources.email;
             this.ptrEmail.Location = new System.Drawing.Point(69, 609);
-            this.ptrEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ptrEmail.Margin = new System.Windows.Forms.Padding(4);
             this.ptrEmail.Name = "ptrEmail";
             this.ptrEmail.Size = new System.Drawing.Size(53, 48);
             this.ptrEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrEmail.TabIndex = 39;
             this.ptrEmail.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(428, 261);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
             // 
             // frmSignUp
             // 
@@ -470,6 +484,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pnlEmail);
             this.Controls.Add(this.pnlName);
             this.Controls.Add(this.pnlPass);
@@ -495,7 +510,7 @@
             this.Controls.Add(this.ptrPhone);
             this.Controls.Add(this.ptrEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
@@ -514,6 +529,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,5 +568,6 @@
         private System.Windows.Forms.PictureBox ptrName;
         private System.Windows.Forms.PictureBox ptrPhone;
         private System.Windows.Forms.PictureBox ptrEmail;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
