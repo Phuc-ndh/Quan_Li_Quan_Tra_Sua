@@ -50,25 +50,60 @@ namespace QuanLyQuanTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (drinkBUS.InsertDrink(txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
+            if (txtTenMatHang.Text == "" || txtGia.Text == "")
             {
-                MessageBox.Show("Đã thêm thành công");
-                dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                MessageBox.Show("Điền đủ thông tin trước khi thêm món");
+            }
+            else
+            {
+                if (drinkBUS.InsertDrink(txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
+                {
+                    MessageBox.Show("Đã thêm thành công");
+                    dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                }
             }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            try
             {
-                if (drinkBUS.DeleteDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value)))
+                if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    MessageBox.Show("Đã xóa thành công");
-                    dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    if (drinkBUS.DeleteDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value)))
+                    {
+                        MessageBox.Show("Đã xóa thành công");
+                        dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    }
                 }
+                else
+                    MessageBox.Show("Chọn một món để xóa");
             }
-            else
-                MessageBox.Show("Chọn một món trước khi xóa");
+            catch (NullReferenceException)
+            {
+
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    if (drinkBUS.UpdateDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value), txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
+                    {
+                        MessageBox.Show("Đã sửa thành công");
+                        dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    }
+                }
+                else
+                    MessageBox.Show("Chọn một món để sửa");
+            }
+            catch (NullReferenceException)
+            {
+
+            }
         }
     }
 }

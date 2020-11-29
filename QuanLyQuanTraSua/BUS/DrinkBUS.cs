@@ -37,5 +37,10 @@ namespace BUS
         {
             return drinkDAL.DeleteDrink(idDrink);
         }
+
+        public bool UpdateDrink(int idDrink, string name, string price, int idCategory)
+        {
+            return drinkDAL.UpdateDrink(idDrink, name, price, idCategory);
+        }
     }
 }

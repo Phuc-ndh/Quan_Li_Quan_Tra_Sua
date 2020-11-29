@@ -70,5 +70,13 @@ namespace DAL
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
+
+        public bool UpdateDrink(int idDrink, string name, string price, int idCategory)
+        {
+            string query = "update Drink set name = @name, price = @price, idCategory = @idCategory where idDrink = @idDrink";
+            object[] value = new object[] { name, price, idCategory, idDrink };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
     }
 }
