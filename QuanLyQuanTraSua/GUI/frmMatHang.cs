@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,10 +26,11 @@ namespace QuanLyQuanTraSua
             dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
             dataGridView1.Columns["Loại"].Width = 150;
             dataGridView1.Columns["Giá"].Width = 100;
+            dataGridView1.Columns["idDrink"].Visible = false;
             dataGridView1.Columns["idCategory"].Visible = false;
 
             cbbLoai.DisplayMember = "Name";
-            cbbLoai.DataSource = drinkCategoryBUS.getDrinkCategoryNames();
+            cbbLoai.DataSource = drinkCategoryBUS.GetDrinkCategories();
             /*
             cbbLoai.DataBindings.Add(new Binding("SelectedIndex", dataGridView1.DataSource, "idCategory"));
             txtTenMatHang.DataBindings.Add(new Binding("Text", dataGridView1.DataSource, "Tên"));
@@ -44,6 +46,29 @@ namespace QuanLyQuanTraSua
                 txtGia.Text = dataGridView1.SelectedRows[0].Cells["Giá"].Value.ToString();
                 cbbLoai.SelectedIndex = cbbLoai.FindStringExact(dataGridView1.SelectedRows[0].Cells["Loại"].Value.ToString());
             }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (drinkBUS.InsertDrink(txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
+            {
+                MessageBox.Show("Đã thêm thành công");
+                dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+            }
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                if (drinkBUS.DeleteDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value)))
+                {
+                    MessageBox.Show("Đã xóa thành công");
+                    dataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                }
+            }
+            else
+                MessageBox.Show("Chọn một món trước khi xóa");
         }
     }
 }

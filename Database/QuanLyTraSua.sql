@@ -59,7 +59,7 @@ constraint FK_BillInfo_idDrink foreign key (idDrink) references Drink(idDrink)
 
 --Thêm dữ liệu:
 select * from DrinkCategory
-DBCC CHECKIDENT ('DrinkCategory', RESEED, -1);
+--DBCC CHECKIDENT ('DrinkCategory', RESEED, -1);
 insert into DrinkCategory(Name)
 values
 (N'Trà Sữa'),
@@ -67,8 +67,8 @@ values
 (N'Sinh Tố'),
 (N'Nước Ép')
 
-select * from Drink
-DBCC CHECKIDENT ('Drink', RESEED, -1);
+select * from Drink order by idCategory
+--DBCC CHECKIDENT ('Drink', RESEED, -1);
 insert into Drink(Name, Price, idCategory)
 values
 (N'Sinh Tố Dâu Tây', 30000, 2),

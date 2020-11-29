@@ -1,4 +1,5 @@
 ﻿using DAL;
+using DTO;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,9 +12,9 @@ namespace BUS
     public class DrinkCategoryBUS
     {
         DrinkCategoryDAL drinkCategoryDAL = new DrinkCategoryDAL();
-        public DataTable getDrinkCategoryNames()
+        public List<DrinkCategory> GetDrinkCategories()
         {
-            return drinkCategoryDAL.getDrinkCategories();
+            return drinkCategoryDAL.GetDrinkCategories();
         }
     }
 }

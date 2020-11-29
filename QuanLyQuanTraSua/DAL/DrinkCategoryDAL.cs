@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,17 +10,17 @@ namespace DAL
 {
     public class DrinkCategoryDAL
     {
-        public DataTable getDrinkCategories()
+        public List<DrinkCategory> GetDrinkCategories()
         {
-            List<string> names = new List<string>();
-            string query = "SELECT Name FROM DrinkCategory";
+            List<DrinkCategory> list = new List<DrinkCategory>();
+            string query = "SELECT * FROM DrinkCategory";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             foreach (DataRow row in dt.Rows)
             {
-                names.Add(row["Name"].ToString());
+                list.Add(new DrinkCategory(row));
             }
-            return dt;
+            return list;
         }
     }
 }
