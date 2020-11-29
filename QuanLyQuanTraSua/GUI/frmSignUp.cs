@@ -29,70 +29,77 @@ namespace QuanLyQuanTraSua
             Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
             Regex phoneRegex = new Regex(@"^[0-9]{1,12}$");
             flag = true;
-            if (txtPassword.PasswordChar != '*')
+            string errorMessage = null;
+
+            if (txtUsername.TextLength == 0 || txtUsername.Text == "Tên Đăng Nhập") //Kiểm tra điều kiện username
             {
-                MessageBox.Show("Điền thông tin trước khi đăng ký");
+                errorMessage += "- Không thể bỏ trống tên đăng nhập\n";
+                flag = false;
             }
             else
             {
-                if (txtUsername.TextLength == 0) //Kiểm tra điều kiện username
+                if (!usernameRegex.IsMatch(txtUsername.Text))
                 {
-                    MessageBox.Show("Không thể bỏ trống tên đăng nhập");
+                    errorMessage += "- Tên đăng nhập không hợp lệ\n";
+                    flag = false;
+                }
+            }
+            if (txtPassword.TextLength == 0 || txtPassword.Text == "Mật Khẩu") //Kiểm tra điều kiện password
+            {
+                errorMessage += "- Không thể bỏ trống mật khẩu\n";
+                flag = false;
+            }
+            else
+            {
+                if (!passwordRegex.IsMatch(txtPassword.Text))
+                {
+                    errorMessage += "- Mật khẩu đăng ký không hợp lệ\n";
                     flag = false;
                 }
                 else
                 {
-                    if (!usernameRegex.IsMatch(txtUsername.Text))
+                    if (!(txtPassword.Text == txtRePassword.Text))
                     {
-                        MessageBox.Show("Tên đăng nhập không hợp lệ");
+                        errorMessage += "- Mật khẩu không trùng khớp\n";
                         flag = false;
-                    }
-                }
-                if (txtPassword.TextLength == 0) //Kiểm tra điều kiện password
-                {
-                    MessageBox.Show("Không thể bỏ trống mật khẩu");
-                    flag = false;
-                }
-                else
-                {
-                    if (!passwordRegex.IsMatch(txtPassword.Text))
-                    {
-                        MessageBox.Show("Mật khẩu đăng ký không hợp lệ");
-                        flag = false;
-                    }
-                    else
-                    {
-                        if (!(txtPassword.Text == txtRePassword.Text))
-                        {
-                            MessageBox.Show("Mật khẩu không trùng khớp");
-                            flag = false;
-                        }
-                    }
-                }
-                if (txtName.TextLength == 0) //Kiểm tra điều kiện name
-                {
-                    MessageBox.Show("Không thể bỏ trống tên");
-                    flag = false;
-                }
-                if (!emailRegex.IsMatch(txtEmail.Text)) //Kiểm tra điều kiện email
-                {
-                    MessageBox.Show("Email không hợp lệ");
-                    flag = false;
-                }
-                if (!phoneRegex.IsMatch(txtPhone.Text))
-                {
-                    MessageBox.Show("Số điện thoại không hợp lệ");
-                    flag = false;
-                }
-                if (accountBUS.insertAccount(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text)) //Đăng ký
-                {
-                    if (flag)
-                    {
-                        MessageBox.Show("Đăng ký tài khoản thành công");
-                        this.Close();
                     }
                 }
             }
+            if (txtName.TextLength == 0 || txtName.Text == "Họ Tên") //Kiểm tra điều kiện name
+            {
+                errorMessage += "- Không thể bỏ trống tên\n";
+                flag = false;
+            }
+            if (txtPhone.TextLength > 0 && txtPhone.Text != "SĐT") //Kiểm tra điều kiện SĐT
+            {
+                if (!phoneRegex.IsMatch(txtPhone.Text))
+                {
+                    errorMessage += "- Số điện thoại không hợp lệ\n";
+                    flag = false;
+                }
+            }
+            if (txtEmail.TextLength > 0 && txtEmail.Text != "Email") //Kiểm tra điều kiện email
+            {
+                if (!emailRegex.IsMatch(txtEmail.Text))
+                {
+                    errorMessage += "- Email không hợp lệ\n";
+                    flag = false;
+                }
+            }
+            if (flag)
+            {
+                if (accountBUS.insertAccount(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text)) //Đăng ký
+                {
+                    MessageBox.Show("Đăng ký tài khoản thành công");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Đăng ký tài khoản thất bại");
+                }
+            }
+            else
+                MessageBox.Show(errorMessage);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

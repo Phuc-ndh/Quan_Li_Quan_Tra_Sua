@@ -52,6 +52,10 @@ namespace BUS
         {
             try
             {
+                if (phone == "SĐT")
+                    phone = "";
+                if (email == "Email")
+                    email = "";
                 accountDAL.insertAccount(username, name, getHashMD5(password).ToString(), phone, email);
                 return true;
             }
