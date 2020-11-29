@@ -33,16 +33,16 @@ namespace QuanLyQuanTraSua
                 flpTatCa.Controls.Add(btn);
                 switch (drink.idCategory)
                 {
-                    case 1:
+                    case 0:
                         flpTraSua.Controls.Add(btn2);
                         break;
-                    case 2:
+                    case 1:
                         flpHongTra.Controls.Add(btn2);
                         break;
-                    case 3:
+                    case 2:
                         flpSinhTo.Controls.Add(btn2);
                         break;
-                    case 4:
+                    case 3:
                         flpNuocEp.Controls.Add(btn2);
                         break;
                     default:
