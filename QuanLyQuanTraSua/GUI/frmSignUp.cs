@@ -723,5 +723,13 @@ namespace QuanLyQuanTraSua
                     txtPassword.PasswordChar = '*';
             }
         }
+
+        private void frmSignUp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnSignUp_Click(sender, e);
+            }
+        }
     }
 }

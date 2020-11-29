@@ -514,6 +514,7 @@
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmSignUp_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();
             this.panel2.ResumeLayout(false);
