@@ -71,12 +71,13 @@ select * from Drink
 DBCC CHECKIDENT ('Drink', RESEED, -1);
 insert into Drink(Name, Price, idCategory)
 values
-(N'Sinh Tố Dâu Tây', 30000, 3),
-(N'Sinh Tố Xoài', 30000, 3),
-(N'Trà Sữa Truyền Thống', 40000, 1),
-(N'Nước Ép Dưa Hấu', 35000, 4),
-(N'Hồng Trà Đào', 35000, 2)
+(N'Sinh Tố Dâu Tây', 30000, 2),
+(N'Sinh Tố Xoài', 30000, 2),
+(N'Trà Sữa Truyền Thống', 40000, 0),
+(N'Nước Ép Dưa Hấu', 35000, 3),
+(N'Hồng Trà Đào', 35000, 1)
 
 SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory
 
-SELECT Name FROM DrinkCategory
+delete from Drink
+delete from DrinkCategory
