@@ -153,6 +153,10 @@
       <Project>{e56cc64e-1813-4f81-88cd-ee9a364020cf}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{da109b02-af92-4bd4-be36-2537816695a0}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\email.png" />

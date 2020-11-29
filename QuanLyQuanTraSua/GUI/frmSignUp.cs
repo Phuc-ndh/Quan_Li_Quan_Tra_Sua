@@ -84,10 +84,13 @@ namespace QuanLyQuanTraSua
                     MessageBox.Show("Số điện thoại không hợp lệ");
                     flag = false;
                 }
-                if (accountBUS.insertAccount(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text) && flag) //Đăng ký
+                if (accountBUS.insertAccount(txtUsername.Text, txtName.Text, txtPassword.Text, txtPhone.Text, txtEmail.Text)) //Đăng ký
                 {
-                    MessageBox.Show("Đăng ký tài khoản thành công");
-                    this.Close();
+                    if (flag)
+                    {
+                        MessageBox.Show("Đăng ký tài khoản thành công");
+                        this.Close();
+                    }
                 }
             }
         }
@@ -95,9 +98,6 @@ namespace QuanLyQuanTraSua
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
-            //frmMain1 frmM1 = new frmMain1();
-            //frmM1.Show();
-            
         }
 
         private void txtUsername_Click(object sender, EventArgs e)
@@ -106,12 +106,11 @@ namespace QuanLyQuanTraSua
             {
                 txtUsername.Clear();
             }
-            //ptrUsername.BackgroundImage = Properties.Resources.user1;
+            //
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
             txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -154,12 +153,11 @@ namespace QuanLyQuanTraSua
             {
                 txtPassword.Clear();
             }
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
             txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrUsername.BackgroundImage = Properties.Resources.user;
+            //
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
             if (txtUsername.Text == "Tên Đăng Nhập")
@@ -202,12 +200,11 @@ namespace QuanLyQuanTraSua
             {
                 txtRePassword.Clear();
             }
-            //ptrRetypePass.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrRetypePass1.Visible = true;
             pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
             txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -250,12 +247,11 @@ namespace QuanLyQuanTraSua
             {
                 txtName.Clear();
             }
-            //ptrName.BackgroundImage = Properties.Resources.name;
+            //
             this.ptrName1.Visible = true;
             pnlName.ForeColor = Color.FromArgb(78, 184, 206);
             txtName.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -298,12 +294,11 @@ namespace QuanLyQuanTraSua
             {
                 txtPhone.Clear();
             }
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrPhone1.Visible = true;
             pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
             txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -346,12 +341,11 @@ namespace QuanLyQuanTraSua
             {
                 txtEmail.Clear();
             }
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrEmail1.Visible = true;
             pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
             txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -393,12 +387,11 @@ namespace QuanLyQuanTraSua
         //=== TextChanged ================
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            //ptrUsername.BackgroundImage = Properties.Resources.user1;
+            //
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
             txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -441,12 +434,11 @@ namespace QuanLyQuanTraSua
             {
                 txtPassword.PasswordChar = '*';
             }
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
             txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrUsername.BackgroundImage = Properties.Resources.user;
+            //
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
             if (txtUsername.Text == "Tên Đăng Nhập")
@@ -489,12 +481,11 @@ namespace QuanLyQuanTraSua
             {
                 txtRePassword.PasswordChar = '*';
             }
-            //ptrRetypePass.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrRetypePass1.Visible = true;
             pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
             txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -533,12 +524,11 @@ namespace QuanLyQuanTraSua
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //ptrName.BackgroundImage = Properties.Resources.name;
+            //
             this.ptrName1.Visible = true;
             pnlName.ForeColor = Color.FromArgb(78, 184, 206);
             txtName.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -577,12 +567,11 @@ namespace QuanLyQuanTraSua
 
         private void txtPhone_TextChanged(object sender, EventArgs e)
         {
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrPhone1.Visible = true;
             pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
             txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -621,12 +610,11 @@ namespace QuanLyQuanTraSua
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrEmail1.Visible = true;
             pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
             txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")

@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Security.Cryptography;
 using BUS;
 using System.Runtime.InteropServices;
 
@@ -17,6 +10,7 @@ namespace QuanLyQuanTraSua
     public partial class frmLogin : Form
     {
         AccountBUS accountBus = new AccountBUS();
+        public string currentUser;
         public frmLogin()
         {
             InitializeComponent();
@@ -27,10 +21,12 @@ namespace QuanLyQuanTraSua
             if (accountBus.Login(txtUsername.Text, txtPassword.Text))
             {
                 this.Hide();
-                frmMain1 form = new frmMain1();
+                currentUser = txtUsername.Text;
+                frmMain1 form = new frmMain1(this);
                 form.ShowDialog();
                 this.Show();
                 //--
+                currentUser = null;
                 txtUsername.Text = "Username";
                 txtPassword.Text = "Password";
                 txtPassword.PasswordChar = default;
@@ -40,7 +36,6 @@ namespace QuanLyQuanTraSua
             {
                 MessageBox.Show("Sai mật khẩu hoặc tài khoản");
                 txtPassword.Text = "";
-                //txtPassword.Focus();
                 txtUsername.Focus();
             }
         }
@@ -74,7 +69,7 @@ namespace QuanLyQuanTraSua
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
             txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-
+            //
             ptrPassword.BackgroundImage = Properties.Resources.pass;
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
@@ -95,8 +90,7 @@ namespace QuanLyQuanTraSua
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
             txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-
+            //
             ptrUsername.BackgroundImage = Properties.Resources.user;
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
@@ -108,13 +102,11 @@ namespace QuanLyQuanTraSua
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            //ptrPassword.BackgroundImage = Properties.Resources.pass1;
+            //
             this.ptrUser1.Visible = true;
             pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
             txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-
-
-            //ptrUsername.BackgroundImage = Properties.Resources.user;
+            //
             this.ptrPass1.Visible = false;
             pnlPass.ForeColor = Color.White;
             if (txtPassword.Text == "Mật Khẩu")
@@ -129,12 +121,11 @@ namespace QuanLyQuanTraSua
             {
                 txtPassword.PasswordChar = '*';
             }
-            //ptrUsername.BackgroundImage = Properties.Resources.user1;
+            //
             this.ptrPass1.Visible = true;
             pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
             txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-
-            //ptrPassword.BackgroundImage = Properties.Resources.pass;
+            //
             this.ptrUser1.Visible = false;
             pnlUser.ForeColor = Color.White;
             if (txtUsername.Text == "Tên Đăng Nhập")

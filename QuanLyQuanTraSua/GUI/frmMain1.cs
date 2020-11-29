@@ -14,11 +14,15 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmMain1 : Form
     {
+        private frmLogin parent;
+        public string currentUser;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        public frmMain1()
+        public frmMain1(frmLogin parent)
         {
+            this.parent = parent;
+            this.currentUser = parent.currentUser;
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
@@ -33,7 +37,6 @@ namespace QuanLyQuanTraSua
         //Change color of button
         private struct RGBColors
         {
-            //public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color1 = Color.FromArgb(197, 190, 250);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
@@ -49,8 +52,6 @@ namespace QuanLyQuanTraSua
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                //currentBtn.BackColor = Color.FromArgb(37, 36, 81);
-                //currentBtn.BackColor = Color.FromArgb(69,69,69);
                 currentBtn.BackColor = Color.FromArgb(90,90,90);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
@@ -71,14 +72,10 @@ namespace QuanLyQuanTraSua
         {
             if (currentBtn != null)
             {
-                //currentBtn.BackColor = Color.FromArgb(31, 30, 68);
-                //currentBtn.BackColor = Color.FromArgb(69, 69, 69);
-                //currentBtn.BackColor = Color.FromArgb(105, 105, 105);
                 currentBtn.BackColor = Color.FromArgb(75, 75, 75);
-
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
@@ -153,13 +150,10 @@ namespace QuanLyQuanTraSua
         {
             ActivateButton(sender, RGBColors.color1);
             frmSignUp frmSU =new frmSignUp();
-            //frmSignUp.FormClosed += new FormClosedEventHandler(FrmSignUp_FormClosed);
-            //this.Hide();
             this.Visible = false;
             frmSU.ShowDialog();
             btnHome_Click(sender, e);
             this.Visible = true;
-            //this.Show();
         }
 
         private void FrmSignUp_FormClosed(object sender, FormClosedEventArgs e)
@@ -172,7 +166,7 @@ namespace QuanLyQuanTraSua
             ActivateButton(sender, RGBColors.color1);
             //OpenChildForm(new frmTaiKhoan());
             this.Hide();
-            frmTaiKhoan formTK = new frmTaiKhoan();
+            frmTaiKhoan formTK = new frmTaiKhoan(this);
             formTK.ShowDialog();
             btnHome_Click(sender, e);
             this.Show();

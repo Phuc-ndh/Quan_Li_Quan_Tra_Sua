@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using DTO;
 
 namespace BUS
 {
@@ -26,6 +27,12 @@ namespace BUS
             if (Username != "")
                 return true;
             return false;
+        }
+
+        public Account getAccountByUsername(string username)
+        {
+            Account account = accountDAL.getAccountByUsername(username);
+            return account;
         }
 
         public bool updatePassword(string username, string new_password)
