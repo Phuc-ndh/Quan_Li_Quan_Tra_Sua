@@ -211,7 +211,7 @@ namespace QuanLyQuanTraSua
             }
             else
             {
-                this.FormBorderStyle = FormBorderStyle.None;
+                this.FormBorderStyle = FormBorderStyle.FixedSingle;
                 this.WindowState = FormWindowState.Maximized;
             }
         }
