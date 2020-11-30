@@ -14,7 +14,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmAdmin : Form
     {
-        Account selectedAccount = new Account();
+        public Account selectedAccount = new Account();
         AccountBUS accountBUS = new AccountBUS();
         public frmAdmin()
         {
@@ -47,5 +47,26 @@ namespace QuanLyQuanTraSua
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (accountBUS.deleteAccount(selectedAccount.Username))
+            {
+                MessageBox.Show("Đã xóa thành công");
+                flowLayoutPanel1.Controls.Clear();
+                frmAdmin_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại");
+            }    
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            frmUpdateTK frm1 = new frmUpdateTK(this);
+            frm1.ShowDialog();
+            flowLayoutPanel1.Controls.Clear();
+            frmAdmin_Load(sender, e);
+        }
     }
 }

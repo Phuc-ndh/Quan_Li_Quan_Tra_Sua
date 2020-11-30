@@ -46,6 +46,22 @@ namespace DAL
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
+        public bool deleteAccount(string username)
+        {
+            string query = "delete from Account where Username = @username";
+            object[] value = new object[] { username };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
+
+        public bool updateAccount(string username, string name, string phone, string email)
+        {
+            string query = "update Account set RealName = @name, PhoneNumber = @phone, Email = @email where Username = @username";
+            object[] value = new object[] { name, phone, email, username };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
+
         // truy van toi username trong table Accout
         public string getPasswordByUsername(string username)
         {
@@ -85,5 +101,15 @@ namespace DAL
             DataTable dt = db.ExecuteQuery(query, value);
             return dt;
         }
+
+        public bool insertBill(string date, int totalprice)
+        {
+            string query = "insert into Bill(Date, TotalPrice) values (@date, @totalprice) ";
+            object[] value = new object[] { date, totalprice };
+            DBConnect db = new DBConnect();
+            return (db.ExecuteNonQuery(query, value) > 0);
+        }
+
+        //public bool insertBillInfo()
     }
 }

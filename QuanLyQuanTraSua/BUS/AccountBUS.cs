@@ -78,6 +78,36 @@ namespace BUS
 
         }
 
+        public bool deleteAccount(string username)
+        {
+            try
+            {
+                if (accountDAL.deleteAccount(username))
+
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool updateAccount(string username, string name, string phone, string email)
+        {
+            try
+            {
+                return (accountDAL.updateAccount(username, name, phone, email));
+
+            }
+            catch (Exception)
+            {
+                return false;
+                //throw;
+            }
+        }
+
         public string getPasswordByUsername(string username)
         {
             try

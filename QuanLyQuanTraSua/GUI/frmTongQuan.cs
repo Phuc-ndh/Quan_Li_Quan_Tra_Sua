@@ -97,5 +97,10 @@ namespace QuanLyQuanTraSua
         {
             dataGridView1.Rows.Clear();
         }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

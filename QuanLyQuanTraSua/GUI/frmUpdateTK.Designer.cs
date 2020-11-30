@@ -1,7 +1,7 @@
 ﻿
 namespace QuanLyQuanTraSua
 {
-    partial class frmTaiKhoan
+    partial class frmUpdateTK
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,13 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTaiKhoan));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUpdateTK));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.pnlName = new System.Windows.Forms.Panel();
             this.pnlPhone = new System.Windows.Forms.Panel();
@@ -43,24 +44,24 @@ namespace QuanLyQuanTraSua
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptrPhone = new System.Windows.Forms.PictureBox();
             this.ptrUser1 = new System.Windows.Forms.PictureBox();
             this.ptrName1 = new System.Windows.Forms.PictureBox();
             this.ptrPhone1 = new System.Windows.Forms.PictureBox();
             this.ptrEmail1 = new System.Windows.Forms.PictureBox();
             this.ptrUsername = new System.Windows.Forms.PictureBox();
             this.ptrName = new System.Windows.Forms.PictureBox();
-            this.ptrPhone = new System.Windows.Forms.PictureBox();
             this.ptrEmail = new System.Windows.Forms.PictureBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@ namespace QuanLyQuanTraSua
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(429, 146);
-            this.panel2.TabIndex = 76;
+            this.panel2.TabIndex = 95;
             // 
             // label4
             // 
@@ -88,7 +89,6 @@ namespace QuanLyQuanTraSua
             this.label4.Size = new System.Drawing.Size(20, 25);
             this.label4.TabIndex = 2;
             this.label4.Text = "-";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -101,7 +101,6 @@ namespace QuanLyQuanTraSua
             this.label5.Size = new System.Drawing.Size(22, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "X";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -115,106 +114,6 @@ namespace QuanLyQuanTraSua
             this.label3.TabIndex = 1;
             this.label3.Text = "-";
             // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCancel.FlatAppearance.BorderSize = 2;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(51, 525);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(330, 50);
-            this.btnCancel.TabIndex = 63;
-            this.btnCancel.Text = "Thoát";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // pnlEmail
-            // 
-            this.pnlEmail.BackColor = System.Drawing.Color.White;
-            this.pnlEmail.Location = new System.Drawing.Point(54, 481);
-            this.pnlEmail.Name = "pnlEmail";
-            this.pnlEmail.Size = new System.Drawing.Size(331, 2);
-            this.pnlEmail.TabIndex = 72;
-            // 
-            // pnlName
-            // 
-            this.pnlName.BackColor = System.Drawing.Color.White;
-            this.pnlName.Location = new System.Drawing.Point(53, 296);
-            this.pnlName.Name = "pnlName";
-            this.pnlName.Size = new System.Drawing.Size(331, 2);
-            this.pnlName.TabIndex = 71;
-            // 
-            // pnlPhone
-            // 
-            this.pnlPhone.BackColor = System.Drawing.Color.White;
-            this.pnlPhone.Location = new System.Drawing.Point(53, 388);
-            this.pnlPhone.Name = "pnlPhone";
-            this.pnlPhone.Size = new System.Drawing.Size(331, 2);
-            this.pnlPhone.TabIndex = 74;
-            // 
-            // pnlUser
-            // 
-            this.pnlUser.BackColor = System.Drawing.Color.White;
-            this.pnlUser.Location = new System.Drawing.Point(51, 203);
-            this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(331, 2);
-            this.pnlUser.TabIndex = 75;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(110, 451);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(273, 23);
-            this.txtEmail.TabIndex = 61;
-            this.txtEmail.Text = "Email";
-            // 
-            // txtName
-            // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(108, 267);
-            this.txtName.Name = "txtName";
-            this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(273, 23);
-            this.txtName.TabIndex = 59;
-            this.txtName.Text = "Name";
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.ForeColor = System.Drawing.Color.White;
-            this.txtPhone.Location = new System.Drawing.Point(108, 360);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.ReadOnly = true;
-            this.txtPhone.Size = new System.Drawing.Size(273, 23);
-            this.txtPhone.TabIndex = 60;
-            this.txtPhone.Text = "Phone";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.Location = new System.Drawing.Point(108, 171);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(273, 23);
-            this.txtUsername.TabIndex = 56;
-            this.txtUsername.Text = "đổ dữ liệu vào đây";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
@@ -226,15 +125,122 @@ namespace QuanLyQuanTraSua
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUpdate.FlatAppearance.BorderSize = 2;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(51, 530);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(330, 50);
+            this.btnUpdate.TabIndex = 86;
+            this.btnUpdate.Text = "Hoàn Tất";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // pnlEmail
+            // 
+            this.pnlEmail.BackColor = System.Drawing.Color.White;
+            this.pnlEmail.Location = new System.Drawing.Point(54, 486);
+            this.pnlEmail.Name = "pnlEmail";
+            this.pnlEmail.Size = new System.Drawing.Size(331, 2);
+            this.pnlEmail.TabIndex = 92;
+            // 
+            // pnlName
+            // 
+            this.pnlName.BackColor = System.Drawing.Color.White;
+            this.pnlName.Location = new System.Drawing.Point(53, 301);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(331, 2);
+            this.pnlName.TabIndex = 91;
+            // 
+            // pnlPhone
+            // 
+            this.pnlPhone.BackColor = System.Drawing.Color.White;
+            this.pnlPhone.Location = new System.Drawing.Point(53, 393);
+            this.pnlPhone.Name = "pnlPhone";
+            this.pnlPhone.Size = new System.Drawing.Size(331, 2);
+            this.pnlPhone.TabIndex = 93;
+            // 
+            // pnlUser
+            // 
+            this.pnlUser.BackColor = System.Drawing.Color.White;
+            this.pnlUser.Location = new System.Drawing.Point(51, 208);
+            this.pnlUser.Name = "pnlUser";
+            this.pnlUser.Size = new System.Drawing.Size(331, 2);
+            this.pnlUser.TabIndex = 94;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.White;
+            this.txtEmail.Location = new System.Drawing.Point(110, 456);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(273, 23);
+            this.txtEmail.TabIndex = 85;
+            this.txtEmail.Text = "Email";
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.White;
+            this.txtName.Location = new System.Drawing.Point(108, 272);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(273, 23);
+            this.txtName.TabIndex = 83;
+            this.txtName.Text = "Name";
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.ForeColor = System.Drawing.Color.White;
+            this.txtPhone.Location = new System.Drawing.Point(108, 365);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(273, 23);
+            this.txtPhone.TabIndex = 84;
+            this.txtPhone.Text = "Phone";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.White;
+            this.txtUsername.Location = new System.Drawing.Point(108, 176);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(273, 23);
+            this.txtUsername.TabIndex = 82;
+            this.txtUsername.Text = "UserName";
+            // 
+            // ptrPhone
+            // 
+            this.ptrPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.ptrPhone.Image = global::QuanLyQuanTraSua.Properties.Resources.phone;
+            this.ptrPhone.Location = new System.Drawing.Point(52, 348);
+            this.ptrPhone.Name = "ptrPhone";
+            this.ptrPhone.Size = new System.Drawing.Size(40, 39);
+            this.ptrPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrPhone.TabIndex = 89;
+            this.ptrPhone.TabStop = false;
+            // 
             // ptrUser1
             // 
             this.ptrUser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrUser1.Image = global::QuanLyQuanTraSua.Properties.Resources.user1;
-            this.ptrUser1.Location = new System.Drawing.Point(50, 158);
+            this.ptrUser1.Location = new System.Drawing.Point(50, 163);
             this.ptrUser1.Name = "ptrUser1";
             this.ptrUser1.Size = new System.Drawing.Size(40, 39);
             this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUser1.TabIndex = 79;
+            this.ptrUser1.TabIndex = 97;
             this.ptrUser1.TabStop = false;
             this.ptrUser1.Visible = false;
             // 
@@ -242,11 +248,11 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
-            this.ptrName1.Location = new System.Drawing.Point(52, 250);
+            this.ptrName1.Location = new System.Drawing.Point(52, 255);
             this.ptrName1.Name = "ptrName1";
             this.ptrName1.Size = new System.Drawing.Size(40, 39);
             this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrName1.TabIndex = 80;
+            this.ptrName1.TabIndex = 98;
             this.ptrName1.TabStop = false;
             this.ptrName1.Visible = false;
             // 
@@ -254,11 +260,11 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrPhone1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
-            this.ptrPhone1.Location = new System.Drawing.Point(52, 343);
+            this.ptrPhone1.Location = new System.Drawing.Point(52, 348);
             this.ptrPhone1.Name = "ptrPhone1";
             this.ptrPhone1.Size = new System.Drawing.Size(40, 39);
             this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPhone1.TabIndex = 78;
+            this.ptrPhone1.TabIndex = 96;
             this.ptrPhone1.TabStop = false;
             this.ptrPhone1.Visible = false;
             // 
@@ -266,11 +272,11 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrEmail1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrEmail1.Image = global::QuanLyQuanTraSua.Properties.Resources.email1;
-            this.ptrEmail1.Location = new System.Drawing.Point(52, 438);
+            this.ptrEmail1.Location = new System.Drawing.Point(52, 443);
             this.ptrEmail1.Name = "ptrEmail1";
             this.ptrEmail1.Size = new System.Drawing.Size(40, 39);
             this.ptrEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrEmail1.TabIndex = 81;
+            this.ptrEmail1.TabIndex = 99;
             this.ptrEmail1.TabStop = false;
             this.ptrEmail1.Visible = false;
             // 
@@ -278,54 +284,60 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrUsername.Image = global::QuanLyQuanTraSua.Properties.Resources.user;
-            this.ptrUsername.Location = new System.Drawing.Point(50, 158);
+            this.ptrUsername.Location = new System.Drawing.Point(50, 163);
             this.ptrUsername.Name = "ptrUsername";
             this.ptrUsername.Size = new System.Drawing.Size(40, 39);
             this.ptrUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUsername.TabIndex = 68;
+            this.ptrUsername.TabIndex = 90;
             this.ptrUsername.TabStop = false;
             // 
             // ptrName
             // 
             this.ptrName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrName.Image = global::QuanLyQuanTraSua.Properties.Resources.name;
-            this.ptrName.Location = new System.Drawing.Point(52, 250);
+            this.ptrName.Location = new System.Drawing.Point(52, 255);
             this.ptrName.Name = "ptrName";
             this.ptrName.Size = new System.Drawing.Size(40, 39);
             this.ptrName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrName.TabIndex = 64;
+            this.ptrName.TabIndex = 87;
             this.ptrName.TabStop = false;
-            // 
-            // ptrPhone
-            // 
-            this.ptrPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.ptrPhone.Image = global::QuanLyQuanTraSua.Properties.Resources.phone;
-            this.ptrPhone.Location = new System.Drawing.Point(52, 343);
-            this.ptrPhone.Name = "ptrPhone";
-            this.ptrPhone.Size = new System.Drawing.Size(40, 39);
-            this.ptrPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPhone.TabIndex = 67;
-            this.ptrPhone.TabStop = false;
             // 
             // ptrEmail
             // 
             this.ptrEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrEmail.Image = global::QuanLyQuanTraSua.Properties.Resources.email;
-            this.ptrEmail.Location = new System.Drawing.Point(52, 438);
+            this.ptrEmail.Location = new System.Drawing.Point(52, 443);
             this.ptrEmail.Name = "ptrEmail";
             this.ptrEmail.Size = new System.Drawing.Size(40, 39);
             this.ptrEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrEmail.TabIndex = 66;
+            this.ptrEmail.TabIndex = 88;
             this.ptrEmail.TabStop = false;
             // 
-            // frmTaiKhoan
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCancel.FlatAppearance.BorderSize = 2;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(50, 600);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(330, 50);
+            this.btnCancel.TabIndex = 100;
+            this.btnCancel.Text = "Thoát";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // frmUpdateTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.ClientSize = new System.Drawing.Size(429, 585);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(429, 664);
             this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.pnlEmail);
             this.Controls.Add(this.pnlName);
             this.Controls.Add(this.pnlPhone);
@@ -334,29 +346,28 @@ namespace QuanLyQuanTraSua
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.ptrPhone);
             this.Controls.Add(this.ptrUser1);
             this.Controls.Add(this.ptrName1);
             this.Controls.Add(this.ptrPhone1);
             this.Controls.Add(this.ptrEmail1);
             this.Controls.Add(this.ptrUsername);
             this.Controls.Add(this.ptrName);
-            this.Controls.Add(this.ptrPhone);
             this.Controls.Add(this.ptrEmail);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmTaiKhoan";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thông Tin Tài Khoản";
-            this.Load += new System.EventHandler(this.frmTaiKhoan_Load);
+            this.Name = "frmUpdateTK";
+            this.Text = "frmUpdateTK";
+            this.Load += new System.EventHandler(this.frmUpdateTK_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -366,9 +377,11 @@ namespace QuanLyQuanTraSua
         #endregion
 
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel pnlEmail;
         private System.Windows.Forms.Panel pnlName;
         private System.Windows.Forms.Panel pnlPhone;
@@ -377,15 +390,14 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.PictureBox ptrPhone;
         private System.Windows.Forms.PictureBox ptrUser1;
         private System.Windows.Forms.PictureBox ptrName1;
         private System.Windows.Forms.PictureBox ptrPhone1;
         private System.Windows.Forms.PictureBox ptrEmail1;
         private System.Windows.Forms.PictureBox ptrUsername;
         private System.Windows.Forms.PictureBox ptrName;
-        private System.Windows.Forms.PictureBox ptrPhone;
         private System.Windows.Forms.PictureBox ptrEmail;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnCancel;
     }
 }
