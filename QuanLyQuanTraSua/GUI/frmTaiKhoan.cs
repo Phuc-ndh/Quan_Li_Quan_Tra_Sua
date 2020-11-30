@@ -36,5 +36,15 @@ namespace QuanLyQuanTraSua
             txtPhone.Text = currentAccount.PhoneNumber;
             txtEmail.Text = currentAccount.Email;
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            btnCancel_Click(sender, e);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

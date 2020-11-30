@@ -29,6 +29,7 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -47,25 +48,27 @@ namespace QuanLyQuanTraSua
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lvHoaDon = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.lblHoaDon = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnGiam = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTenMatHang = new System.Windows.Forms.Label();
-            this.lblSoLuong = new System.Windows.Forms.Label();
-            this.txtTenMatHang = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.lblGia = new System.Windows.Forms.Label();
             this.txtGia = new System.Windows.Forms.TextBox();
+            this.lblGia = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtTenMatHang = new System.Windows.Forms.TextBox();
+            this.lblSoLuong = new System.Windows.Forms.Label();
+            this.lblTenMatHang = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblHoaDon = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.columnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -80,9 +83,11 @@ namespace QuanLyQuanTraSua
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -290,6 +295,7 @@ namespace QuanLyQuanTraSua
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -299,9 +305,134 @@ namespace QuanLyQuanTraSua
             this.panel1.Size = new System.Drawing.Size(1445, 602);
             this.panel1.TabIndex = 14;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnGiam);
+            this.groupBox1.Controls.Add(this.btnThem);
+            this.groupBox1.Controls.Add(this.txtGia);
+            this.groupBox1.Controls.Add(this.lblGia);
+            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.txtTenMatHang);
+            this.groupBox1.Controls.Add(this.lblSoLuong);
+            this.groupBox1.Controls.Add(this.lblTenMatHang);
+            this.groupBox1.Location = new System.Drawing.Point(881, 91);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(274, 358);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            // 
+            // btnGiam
+            // 
+            this.btnGiam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnGiam.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnGiam.FlatAppearance.BorderSize = 0;
+            this.btnGiam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGiam.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnGiam.ForeColor = System.Drawing.Color.White;
+            this.btnGiam.Location = new System.Drawing.Point(152, 285);
+            this.btnGiam.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGiam.Name = "btnGiam";
+            this.btnGiam.Size = new System.Drawing.Size(102, 47);
+            this.btnGiam.TabIndex = 16;
+            this.btnGiam.Text = "Hủy";
+            this.btnGiam.UseVisualStyleBackColor = false;
+            this.btnGiam.Click += new System.EventHandler(this.btnGiam_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btnThem.FlatAppearance.BorderSize = 0;
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThem.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(25, 285);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(102, 47);
+            this.btnThem.TabIndex = 18;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // txtGia
+            // 
+            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(25, 123);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.ReadOnly = true;
+            this.txtGia.Size = new System.Drawing.Size(229, 29);
+            this.txtGia.TabIndex = 12;
+            // 
+            // lblGia
+            // 
+            this.lblGia.AutoSize = true;
+            this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGia.Location = new System.Drawing.Point(21, 95);
+            this.lblGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGia.Name = "lblGia";
+            this.lblGia.Size = new System.Drawing.Size(95, 24);
+            this.lblGia.TabIndex = 11;
+            this.lblGia.Text = "Giá (VNĐ)";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(25, 193);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(102, 29);
+            this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtTenMatHang
+            // 
+            this.txtTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenMatHang.Location = new System.Drawing.Point(25, 47);
+            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenMatHang.Name = "txtTenMatHang";
+            this.txtTenMatHang.ReadOnly = true;
+            this.txtTenMatHang.Size = new System.Drawing.Size(229, 29);
+            this.txtTenMatHang.TabIndex = 3;
+            // 
+            // lblSoLuong
+            // 
+            this.lblSoLuong.AutoSize = true;
+            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Location = new System.Drawing.Point(21, 165);
+            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSoLuong.Name = "lblSoLuong";
+            this.lblSoLuong.Size = new System.Drawing.Size(86, 24);
+            this.lblSoLuong.TabIndex = 1;
+            this.lblSoLuong.Text = "Số lượng";
+            // 
+            // lblTenMatHang
+            // 
+            this.lblTenMatHang.AutoSize = true;
+            this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenMatHang.Location = new System.Drawing.Point(21, 19);
+            this.lblTenMatHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTenMatHang.Name = "lblTenMatHang";
+            this.lblTenMatHang.Size = new System.Drawing.Size(127, 24);
+            this.lblTenMatHang.TabIndex = 0;
+            this.lblTenMatHang.Text = "Tên mặt hàng";
+            // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.lvHoaDon);
+            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.lblHoaDon);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -309,56 +440,6 @@ namespace QuanLyQuanTraSua
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(873, 602);
             this.panel3.TabIndex = 22;
-            // 
-            // lvHoaDon
-            // 
-            this.lvHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.lvHoaDon.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.lvHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.176471F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvHoaDon.HideSelection = false;
-            this.lvHoaDon.Location = new System.Drawing.Point(53, 91);
-            this.lvHoaDon.Margin = new System.Windows.Forms.Padding(4);
-            this.lvHoaDon.Name = "lvHoaDon";
-            this.lvHoaDon.Size = new System.Drawing.Size(772, 409);
-            this.lvHoaDon.TabIndex = 19;
-            this.lvHoaDon.UseCompatibleStateImageBehavior = false;
-            this.lvHoaDon.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "STT";
-            this.columnHeader1.Width = 50;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tên";
-            this.columnHeader2.Width = 150;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Số lượng";
-            this.columnHeader3.Width = 70;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Đơn giá";
-            this.columnHeader4.Width = 90;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Thành tiền";
-            this.columnHeader5.Width = 100;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Ghi chú";
-            this.columnHeader6.Width = 100;
             // 
             // lblHoaDon
             // 
@@ -387,123 +468,101 @@ namespace QuanLyQuanTraSua
             this.button6.Text = "Thanh Toán";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // btnGiam
+            // dataGridView1
             // 
-            this.btnGiam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.btnGiam.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btnGiam.FlatAppearance.BorderSize = 0;
-            this.btnGiam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGiam.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnGiam.ForeColor = System.Drawing.Color.White;
-            this.btnGiam.Location = new System.Drawing.Point(152, 285);
-            this.btnGiam.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGiam.Name = "btnGiam";
-            this.btnGiam.Size = new System.Drawing.Size(102, 47);
-            this.btnGiam.TabIndex = 16;
-            this.btnGiam.Text = "Hủy";
-            this.btnGiam.UseVisualStyleBackColor = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.columnID,
+            this.columnTen,
+            this.columnGia,
+            this.columnSoLuong,
+            this.columnThanhTien});
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridView1.Location = new System.Drawing.Point(52, 91);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(775, 442);
+            this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // btnThem
+            // txtID
             // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.btnThem.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(25, 285);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(102, 47);
-            this.btnThem.TabIndex = 18;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = false;
+            this.txtID.BackColor = System.Drawing.Color.Gray;
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtID.Location = new System.Drawing.Point(1162, 427);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 15);
+            this.txtID.TabIndex = 23;
+            this.txtID.TabStop = false;
+            this.txtID.Visible = false;
             // 
-            // groupBox1
+            // columnID
             // 
-            this.groupBox1.Controls.Add(this.btnGiam);
-            this.groupBox1.Controls.Add(this.btnThem);
-            this.groupBox1.Controls.Add(this.txtGia);
-            this.groupBox1.Controls.Add(this.lblGia);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
-            this.groupBox1.Controls.Add(this.txtTenMatHang);
-            this.groupBox1.Controls.Add(this.lblSoLuong);
-            this.groupBox1.Controls.Add(this.lblTenMatHang);
-            this.groupBox1.Location = new System.Drawing.Point(881, 91);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(274, 358);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
+            this.columnID.HeaderText = "idDrink";
+            this.columnID.MinimumWidth = 6;
+            this.columnID.Name = "columnID";
+            this.columnID.ReadOnly = true;
+            this.columnID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.columnID.Visible = false;
             // 
-            // lblTenMatHang
+            // columnTen
             // 
-            this.lblTenMatHang.AutoSize = true;
-            this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenMatHang.Location = new System.Drawing.Point(21, 19);
-            this.lblTenMatHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(127, 24);
-            this.lblTenMatHang.TabIndex = 0;
-            this.lblTenMatHang.Text = "Tên mặt hàng";
+            this.columnTen.FillWeight = 171.6906F;
+            this.columnTen.HeaderText = "Tên";
+            this.columnTen.MinimumWidth = 6;
+            this.columnTen.Name = "columnTen";
+            this.columnTen.ReadOnly = true;
+            this.columnTen.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // lblSoLuong
+            // columnGia
             // 
-            this.lblSoLuong.AutoSize = true;
-            this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoLuong.Location = new System.Drawing.Point(21, 165);
-            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(86, 24);
-            this.lblSoLuong.TabIndex = 1;
-            this.lblSoLuong.Text = "Số lượng";
+            this.columnGia.FillWeight = 93.17125F;
+            this.columnGia.HeaderText = "Đơn giá";
+            this.columnGia.MinimumWidth = 6;
+            this.columnGia.Name = "columnGia";
+            this.columnGia.ReadOnly = true;
+            this.columnGia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // txtTenMatHang
+            // columnSoLuong
             // 
-            this.txtTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMatHang.Location = new System.Drawing.Point(25, 47);
-            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenMatHang.Name = "txtTenMatHang";
-            this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(229, 29);
-            this.txtTenMatHang.TabIndex = 3;
+            this.columnSoLuong.FillWeight = 49.57664F;
+            this.columnSoLuong.HeaderText = "SL";
+            this.columnSoLuong.MinimumWidth = 6;
+            this.columnSoLuong.Name = "columnSoLuong";
+            this.columnSoLuong.ReadOnly = true;
+            this.columnSoLuong.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // numericUpDown1
+            // columnThanhTien
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(25, 193);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(102, 29);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.columnThanhTien.FillWeight = 85.56149F;
+            this.columnThanhTien.HeaderText = "Thành tiền";
+            this.columnThanhTien.MinimumWidth = 6;
+            this.columnThanhTien.Name = "columnThanhTien";
+            this.columnThanhTien.ReadOnly = true;
+            this.columnThanhTien.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // lblGia
+            // contextMenuStrip1
             // 
-            this.lblGia.AutoSize = true;
-            this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGia.Location = new System.Drawing.Point(21, 95);
-            this.lblGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(95, 24);
-            this.lblGia.TabIndex = 11;
-            this.lblGia.Text = "Giá (VNĐ)";
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(105, 28);
             // 
-            // txtGia
+            // toolStripMenuItem1
             // 
-            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(25, 123);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
-            this.txtGia.Name = "txtGia";
-            this.txtGia.ReadOnly = true;
-            this.txtGia.Size = new System.Drawing.Size(229, 29);
-            this.txtGia.TabIndex = 12;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(104, 24);
+            this.toolStripMenuItem1.Text = "Xóa";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // frmTongQuan
             // 
@@ -529,11 +588,14 @@ namespace QuanLyQuanTraSua
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -553,13 +615,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ListView lvHoaDon;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Label lblHoaDon;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.FlowLayoutPanel flpTatCa;
@@ -576,5 +631,14 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.TextBox txtTenMatHang;
         private System.Windows.Forms.Label lblSoLuong;
         private System.Windows.Forms.Label lblTenMatHang;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnSoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnThanhTien;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

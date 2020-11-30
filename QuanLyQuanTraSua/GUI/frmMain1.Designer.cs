@@ -86,7 +86,7 @@ namespace QuanLyQuanTraSua
             this.btnDangXuat.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnDangXuat.Size = new System.Drawing.Size(267, 74);
             this.btnDangXuat.TabIndex = 14;
-            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDangXuat.UseVisualStyleBackColor = true;
@@ -109,7 +109,7 @@ namespace QuanLyQuanTraSua
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(267, 74);
             this.btnTaiKhoan.TabIndex = 13;
-            this.btnTaiKhoan.Text = "Thông tin TK";
+            this.btnTaiKhoan.Text = "Thông Tin";
             this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaiKhoan.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace QuanLyQuanTraSua
             this.btnAdmin.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnAdmin.Size = new System.Drawing.Size(267, 74);
             this.btnAdmin.TabIndex = 12;
-            this.btnAdmin.Text = "Đăng ký TK";
+            this.btnAdmin.Text = "Đăng Ký";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdmin.UseVisualStyleBackColor = true;
@@ -155,7 +155,7 @@ namespace QuanLyQuanTraSua
             this.btnMatHang.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnMatHang.Size = new System.Drawing.Size(267, 74);
             this.btnMatHang.TabIndex = 9;
-            this.btnMatHang.Text = "Mặt hàng";
+            this.btnMatHang.Text = "Mặt Hàng";
             this.btnMatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMatHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMatHang.UseVisualStyleBackColor = true;
@@ -178,7 +178,7 @@ namespace QuanLyQuanTraSua
             this.btnThongKe.Padding = new System.Windows.Forms.Padding(13, 0, 27, 0);
             this.btnThongKe.Size = new System.Drawing.Size(267, 74);
             this.btnThongKe.TabIndex = 7;
-            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Text = "Thống Kê";
             this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongKe.UseVisualStyleBackColor = true;

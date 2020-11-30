@@ -55,6 +55,47 @@ namespace QuanLyQuanTraSua
         {
             txtTenMatHang.Text = ((sender as Button).Tag as Drink).Name;
             txtGia.Text = ((sender as Button).Tag as Drink).Price.ToString();
+            txtID.Text = ((sender as Button).Tag as Drink).idDrink.ToString();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[0].Value.ToString() == txtID.Text)
+                {
+                    row.Cells["columnSoLuong"].Value = Convert.ToInt32(row.Cells["columnSoLuong"].Value) + Convert.ToInt32(numericUpDown1.Value);
+                    row.Cells["columnThanhTien"].Value = Convert.ToInt32(row.Cells["columnSoLuong"].Value) * Convert.ToInt32(row.Cells["columnGia"].Value);
+                    return;
+                }
+            }
+            dataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, numericUpDown1.Value, Convert.ToInt32(txtGia.Text) * (int)numericUpDown1.Value);
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                txtTenMatHang.Text = dataGridView1.SelectedRows[0].Cells["columnTen"].Value.ToString();
+                txtGia.Text = dataGridView1.SelectedRows[0].Cells["columnGia"].Value.ToString();
+                txtID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+            }
+        }
+
+        private void btnGiam_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                {
+                    dataGridView1.Rows.Remove(row);
+                }
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
         }
     }
 }
