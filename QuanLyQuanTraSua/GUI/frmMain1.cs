@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 using FontAwesome.Sharp;
 
 namespace QuanLyQuanTraSua
 {
     public partial class frmMain1 : Form
     {
+        AccountBUS accountBUS = new AccountBUS();
         private frmLogin parent;
         public string currentUser;
         private IconButton currentBtn;
@@ -163,11 +160,20 @@ namespace QuanLyQuanTraSua
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
+            Account currentAccount = new Account();
+            currentAccount = accountBUS.getAccountByUsername(this.parent.currentUser);
             ActivateButton(sender, RGBColors.color1);
             //OpenChildForm(new frmTaiKhoan());
-            this.Hide();
-            frmTaiKhoan formTK = new frmTaiKhoan(this);
-            formTK.ShowDialog();
+            if (currentAccount.Type == 1)
+            {
+                this.Hide();
+            }
+            else
+            {
+                this.Hide();
+                frmTaiKhoan formTK = new frmTaiKhoan(this);
+                formTK.ShowDialog();
+            }
             btnHome_Click(sender, e);
             this.Show();
         }
