@@ -52,6 +52,8 @@ namespace QuanLyQuanTraSua
             this.ptrName = new System.Windows.Forms.PictureBox();
             this.ptrPhone = new System.Windows.Forms.PictureBox();
             this.ptrEmail = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
@@ -67,15 +69,16 @@ namespace QuanLyQuanTraSua
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(572, 180);
+            this.panel2.Size = new System.Drawing.Size(429, 146);
             this.panel2.TabIndex = 76;
             // 
             // label3
@@ -84,10 +87,9 @@ namespace QuanLyQuanTraSua
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(499, 101);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(374, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 25);
+            this.label3.Size = new System.Drawing.Size(16, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "-";
             // 
@@ -98,10 +100,9 @@ namespace QuanLyQuanTraSua
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(575, 9);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(431, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 29);
+            this.label2.Size = new System.Drawing.Size(20, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "-";
             // 
@@ -112,10 +113,9 @@ namespace QuanLyQuanTraSua
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(611, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(458, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 26);
+            this.label1.Size = new System.Drawing.Size(22, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "X";
             // 
@@ -123,10 +123,9 @@ namespace QuanLyQuanTraSua
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(199, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(149, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(173, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -139,10 +138,9 @@ namespace QuanLyQuanTraSua
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(68, 646);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancel.Location = new System.Drawing.Point(51, 525);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(440, 62);
+            this.btnCancel.Size = new System.Drawing.Size(330, 50);
             this.btnCancel.TabIndex = 63;
             this.btnCancel.Text = "Thoát";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -151,37 +149,33 @@ namespace QuanLyQuanTraSua
             // pnlEmail
             // 
             this.pnlEmail.BackColor = System.Drawing.Color.White;
-            this.pnlEmail.Location = new System.Drawing.Point(72, 592);
-            this.pnlEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlEmail.Location = new System.Drawing.Point(54, 481);
             this.pnlEmail.Name = "pnlEmail";
-            this.pnlEmail.Size = new System.Drawing.Size(441, 2);
+            this.pnlEmail.Size = new System.Drawing.Size(331, 2);
             this.pnlEmail.TabIndex = 72;
             // 
             // pnlName
             // 
             this.pnlName.BackColor = System.Drawing.Color.White;
-            this.pnlName.Location = new System.Drawing.Point(71, 364);
-            this.pnlName.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlName.Location = new System.Drawing.Point(53, 296);
             this.pnlName.Name = "pnlName";
-            this.pnlName.Size = new System.Drawing.Size(441, 2);
+            this.pnlName.Size = new System.Drawing.Size(331, 2);
             this.pnlName.TabIndex = 71;
             // 
             // pnlPhone
             // 
             this.pnlPhone.BackColor = System.Drawing.Color.White;
-            this.pnlPhone.Location = new System.Drawing.Point(71, 478);
-            this.pnlPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlPhone.Location = new System.Drawing.Point(53, 388);
             this.pnlPhone.Name = "pnlPhone";
-            this.pnlPhone.Size = new System.Drawing.Size(441, 2);
+            this.pnlPhone.Size = new System.Drawing.Size(331, 2);
             this.pnlPhone.TabIndex = 74;
             // 
             // pnlUser
             // 
             this.pnlUser.BackColor = System.Drawing.Color.White;
-            this.pnlUser.Location = new System.Drawing.Point(68, 250);
-            this.pnlUser.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlUser.Location = new System.Drawing.Point(51, 203);
             this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(441, 2);
+            this.pnlUser.Size = new System.Drawing.Size(331, 2);
             this.pnlUser.TabIndex = 75;
             // 
             // txtEmail
@@ -190,11 +184,10 @@ namespace QuanLyQuanTraSua
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(147, 555);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Location = new System.Drawing.Point(110, 451);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(364, 27);
+            this.txtEmail.Size = new System.Drawing.Size(273, 23);
             this.txtEmail.TabIndex = 61;
             this.txtEmail.Text = "Email";
             // 
@@ -204,11 +197,10 @@ namespace QuanLyQuanTraSua
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.White;
-            this.txtName.Location = new System.Drawing.Point(144, 329);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Location = new System.Drawing.Point(108, 267);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(364, 27);
+            this.txtName.Size = new System.Drawing.Size(273, 23);
             this.txtName.TabIndex = 59;
             this.txtName.Text = "Name";
             // 
@@ -218,11 +210,10 @@ namespace QuanLyQuanTraSua
             this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.White;
-            this.txtPhone.Location = new System.Drawing.Point(144, 443);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPhone.Location = new System.Drawing.Point(108, 360);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.ReadOnly = true;
-            this.txtPhone.Size = new System.Drawing.Size(364, 27);
+            this.txtPhone.Size = new System.Drawing.Size(273, 23);
             this.txtPhone.TabIndex = 60;
             this.txtPhone.Text = "Phone";
             // 
@@ -232,11 +223,10 @@ namespace QuanLyQuanTraSua
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.White;
-            this.txtUsername.Location = new System.Drawing.Point(144, 210);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Location = new System.Drawing.Point(108, 171);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
-            this.txtUsername.Size = new System.Drawing.Size(364, 27);
+            this.txtUsername.Size = new System.Drawing.Size(273, 23);
             this.txtUsername.TabIndex = 56;
             this.txtUsername.Text = "đổ dữ liệu vào đây";
             // 
@@ -244,10 +234,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrUser1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrUser1.Image = global::QuanLyQuanTraSua.Properties.Resources.user1;
-            this.ptrUser1.Location = new System.Drawing.Point(67, 194);
-            this.ptrUser1.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrUser1.Location = new System.Drawing.Point(50, 158);
             this.ptrUser1.Name = "ptrUser1";
-            this.ptrUser1.Size = new System.Drawing.Size(53, 48);
+            this.ptrUser1.Size = new System.Drawing.Size(40, 39);
             this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrUser1.TabIndex = 79;
             this.ptrUser1.TabStop = false;
@@ -257,10 +246,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrName1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
-            this.ptrName1.Location = new System.Drawing.Point(69, 308);
-            this.ptrName1.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrName1.Location = new System.Drawing.Point(52, 250);
             this.ptrName1.Name = "ptrName1";
-            this.ptrName1.Size = new System.Drawing.Size(53, 48);
+            this.ptrName1.Size = new System.Drawing.Size(40, 39);
             this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrName1.TabIndex = 80;
             this.ptrName1.TabStop = false;
@@ -270,10 +258,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrPhone1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
-            this.ptrPhone1.Location = new System.Drawing.Point(69, 422);
-            this.ptrPhone1.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrPhone1.Location = new System.Drawing.Point(52, 343);
             this.ptrPhone1.Name = "ptrPhone1";
-            this.ptrPhone1.Size = new System.Drawing.Size(53, 48);
+            this.ptrPhone1.Size = new System.Drawing.Size(40, 39);
             this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrPhone1.TabIndex = 78;
             this.ptrPhone1.TabStop = false;
@@ -283,10 +270,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrEmail1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrEmail1.Image = global::QuanLyQuanTraSua.Properties.Resources.email1;
-            this.ptrEmail1.Location = new System.Drawing.Point(69, 539);
-            this.ptrEmail1.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrEmail1.Location = new System.Drawing.Point(52, 438);
             this.ptrEmail1.Name = "ptrEmail1";
-            this.ptrEmail1.Size = new System.Drawing.Size(53, 48);
+            this.ptrEmail1.Size = new System.Drawing.Size(40, 39);
             this.ptrEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrEmail1.TabIndex = 81;
             this.ptrEmail1.TabStop = false;
@@ -296,10 +282,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrUsername.Image = global::QuanLyQuanTraSua.Properties.Resources.user;
-            this.ptrUsername.Location = new System.Drawing.Point(67, 194);
-            this.ptrUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrUsername.Location = new System.Drawing.Point(50, 158);
             this.ptrUsername.Name = "ptrUsername";
-            this.ptrUsername.Size = new System.Drawing.Size(53, 48);
+            this.ptrUsername.Size = new System.Drawing.Size(40, 39);
             this.ptrUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrUsername.TabIndex = 68;
             this.ptrUsername.TabStop = false;
@@ -308,10 +293,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrName.Image = global::QuanLyQuanTraSua.Properties.Resources.name;
-            this.ptrName.Location = new System.Drawing.Point(69, 308);
-            this.ptrName.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrName.Location = new System.Drawing.Point(52, 250);
             this.ptrName.Name = "ptrName";
-            this.ptrName.Size = new System.Drawing.Size(53, 48);
+            this.ptrName.Size = new System.Drawing.Size(40, 39);
             this.ptrName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrName.TabIndex = 64;
             this.ptrName.TabStop = false;
@@ -320,10 +304,9 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrPhone.Image = global::QuanLyQuanTraSua.Properties.Resources.phone;
-            this.ptrPhone.Location = new System.Drawing.Point(69, 422);
-            this.ptrPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrPhone.Location = new System.Drawing.Point(52, 343);
             this.ptrPhone.Name = "ptrPhone";
-            this.ptrPhone.Size = new System.Drawing.Size(53, 48);
+            this.ptrPhone.Size = new System.Drawing.Size(40, 39);
             this.ptrPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrPhone.TabIndex = 67;
             this.ptrPhone.TabStop = false;
@@ -332,20 +315,43 @@ namespace QuanLyQuanTraSua
             // 
             this.ptrEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.ptrEmail.Image = global::QuanLyQuanTraSua.Properties.Resources.email;
-            this.ptrEmail.Location = new System.Drawing.Point(69, 539);
-            this.ptrEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrEmail.Location = new System.Drawing.Point(52, 438);
             this.ptrEmail.Name = "ptrEmail";
-            this.ptrEmail.Size = new System.Drawing.Size(53, 48);
+            this.ptrEmail.Size = new System.Drawing.Size(40, 39);
             this.ptrEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrEmail.TabIndex = 66;
             this.ptrEmail.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Snow;
+            this.label4.Location = new System.Drawing.Point(374, 6);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "-";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Snow;
+            this.label5.Location = new System.Drawing.Point(401, 8);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(22, 22);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "X";
+            // 
             // frmTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.ClientSize = new System.Drawing.Size(572, 720);
+            this.ClientSize = new System.Drawing.Size(429, 585);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.pnlEmail);
@@ -364,8 +370,7 @@ namespace QuanLyQuanTraSua
             this.Controls.Add(this.ptrName);
             this.Controls.Add(this.ptrPhone);
             this.Controls.Add(this.ptrEmail);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông Tin Tài Khoản";
@@ -410,5 +415,7 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.PictureBox ptrName;
         private System.Windows.Forms.PictureBox ptrPhone;
         private System.Windows.Forms.PictureBox ptrEmail;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
