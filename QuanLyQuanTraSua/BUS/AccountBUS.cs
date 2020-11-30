@@ -13,6 +13,18 @@ namespace BUS
     public class AccountBUS
     {
         AccountDAL accountDAL = new AccountDAL();
+        public List<Account> GetAccountList()
+        {
+            List<Account> listAccount = new List<Account>();
+            DataTable dt = accountDAL.GetAllAccounts();
+            foreach (DataRow row in dt.Rows)
+            {
+                Account account = new Account(row);
+                listAccount.Add(account);
+            }
+            return listAccount;
+        }
+
         public bool Login(string username, string password)
         {
             string Username = "";

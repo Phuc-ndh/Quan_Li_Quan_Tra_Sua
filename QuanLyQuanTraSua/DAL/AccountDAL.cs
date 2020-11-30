@@ -12,6 +12,14 @@ namespace DAL
 {
     public class AccountDAL
     {
+        public DataTable GetAllAccounts()
+        {
+            string query = "SELECT * FROM ACCOUNT";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
+
         public Account getAccountByUsername(string username)
         {
             string query = "select * from ACCOUNT where username = @username";

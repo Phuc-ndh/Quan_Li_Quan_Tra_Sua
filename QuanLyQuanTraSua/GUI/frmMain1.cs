@@ -167,6 +167,8 @@ namespace QuanLyQuanTraSua
             if (currentAccount.Type == 1)
             {
                 this.Hide();
+                frmAdmin formAdmin = new frmAdmin();
+                formAdmin.ShowDialog();
             }
             else
             {

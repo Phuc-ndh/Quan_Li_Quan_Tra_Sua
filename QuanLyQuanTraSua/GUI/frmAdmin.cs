@@ -7,14 +7,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
+using DTO;
 
 namespace QuanLyQuanTraSua
 {
     public partial class frmAdmin : Form
     {
+        Account selectedAccount = new Account();
+        AccountBUS accountBUS = new AccountBUS();
         public frmAdmin()
         {
             InitializeComponent();
         }
+
+        private void frmAdmin_Load(object sender, EventArgs e)
+        {
+            List<Account> listAccount = accountBUS.GetAccountList();
+            foreach (Account account in listAccount)
+            {
+                Button btn = new Button() { Width = 120, Height = 60, Text = account.Username, Tag = account };
+                btn.Click += Btn_Click;
+                flowLayoutPanel1.Controls.Add(btn);
+            }
+        }
+
+        private void Btn_Click(object sender, EventArgs e)
+        {
+            selectedAccount = (sender as Button).Tag as Account;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
     }
 }
