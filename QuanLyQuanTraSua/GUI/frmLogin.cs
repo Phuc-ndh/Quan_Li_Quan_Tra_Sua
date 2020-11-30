@@ -172,10 +172,12 @@ namespace QuanLyQuanTraSua
         {
             if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
             {
+                
                 if (txtPassword.PasswordChar == '*')
                     txtPassword.PasswordChar = default;
                 else
                     txtPassword.PasswordChar = '*';
+                
             }
         }
     }

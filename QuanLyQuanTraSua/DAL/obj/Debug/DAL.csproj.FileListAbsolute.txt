@@ -55,3 +55,4 @@ D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.cs
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\FontAwesome.Sharp.dll

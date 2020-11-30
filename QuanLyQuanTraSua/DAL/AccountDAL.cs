@@ -66,5 +66,24 @@ namespace DAL
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
+
+        // bao cao kinh doanh theo ngay
+        public DataTable reportByDate(int day, int month, int year)
+        {
+            int dayB = day;
+            int monthB = month;
+            int yearB = year;
+            string query = "SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A " +
+                "where A.idBill in (select B.idBill from Bill B where (DAY(B.Date) = @day) and MONTH(B.Date) = @month and YEAR(B.Date) = @year) ) AS PERCENTAGE, SUM(T1.Quantity)* T2.Price AS MONEY, SUM(T1.Quantity) AS SO_LUONG, T2.Name, T1.idDrink " +
+                "FROM BillInfo T1 " +
+                "INNER JOIN Drink T2 " +
+                "ON T1.idDrink = T2.idDrink" +
+                " WHERE T1.idBill in (select T3.idOrder from Bill T3 where (DAY(T3.Date) = @dayB  and MONTH(T3.Date) = @monthB and YEAR(T3.Date) = @yearB)) " +
+                "GROUP BY T1.idDrink, T2.Name, T2.Price";
+            object[] value = new object[] { day, month, year, dayB, monthB, yearB };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            return dt;
+        }
     }
 }

@@ -90,6 +90,21 @@ namespace BUS
             }
         }
 
+        public DataTable getReportByDate(int day, int month, int year)
+        {
+            /**
+            try
+            {
+                return accountDAL.reportByDate(date);
+            }
+            catch (Exception)
+            {
+                return null;               
+            }
+            **/
+            return accountDAL.reportByDate(day, month, year);
+        }
+
         public StringBuilder getHashMD5(string pass)
         {
             MD5 hash = MD5.Create();
