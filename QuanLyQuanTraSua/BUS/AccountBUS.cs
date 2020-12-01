@@ -133,11 +133,11 @@ namespace BUS
             }
         }
 
-        public bool insertBillInfo(int id, int idDrink, int quantity)
+        public bool insertBillInfo(int idDrink, int quantity)
         {
             try
             {
-                if (accountDAL.insertBillInfo(id, idDrink, quantity))
+                if (accountDAL.insertBillInfo(idDrink, quantity))
                     return true;
                 else
                     return false;
