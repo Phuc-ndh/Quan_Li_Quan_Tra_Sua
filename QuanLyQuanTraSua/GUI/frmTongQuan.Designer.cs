@@ -101,7 +101,7 @@ namespace QuanLyQuanTraSua
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(357, 798);
+            this.tabControl1.Size = new System.Drawing.Size(335, 733);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -112,7 +112,7 @@ namespace QuanLyQuanTraSua
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(349, 750);
+            this.tabPage1.Size = new System.Drawing.Size(327, 685);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -131,7 +131,7 @@ namespace QuanLyQuanTraSua
             this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(345, 746);
+            this.tabControl2.Size = new System.Drawing.Size(323, 681);
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl2.TabIndex = 0;
             // 
@@ -143,7 +143,7 @@ namespace QuanLyQuanTraSua
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(337, 708);
+            this.tabPage3.Size = new System.Drawing.Size(315, 643);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Tất Cả";
             // 
@@ -153,7 +153,7 @@ namespace QuanLyQuanTraSua
             this.flpTatCa.Location = new System.Drawing.Point(2, 2);
             this.flpTatCa.Margin = new System.Windows.Forms.Padding(2);
             this.flpTatCa.Name = "flpTatCa";
-            this.flpTatCa.Size = new System.Drawing.Size(333, 704);
+            this.flpTatCa.Size = new System.Drawing.Size(311, 639);
             this.flpTatCa.TabIndex = 0;
             // 
             // tabPage7
@@ -293,8 +293,8 @@ namespace QuanLyQuanTraSua
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1443, 798);
-            this.splitContainer1.SplitterDistance = 1083;
+            this.splitContainer1.Size = new System.Drawing.Size(1354, 733);
+            this.splitContainer1.SplitterDistance = 1016;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 5;
             // 
@@ -304,9 +304,9 @@ namespace QuanLyQuanTraSua
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 309);
+            this.panel1.Location = new System.Drawing.Point(0, 244);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1083, 489);
+            this.panel1.Size = new System.Drawing.Size(1016, 489);
             this.panel1.TabIndex = 14;
             // 
             // txtID
@@ -375,7 +375,7 @@ namespace QuanLyQuanTraSua
             this.txtGia.Location = new System.Drawing.Point(19, 100);
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
-            this.txtGia.Size = new System.Drawing.Size(173, 26);
+            this.txtGia.Size = new System.Drawing.Size(173, 25);
             this.txtGia.TabIndex = 12;
             // 
             // lblGia
@@ -384,7 +384,7 @@ namespace QuanLyQuanTraSua
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.Location = new System.Drawing.Point(16, 77);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(87, 20);
+            this.lblGia.Size = new System.Drawing.Size(82, 20);
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá (VNĐ)";
             // 
@@ -398,7 +398,7 @@ namespace QuanLyQuanTraSua
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(76, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(76, 25);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -413,7 +413,7 @@ namespace QuanLyQuanTraSua
             this.txtTenMatHang.Location = new System.Drawing.Point(19, 38);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(173, 26);
+            this.txtTenMatHang.Size = new System.Drawing.Size(173, 25);
             this.txtTenMatHang.TabIndex = 3;
             // 
             // lblSoLuong
@@ -422,7 +422,7 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.Location = new System.Drawing.Point(16, 134);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(74, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(72, 20);
             this.lblSoLuong.TabIndex = 1;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -432,7 +432,7 @@ namespace QuanLyQuanTraSua
             this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMatHang.Location = new System.Drawing.Point(16, 15);
             this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(111, 20);
+            this.lblTenMatHang.Size = new System.Drawing.Size(107, 20);
             this.lblTenMatHang.TabIndex = 0;
             this.lblTenMatHang.Text = "Tên mặt hàng";
             // 
@@ -523,12 +523,12 @@ namespace QuanLyQuanTraSua
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 36);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(118, 32);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(94, 22);
             this.toolStripMenuItem1.Text = "Xóa";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
@@ -538,7 +538,7 @@ namespace QuanLyQuanTraSua
             this.lblHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoaDon.Location = new System.Drawing.Point(36, 42);
             this.lblHoaDon.Name = "lblHoaDon";
-            this.lblHoaDon.Size = new System.Drawing.Size(72, 20);
+            this.lblHoaDon.Size = new System.Drawing.Size(70, 20);
             this.lblHoaDon.TabIndex = 14;
             this.lblHoaDon.Text = "Hóa đơn";
             // 
@@ -562,7 +562,7 @@ namespace QuanLyQuanTraSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 798);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmTongQuan";
             this.Text = "Tổng Quan";

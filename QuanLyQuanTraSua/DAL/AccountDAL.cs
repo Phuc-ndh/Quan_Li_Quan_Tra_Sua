@@ -94,7 +94,7 @@ namespace DAL
                 "FROM BillInfo T1 " +
                 "INNER JOIN Drink T2 " +
                 "ON T1.idDrink = T2.idDrink" +
-                " WHERE T1.idBill in (select T3.idOrder from Bill T3 where (DAY(T3.Date) = @dayB  and MONTH(T3.Date) = @monthB and YEAR(T3.Date) = @yearB)) " +
+                " WHERE T1.idBill in (select T3.idBill from Bill T3 where (DAY(T3.Date) = @dayB  and MONTH(T3.Date) = @monthB and YEAR(T3.Date) = @yearB)) " +
                 "GROUP BY T1.idDrink, T2.Name, T2.Price";
             object[] value = new object[] { day, month, year, dayB, monthB, yearB };
             DBConnect db = new DBConnect();
@@ -102,14 +102,28 @@ namespace DAL
             return dt;
         }
 
-        public bool insertBill(string date, int totalprice)
+        // lay id
+        public int _id;
+
+        // them bill
+        public int insertBill(string date, int totalprice)
         {
             string query = "insert into Bill(Date, TotalPrice) values (@date, @totalprice) ";
             object[] value = new object[] { date, totalprice };
             DBConnect db = new DBConnect();
-            return (db.ExecuteNonQuery(query, value) > 0);
+            _id = (int)(db.ExecuteScalar(query, value));
+            return _id;
+            //return (db.ExecuteNonQuery(query, value) > 0);
         }
 
-        //public bool insertBillInfo()
+        // them BillInfo theo _id
+        public bool insertBillInfo(int id, int idDrink,int quantity)
+        {
+            id = this._id;
+            string query = "insert into BillInfo(idBill, idDrink, quantity) values (@id, @idDrink, @quantity)";
+            object[] value = new object[] { id, idDrink, quantity };
+            DBConnect db = new DBConnect();
+            return (db.ExecuteNonQuery(query, value) > 0);
+        }
     }
 }

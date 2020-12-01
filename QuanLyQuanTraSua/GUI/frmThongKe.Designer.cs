@@ -29,26 +29,26 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.btnDateReport = new System.Windows.Forms.Button();
             this.btnMonthReport = new System.Windows.Forms.Button();
             this.btnYearReport = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chartCollum = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartPie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnReport = new System.Windows.Forms.Button();
             this.cldDateTime = new System.Windows.Forms.DateTimePicker();
-            this.chartPie = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chartCollum = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartPie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCollum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPie)).BeginInit();
             this.SuspendLayout();
             // 
             // btnDateReport
@@ -102,52 +102,6 @@ namespace QuanLyQuanTraSua
             this.panel1.Size = new System.Drawing.Size(1245, 718);
             this.panel1.TabIndex = 5;
             // 
-            // btnReport
-            // 
-            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnReport.Location = new System.Drawing.Point(300, 13);
-            this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(94, 26);
-            this.btnReport.TabIndex = 3;
-            this.btnReport.Text = "Report";
-            this.btnReport.UseVisualStyleBackColor = true;
-            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
-            // 
-            // cldDateTime
-            // 
-            this.cldDateTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cldDateTime.CalendarForeColor = System.Drawing.Color.Gray;
-            this.cldDateTime.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.cldDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cldDateTime.Location = new System.Drawing.Point(8, 11);
-            this.cldDateTime.Name = "cldDateTime";
-            this.cldDateTime.Size = new System.Drawing.Size(251, 26);
-            this.cldDateTime.TabIndex = 0;
-            // 
-            // chartPie
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chartPie.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartPie.Legends.Add(legend2);
-            this.chartPie.Location = new System.Drawing.Point(10, 49);
-            this.chartPie.Name = "chartPie";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series3.IsValueShownAsLabel = true;
-            series3.LabelFormat = "#,##%";
-            series3.Legend = "Legend1";
-            series3.Name = "Drink";
-            this.chartPie.Series.Add(series3);
-            this.chartPie.Size = new System.Drawing.Size(458, 404);
-            this.chartPie.TabIndex = 4;
-            this.chartPie.Text = "Pie Chart";
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title2.Name = "Title1";
-            title2.Text = "Tỉ lệ bán hàng";
-            this.chartPie.Titles.Add(title2);
-            this.chartPie.Click += new System.EventHandler(this.chartPie_Click);
-            // 
             // chartCollum
             // 
             chartArea1.Name = "Sell Number";
@@ -172,6 +126,53 @@ namespace QuanLyQuanTraSua
             title1.Text = "Số lượng bán và doanh thu";
             this.chartCollum.Titles.Add(title1);
             // 
+            // chartPie
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chartPie.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            legend2.Title = "Drink";
+            this.chartPie.Legends.Add(legend2);
+            this.chartPie.Location = new System.Drawing.Point(10, 49);
+            this.chartPie.Name = "chartPie";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.IsValueShownAsLabel = true;
+            series3.LabelFormat = "#,##%";
+            series3.Legend = "Legend1";
+            series3.Name = "Drink";
+            this.chartPie.Series.Add(series3);
+            this.chartPie.Size = new System.Drawing.Size(458, 404);
+            this.chartPie.TabIndex = 4;
+            this.chartPie.Text = "Pie Chart";
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title2.Name = "Title1";
+            title2.Text = "Tỉ lệ bán hàng";
+            this.chartPie.Titles.Add(title2);
+            this.chartPie.Click += new System.EventHandler(this.chartPie_Click);
+            // 
+            // btnReport
+            // 
+            this.btnReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnReport.Location = new System.Drawing.Point(300, 13);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(94, 26);
+            this.btnReport.TabIndex = 3;
+            this.btnReport.Text = "Report";
+            this.btnReport.UseVisualStyleBackColor = true;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
+            // cldDateTime
+            // 
+            this.cldDateTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cldDateTime.CalendarForeColor = System.Drawing.Color.Gray;
+            this.cldDateTime.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cldDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cldDateTime.Location = new System.Drawing.Point(8, 11);
+            this.cldDateTime.Name = "cldDateTime";
+            this.cldDateTime.Size = new System.Drawing.Size(251, 26);
+            this.cldDateTime.TabIndex = 0;
+            // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,8 +185,8 @@ namespace QuanLyQuanTraSua
             this.Name = "frmThongKe";
             this.Text = "frmThongKe";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartPie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartCollum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartPie)).EndInit();
             this.ResumeLayout(false);
 
         }

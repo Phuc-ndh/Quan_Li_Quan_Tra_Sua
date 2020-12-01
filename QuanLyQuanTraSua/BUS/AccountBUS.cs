@@ -120,6 +120,35 @@ namespace BUS
             }
         }
 
+        public int insertBill(string date, int price)
+        {
+            try
+            {
+                return accountDAL.insertBill(date, price);
+            }
+            catch (Exception)
+            {
+                return 0;
+                //throw;
+            }
+        }
+
+        public bool insertBillInfo(int id, int idDrink, int quantity)
+        {
+            try
+            {
+                if (accountDAL.insertBillInfo(id, idDrink, quantity))
+                    return true;
+                else
+                    return false;
+            }
+            catch (Exception)
+            {
+                return false;
+                //throw;
+            }
+        }
+
         public DataTable getReportByDate(int day, int month, int year)
         {
             /**

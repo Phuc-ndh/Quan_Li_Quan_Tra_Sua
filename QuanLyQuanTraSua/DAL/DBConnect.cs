@@ -14,9 +14,9 @@ namespace DAL
         private SqlConnection connection;
         public DBConnect()
         {
-            //connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
+            connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
             //connection = new SqlConnection(@"Data Source=LAPTOP-5ISISA5V\SQLEXPRESS;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
-            connection = new SqlConnection(@"Data Source = .\sqlexpress;Initial catalog = QuanLyTraSua;Integrated Security = True");
+            //connection = new SqlConnection(@"Data Source = .\sqlexpress;Initial catalog = QuanLyTraSua;Integrated Security = True");
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)
@@ -67,9 +67,9 @@ namespace DAL
             return result;
         }
 
-        public object ExecuteScalar(string query, object[] parameterValue = null)
+        public int ExecuteScalar(string query, object[] parameterValue = null)
         {
-            object result = 0;
+            int result;
             Open();
             //Tách tên parameter từ query
             Regex regex = new Regex("@[a-z]+", RegexOptions.IgnoreCase);
@@ -85,7 +85,7 @@ namespace DAL
             {
                 command.Parameters.AddWithValue(parameterName[i], parameterValue[i]);
             }
-            result = command.ExecuteScalar();
+            result = (int)(command.ExecuteScalar());
             Close();
             return result;
         }
