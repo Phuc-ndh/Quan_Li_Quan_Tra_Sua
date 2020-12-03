@@ -211,5 +211,8 @@
   <ItemGroup>
     <None Include="Resources\bubble_tea - Copy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\milktea.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

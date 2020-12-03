@@ -30,7 +30,7 @@ namespace QuanLyQuanTraSua
         private void frmTaiKhoan_Load(object sender, EventArgs e)
         {
             Account currentAccount = new Account();
-            currentAccount = accountBUS.getAccountByUsername(this.parent.currentUser);
+            currentAccount = accountBUS.getAccountByUsername(this.parent.currentUser.Username);
             txtUsername.Text = currentAccount.Username;
             txtName.Text = currentAccount.Realname;
             txtPhone.Text = currentAccount.PhoneNumber;

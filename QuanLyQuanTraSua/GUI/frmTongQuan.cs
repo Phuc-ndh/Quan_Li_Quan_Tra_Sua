@@ -27,8 +27,8 @@ namespace QuanLyQuanTraSua
             List<Drink> listDrink = drinkBUS.GetDrinkList();
             foreach (Drink drink in listDrink)
             {
-                Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.White };
-                Button btn2 = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.White };
+                Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(150, 150, 150) };
+                Button btn2 = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(150, 150, 150) };
                 btn.MouseDown += Btn_MouseDown;
                 btn2.MouseDown += Btn_MouseDown;
                 btn.Click += Btn_Click;
@@ -129,5 +129,6 @@ namespace QuanLyQuanTraSua
             dataGridView1.Rows.Clear();
 
         }
+
     }
 }

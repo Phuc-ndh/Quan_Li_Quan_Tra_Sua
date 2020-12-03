@@ -445,6 +445,7 @@
             // 
             // frmSignUp
             // 
+            this.AcceptButton = this.btnSignUp;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -481,6 +482,7 @@
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
+            this.Load += new System.EventHandler(this.frmSignUp_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmSignUp_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();

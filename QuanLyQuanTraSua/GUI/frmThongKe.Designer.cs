@@ -103,7 +103,7 @@ namespace QuanLyQuanTraSua
             this.chartCollum.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartCollum.Legends.Add(legend1);
-            this.chartCollum.Location = new System.Drawing.Point(533, 50);
+            this.chartCollum.Location = new System.Drawing.Point(551, 50);
             this.chartCollum.Name = "chartCollum";
             series1.ChartArea = "Sell Number";
             series1.Legend = "Legend1";
@@ -113,7 +113,7 @@ namespace QuanLyQuanTraSua
             series2.Name = "Doanh thu";
             this.chartCollum.Series.Add(series1);
             this.chartCollum.Series.Add(series2);
-            this.chartCollum.Size = new System.Drawing.Size(607, 332);
+            this.chartCollum.Size = new System.Drawing.Size(809, 671);
             this.chartCollum.TabIndex = 5;
             this.chartCollum.Text = "Collum chart";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -129,7 +129,7 @@ namespace QuanLyQuanTraSua
             legend2.Name = "Legend1";
             legend2.Title = "Thức uống";
             this.chartPie.Legends.Add(legend2);
-            this.chartPie.Location = new System.Drawing.Point(117, 50);
+            this.chartPie.Location = new System.Drawing.Point(135, 50);
             this.chartPie.Name = "chartPie";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -168,7 +168,7 @@ namespace QuanLyQuanTraSua
             this.cldDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cldDateTime.Location = new System.Drawing.Point(117, 12);
             this.cldDateTime.Name = "cldDateTime";
-            this.cldDateTime.Size = new System.Drawing.Size(251, 26);
+            this.cldDateTime.Size = new System.Drawing.Size(251, 27);
             this.cldDateTime.TabIndex = 0;
             this.cldDateTime.Visible = false;
             // 
@@ -202,7 +202,7 @@ namespace QuanLyQuanTraSua
             legend3.Name = "Money";
             legend3.Title = "Thức uống";
             this.chartMoneyPercent.Legends.Add(legend3);
-            this.chartMoneyPercent.Location = new System.Drawing.Point(117, 389);
+            this.chartMoneyPercent.Location = new System.Drawing.Point(135, 389);
             this.chartMoneyPercent.Name = "chartMoneyPercent";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;

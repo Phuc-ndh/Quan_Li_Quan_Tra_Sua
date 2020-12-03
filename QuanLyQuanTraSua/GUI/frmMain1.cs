@@ -12,7 +12,7 @@ namespace QuanLyQuanTraSua
     {
         AccountBUS accountBUS = new AccountBUS();
         private frmLogin parent;
-        public string currentUser;
+        public Account currentUser;
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
@@ -161,7 +161,7 @@ namespace QuanLyQuanTraSua
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             Account currentAccount = new Account();
-            currentAccount = accountBUS.getAccountByUsername(this.parent.currentUser);
+            currentAccount = accountBUS.getAccountByUsername(this.parent.currentUser.Username);
             ActivateButton(sender, RGBColors.color1);
             //OpenChildForm(new frmTaiKhoan());
             if (currentAccount.Type == 1)
@@ -237,7 +237,19 @@ namespace QuanLyQuanTraSua
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void frmMain1_Load(object sender, EventArgs e)
+        {
+            if (parent.currentUser.Type == 0)
+            {
+                lblName.Text = "NV: " + parent.currentUser.Realname;
+            }
+            else
+            {
+                lblName.Text = "Chủ Quán";
+            }
+        }
         //End of Change color of button
 
     }
 }
+    

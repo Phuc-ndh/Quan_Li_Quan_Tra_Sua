@@ -3,14 +3,14 @@ using System.Drawing;
 using System.Windows.Forms;
 using BUS;
 using System.Runtime.InteropServices;
-
+using DTO;
 
 namespace QuanLyQuanTraSua
 {
     public partial class frmLogin : Form
     {
         AccountBUS accountBus = new AccountBUS();
-        public string currentUser;
+        public Account currentUser;
         public frmLogin()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace QuanLyQuanTraSua
             if (accountBus.Login(txtUsername.Text, txtPassword.Text))
             {
                 this.Hide();
-                currentUser = txtUsername.Text;
+                currentUser = accountBus.getAccountByUsername(txtUsername.Text);
                 frmMain1 form = new frmMain1(this);
                 form.ShowDialog();
                 this.Show();
