@@ -67,9 +67,10 @@ namespace DAL
             return result;
         }
 
-        public int ExecuteScalar(string query, object[] parameterValue = null)
+        public object ExecuteScalar(string query, object[] parameterValue = null)
         {
-            int result;
+            object result;
+            //int result;
             Open();
             //Tách tên parameter từ query
             Regex regex = new Regex("@[a-z]+", RegexOptions.IgnoreCase);
@@ -85,7 +86,7 @@ namespace DAL
             {
                 command.Parameters.AddWithValue(parameterName[i], parameterValue[i]);
             }
-            result = (int)(command.ExecuteScalar());
+            result = (command.ExecuteScalar());
             Close();
             return result;
         }

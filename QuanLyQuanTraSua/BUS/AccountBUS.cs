@@ -120,7 +120,7 @@ namespace BUS
             }
         }
 
-        public int insertBill(string date, int price)
+        public object insertBill(string date, int price)
         {
             try
             {
@@ -128,8 +128,9 @@ namespace BUS
             }
             catch (Exception)
             {
-                return 0;
-                //throw;
+                
+                throw;
+                //return 0;
             }
         }
 
@@ -144,8 +145,9 @@ namespace BUS
             }
             catch (Exception)
             {
-                return false;
-                //throw;
+                throw;
+                //return false;
+                
             }
         }
 
@@ -162,6 +164,18 @@ namespace BUS
             }
             **/
             return accountDAL.reportByDate(day, month, year);
+        }
+
+        public DataTable getReportByMonth(int month)
+        {
+            try
+            {
+                return accountDAL.reportByMonth(month);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public StringBuilder getHashMD5(string pass)

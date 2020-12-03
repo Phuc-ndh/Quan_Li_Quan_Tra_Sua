@@ -29,7 +29,7 @@ namespace QuanLyQuanTraSua
                 currentUser = null;
                 txtUsername.Text = "Username";
                 txtPassword.Text = "Password";
-                txtPassword.PasswordChar = default;
+                //txtPassword.PasswordChar = default;
                 txtUsername.Focus();
             }
             else
@@ -164,7 +164,7 @@ namespace QuanLyQuanTraSua
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Mật Khẩu";
-                txtPassword.PasswordChar = default;
+                //txtPassword.PasswordChar = default;
             }
         }
 
@@ -172,12 +172,12 @@ namespace QuanLyQuanTraSua
         {
             if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
             {
-                
+                /**
                 if (txtPassword.PasswordChar == '*')
                     txtPassword.PasswordChar = default;
                 else
                     txtPassword.PasswordChar = '*';
-                
+                **/
             }
         }
     }
