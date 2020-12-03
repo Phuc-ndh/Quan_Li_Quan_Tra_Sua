@@ -23,7 +23,7 @@ namespace QuanLyQuanTraSua
 
         private void frmTongQuan_Load(object sender, EventArgs e)
         {
-            splitContainer1.SplitterDistance = panel3.Width + 100;
+            splitContainer1.SplitterDistance = panel3.Width + 95;
             List<Drink> listDrink = drinkBUS.GetDrinkList();
             foreach (Drink drink in listDrink)
             {
