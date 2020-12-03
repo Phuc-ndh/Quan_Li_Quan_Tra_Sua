@@ -27,8 +27,10 @@ namespace QuanLyQuanTraSua
             List<Drink> listDrink = drinkBUS.GetDrinkList();
             foreach (Drink drink in listDrink)
             {
-                Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink };
-                Button btn2 = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink };
+                Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.White };
+                Button btn2 = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.White };
+                btn.MouseDown += Btn_MouseDown;
+                btn2.MouseDown += Btn_MouseDown;
                 btn.Click += Btn_Click;
                 btn2.Click += Btn_Click;
                 flpTatCa.Controls.Add(btn);
@@ -49,6 +51,15 @@ namespace QuanLyQuanTraSua
                     default:
                         break;
                 }
+            }
+        }
+
+        private void Btn_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                Btn_Click(sender, e);
+                btnThem_Click(sender, e);
             }
         }
 
