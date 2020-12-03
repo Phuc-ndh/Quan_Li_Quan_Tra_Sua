@@ -27,6 +27,13 @@ namespace QuanLyQuanTraSua
             foreach (Account account in listAccount)
             {
                 Button btn = new Button() { Width = 120, Height = 60, Text = account.Username, Tag = account };
+                btn.ForeColor = Color.White;
+                if (account.Type == 1)
+                {
+                    btn.ForeColor = Color.Black;
+                    btn.Font = new Font(btn.Font, FontStyle.Bold);
+                    btn.BackColor = Color.FromArgb(78, 184, 206);
+                }
                 btn.Click += Btn_Click;
                 flowLayoutPanel1.Controls.Add(btn);
             }
@@ -49,16 +56,23 @@ namespace QuanLyQuanTraSua
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (accountBUS.deleteAccount(selectedAccount.Username))
+            if (selectedAccount.Username == "admin")
             {
-                MessageBox.Show("Đã xóa thành công");
-                flowLayoutPanel1.Controls.Clear();
-                frmAdmin_Load(sender, e);
+                MessageBox.Show("Không thể xóa tài khoản này");
             }
             else
             {
-                MessageBox.Show("Xóa thất bại");
-            }    
+                if (accountBUS.deleteAccount(selectedAccount.Username))
+                {
+                    MessageBox.Show("Đã xóa thành công");
+                    flowLayoutPanel1.Controls.Clear();
+                    frmAdmin_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa thất bại");
+                }
+            }
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)

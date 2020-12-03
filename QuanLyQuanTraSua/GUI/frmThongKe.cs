@@ -25,7 +25,7 @@ namespace QuanLyQuanTraSua
 
         }
 
-        AccountBUS accountBUS = new AccountBUS();
+        BillBUS billBUS = new BillBUS();
 
         DataTable dt;
 
@@ -59,12 +59,12 @@ namespace QuanLyQuanTraSua
         {           
             if (dateReport)
             {
-                dt = accountBUS.getReportByDate(_day, _month, _year);
+                dt = billBUS.getReportByDate(_day, _month, _year);
             } else
             {
                 if (monthReport)
                 {
-                    dt = accountBUS.getReportByMonth(_month);
+                    dt = billBUS.getReportByMonth(_month);
                 } else
                 {
                     // year report

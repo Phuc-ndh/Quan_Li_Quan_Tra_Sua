@@ -15,7 +15,7 @@ namespace QuanLyQuanTraSua
     public partial class frmTongQuan : Form
     {
         DrinkBUS drinkBUS = new DrinkBUS();
-        AccountBUS accountBUS = new AccountBUS();
+        BillBUS billBUS = new BillBUS();
         public frmTongQuan()
         {
             InitializeComponent();
@@ -108,11 +108,11 @@ namespace QuanLyQuanTraSua
                 totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
             }
 
-            accountBUS.insertBill(date, totalprice);
+            billBUS.insertBill(date, totalprice);
 
             foreach(DataGridViewRow row in dataGridView1.Rows)
             {
-                accountBUS.insertBillInfo( Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
+                billBUS.insertBillInfo( Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
                 //dataGridView1.Rows.Remove(row);
             }
             dataGridView1.Rows.Clear();

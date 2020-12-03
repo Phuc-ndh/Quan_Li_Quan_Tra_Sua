@@ -119,50 +119,6 @@ namespace BUS
             }
         }
 
-        public object insertBill(string date, int price)
-        {
-            try
-            {
-                return accountDAL.insertBill(date, price);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-        }
-
-        public bool insertBillInfo(int idDrink, int quantity)
-        {
-            try
-            {
-                if (accountDAL.insertBillInfo(idDrink, quantity))
-                    return true;
-                else
-                    return false;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-
-        public DataTable getReportByDate(int day, int month, int year)
-        {
-            return accountDAL.reportByDate(day, month, year);
-        }
-
-        public DataTable getReportByMonth(int month)
-        {
-            try
-            {
-                return accountDAL.reportByMonth(month);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-        }
-
         public StringBuilder getHashMD5(string pass)
         {
             MD5 hash = MD5.Create();

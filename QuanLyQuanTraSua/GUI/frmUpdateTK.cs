@@ -33,11 +33,12 @@ namespace QuanLyQuanTraSua
         {
             if (accountBUS.updateAccount(txtUsername.Text, txtName.Text, txtPhone.Text, txtEmail.Text))
             {
-                MessageBox.Show("OK");
+                MessageBox.Show("Cập nhật thành công");
+                this.Close();
             }
             else
             {
-                MessageBox.Show("Khong duoc");
+                MessageBox.Show("Cập nhật thất bại");
             }
         }
 
@@ -46,5 +47,14 @@ namespace QuanLyQuanTraSua
             this.Close();
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
