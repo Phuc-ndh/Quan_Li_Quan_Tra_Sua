@@ -101,7 +101,7 @@ namespace QuanLyQuanTraSua
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {          
-            string date = (DateTime.Now.Day + "/" + DateTime.Now.Month + "/" + DateTime.Now.Year).ToString();
+            string date = (DateTime.Now.Month + "/" +DateTime.Now.Day  + "/" + DateTime.Now.Year).ToString();
             int totalprice = 0;
             foreach( DataGridViewRow row in dataGridView1.Rows)
             {

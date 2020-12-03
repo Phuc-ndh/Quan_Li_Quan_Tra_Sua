@@ -133,7 +133,7 @@ namespace DAL
                            "FROM BillInfo T1 " +
                            "INNER JOIN Drink T2 " +
                                 "ON T1.idDrink = T2.idDrink" +
-                           " WHERE T1.idBill in (select T3.idBill from Bill T3 where and MONTH(T3.Date) = @monthC and YEAR(T3.Date) = @yearC)) " +
+                           " WHERE T1.idBill in (select T3.idBill from Bill T3 where MONTH(T3.Date) = @monthC and YEAR(T3.Date) = @yearC)) " +
                            "GROUP BY T1.idDrink, T2.Name, T2.Price";
             object[] value = new object[] { month, year, monthB, yearB, monthC, yearC };
             DBConnect db = new DBConnect();
