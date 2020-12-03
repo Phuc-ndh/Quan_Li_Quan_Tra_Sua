@@ -104,7 +104,6 @@ namespace BUS
             catch (Exception)
             {
                 return false;
-                //throw;
             }
         }
 
@@ -128,9 +127,7 @@ namespace BUS
             }
             catch (Exception)
             {
-                
-                throw;
-                //return 0;
+                return null;
             }
         }
 
@@ -145,24 +142,12 @@ namespace BUS
             }
             catch (Exception)
             {
-                throw;
-                //return false;
-                
+                return false;
             }
         }
 
         public DataTable getReportByDate(int day, int month, int year)
         {
-            /**
-            try
-            {
-                return accountDAL.reportByDate(date);
-            }
-            catch (Exception)
-            {
-                return null;               
-            }
-            **/
             return accountDAL.reportByDate(day, month, year);
         }
 

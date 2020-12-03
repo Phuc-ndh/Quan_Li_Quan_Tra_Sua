@@ -156,3 +156,4 @@ D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug
 D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
 D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
+C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
