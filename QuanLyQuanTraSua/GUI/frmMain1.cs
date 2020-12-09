@@ -49,7 +49,8 @@ namespace QuanLyQuanTraSua
                 DisableButton();
                 //Button
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(90,90,90);
+                //currentBtn.BackColor = Color.FromArgb(90, 90, 90);
+                currentBtn.BackColor = Color.FromArgb(25,95,95);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -69,7 +70,8 @@ namespace QuanLyQuanTraSua
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(75, 75, 75);
+                //currentBtn.BackColor = Color.FromArgb(75, 75, 75);
+                currentBtn.BackColor = Color.Teal;
                 currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.White;

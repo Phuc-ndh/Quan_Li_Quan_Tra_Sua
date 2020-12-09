@@ -184,3 +184,33 @@ D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmAdmin.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmLogin.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain1.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMatHang.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTaiKhoan.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmThongKe.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTongQuan.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\Guna.UI.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\Bunifu_UI_v1.52.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\XanderUI.dll

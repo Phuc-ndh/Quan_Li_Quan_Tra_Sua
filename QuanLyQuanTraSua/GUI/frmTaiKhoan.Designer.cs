@@ -34,6 +34,7 @@ namespace QuanLyQuanTraSua
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.pnlName = new System.Windows.Forms.Panel();
@@ -43,7 +44,6 @@ namespace QuanLyQuanTraSua
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ptrUser1 = new System.Windows.Forms.PictureBox();
             this.ptrName1 = new System.Windows.Forms.PictureBox();
             this.ptrPhone1 = new System.Windows.Forms.PictureBox();
@@ -114,6 +114,17 @@ namespace QuanLyQuanTraSua
             this.label3.Size = new System.Drawing.Size(16, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "-";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(149, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 95);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnCancel
             // 
@@ -214,17 +225,6 @@ namespace QuanLyQuanTraSua
             this.txtUsername.Size = new System.Drawing.Size(273, 23);
             this.txtUsername.TabIndex = 56;
             this.txtUsername.Text = "đổ dữ liệu vào đây";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(149, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // ptrUser1
             // 

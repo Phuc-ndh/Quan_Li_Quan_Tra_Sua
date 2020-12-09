@@ -44,3 +44,11 @@ D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CopyComplete
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
 D:\QLQTS\quan 3-12 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\DTO.pdb
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.dll
+D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DTO\obj\Debug\DTO.pdb

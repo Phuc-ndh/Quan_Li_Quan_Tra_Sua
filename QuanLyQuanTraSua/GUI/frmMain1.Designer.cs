@@ -40,33 +40,32 @@ namespace QuanLyQuanTraSua
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lblName = new System.Windows.Forms.Label();
             this.btnMinimize = new FontAwesome.Sharp.IconPictureBox();
             this.btnMaximize = new FontAwesome.Sharp.IconPictureBox();
             this.btnExit = new FontAwesome.Sharp.IconPictureBox();
             this.lblTitleChildForm = new System.Windows.Forms.Label();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
-            this.pnlShadow = new System.Windows.Forms.Panel();
             this.pnlDesktop = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
             this.pnlDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.Teal;
             this.pnlMenu.Controls.Add(this.btnDangXuat);
             this.pnlMenu.Controls.Add(this.btnTaiKhoan);
             this.pnlMenu.Controls.Add(this.btnAdmin);
@@ -235,27 +234,39 @@ namespace QuanLyQuanTraSua
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.btnMinimize);
             this.panel1.Controls.Add(this.btnMaximize);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.lblTitleChildForm);
             this.panel1.Controls.Add(this.iconCurrentChildForm);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(200, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1243, 65);
+            this.panel1.Size = new System.Drawing.Size(1243, 41);
             this.panel1.TabIndex = 5;
             this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.lblName);
+            this.panel2.Location = new System.Drawing.Point(652, 9);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(445, 32);
+            this.panel2.TabIndex = 11;
+            this.panel2.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.ForeColor = System.Drawing.Color.Black;
             this.lblName.Location = new System.Drawing.Point(296, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(149, 27);
@@ -267,13 +278,13 @@ namespace QuanLyQuanTraSua
             // btnMinimize
             // 
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.btnMinimize.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btnMinimize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.btnMinimize.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMinimize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnMinimize.IconSize = 25;
-            this.btnMinimize.Location = new System.Drawing.Point(1131, 11);
+            this.btnMinimize.Location = new System.Drawing.Point(1131, 5);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(25, 28);
@@ -284,13 +295,13 @@ namespace QuanLyQuanTraSua
             // btnMaximize
             // 
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.btnMaximize.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btnMaximize.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.btnMaximize.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnMaximize.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnMaximize.IconSize = 31;
-            this.btnMaximize.Location = new System.Drawing.Point(1166, 11);
+            this.btnMaximize.Location = new System.Drawing.Point(1166, 5);
             this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(31, 32);
@@ -301,13 +312,13 @@ namespace QuanLyQuanTraSua
             // btnExit
             // 
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnExit.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnExit.IconSize = 30;
-            this.btnExit.Location = new System.Drawing.Point(1207, 11);
+            this.btnExit.Location = new System.Drawing.Point(1207, 5);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(30, 31);
@@ -318,52 +329,43 @@ namespace QuanLyQuanTraSua
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(75, 26);
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.Black;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(63, 10);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(45, 17);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(54, 20);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
+            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.iconCurrentChildForm.ForeColor = System.Drawing.Color.DarkGoldenrod;
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.DarkGoldenrod;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(25, 19);
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(24, 5);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
             this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
             this.iconCurrentChildForm.TabIndex = 0;
             this.iconCurrentChildForm.TabStop = false;
             // 
-            // pnlShadow
-            // 
-            this.pnlShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(69)))), ((int)(((byte)(69)))));
-            this.pnlShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlShadow.Location = new System.Drawing.Point(200, 65);
-            this.pnlShadow.Name = "pnlShadow";
-            this.pnlShadow.Size = new System.Drawing.Size(1243, 9);
-            this.pnlShadow.TabIndex = 6;
-            // 
             // pnlDesktop
             // 
-            this.pnlDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.pnlDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.pnlDesktop.Controls.Add(this.pictureBox1);
             this.pnlDesktop.Controls.Add(this.lblTitle);
             this.pnlDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDesktop.Location = new System.Drawing.Point(200, 74);
+            this.pnlDesktop.Location = new System.Drawing.Point(200, 41);
             this.pnlDesktop.Name = "pnlDesktop";
-            this.pnlDesktop.Size = new System.Drawing.Size(1243, 783);
+            this.pnlDesktop.Size = new System.Drawing.Size(1243, 816);
             this.pnlDesktop.TabIndex = 7;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::QuanLyQuanTraSua.Properties.Resources.bubble_tea___Copy;
-            this.pictureBox1.Location = new System.Drawing.Point(479, 278);
+            this.pictureBox1.Location = new System.Drawing.Point(479, 295);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 278);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -376,23 +378,12 @@ namespace QuanLyQuanTraSua
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(395, 119);
+            this.lblTitle.Location = new System.Drawing.Point(395, 136);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(549, 59);
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "Quản Lý Quán Trà Sữa";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.lblName);
-            this.panel2.Location = new System.Drawing.Point(652, 15);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(445, 40);
-            this.panel2.TabIndex = 11;
-            this.panel2.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // frmMain1
             // 
@@ -400,7 +391,6 @@ namespace QuanLyQuanTraSua
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1443, 857);
             this.Controls.Add(this.pnlDesktop);
-            this.Controls.Add(this.pnlShadow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -413,6 +403,8 @@ namespace QuanLyQuanTraSua
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).EndInit();
@@ -420,8 +412,6 @@ namespace QuanLyQuanTraSua
             this.pnlDesktop.ResumeLayout(false);
             this.pnlDesktop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -438,7 +428,6 @@ namespace QuanLyQuanTraSua
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.PictureBox btnHome;
-        private System.Windows.Forms.Panel pnlShadow;
         private System.Windows.Forms.Panel pnlDesktop;
         private FontAwesome.Sharp.IconButton btnDangXuat;
         private FontAwesome.Sharp.IconPictureBox btnExit;

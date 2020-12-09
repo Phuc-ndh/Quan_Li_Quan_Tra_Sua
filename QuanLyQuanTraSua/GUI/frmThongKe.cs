@@ -18,13 +18,78 @@ namespace QuanLyQuanTraSua
         public frmThongKe()
         {
             InitializeComponent();
-        }
+            
 
-        private void chartPie_Click(object sender, EventArgs e)
+        }
+        public void CanChinhViTri()
         {
+            if (WindowState == FormWindowState.Maximized)
+            {
+                //panel2.Location = new Point(260,40);
 
+            }
+            //panel2.Location = new Point(260,40);
+            //chartPie.Location = new Point(260, 40);
+            //chartPie.Location = new Point(chartPie.Location.X + 30, chartPie.Location.Y + 30);
+            //chartPie.Location = new Point(30, 60);
+            chartPie.Location = new Point((splitContainer2.Panel1.Width - chartPie.Width) / 2,
+                (splitContainer2.Panel1.Height - gbtnReport.Height - chartPie.Height - chartMoneyPercent.Height) * 26 / 50 + gbtnReport.Height);
+            chartMoneyPercent.Location = new Point((splitContainer2.Panel1.Width - chartPie.Width) / 2,
+                (splitContainer2.Panel1.Height - gbtnReport.Height - chartPie.Height - chartMoneyPercent.Height) * 4 / 5 + gbtnReport.Height +chartPie.Height);
+            // chia docj theo 1,2,1,1 =>5 === 2,2,1
+            //chartPie.ChartAreas(0).BackColor = Color.Orange;
+            //chartPie.ChartAreas[0].BackColor = Color.Orange;
         }
 
+        public void CanChinhKichThuoc()
+        {
+            chartPie.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
+            chartMoneyPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
+            chartCollum.Size = new Size(splitContainer2.Panel2.Width * 99 / 100, splitContainer2.Panel2.Height * 7 / 10);
+
+            //============
+            //chartPie.Titles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            //MessageBox.Show(splitContainer2.Panel1.Width + "");
+
+            var fontsiz = 1F;
+            int x = splitContainer2.Panel1.Width * 10 / 348;
+            //MessageBox.Show(typeof(splitContainer2.Panel1.Width)+"");
+            for (int j = 0; j < x; j++)
+                fontsiz += 1;
+            //if (fontsiz == 0)
+            //fontsiz = 1;
+            //MessageBox.Show(x + "");
+            //fontsiz += 10;
+            foreach (var i in chartPie.Titles)
+            {
+            i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            }
+            foreach (var i in chartMoneyPercent.Titles)
+            {
+            i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            }
+            foreach (var i in chartCollum.Titles)
+            {
+            i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            }
+            //==
+            foreach( var i in chartPie.Legends)
+            {
+                i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
+                i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
+            }
+            foreach( var i in chartMoneyPercent.Legends)
+            {
+                i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
+                i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
+            }
+            foreach( var i in chartCollum.Legends)
+            {
+                i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
+                i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
+            }
+            //foreach (var i in chartPie.)
+        }
         BillBUS billBUS = new BillBUS();
 
         DataTable dt;
@@ -42,7 +107,8 @@ namespace QuanLyQuanTraSua
         {
             if (dateReport)
             {
-                DateTime date = cldDateTime.Value.Date;
+                //DateTime date = cldDateTime.Value.Date;
+                DateTime date = gunacldDateTime.Value.Date;
                 _day = date.Day;
                 _month = date.Month;
                 _year = date.Year;
@@ -50,7 +116,8 @@ namespace QuanLyQuanTraSua
             if (monthReport)
             {
                 
-                _month = (this.cbbMonth.SelectedIndex) + 1;               
+                //_month = (this.cbbMonth.SelectedIndex) + 1;               
+                _month = (this.gunacbbMonth.SelectedIndex) + 1;               
             }
         }
 
@@ -139,6 +206,8 @@ namespace QuanLyQuanTraSua
             chartMoneyPercent.Visible = true;
 
             paintChart();
+            //
+            CanChinhViTri();
         }
 
         // nut bao cao theo ngay
@@ -150,9 +219,11 @@ namespace QuanLyQuanTraSua
             monthReport = false;
             yearReport = false;
 
-            cldDateTime.Visible = true;
-            cbbMonth.Visible = false;
-            btnReport.Visible = true;
+            //cldDateTime.Visible = true;
+            gunacldDateTime.Visible = true;
+            //cbbMonth.Visible = false;
+            gunacbbMonth.Visible = false;
+            gbtnReport.Visible = true;
           
         }
 
@@ -165,13 +236,24 @@ namespace QuanLyQuanTraSua
             monthReport = true;
             yearReport = false;
 
-            cbbMonth.Visible = true;
-            btnReport.Visible = true;
-            cldDateTime.Visible = false;
+            gbtnReport.Visible = true;
+            //cbbMonth.Visible = true;
+            gunacbbMonth.Visible = true;
+            //cldDateTime.Visible = false;
+            gunacldDateTime.Visible = false;
 
             // lay gia tri thang hien tai
-            this.cbbMonth.SelectedIndex = DateTime.Now.Month - 1;
+            //this.cbbMonth.SelectedIndex = DateTime.Now.Month - 1;
+            this.gunacbbMonth.SelectedIndex = DateTime.Now.Month - 1;
         }
-        
+
+
+        private void frmThongKe_SizeChanged(object sender, EventArgs e)
+        {
+            CanChinhKichThuoc();
+            CanChinhViTri();
+        }
+
+    
     }
 }
