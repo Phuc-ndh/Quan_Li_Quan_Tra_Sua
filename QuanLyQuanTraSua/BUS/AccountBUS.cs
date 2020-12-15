@@ -16,7 +16,7 @@ namespace BUS
         public List<Account> GetAccountList()
         {
             List<Account> listAccount = new List<Account>();
-            DataTable dt = accountDAL.GetAllAccounts();
+            DataTable dt = accountDAL.getAllAccounts();
             foreach (DataRow row in dt.Rows)
             {
                 Account account = new Account(row);
@@ -25,7 +25,7 @@ namespace BUS
             return listAccount;
         }
 
-        public bool Login(string username, string password)
+        public bool logIn(string username, string password)
         {
             string Username = "";
             DataTable dt = accountDAL.getLoginAccount(username, getHashMD5(password).ToString());

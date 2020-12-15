@@ -18,7 +18,7 @@ namespace QuanLyQuanTraSua
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (accountBus.Login(txtUsername.Text, txtPassword.Text))
+            if (accountBus.logIn(txtUsername.Text, txtPassword.Text))
             {
                 this.Hide();
                 currentUser = accountBus.getAccountByUsername(txtUsername.Text);

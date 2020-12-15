@@ -12,7 +12,7 @@ namespace DAL
 {
     public class AccountDAL
     {
-        public DataTable GetAllAccounts()
+        public DataTable getAllAccounts()
         {
             string query = "SELECT * FROM ACCOUNT";
             DBConnect db = new DBConnect();
