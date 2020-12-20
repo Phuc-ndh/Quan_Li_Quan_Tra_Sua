@@ -32,10 +32,10 @@ namespace QuanLyQuanTraSua
             //chartPie.Location = new Point(260, 40);
             //chartPie.Location = new Point(chartPie.Location.X + 30, chartPie.Location.Y + 30);
             //chartPie.Location = new Point(30, 60);
-            chartPie.Location = new Point((splitContainer2.Panel1.Width - chartPie.Width) / 2,
-                (splitContainer2.Panel1.Height - gbtnReport.Height - chartPie.Height - chartMoneyPercent.Height) * 26 / 50 + gbtnReport.Height);
-            chartMoneyPercent.Location = new Point((splitContainer2.Panel1.Width - chartPie.Width) / 2,
-                (splitContainer2.Panel1.Height - gbtnReport.Height - chartPie.Height - chartMoneyPercent.Height) * 4 / 5 + gbtnReport.Height +chartPie.Height);
+            chartSellPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
+                (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 26 / 50 + gbtnReport.Height);
+            chartMoneyPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
+                (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 4 / 5 + gbtnReport.Height +chartSellPercent.Height);
             // chia docj theo 1,2,1,1 =>5 === 2,2,1
             //chartPie.ChartAreas(0).BackColor = Color.Orange;
             //chartPie.ChartAreas[0].BackColor = Color.Orange;
@@ -43,9 +43,9 @@ namespace QuanLyQuanTraSua
 
         public void CanChinhKichThuoc()
         {
-            chartPie.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
+            chartSellPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
             chartMoneyPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
-            chartCollum.Size = new Size(splitContainer2.Panel2.Width * 99 / 100, splitContainer2.Panel2.Height * 7 / 10);
+            chartSellAndMoney.Size = new Size(splitContainer2.Panel2.Width * 99 / 100, splitContainer2.Panel2.Height * 7 / 10);
 
             //============
             //chartPie.Titles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -60,7 +60,7 @@ namespace QuanLyQuanTraSua
             //fontsiz = 1;
             //MessageBox.Show(x + "");
             //fontsiz += 10;
-            foreach (var i in chartPie.Titles)
+            foreach (var i in chartSellPercent.Titles)
             {
             i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             }
@@ -68,12 +68,12 @@ namespace QuanLyQuanTraSua
             {
             i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             }
-            foreach (var i in chartCollum.Titles)
+            foreach (var i in chartSellAndMoney.Titles)
             {
             i.Font = new System.Drawing.Font("Microsoft Sans Serif", fontsiz, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             }
             //==
-            foreach( var i in chartPie.Legends)
+            foreach( var i in chartSellPercent.Legends)
             {
                 i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
                 i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
@@ -83,7 +83,7 @@ namespace QuanLyQuanTraSua
                 i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
                 i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
             }
-            foreach( var i in chartCollum.Legends)
+            foreach( var i in chartSellAndMoney.Legends)
             {
                 i.Font = new Font("Microsoft Sans Serif", fontsiz*2/3);
                 i.TitleFont = new Font("Microsoft Sans Serif", fontsiz * 2 / 3,FontStyle.Bold);
@@ -139,10 +139,10 @@ namespace QuanLyQuanTraSua
             }
 
             // bieu do tron ti le so hang ban ra
-            chartPie.DataSource = dt;          
-            chartPie.Series["Drink"].XValueMember = "Name";
-            chartPie.Series["Drink"].YValueMembers = "PERCENTAGE_DRINK";
-            chartPie.Series["Drink"].ChartType = SeriesChartType.Pie;
+            chartSellPercent.DataSource = dt;          
+            chartSellPercent.Series["Drink"].XValueMember = "Name";
+            chartSellPercent.Series["Drink"].YValueMembers = "PERCENTAGE_DRINK";
+            chartSellPercent.Series["Drink"].ChartType = SeriesChartType.Pie;
 
             // bieu do tron ti le doanh thu   
             chartMoneyPercent.DataSource = dt;
@@ -151,67 +151,50 @@ namespace QuanLyQuanTraSua
             chartMoneyPercent.Series["Money"].ChartType = SeriesChartType.Pie;
 
             // bieu do cot doanh thu va so luong ban ra     
-            chartCollum.DataSource = dt;
-            chartCollum.Series[0].XValueMember = "Name";
-            chartCollum.Series[0].YValueMembers = "SO_LUONG";
-            chartCollum.ChartAreas[0].AxisX.Title = "Loại đồ uống";
-            chartCollum.ChartAreas[0].AxisY.Title = "Số lượng";
+            chartSellAndMoney.DataSource = dt;
+            chartSellAndMoney.Series[0].XValueMember = "Name";
+            chartSellAndMoney.Series[0].YValueMembers = "SO_LUONG";
+            chartSellAndMoney.ChartAreas[0].AxisX.Title = "Loại đồ uống";
+            chartSellAndMoney.ChartAreas[0].AxisY.Title = "Số lượng";
 
-            chartCollum.Series[1].XValueMember = "Name";
-            chartCollum.Series[1].YValueMembers = "MONEY";
+            chartSellAndMoney.Series[1].XValueMember = "Name";
+            chartSellAndMoney.Series[1].YValueMembers = "MONEY";
 
-            chartCollum.Series[1].YAxisType = AxisType.Secondary;
+            chartSellAndMoney.Series[1].YAxisType = AxisType.Secondary;
             
             // xoa line truc x bieu do cot
-            chartCollum.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
-            chartCollum.ChartAreas[0].AxisX.MinorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisX.MinorGrid.Enabled = false;
 
             // xoa line truc y 1 bieu do cot
-            chartCollum.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
-            chartCollum.ChartAreas[0].AxisY.MinorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisY.MinorGrid.Enabled = false;
 
             // xoa line truc y 2 bieu do cot
-            chartCollum.ChartAreas[0].AxisY2.MajorGrid.Enabled = false;
-            chartCollum.ChartAreas[0].AxisY2.MinorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisY2.MajorGrid.Enabled = false;
+            chartSellAndMoney.ChartAreas[0].AxisY2.MinorGrid.Enabled = false;
 
 
-            chartCollum.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
+            chartSellAndMoney.ChartAreas[0].AxisY.MajorGrid.LineWidth = 0;
 
             // hien thi label tung cot
-            chartCollum.Series[0].IsValueShownAsLabel = true;
-            chartCollum.Series[1].IsValueShownAsLabel = true;
+            chartSellAndMoney.Series[0].IsValueShownAsLabel = true;
+            chartSellAndMoney.Series[1].IsValueShownAsLabel = true;
 
-            chartCollum.Series[0].ChartType = SeriesChartType.Column;
-            chartCollum.Series[1].ChartType = SeriesChartType.Column;
+            chartSellAndMoney.Series[0].ChartType = SeriesChartType.Column;
+            chartSellAndMoney.Series[1].ChartType = SeriesChartType.Column;
         }
 
         // an chart
         private void hideChart()
         {
-            chartPie.Visible = false;
-            chartCollum.Visible = false;
+            chartSellPercent.Visible = false;
+            chartSellAndMoney.Visible = false;
             chartMoneyPercent.Visible = false;
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
-        {
-            getDateTime();
-
-            chartPie.Update();
-            chartMoneyPercent.Update();
-            chartCollum.Update();
-
-            chartCollum.Visible = true;
-            chartPie.Visible = true;
-            chartMoneyPercent.Visible = true;
-
-            paintChart();
-            //
-            CanChinhViTri();
-        }
-
         // nut bao cao theo ngay
-        private void btnDateReport_Click(object sender, EventArgs e)
+        private void gnbtnDateReport_Click(object sender, EventArgs e)
         {
             hideChart();
 
@@ -224,11 +207,10 @@ namespace QuanLyQuanTraSua
             //cbbMonth.Visible = false;
             gunacbbMonth.Visible = false;
             gbtnReport.Visible = true;
-          
         }
 
         // nut bao cao theo thang
-        private void btnMonthReport_Click(object sender, EventArgs e)
+        private void gnbtnMonthReport_Click(object sender, EventArgs e)
         {
             hideChart();
 
@@ -246,6 +228,24 @@ namespace QuanLyQuanTraSua
             //this.cbbMonth.SelectedIndex = DateTime.Now.Month - 1;
             this.gunacbbMonth.SelectedIndex = DateTime.Now.Month - 1;
         }
+        
+        // click report botton
+        private void gbtnReport_Click(object sender, EventArgs e)
+        {
+            getDateTime();
+
+            chartSellPercent.Update();
+            chartMoneyPercent.Update();
+            chartSellAndMoney.Update();
+
+            chartSellAndMoney.Visible = true;
+            chartSellPercent.Visible = true;
+            chartMoneyPercent.Visible = true;
+
+            paintChart();
+            //
+            CanChinhViTri();
+        }
 
 
         private void frmThongKe_SizeChanged(object sender, EventArgs e)
@@ -254,6 +254,6 @@ namespace QuanLyQuanTraSua
             CanChinhViTri();
         }
 
-    
+
     }
 }
