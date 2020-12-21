@@ -67,7 +67,6 @@ D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.cs
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 D:\QLQTS\quan - 30-11\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
-C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\FontAwesome.Sharp.dll
 D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.dll
 D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.pdb
 D:\QLQTS\quan - 30 -11 12-43\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.dll
@@ -104,3 +103,9 @@ D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\B
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.Charting.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.Charting.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\de\PdfSharp.Charting.resources.dll

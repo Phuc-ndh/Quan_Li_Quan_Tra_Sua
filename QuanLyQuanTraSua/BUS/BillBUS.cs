@@ -5,6 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using System.Diagnostics;
+using System.Reflection;
+using System.IO;
+using System.ComponentModel;
 
 namespace BUS
 {
