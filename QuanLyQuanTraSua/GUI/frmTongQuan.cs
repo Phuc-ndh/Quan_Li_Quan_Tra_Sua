@@ -143,9 +143,13 @@ namespace QuanLyQuanTraSua
                 billBUS.insertBillInfo( Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
                 //gunaDataGridView1.Rows.Remove(row);
             }
+
+            // chuyen datagridview sang data table
+            DataTable orderList = new DataTable();
+            orderList = this.gunaDataGridView1.DataSource as DataTable;
+
             printReceipt();
-            gunaDataGridView1.Rows.Clear();
-            
+            gunaDataGridView1.Rows.Clear(); 
         }
  
         private void gtxtSearch_Click(object sender, EventArgs e)
@@ -192,9 +196,10 @@ namespace QuanLyQuanTraSua
         {
             gunaDataGridView1.Rows.Clear();
         }
-        
+
         // print receipt 
         //-- * chua chuyen qua Bill duoc *
+       
         private void printReceipt()
         {
             int point = 0;
@@ -204,24 +209,24 @@ namespace QuanLyQuanTraSua
                 pdf.Info.Title = "receipt bill";
                 PdfPage pdfPage = pdf.AddPage();
                 XGraphics g = XGraphics.FromPdfPage(pdfPage);
-                XFont font_regular = new XFont("Verdana", 12, XFontStyle.Regular);
-                XFont font_bold = new XFont("Verdana", 14, XFontStyle.Bold);
+                XFont font_regular = new XFont("Verdana", 15, XFontStyle.Regular);
+                XFont font_bold = new XFont("Verdana", 17, XFontStyle.Bold);
 
                 point = point + 100;
                 g.DrawString("HOA DON BAN HANG", font_bold, XBrushes.Black, new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
                 point = point + 50;
                 g.DrawString("Linh Trung   Thu Duc", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 point = point + 20;
-                g.DrawString("-------------------------------------------------------------------------------------------",
+                g.DrawString("----------------------------------------------------------------------------",
                     font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 point = point + 20;
-                g.DrawString("Ten", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString("Ten", font_regular, XBrushes.Black, new XRect(80, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 g.DrawString("So luong", font_regular, XBrushes.Black, new XRect(250, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 g.DrawString("Don gia", font_regular, XBrushes.Black, new XRect(370, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 g.DrawString("Thanh tien", font_regular, XBrushes.Black, new XRect(480, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
-                point = point + 20;
+                point = point + 30;
                 string nameDrink;
                 string numberDrink;
                 string priceDrink;
@@ -236,11 +241,11 @@ namespace QuanLyQuanTraSua
                     g.DrawString(nameDrink, font_regular, XBrushes.Black,
                         new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                     g.DrawString(numberDrink, font_regular, XBrushes.Black,
-                        new XRect(290, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                        new XRect(-300, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
                     g.DrawString(priceDrink, font_regular, XBrushes.Black,
-                        new XRect(380, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                        new XRect(-170, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
                     g.DrawString(moneyDrink, font_regular, XBrushes.Black,
-                        new XRect(500, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                        new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
 
                 point = point + 20;
                 }
@@ -255,6 +260,7 @@ namespace QuanLyQuanTraSua
 
             }
         }
+        
         
     }
 }
