@@ -103,10 +103,26 @@ namespace DAL
 
         public bool insertIdDiscount(string idDiscount, int valueDiscount, int isUsed)
         {
-            string query = "insert into Discount(idDiscount, valueDiscount, isUsed) values(@idDiscount, valueDiscount, isUsed)";
+            string query = "insert into Discount(idDiscount, valueDiscount, isUsed) values(@idDiscount, @valueDiscount, @isUsed)";
             object[] value = new object[] { idDiscount, valueDiscount, isUsed };
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);
+        }
+
+        public bool deleteIdDiscount(string idDiscount)
+        {
+            string query = "delete from Discount where idDiscount = @idDiscount";
+            object[] value = new object[] { idDiscount };
+            DBConnect db = new DBConnect();
+            return (db.ExecuteNonQuery(query, value) > 0);
+        }
+
+        public DataTable getDiscountList()
+        {
+            string query = "select idDiscount as Mã, valueDiscount as 'Trị giá', isUsed as 'Đã dùng' from Discount";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
         }
     }
 }

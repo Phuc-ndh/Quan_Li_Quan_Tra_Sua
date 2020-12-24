@@ -76,8 +76,8 @@ namespace QuanLyQuanTraSua
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gDataGridView1);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1443, 798);
-            this.splitContainer1.SplitterDistance = 621;
+            this.splitContainer1.Size = new System.Drawing.Size(1354, 733);
+            this.splitContainer1.SplitterDistance = 582;
             this.splitContainer1.TabIndex = 34;
             // 
             // gunaGroupBox2
@@ -106,7 +106,7 @@ namespace QuanLyQuanTraSua
             this.gunaCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCheckBox2.Location = new System.Drawing.Point(42, 80);
             this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(229, 22);
+            this.gunaCheckBox2.Size = new System.Drawing.Size(217, 21);
             this.gunaCheckBox2.TabIndex = 25;
             this.gunaCheckBox2.Text = "Điều chỉnh kích thước hàng";
             // 
@@ -119,7 +119,7 @@ namespace QuanLyQuanTraSua
             this.gunaCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaCheckBox1.Location = new System.Drawing.Point(42, 52);
             this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(214, 22);
+            this.gunaCheckBox1.Size = new System.Drawing.Size(203, 21);
             this.gunaCheckBox1.TabIndex = 25;
             this.gunaCheckBox1.Text = "Điều chỉnh kích thước cột";
             // 
@@ -130,7 +130,7 @@ namespace QuanLyQuanTraSua
             this.panelThongTinGG.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelThongTinGG.Location = new System.Drawing.Point(0, 0);
             this.panelThongTinGG.Name = "panelThongTinGG";
-            this.panelThongTinGG.Size = new System.Drawing.Size(621, 343);
+            this.panelThongTinGG.Size = new System.Drawing.Size(582, 343);
             this.panelThongTinGG.TabIndex = 32;
             // 
             // panelButton
@@ -155,7 +155,7 @@ namespace QuanLyQuanTraSua
             this.btnSua.IconColor = System.Drawing.Color.White;
             this.btnSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSua.IconSize = 30;
-            this.btnSua.Location = new System.Drawing.Point(163, 0);
+            this.btnSua.Location = new System.Drawing.Point(162, 0);
             this.btnSua.Name = "btnSua";
             this.btnSua.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnSua.Size = new System.Drawing.Size(129, 45);
@@ -184,6 +184,7 @@ namespace QuanLyQuanTraSua
             this.btnThem.Text = "Thêm";
             this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -205,6 +206,7 @@ namespace QuanLyQuanTraSua
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // gunaGroupBoxThongTinGG
             // 
@@ -221,7 +223,7 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinGG.Location = new System.Drawing.Point(27, 54);
             this.gunaGroupBoxThongTinGG.Name = "gunaGroupBoxThongTinGG";
             this.gunaGroupBoxThongTinGG.Radius = 10;
-            this.gunaGroupBoxThongTinGG.Size = new System.Drawing.Size(426, 174);
+            this.gunaGroupBoxThongTinGG.Size = new System.Drawing.Size(452, 174);
             this.gunaGroupBoxThongTinGG.TabIndex = 22;
             this.gunaGroupBoxThongTinGG.Text = "Thông tin giảm giá";
             this.gunaGroupBoxThongTinGG.TextLocation = new System.Drawing.Point(10, 8);
@@ -232,7 +234,7 @@ namespace QuanLyQuanTraSua
             this.lblMaGiamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMaGiamGia.Location = new System.Drawing.Point(34, 68);
             this.lblMaGiamGia.Name = "lblMaGiamGia";
-            this.lblMaGiamGia.Size = new System.Drawing.Size(100, 20);
+            this.lblMaGiamGia.Size = new System.Drawing.Size(94, 20);
             this.lblMaGiamGia.TabIndex = 13;
             this.lblMaGiamGia.Text = "Mã giảm giá";
             // 
@@ -252,7 +254,7 @@ namespace QuanLyQuanTraSua
             this.gtxtGiaTriGiam.PasswordChar = '\0';
             this.gtxtGiaTriGiam.Radius = 10;
             this.gtxtGiaTriGiam.SelectedText = "";
-            this.gtxtGiaTriGiam.Size = new System.Drawing.Size(189, 33);
+            this.gtxtGiaTriGiam.Size = new System.Drawing.Size(218, 33);
             this.gtxtGiaTriGiam.TabIndex = 20;
             this.gtxtGiaTriGiam.TextOffsetX = 10;
             // 
@@ -272,7 +274,7 @@ namespace QuanLyQuanTraSua
             this.gtxtMaGiamGia.PasswordChar = '\0';
             this.gtxtMaGiamGia.Radius = 10;
             this.gtxtMaGiamGia.SelectedText = "";
-            this.gtxtMaGiamGia.Size = new System.Drawing.Size(189, 33);
+            this.gtxtMaGiamGia.Size = new System.Drawing.Size(218, 33);
             this.gtxtMaGiamGia.TabIndex = 20;
             this.gtxtMaGiamGia.TextOffsetX = 10;
             // 
@@ -282,9 +284,9 @@ namespace QuanLyQuanTraSua
             this.lblGiaTriGiam.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiaTriGiam.Location = new System.Drawing.Point(34, 117);
             this.lblGiaTriGiam.Name = "lblGiaTriGiam";
-            this.lblGiaTriGiam.Size = new System.Drawing.Size(148, 20);
+            this.lblGiaTriGiam.Size = new System.Drawing.Size(117, 20);
             this.lblGiaTriGiam.TabIndex = 17;
-            this.lblGiaTriGiam.Text = "Giá trị giảm (VNĐ)";
+            this.lblGiaTriGiam.Text = "Giá trị giảm (%)";
             // 
             // gDataGridView1
             // 
@@ -324,7 +326,7 @@ namespace QuanLyQuanTraSua
             this.gDataGridView1.RowHeadersWidth = 44;
             this.gDataGridView1.RowTemplate.Height = 35;
             this.gDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gDataGridView1.Size = new System.Drawing.Size(818, 798);
+            this.gDataGridView1.Size = new System.Drawing.Size(768, 733);
             this.gDataGridView1.TabIndex = 1;
             this.gDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -366,10 +368,11 @@ namespace QuanLyQuanTraSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 798);
+            this.ClientSize = new System.Drawing.Size(1354, 733);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmDiscount";
             this.Text = "frmDiscount";
+            this.Load += new System.EventHandler(this.frmDiscount_Load);
             this.SizeChanged += new System.EventHandler(this.frmDiscount_SizeChanged);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);

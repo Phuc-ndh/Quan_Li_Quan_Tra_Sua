@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS;
 
 namespace QuanLyQuanTraSua
 {
@@ -16,6 +17,8 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+
+        BillBUS billBus = new BillBUS();
 
         private void frmDiscount_SizeChanged(object sender, EventArgs e)
         {
@@ -65,6 +68,51 @@ namespace QuanLyQuanTraSua
             gtxtMaGiamGia.Location = new Point(lblMaGiamGia.Location.X + lblMaGiamGia.Width + 60, lblMaGiamGia.Location.Y - gtxtMaGiamGia.Height / 2 + lblMaGiamGia.Height / 2);
             //gcbbLoai.Location = new Point(gtxtTenMatHang.Location.X, gtxtTenMatHang.Location.Y + (gunaGroupBoxThongTinMH.Height) * 2 / 18 + lblTenMatHang.Height);
             gtxtGiaTriGiam.Location = new Point(gtxtMaGiamGia.Location.X, gtxtMaGiamGia.Location.Y + (gunaGroupBoxThongTinGG.Height) * 2 / 18 + lblMaGiamGia.Height +5);
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (billBus.insertIdDiscount(gtxtMaGiamGia.Text, Convert.ToInt32(gtxtGiaTriGiam.Text)))
+            {
+                MessageBox.Show("Thêm mã giảm giá thành công");
+                updateDataGridView();
+            } else
+            {
+                MessageBox.Show("Không thêm được vì mã đã trùng hoặc giá trị giảm không hợp lệ");
+            }
+        }
+
+        private void frmDiscount_Load(object sender, EventArgs e)
+        {
+            updateDataGridView();
+            gDataGridView1.Columns["Mã"].Width = 250;
+        }
+
+        private void updateDataGridView()
+        {
+            gDataGridView1.DataSource = billBus.getDiscountList();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (gDataGridView1.SelectedRows.Count > 0)
+                {
+                    if (billBus.deleteIdDiscount(gDataGridView1.SelectedRows[0].Cells["Mã"].Value.ToString()))
+                    {
+                        MessageBox.Show("Đã xóa thành công");
+                        updateDataGridView();
+                    }
+                } else
+                {
+                    MessageBox.Show("Chọn một món để xóa");
+                }
+            }
+            catch (NullReferenceException)
+            {
+
+            }
         }
     }
 }
