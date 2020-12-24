@@ -25,6 +25,14 @@ namespace DTO
             set { _idDrink = value; }
         }
 
+        private string _DrinkName;
+
+        public string DrinkName
+        {
+            get { return _DrinkName; }
+            set { _DrinkName = value; }
+        }
+
         private int _Quantity;
 
         public int Quantity
@@ -39,6 +47,12 @@ namespace DTO
         {
             this._idBill = idBill;
             this._idDrink = idDrink;
+            this._Quantity = Quantity;
+        }
+
+        public BillInfo (string DrinkName, int Quantity)
+        {
+            this._DrinkName = DrinkName;
             this._Quantity = Quantity;
         }
 

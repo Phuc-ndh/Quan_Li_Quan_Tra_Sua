@@ -87,7 +87,6 @@ namespace QuanLyQuanTraSua
             //foreach (DataGridViewRow row in dataGridView1.Rows)
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                //row.Cells[0].Value = "hello";
             //gunaDataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, numericUpDown1.Value, Convert.ToInt32(txtGia.Text) * (int)numericUpDown1.Value);
                 //return;
                 if (row.Cells[0].Value.ToString() == txtID.Text)
@@ -141,20 +140,37 @@ namespace QuanLyQuanTraSua
         }
 
         private void btnThanhToan_Click(object sender, EventArgs e)
-        {          
+        {
+            List<BillInfo> listBillInfo = new List<BillInfo>();
             string date = (DateTime.Now.Month + "/" +DateTime.Now.Day  + "/" + DateTime.Now.Year).ToString();
-            foreach( DataGridViewRow row in gunaDataGridView1.Rows)
+            billBUS.insertBill(date, (int)totalprice);
+            foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
                 //totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
                 billBUS.insertBillInfo(Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
+                listBillInfo.Add(new BillInfo(row.Cells["columnTen"].Value.ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value)));
             }
 
-            billBUS.insertBill(date, (int)totalprice);
 
             printReceipt();
+            Panel orderPanel = new Panel();
+            orderPanel.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
+            orderPanel.BackColor = Color.FromArgb(157, 177, 186);
+            orderPanel.Tag = listBillInfo;
+            orderPanel.Click += OrderPanel_Click;        
+            flpDSOrder.Controls.Add(orderPanel);
             gunaDataGridView1.Rows.Clear();
         }
- 
+
+        private void OrderPanel_Click(object sender, EventArgs e)
+        {
+            gunaDataGridView2.Rows.Clear();
+            foreach (BillInfo item in (sender as Panel).Tag as List<BillInfo>)
+            {
+                gunaDataGridView2.Rows.Add(item.DrinkName, item.Quantity);
+            }
+        }
+
         private void gtxtSearch_Click(object sender, EventArgs e)
         {
             if ((gtxtSearch.Text == "Tìm kiếm"))
@@ -258,9 +274,9 @@ namespace QuanLyQuanTraSua
                 }
                 string pathPdf = "receipt.pdf";
                 pdf.Save(pathPdf);
-                //Process.Start(pathPdf);
-                Form f = new frmOpenPDF(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + pathPdf);// + "\" + pathPdf);
-                f.Show();
+                Process.Start(pathPdf);
+                //Form f = new frmOpenPDF(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + pathPdf);// + "\" + pathPdf);
+                //f.Show();
                 //f.Location = new Point(tabControl1.Location.X, tabControl1.Location.Y);
                 //f.Location = new Point(this.DesktopLocation.X, this.DesktopLocation.Y);
                 //f.Location = new Point(this.Bounds.Top+500, this.Bounds.Left);
@@ -269,8 +285,6 @@ namespace QuanLyQuanTraSua
             catch (Exception e)
             {
                 MessageBox.Show(e.ToString());
-               throw;
-
             }
         }
 
