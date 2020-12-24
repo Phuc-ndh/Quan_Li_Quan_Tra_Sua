@@ -250,6 +250,12 @@ namespace QuanLyQuanTraSua
                 lblName.Text = "Chủ Quán";
             }
         }
+
+        private void btnDiscount_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new frmDiscount());
+        }
         //End of Change color of button
 
     }

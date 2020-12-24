@@ -34,6 +34,7 @@ namespace QuanLyQuanTraSua
             this.btnDangXuat = new FontAwesome.Sharp.IconButton();
             this.btnTaiKhoan = new FontAwesome.Sharp.IconButton();
             this.btnAdmin = new FontAwesome.Sharp.IconButton();
+            this.btnDiscount = new FontAwesome.Sharp.IconButton();
             this.btnMatHang = new FontAwesome.Sharp.IconButton();
             this.btnThongKe = new FontAwesome.Sharp.IconButton();
             this.btnTongQuan = new FontAwesome.Sharp.IconButton();
@@ -69,6 +70,7 @@ namespace QuanLyQuanTraSua
             this.pnlMenu.Controls.Add(this.btnDangXuat);
             this.pnlMenu.Controls.Add(this.btnTaiKhoan);
             this.pnlMenu.Controls.Add(this.btnAdmin);
+            this.pnlMenu.Controls.Add(this.btnDiscount);
             this.pnlMenu.Controls.Add(this.btnMatHang);
             this.pnlMenu.Controls.Add(this.btnThongKe);
             this.pnlMenu.Controls.Add(this.btnTongQuan);
@@ -91,11 +93,11 @@ namespace QuanLyQuanTraSua
             this.btnDangXuat.IconColor = System.Drawing.Color.White;
             this.btnDangXuat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(0, 400);
+            this.btnDangXuat.Location = new System.Drawing.Point(0, 460);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnDangXuat.Size = new System.Drawing.Size(200, 60);
-            this.btnDangXuat.TabIndex = 14;
+            this.btnDangXuat.TabIndex = 15;
             this.btnDangXuat.Text = "Đăng Xuất";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -113,11 +115,11 @@ namespace QuanLyQuanTraSua
             this.btnTaiKhoan.IconColor = System.Drawing.Color.White;
             this.btnTaiKhoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 340);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 400);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(200, 60);
-            this.btnTaiKhoan.TabIndex = 13;
+            this.btnTaiKhoan.TabIndex = 14;
             this.btnTaiKhoan.Text = "Thông Tin";
             this.btnTaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,16 +137,38 @@ namespace QuanLyQuanTraSua
             this.btnAdmin.IconColor = System.Drawing.Color.White;
             this.btnAdmin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 280);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 340);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnAdmin.Size = new System.Drawing.Size(200, 60);
-            this.btnAdmin.TabIndex = 12;
+            this.btnAdmin.TabIndex = 13;
             this.btnAdmin.Text = "Đăng Ký";
             this.btnAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
+            // btnDiscount
+            // 
+            this.btnDiscount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDiscount.FlatAppearance.BorderSize = 0;
+            this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscount.ForeColor = System.Drawing.Color.White;
+            this.btnDiscount.IconChar = FontAwesome.Sharp.IconChar.Tag;
+            this.btnDiscount.IconColor = System.Drawing.Color.White;
+            this.btnDiscount.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDiscount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscount.Location = new System.Drawing.Point(0, 280);
+            this.btnDiscount.Name = "btnDiscount";
+            this.btnDiscount.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnDiscount.Size = new System.Drawing.Size(200, 60);
+            this.btnDiscount.TabIndex = 12;
+            this.btnDiscount.Text = "QL Giảm Giá";
+            this.btnDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiscount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDiscount.UseVisualStyleBackColor = true;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // btnMatHang
             // 
@@ -421,15 +445,15 @@ namespace QuanLyQuanTraSua
         private FontAwesome.Sharp.IconButton btnThongKe;
         private System.Windows.Forms.Panel pnlLogo;
         private FontAwesome.Sharp.IconButton btnMatHang;
-        private FontAwesome.Sharp.IconButton btnTaiKhoan;
         private FontAwesome.Sharp.IconButton btnAdmin;
+        private FontAwesome.Sharp.IconButton btnDiscount;
         private FontAwesome.Sharp.IconButton btnTongQuan;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label lblTitleChildForm;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Panel pnlDesktop;
-        private FontAwesome.Sharp.IconButton btnDangXuat;
+        private FontAwesome.Sharp.IconButton btnTaiKhoan;
         private FontAwesome.Sharp.IconPictureBox btnExit;
         private FontAwesome.Sharp.IconPictureBox btnMinimize;
         private FontAwesome.Sharp.IconPictureBox btnMaximize;
@@ -437,5 +461,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton btnDangXuat;
     }
 }

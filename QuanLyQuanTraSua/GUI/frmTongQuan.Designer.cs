@@ -212,7 +212,7 @@ namespace QuanLyQuanTraSua
             this.labelValueDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.labelValueDiscount.Location = new System.Drawing.Point(283, 631);
             this.labelValueDiscount.Name = "labelValueDiscount";
-            this.labelValueDiscount.Size = new System.Drawing.Size(72, 20);
+            this.labelValueDiscount.Size = new System.Drawing.Size(76, 20);
             this.labelValueDiscount.TabIndex = 28;
             this.labelValueDiscount.Text = "Giảm giá";
             // 
@@ -462,7 +462,7 @@ namespace QuanLyQuanTraSua
             this.txtGia.Location = new System.Drawing.Point(19, 100);
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
-            this.txtGia.Size = new System.Drawing.Size(173, 25);
+            this.txtGia.Size = new System.Drawing.Size(173, 26);
             this.txtGia.TabIndex = 12;
             // 
             // lblGia
@@ -472,7 +472,7 @@ namespace QuanLyQuanTraSua
             this.lblGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblGia.Location = new System.Drawing.Point(16, 77);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(82, 20);
+            this.lblGia.Size = new System.Drawing.Size(87, 20);
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá (VNĐ)";
             // 
@@ -486,7 +486,7 @@ namespace QuanLyQuanTraSua
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(76, 25);
+            this.numericUpDown1.Size = new System.Drawing.Size(76, 26);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -502,7 +502,7 @@ namespace QuanLyQuanTraSua
             this.txtTenMatHang.Location = new System.Drawing.Point(19, 38);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(173, 25);
+            this.txtTenMatHang.Size = new System.Drawing.Size(173, 26);
             this.txtTenMatHang.TabIndex = 3;
             // 
             // lblSoLuong
@@ -512,7 +512,7 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblSoLuong.Location = new System.Drawing.Point(16, 134);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(72, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(74, 20);
             this.lblSoLuong.TabIndex = 1;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -524,7 +524,7 @@ namespace QuanLyQuanTraSua
             this.lblTenMatHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblTenMatHang.Location = new System.Drawing.Point(16, 15);
             this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(107, 20);
+            this.lblTenMatHang.Size = new System.Drawing.Size(111, 20);
             this.lblTenMatHang.TabIndex = 0;
             this.lblTenMatHang.Text = "Tên mặt hàng";
             // 
@@ -574,7 +574,7 @@ namespace QuanLyQuanTraSua
             this.lblMoneyChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblMoneyChange.Location = new System.Drawing.Point(283, 541);
             this.lblMoneyChange.Name = "lblMoneyChange";
-            this.lblMoneyChange.Size = new System.Drawing.Size(81, 20);
+            this.lblMoneyChange.Size = new System.Drawing.Size(88, 20);
             this.lblMoneyChange.TabIndex = 30;
             this.lblMoneyChange.Text = "Tiền trả lại";
             // 
@@ -586,7 +586,7 @@ namespace QuanLyQuanTraSua
             this.lblCustomerMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblCustomerMoney.Location = new System.Drawing.Point(283, 483);
             this.lblCustomerMoney.Name = "lblCustomerMoney";
-            this.lblCustomerMoney.Size = new System.Drawing.Size(117, 20);
+            this.lblCustomerMoney.Size = new System.Drawing.Size(122, 20);
             this.lblCustomerMoney.TabIndex = 29;
             this.lblCustomerMoney.Text = "Tiền khách đưa";
             // 
@@ -735,13 +735,13 @@ namespace QuanLyQuanTraSua
             this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(95, 26);
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(119, 36);
             this.gunaContextMenuStrip1.Click += new System.EventHandler(this.gunaContextMenuStrip1_Click);
             // 
             // xóaToolStripMenuItem
             // 
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(118, 32);
             this.xóaToolStripMenuItem.Text = "Xóa";
             // 
             // lblHoaDon
@@ -751,7 +751,7 @@ namespace QuanLyQuanTraSua
             this.lblHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblHoaDon.Location = new System.Drawing.Point(35, 48);
             this.lblHoaDon.Name = "lblHoaDon";
-            this.lblHoaDon.Size = new System.Drawing.Size(70, 20);
+            this.lblHoaDon.Size = new System.Drawing.Size(72, 20);
             this.lblHoaDon.TabIndex = 14;
             this.lblHoaDon.Text = "Hóa đơn";
             // 
@@ -763,7 +763,7 @@ namespace QuanLyQuanTraSua
             this.lblTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblTotalMoney.Location = new System.Drawing.Point(283, 425);
             this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(79, 20);
+            this.lblTotalMoney.Size = new System.Drawing.Size(83, 20);
             this.lblTotalMoney.TabIndex = 27;
             this.lblTotalMoney.Text = "Tổng Tiền";
             // 
@@ -1000,12 +1000,12 @@ namespace QuanLyQuanTraSua
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 36);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(94, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(118, 32);
             this.toolStripMenuItem1.Text = "Xóa";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 

@@ -226,3 +226,46 @@ C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.BitmapSourceInterop.xml
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.GenericImage.xml
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.Primitives2D.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe.config
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.exe
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\QuanLyQuanTraSua.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\Bunifu_UI_v1.52.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.BitmapSourceInterop.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.GenericImage.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.Primitives2D.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\Guna.UI.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\PdfSharp.Charting.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\PdfSharp.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\XanderUI.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\BUS.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DTO.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.BitmapSourceInterop.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.GenericImage.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DotImaging.Primitives2D.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\PdfSharp.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\PdfSharp.Charting.xml
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\DAL.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\de\PdfSharp.resources.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmAdmin.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmLogin.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain1.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMatHang.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTaiKhoan.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmThongKe.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTongQuan.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmDiscount.resources

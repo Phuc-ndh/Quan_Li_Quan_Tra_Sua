@@ -86,3 +86,13 @@ D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\D
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
 D:\QLQTS\quan - 6-12 12-39\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.pdb
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb
