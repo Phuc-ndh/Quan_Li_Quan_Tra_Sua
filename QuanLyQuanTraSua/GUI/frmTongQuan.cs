@@ -258,7 +258,13 @@ namespace QuanLyQuanTraSua
                 }
                 string pathPdf = "receipt.pdf";
                 pdf.Save(pathPdf);
-                Process.Start(pathPdf);
+                //Process.Start(pathPdf);
+                Form f = new frmOpenPDF(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + pathPdf);// + "\" + pathPdf);
+                f.Show();
+                //f.Location = new Point(tabControl1.Location.X, tabControl1.Location.Y);
+                //f.Location = new Point(this.DesktopLocation.X, this.DesktopLocation.Y);
+                //f.Location = new Point(this.Bounds.Top+500, this.Bounds.Left);
+                //f.Size = new Size(tabControl1.Width, tabControl1.Height);
             }
             catch (Exception e)
             {

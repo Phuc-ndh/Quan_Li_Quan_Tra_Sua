@@ -69,20 +69,15 @@ namespace BUS
 
         public bool insertIdDiscount(string id, int value)
         {
-            try
+            
+            if (billDAL.insertIdDiscount(id, value, 0))
             {
-                if (billDAL.insertIdDiscount(id, value, 0))
-                {
-                    return true;
-                } else
-                {
-                    return false;
-                }
-            }
-            catch (Exception)
+                return true;
+            } else
             {
                 return false;
             }
+            
         }
 
         public bool deleteIdDiscount(string id)

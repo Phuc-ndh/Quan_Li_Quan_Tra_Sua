@@ -121,6 +121,12 @@
     <Compile Include="frmMatHang.Designer.cs">
       <DependentUpon>frmMatHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOpenPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenPDF.Designer.cs">
+      <DependentUpon>frmOpenPDF.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMatHang.resx">
       <DependentUpon>frmMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpenPDF.resx">
+      <DependentUpon>frmOpenPDF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>

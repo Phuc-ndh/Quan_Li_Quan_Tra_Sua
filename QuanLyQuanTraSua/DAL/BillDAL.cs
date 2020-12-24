@@ -103,7 +103,7 @@ namespace DAL
 
         public bool insertIdDiscount(string idDiscount, int valueDiscount, int isUsed)
         {
-            string query = "insert into Discount(idDiscount, valueDiscount, isUsed) values(@idDiscount, valueDiscount, isUsed)";
+            string query = "insert into Discount(idDiscount, valueDiscount, isUsed) values(@idDiscount, @valueDiscount, @isUsed)";
             object[] value = new object[] { idDiscount, valueDiscount, isUsed };
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);

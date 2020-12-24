@@ -269,4 +269,9 @@ D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\G
 D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.exe
 D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.pdb
 D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmDiscount.resources
+<<<<<<< HEAD
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmDiscount.resources
+=======
+D:\QLQTS\quan 24-12 8-32pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmOpenPDF.resources
+>>>>>>> 126d7a5d714bc055c44b7417bb6613db97815c85
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmOpenPDF.resources
