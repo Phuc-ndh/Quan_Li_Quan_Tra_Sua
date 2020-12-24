@@ -69,6 +69,8 @@ namespace QuanLyQuanTraSua
             }
         }
 
+        private double totalprice = 0;
+
         private void Btn_Click(object sender, EventArgs e)
         {
             txtTenMatHang.Text = ((sender as Button).Tag as Drink).Name;
@@ -81,6 +83,7 @@ namespace QuanLyQuanTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            totalprice = 0;
             //foreach (DataGridViewRow row in dataGridView1.Rows)
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
@@ -91,11 +94,26 @@ namespace QuanLyQuanTraSua
                 {
                     row.Cells["columnSoLuong"].Value = Convert.ToInt32(row.Cells["columnSoLuong"].Value) + Convert.ToInt32(gunaNumeric1.Value);
                     row.Cells["columnThanhTien"].Value = Convert.ToInt32(row.Cells["columnSoLuong"].Value) * Convert.ToInt32(row.Cells["columnGia"].Value);
+                    totalMoney();
                     return;
                 }
             }
             //gunaDataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, numericUpDown1.Value, Convert.ToInt32(txtGia.Text) * (int)numericUpDown1.Value);
             gunaDataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, gunaNumeric1.Value, Convert.ToInt32(txtGia.Text) * (int)gunaNumeric1.Value);
+            totalMoney();
+        }
+
+        private void totalMoney()
+        {
+            foreach (DataGridViewRow row in gunaDataGridView1.Rows)
+            {
+                totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
+            }
+            if (valueDiscount != 0)
+            {
+                totalprice = totalprice - (totalprice * valueDiscount) / 100;
+            }
+            gtxtTotalMoney.Text = totalprice.ToString();
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -122,34 +140,19 @@ namespace QuanLyQuanTraSua
             }
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            gunaDataGridView1.Rows.Clear();
-        }
-
         private void btnThanhToan_Click(object sender, EventArgs e)
         {          
             string date = (DateTime.Now.Month + "/" +DateTime.Now.Day  + "/" + DateTime.Now.Year).ToString();
-            int totalprice = 0;
             foreach( DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
+                //totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
+                billBUS.insertBillInfo(Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
             }
 
-            billBUS.insertBill(date, totalprice);
-
-            foreach(DataGridViewRow row in gunaDataGridView1.Rows)
-            {
-                billBUS.insertBillInfo( Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
-                //gunaDataGridView1.Rows.Remove(row);
-            }
-
-            // chuyen datagridview sang data table
-            DataTable orderList = new DataTable();
-            orderList = this.gunaDataGridView1.DataSource as DataTable;
+            billBUS.insertBill(date, (int)totalprice);
 
             printReceipt();
-            gunaDataGridView1.Rows.Clear(); 
+            gunaDataGridView1.Rows.Clear();
         }
  
         private void gtxtSearch_Click(object sender, EventArgs e)
@@ -197,9 +200,13 @@ namespace QuanLyQuanTraSua
             gunaDataGridView1.Rows.Clear();
         }
 
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            gunaDataGridView1.Rows.Clear();
+        }
+
         // print receipt 
         //-- * chua chuyen qua Bill duoc *
-       
         private void printReceipt()
         {
             int point = 0;
@@ -260,7 +267,64 @@ namespace QuanLyQuanTraSua
 
             }
         }
-        
-        
+
+        protected int valueDiscount = 0;
+        protected bool isUsed = true;
+        protected double customerMoney;
+        protected double changeMoney = 0;
+        private void gbtnCheckDiscount_Click(object sender, EventArgs e)
+        {
+            DataTable dtDiscout = billBUS.getIdDiscount(gtxtIdDicount.Text);
+
+            if (dtDiscout == null)
+            {
+                MessageBox.Show("Ma giam gia khong hop le");
+                return;
+            } else
+            {
+                foreach(DataRow item in dtDiscout.Rows)
+                {
+                    if (item["isUsed"].ToString() == "1")
+                    {
+                        MessageBox.Show("Ma da duoc su dung");
+                        return;
+                    } else
+                    {
+                        MessageBox.Show("Ma giam gia co the su dung duoc");
+                        isUsed = true;
+                        valueDiscount += Convert.ToInt32(item["valueDiscount"]);
+                        gtxtValueDiscount.Text = valueDiscount.ToString() + "%";
+                    }
+                }
+            }
+            changeTotalPrice();
+        }
+
+        private void changeTotalPrice()
+        {
+            if (isUsed)
+            {
+                totalprice = totalprice - (totalprice * valueDiscount) / 100;
+            }
+            gtxtTotalMoney.Text = totalprice.ToString();
+        }
+
+        private void gtxtCustomerMoney_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+                customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
+            }   
+        }
+
+        private void gtxtMoneyChange_TextChanged(object sender, EventArgs e)
+        {
+            if (customerMoney - totalprice >= 0)
+            {
+                double change = customerMoney - totalprice;
+                gtxtMoneyChange.Text = change.ToString();
+            }
+        }
     }
 }

@@ -61,5 +61,35 @@ namespace BUS
                 return null;
             }
         }
+
+        public DataTable getIdDiscount(string id)
+        {
+            try
+            {
+                return billDAL.getIdDiscount(id);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        public bool insertIdDiscount(string id, int value)
+        {
+            try
+            {
+                if (billDAL.insertIdDiscount(id, value, 0))
+                {
+                    return true;
+                } else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

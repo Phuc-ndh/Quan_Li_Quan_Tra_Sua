@@ -37,6 +37,10 @@ namespace QuanLyQuanTraSua
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gtxtValueDiscount = new Guna.UI.WinForms.GunaTextBox();
+            this.gbtnCheckDiscount = new Guna.UI.WinForms.GunaButton();
+            this.labelValueDiscount = new System.Windows.Forms.Label();
+            this.gtxtIdDicount = new Guna.UI.WinForms.GunaTextBox();
             this.fabtnSearch = new FontAwesome.Sharp.IconButton();
             this.txtID = new System.Windows.Forms.TextBox();
             this.gtxtSearch = new Guna.UI.WinForms.GunaTextBox();
@@ -56,15 +60,22 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenMatHang = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.gtxtMoneyChange = new Guna.UI.WinForms.GunaTextBox();
+            this.lblMoneyChange = new System.Windows.Forms.Label();
+            this.lblCustomerMoney = new System.Windows.Forms.Label();
+            this.gtxtCustomerMoney = new Guna.UI.WinForms.GunaTextBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.columnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.columnThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fabtnThanhToan = new FontAwesome.Sharp.IconButton();
+            this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
+            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblHoaDon = new System.Windows.Forms.Label();
-            this.btnThanhToan = new System.Windows.Forms.Button();
+            this.lblTotalMoney = new System.Windows.Forms.Label();
+            this.gtxtTotalMoney = new Guna.UI.WinForms.GunaTextBox();
+            this.fabtnThanhToan = new FontAwesome.Sharp.IconButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -83,8 +94,6 @@ namespace QuanLyQuanTraSua
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gunaContextMenuStrip1 = new Guna.UI.WinForms.GunaContextMenuStrip();
-            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -94,6 +103,7 @@ namespace QuanLyQuanTraSua
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            this.gunaContextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -104,7 +114,6 @@ namespace QuanLyQuanTraSua
             this.tabPage5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.gunaContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -132,6 +141,10 @@ namespace QuanLyQuanTraSua
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.panel1.Controls.Add(this.gtxtValueDiscount);
+            this.panel1.Controls.Add(this.gbtnCheckDiscount);
+            this.panel1.Controls.Add(this.labelValueDiscount);
+            this.panel1.Controls.Add(this.gtxtIdDicount);
             this.panel1.Controls.Add(this.fabtnSearch);
             this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.gtxtSearch);
@@ -140,8 +153,89 @@ namespace QuanLyQuanTraSua
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1015, 651);
+            this.panel1.Size = new System.Drawing.Size(1015, 664);
             this.panel1.TabIndex = 14;
+            // 
+            // gtxtValueDiscount
+            // 
+            this.gtxtValueDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtValueDiscount.BaseColor = System.Drawing.Color.White;
+            this.gtxtValueDiscount.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtValueDiscount.BorderSize = 3;
+            this.gtxtValueDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtValueDiscount.Enabled = false;
+            this.gtxtValueDiscount.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtValueDiscount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtValueDiscount.Location = new System.Drawing.Point(361, 621);
+            this.gtxtValueDiscount.Name = "gtxtValueDiscount";
+            this.gtxtValueDiscount.PasswordChar = '\0';
+            this.gtxtValueDiscount.Radius = 8;
+            this.gtxtValueDiscount.SelectedText = "";
+            this.gtxtValueDiscount.Size = new System.Drawing.Size(108, 32);
+            this.gtxtValueDiscount.TabIndex = 29;
+            this.gtxtValueDiscount.TextOffsetX = 10;
+            // 
+            // gbtnCheckDiscount
+            // 
+            this.gbtnCheckDiscount.AnimationHoverSpeed = 0.07F;
+            this.gbtnCheckDiscount.AnimationSpeed = 0.03F;
+            this.gbtnCheckDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnCheckDiscount.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gbtnCheckDiscount.BorderColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnCheckDiscount.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnCheckDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.gbtnCheckDiscount.ForeColor = System.Drawing.Color.White;
+            this.gbtnCheckDiscount.Image = null;
+            this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnCheckDiscount.Location = new System.Drawing.Point(184, 620);
+            this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
+            this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
+            this.gbtnCheckDiscount.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnCheckDiscount.OnHoverImage = null;
+            this.gbtnCheckDiscount.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.Radius = 10;
+            this.gbtnCheckDiscount.Size = new System.Drawing.Size(79, 31);
+            this.gbtnCheckDiscount.TabIndex = 28;
+            this.gbtnCheckDiscount.Text = "Check";
+            this.gbtnCheckDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnCheckDiscount.Click += new System.EventHandler(this.gbtnCheckDiscount_Click);
+            // 
+            // labelValueDiscount
+            // 
+            this.labelValueDiscount.AutoSize = true;
+            this.labelValueDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.labelValueDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.labelValueDiscount.Location = new System.Drawing.Point(283, 631);
+            this.labelValueDiscount.Name = "labelValueDiscount";
+            this.labelValueDiscount.Size = new System.Drawing.Size(72, 20);
+            this.labelValueDiscount.TabIndex = 28;
+            this.labelValueDiscount.Text = "Giảm giá";
+            // 
+            // gtxtIdDicount
+            // 
+            this.gtxtIdDicount.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtIdDicount.BaseColor = System.Drawing.Color.White;
+            this.gtxtIdDicount.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtIdDicount.BorderSize = 3;
+            this.gtxtIdDicount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtIdDicount.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtIdDicount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtIdDicount.Location = new System.Drawing.Point(12, 619);
+            this.gtxtIdDicount.Name = "gtxtIdDicount";
+            this.gtxtIdDicount.PasswordChar = '\0';
+            this.gtxtIdDicount.Radius = 8;
+            this.gtxtIdDicount.SelectedText = "";
+            this.gtxtIdDicount.Size = new System.Drawing.Size(166, 32);
+            this.gtxtIdDicount.TabIndex = 28;
+            this.gtxtIdDicount.Text = "Mã giảm giá";
+            this.gtxtIdDicount.TextOffsetX = 10;
             // 
             // fabtnSearch
             // 
@@ -368,7 +462,7 @@ namespace QuanLyQuanTraSua
             this.txtGia.Location = new System.Drawing.Point(19, 100);
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
-            this.txtGia.Size = new System.Drawing.Size(173, 26);
+            this.txtGia.Size = new System.Drawing.Size(173, 25);
             this.txtGia.TabIndex = 12;
             // 
             // lblGia
@@ -378,7 +472,7 @@ namespace QuanLyQuanTraSua
             this.lblGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblGia.Location = new System.Drawing.Point(16, 77);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(87, 20);
+            this.lblGia.Size = new System.Drawing.Size(82, 20);
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá (VNĐ)";
             // 
@@ -392,7 +486,7 @@ namespace QuanLyQuanTraSua
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(76, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(76, 25);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -408,7 +502,7 @@ namespace QuanLyQuanTraSua
             this.txtTenMatHang.Location = new System.Drawing.Point(19, 38);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(173, 26);
+            this.txtTenMatHang.Size = new System.Drawing.Size(173, 25);
             this.txtTenMatHang.TabIndex = 3;
             // 
             // lblSoLuong
@@ -418,7 +512,7 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblSoLuong.Location = new System.Drawing.Point(16, 134);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(74, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(72, 20);
             this.lblSoLuong.TabIndex = 1;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -430,21 +524,91 @@ namespace QuanLyQuanTraSua
             this.lblTenMatHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.lblTenMatHang.Location = new System.Drawing.Point(16, 15);
             this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(111, 20);
+            this.lblTenMatHang.Size = new System.Drawing.Size(107, 20);
             this.lblTenMatHang.TabIndex = 0;
             this.lblTenMatHang.Text = "Tên mặt hàng";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.panel3.Controls.Add(this.gtxtMoneyChange);
+            this.panel3.Controls.Add(this.lblMoneyChange);
+            this.panel3.Controls.Add(this.lblCustomerMoney);
+            this.panel3.Controls.Add(this.gtxtCustomerMoney);
             this.panel3.Controls.Add(this.gunaDataGridView1);
-            this.panel3.Controls.Add(this.fabtnThanhToan);
             this.panel3.Controls.Add(this.lblHoaDon);
-            this.panel3.Controls.Add(this.btnThanhToan);
+            this.panel3.Controls.Add(this.lblTotalMoney);
+            this.panel3.Controls.Add(this.gtxtTotalMoney);
+            this.panel3.Controls.Add(this.fabtnThanhToan);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(668, 566);
+            this.panel3.Size = new System.Drawing.Size(668, 610);
             this.panel3.TabIndex = 22;
+            // 
+            // gtxtMoneyChange
+            // 
+            this.gtxtMoneyChange.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtMoneyChange.BaseColor = System.Drawing.Color.White;
+            this.gtxtMoneyChange.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtMoneyChange.BorderSize = 1;
+            this.gtxtMoneyChange.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtMoneyChange.Enabled = false;
+            this.gtxtMoneyChange.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtMoneyChange.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtMoneyChange.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtMoneyChange.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtMoneyChange.Location = new System.Drawing.Point(285, 564);
+            this.gtxtMoneyChange.Name = "gtxtMoneyChange";
+            this.gtxtMoneyChange.PasswordChar = '\0';
+            this.gtxtMoneyChange.Radius = 10;
+            this.gtxtMoneyChange.SelectedText = "";
+            this.gtxtMoneyChange.Size = new System.Drawing.Size(184, 32);
+            this.gtxtMoneyChange.TabIndex = 31;
+            this.gtxtMoneyChange.TextChanged += new System.EventHandler(this.gtxtMoneyChange_TextChanged);
+            // 
+            // lblMoneyChange
+            // 
+            this.lblMoneyChange.AutoSize = true;
+            this.lblMoneyChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.lblMoneyChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoneyChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lblMoneyChange.Location = new System.Drawing.Point(283, 541);
+            this.lblMoneyChange.Name = "lblMoneyChange";
+            this.lblMoneyChange.Size = new System.Drawing.Size(81, 20);
+            this.lblMoneyChange.TabIndex = 30;
+            this.lblMoneyChange.Text = "Tiền trả lại";
+            // 
+            // lblCustomerMoney
+            // 
+            this.lblCustomerMoney.AutoSize = true;
+            this.lblCustomerMoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.lblCustomerMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lblCustomerMoney.Location = new System.Drawing.Point(283, 483);
+            this.lblCustomerMoney.Name = "lblCustomerMoney";
+            this.lblCustomerMoney.Size = new System.Drawing.Size(117, 20);
+            this.lblCustomerMoney.TabIndex = 29;
+            this.lblCustomerMoney.Text = "Tiền khách đưa";
+            // 
+            // gtxtCustomerMoney
+            // 
+            this.gtxtCustomerMoney.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtCustomerMoney.BaseColor = System.Drawing.Color.White;
+            this.gtxtCustomerMoney.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtCustomerMoney.BorderSize = 1;
+            this.gtxtCustomerMoney.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtCustomerMoney.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtCustomerMoney.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtCustomerMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtCustomerMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtCustomerMoney.Location = new System.Drawing.Point(285, 506);
+            this.gtxtCustomerMoney.Name = "gtxtCustomerMoney";
+            this.gtxtCustomerMoney.PasswordChar = '\0';
+            this.gtxtCustomerMoney.Radius = 10;
+            this.gtxtCustomerMoney.SelectedText = "";
+            this.gtxtCustomerMoney.Size = new System.Drawing.Size(184, 32);
+            this.gtxtCustomerMoney.TabIndex = 28;
+            this.gtxtCustomerMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gtxtCustomerMoney_KeyPress);
             // 
             // gunaDataGridView1
             // 
@@ -498,7 +662,7 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowHeadersWidth = 44;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(580, 426);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(580, 329);
             this.gunaDataGridView1.TabIndex = 19;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -556,6 +720,73 @@ namespace QuanLyQuanTraSua
             this.columnThanhTien.Name = "columnThanhTien";
             this.columnThanhTien.ReadOnly = true;
             // 
+            // gunaContextMenuStrip1
+            // 
+            this.gunaContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.gunaContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xóaToolStripMenuItem});
+            this.gunaContextMenuStrip1.Name = "gunaContextMenuStrip1";
+            this.gunaContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.gunaContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.gunaContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(95, 26);
+            this.gunaContextMenuStrip1.Click += new System.EventHandler(this.gunaContextMenuStrip1_Click);
+            // 
+            // xóaToolStripMenuItem
+            // 
+            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.xóaToolStripMenuItem.Text = "Xóa";
+            // 
+            // lblHoaDon
+            // 
+            this.lblHoaDon.AutoSize = true;
+            this.lblHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lblHoaDon.Location = new System.Drawing.Point(35, 48);
+            this.lblHoaDon.Name = "lblHoaDon";
+            this.lblHoaDon.Size = new System.Drawing.Size(70, 20);
+            this.lblHoaDon.TabIndex = 14;
+            this.lblHoaDon.Text = "Hóa đơn";
+            // 
+            // lblTotalMoney
+            // 
+            this.lblTotalMoney.AutoSize = true;
+            this.lblTotalMoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.lblTotalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lblTotalMoney.Location = new System.Drawing.Point(283, 425);
+            this.lblTotalMoney.Name = "lblTotalMoney";
+            this.lblTotalMoney.Size = new System.Drawing.Size(79, 20);
+            this.lblTotalMoney.TabIndex = 27;
+            this.lblTotalMoney.Text = "Tổng Tiền";
+            // 
+            // gtxtTotalMoney
+            // 
+            this.gtxtTotalMoney.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtTotalMoney.BaseColor = System.Drawing.Color.White;
+            this.gtxtTotalMoney.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtTotalMoney.BorderSize = 1;
+            this.gtxtTotalMoney.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtTotalMoney.Enabled = false;
+            this.gtxtTotalMoney.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtTotalMoney.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtTotalMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtTotalMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtTotalMoney.Location = new System.Drawing.Point(285, 448);
+            this.gtxtTotalMoney.Name = "gtxtTotalMoney";
+            this.gtxtTotalMoney.PasswordChar = '\0';
+            this.gtxtTotalMoney.Radius = 10;
+            this.gtxtTotalMoney.SelectedText = "";
+            this.gtxtTotalMoney.Size = new System.Drawing.Size(184, 32);
+            this.gtxtTotalMoney.TabIndex = 26;
+            // 
             // fabtnThanhToan
             // 
             this.fabtnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -567,41 +798,14 @@ namespace QuanLyQuanTraSua
             this.fabtnThanhToan.IconColor = System.Drawing.Color.White;
             this.fabtnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnThanhToan.IconSize = 33;
-            this.fabtnThanhToan.Location = new System.Drawing.Point(478, 516);
+            this.fabtnThanhToan.Location = new System.Drawing.Point(479, 440);
             this.fabtnThanhToan.Name = "fabtnThanhToan";
-            this.fabtnThanhToan.Size = new System.Drawing.Size(140, 45);
+            this.fabtnThanhToan.Size = new System.Drawing.Size(139, 45);
             this.fabtnThanhToan.TabIndex = 25;
             this.fabtnThanhToan.Text = "Thanh Toán";
             this.fabtnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.fabtnThanhToan.UseVisualStyleBackColor = false;
             this.fabtnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
-            // 
-            // lblHoaDon
-            // 
-            this.lblHoaDon.AutoSize = true;
-            this.lblHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblHoaDon.Location = new System.Drawing.Point(35, 48);
-            this.lblHoaDon.Name = "lblHoaDon";
-            this.lblHoaDon.Size = new System.Drawing.Size(72, 20);
-            this.lblHoaDon.TabIndex = 14;
-            this.lblHoaDon.Text = "Hóa đơn";
-            // 
-            // btnThanhToan
-            // 
-            this.btnThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnThanhToan.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btnThanhToan.FlatAppearance.BorderSize = 0;
-            this.btnThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(481, 518);
-            this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(138, 38);
-            this.btnThanhToan.TabIndex = 17;
-            this.btnThanhToan.Text = "Thanh Toán";
-            this.btnThanhToan.UseVisualStyleBackColor = false;
-            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // tabControl1
             // 
@@ -796,38 +1000,14 @@ namespace QuanLyQuanTraSua
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 36);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(95, 26);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(118, 32);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(94, 22);
             this.toolStripMenuItem1.Text = "Xóa";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // gunaContextMenuStrip1
-            // 
-            this.gunaContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.gunaContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xóaToolStripMenuItem});
-            this.gunaContextMenuStrip1.Name = "gunaContextMenuStrip1";
-            this.gunaContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.gunaContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(189, 59);
-            this.gunaContextMenuStrip1.Click += new System.EventHandler(this.gunaContextMenuStrip1_Click);
-            // 
-            // xóaToolStripMenuItem
-            // 
-            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(188, 32);
-            this.xóaToolStripMenuItem.Text = "Xóa";
             // 
             // frmTongQuan
             // 
@@ -851,6 +1031,7 @@ namespace QuanLyQuanTraSua
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
+            this.gunaContextMenuStrip1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
@@ -861,7 +1042,6 @@ namespace QuanLyQuanTraSua
             this.tabPage5.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.gunaContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -871,7 +1051,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblHoaDon;
-        private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
@@ -917,5 +1096,15 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.DataGridViewTextBoxColumn columnThanhTien;
         private Guna.UI.WinForms.GunaContextMenuStrip gunaContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
+        private System.Windows.Forms.Label lblTotalMoney;
+        private Guna.UI.WinForms.GunaTextBox gtxtTotalMoney;
+        private Guna.UI.WinForms.GunaTextBox gtxtIdDicount;
+        private Guna.UI.WinForms.GunaButton gbtnCheckDiscount;
+        private Guna.UI.WinForms.GunaTextBox gtxtValueDiscount;
+        private System.Windows.Forms.Label labelValueDiscount;
+        private Guna.UI.WinForms.GunaTextBox gtxtMoneyChange;
+        private System.Windows.Forms.Label lblMoneyChange;
+        private System.Windows.Forms.Label lblCustomerMoney;
+        private Guna.UI.WinForms.GunaTextBox gtxtCustomerMoney;
     }
 }

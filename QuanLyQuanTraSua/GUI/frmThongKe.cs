@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Diagnostics;
 using BUS;
+using System.Windows.Media.Imaging;
 
 namespace QuanLyQuanTraSua
 {
@@ -253,7 +254,5 @@ namespace QuanLyQuanTraSua
             CanChinhKichThuoc();
             CanChinhViTri();
         }
-
-
     }
 }

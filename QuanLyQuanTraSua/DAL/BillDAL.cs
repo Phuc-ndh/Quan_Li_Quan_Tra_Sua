@@ -91,5 +91,22 @@ namespace DAL
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);
         }
+
+        public DataTable getIdDiscount(string idDiscount)
+        {
+            string query = "select * from Discount where idDiscount = @idDiscount";
+            object[] value = new object[] { idDiscount };
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query, value);
+            return dt;
+        }
+
+        public bool insertIdDiscount(string idDiscount, int valueDiscount, int isUsed)
+        {
+            string query = "insert into Discount(idDiscount, valueDiscount, isUsed) values(@idDiscount, valueDiscount, isUsed)";
+            object[] value = new object[] { idDiscount, valueDiscount, isUsed };
+            DBConnect db = new DBConnect();
+            return (db.ExecuteNonQuery(query, value) > 0);
+        }
     }
 }
