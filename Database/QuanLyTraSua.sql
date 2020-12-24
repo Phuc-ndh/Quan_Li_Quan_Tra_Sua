@@ -85,7 +85,15 @@ values
 select* from bill
 select* from BillInfo
 
---insert into Bill(Date, TotalPrice) values('3/12/2020', 20000); select SCOPE_IDENTITY()
+create table Discount
+(
+	idDiscount nvarchar(10), constraint PK_idDiscount primary key (idDiscount),
+	valueDiscount int,
+	isUsed int default 0,
+)
+
+select* from Discount where idDiscount = 'NOR4J9KA'
+go
 
 insert into Bill(Date, TotalPrice) values('2/12/2020', 90000)
 insert into BillInfo(idBill, idDrink,Quantity) values(42, 4, 3)

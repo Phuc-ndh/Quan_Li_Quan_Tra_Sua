@@ -64,14 +64,7 @@ namespace BUS
 
         public DataTable getIdDiscount(string id)
         {
-            try
-            {
-                return billDAL.getIdDiscount(id);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            return billDAL.getIdDiscount(id);
         }
 
         public bool insertIdDiscount(string id, int value)
@@ -90,6 +83,30 @@ namespace BUS
             {
                 return false;
             }
+        }
+
+        public bool deleteIdDiscount(string id)
+        {
+            try
+            {
+                if (billDAL.deleteIdDiscount(id))
+                {
+                    return true;
+                } else
+                {
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+        }
+
+        public DataTable getDiscountList()
+        {
+            return billDAL.getDiscountList();
         }
     }
 }

@@ -108,5 +108,21 @@ namespace DAL
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);
         }
+
+        public bool deleteIdDiscount(string idDiscount)
+        {
+            string query = "delete from Discount where idDiscount = @idDiscount";
+            object[] value = new object[] { idDiscount };
+            DBConnect db = new DBConnect();
+            return (db.ExecuteNonQuery(query, value) > 0);
+        }
+
+        public DataTable getDiscountList()
+        {
+            string query = "select idDiscount as Mã, valueDiscount as 'Trị giá', isUsed as 'Đã dùng' from Discount";
+            DBConnect db = new DBConnect();
+            DataTable dt = db.ExecuteQuery(query);
+            return dt;
+        }
     }
 }
