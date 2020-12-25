@@ -56,6 +56,8 @@ namespace QuanLyQuanTraSua
             this.gunacldDateTime = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gbtnReport = new Guna.UI.WinForms.GunaButton();
             this.cbbMonth = new System.Windows.Forms.ComboBox();
+            this.lblIncomeMoney = new System.Windows.Forms.Label();
+            this.gunacbbYear = new Guna.UI.WinForms.GunaComboBox();
             this.gnpnlGroupReport.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartSellAndMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSellPercent)).BeginInit();
@@ -126,6 +128,7 @@ namespace QuanLyQuanTraSua
             this.gnbtnReportYear.TabIndex = 14;
             this.gnbtnReportYear.Text = "Năm";
             this.gnbtnReportYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gnbtnReportYear.Click += new System.EventHandler(this.gnbtnReportYear_Click);
             // 
             // gnbtnReportMonth
             // 
@@ -200,7 +203,7 @@ namespace QuanLyQuanTraSua
             series2.Name = "Doanh thu";
             this.chartSellAndMoney.Series.Add(series1);
             this.chartSellAndMoney.Series.Add(series2);
-            this.chartSellAndMoney.Size = new System.Drawing.Size(763, 617);
+            this.chartSellAndMoney.Size = new System.Drawing.Size(763, 578);
             this.chartSellAndMoney.TabIndex = 9;
             this.chartSellAndMoney.Text = "Collum chart";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -294,6 +297,7 @@ namespace QuanLyQuanTraSua
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.gunacbbYear);
             this.splitContainer2.Panel1.Controls.Add(this.gunacbbMonth);
             this.splitContainer2.Panel1.Controls.Add(this.gunacldDateTime);
             this.splitContainer2.Panel1.Controls.Add(this.gbtnReport);
@@ -304,6 +308,7 @@ namespace QuanLyQuanTraSua
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.lblIncomeMoney);
             this.splitContainer2.Panel2.Controls.Add(this.chartSellAndMoney);
             this.splitContainer2.Size = new System.Drawing.Size(1192, 733);
             this.splitContainer2.SplitterDistance = 463;
@@ -422,6 +427,49 @@ namespace QuanLyQuanTraSua
             this.cbbMonth.TabIndex = 6;
             this.cbbMonth.Visible = false;
             // 
+            // lblIncomeMoney
+            // 
+            this.lblIncomeMoney.AutoSize = true;
+            this.lblIncomeMoney.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblIncomeMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.lblIncomeMoney.Location = new System.Drawing.Point(187, 686);
+            this.lblIncomeMoney.Name = "lblIncomeMoney";
+            this.lblIncomeMoney.Size = new System.Drawing.Size(147, 18);
+            this.lblIncomeMoney.TabIndex = 15;
+            this.lblIncomeMoney.Text = "Tổng doanh thu";
+            this.lblIncomeMoney.Visible = false;
+            // 
+            // gunacbbYear
+            // 
+            this.gunacbbYear.BackColor = System.Drawing.Color.Transparent;
+            this.gunacbbYear.BaseColor = System.Drawing.Color.White;
+            this.gunacbbYear.BorderColor = System.Drawing.Color.Silver;
+            this.gunacbbYear.BorderSize = 1;
+            this.gunacbbYear.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.gunacbbYear.DropDownHeight = 107;
+            this.gunacbbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gunacbbYear.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunacbbYear.Font = new System.Drawing.Font("Segoe UI", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunacbbYear.ForeColor = System.Drawing.Color.Black;
+            this.gunacbbYear.FormattingEnabled = true;
+            this.gunacbbYear.IntegralHeight = false;
+            this.gunacbbYear.Items.AddRange(new object[] {
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"});
+            this.gunacbbYear.Location = new System.Drawing.Point(125, 13);
+            this.gunacbbYear.Name = "gunacbbYear";
+            this.gunacbbYear.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunacbbYear.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.gunacbbYear.Radius = 5;
+            this.gunacbbYear.Size = new System.Drawing.Size(152, 31);
+            this.gunacbbYear.TabIndex = 15;
+            this.gunacbbYear.Visible = false;
+            // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,6 +490,7 @@ namespace QuanLyQuanTraSua
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
+            this.splitContainer2.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -463,5 +512,7 @@ namespace QuanLyQuanTraSua
         private Guna.UI.WinForms.GunaButton gnbtnReportMonth;
         private Guna.UI.WinForms.GunaButton gbtnReport;
         private System.Windows.Forms.ComboBox cbbMonth;
+        private System.Windows.Forms.Label lblIncomeMoney;
+        private Guna.UI.WinForms.GunaComboBox gunacbbYear;
     }
 }

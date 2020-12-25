@@ -32,7 +32,7 @@ namespace DAL
                            "INNER JOIN Drink T2 " +
                                 "ON T1.idDrink = T2.idDrink" +
                            " WHERE T1.idBill in (select T3.idBill from Bill T3 where (DAY(T3.Date) = @dayC  and MONTH(T3.Date) = @monthC and YEAR(T3.Date) = @yearC)) " +
-                           "GROUP BY T1.idDrink, T2.Name, T2.Price";
+                           "GROUP BY T1.idDrink, T2.Name, T2.Price, T1.valueDiscount";
             object[] value = new object[] { day, month, year, dayB, monthB, yearB, dayC, monthC, yearC };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);
@@ -60,7 +60,7 @@ namespace DAL
                            "INNER JOIN Drink T2 " +
                                 "ON T1.idDrink = T2.idDrink" +
                            " WHERE T1.idBill in (select T3.idBill from Bill T3 where MONTH(T3.Date) = @monthC and YEAR(T3.Date) = @yearC) " +
-                           "GROUP BY T1.idDrink, T2.Name, T2.Price";
+                           "GROUP BY T1.idDrink, T2.Name, T2.Price, T1.valueDiscount";
             object[] value = new object[] { month, year, monthB, yearB, monthC, yearC };
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query, value);

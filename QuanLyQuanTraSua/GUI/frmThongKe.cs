@@ -120,6 +120,10 @@ namespace QuanLyQuanTraSua
                 //_month = (this.cbbMonth.SelectedIndex) + 1;               
                 _month = (this.gunacbbMonth.SelectedIndex) + 1;               
             }
+            if (yearReport)
+            {
+                _year = Convert.ToInt32(this.gunacbbYear.SelectedText);
+            }
         }
 
         // ve chart
@@ -192,6 +196,7 @@ namespace QuanLyQuanTraSua
             chartSellPercent.Visible = false;
             chartSellAndMoney.Visible = false;
             chartMoneyPercent.Visible = false;
+            lblIncomeMoney.Visible = false;
         }
 
         // nut bao cao theo ngay
@@ -219,17 +224,29 @@ namespace QuanLyQuanTraSua
             monthReport = true;
             yearReport = false;
 
-            gbtnReport.Visible = true;
-            //cbbMonth.Visible = true;
+            gbtnReport.Visible = true;           
             gunacbbMonth.Visible = true;
-            //cldDateTime.Visible = false;
             gunacldDateTime.Visible = false;
+            gunacbbYear.Visible = false;
 
             // lay gia tri thang hien tai
-            //this.cbbMonth.SelectedIndex = DateTime.Now.Month - 1;
             this.gunacbbMonth.SelectedIndex = DateTime.Now.Month - 1;
         }
-        
+
+        private void gnbtnReportYear_Click(object sender, EventArgs e)
+        {
+            hideChart();
+
+            dateReport = false;
+            monthReport = false;
+            yearReport = true;
+
+            gbtnReport.Visible = true;
+            gunacldDateTime.Visible = false;
+            gunacbbMonth.Visible = false;
+            gunacbbYear.Visible = true;
+        }
+
         // click report botton
         private void gbtnReport_Click(object sender, EventArgs e)
         {
@@ -239,20 +256,56 @@ namespace QuanLyQuanTraSua
             chartMoneyPercent.Update();
             chartSellAndMoney.Update();
 
-            chartSellAndMoney.Visible = true;
-            chartSellPercent.Visible = true;
-            chartMoneyPercent.Visible = true;
+            if (dateReport || monthReport)
+            {
+                chartSellAndMoney.Visible = true;
+                chartSellPercent.Visible = true;
+                chartMoneyPercent.Visible = true;
+            } else
+            {
 
+            }
+      
             paintChart();
+            reportIncomeMoney();
             //
             CanChinhViTri();
         }
 
+        private void reportIncomeMoney()
+        {
+            getIncomeMoney();
+            lblIncomeMoney.Visible = true;
+            lblIncomeMoney.Location = new Point(chartSellAndMoney.Location.X + chartSellAndMoney.Width / 4,
+                chartSellAndMoney.Location.Y + chartSellAndMoney.Height + 30);
+            if (dateReport)
+            {
+                lblIncomeMoney.Text = " Doang thu ngày " + _day.ToString() + " tháng " + _month.ToString() + " năm " + _year.ToString() + ": " + incomeMoney.ToString();
+            } else
+            {
+                if (monthReport)
+                {
+                    lblIncomeMoney.Text = "Doanh thu tháng " + _month.ToString() + ": " + incomeMoney.ToString();
+                }
+            }
+        }
+
+        private double incomeMoney;
+        private void getIncomeMoney()
+        {
+            incomeMoney = 0;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                incomeMoney += Convert.ToInt32(dt.Rows[i].ItemArray[2].ToString());
+            }
+        }
 
         private void frmThongKe_SizeChanged(object sender, EventArgs e)
         {
             CanChinhKichThuoc();
             CanChinhViTri();
         }
+
+        
     }
 }

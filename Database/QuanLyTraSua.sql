@@ -111,5 +111,19 @@ SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A
                             WHERE T1.idBill in (select T3.idBill from Bill T3 where MONTH(T3.Date) = 12 and YEAR(T3.Date) = 2020)
                            GROUP BY T1.idDrink, T2.Name, T2.Price, T1.valueDiscount
 
+SELECT  SUM(T1.Quantity)* T2.Price - SUM(T1.Quantity) * T2.Price * T1.valueDiscount / 100 AS MONEY, 
+                                SUM(T1.Quantity) AS SO_LUONG,
+                                T2.Name, T1.idDrink
+                           FROM BillInfo T1                      
+						   INNER JOIN Drink T2 
+                                ON T1.idDrink = T2.idDrink
+                            WHERE T1.idBill in (select T3.idBill from Bill T3 where MONTH(T3.Date) = 12 and YEAR(T3.Date) = 2020)
+                           GROUP BY T1.idDrink, T2.Name, T2.Price, T1.valueDiscount
 
-
+select sum(t1.quantity) * t2.price - sum(t1.quantity) * t2.price * t1.valueDiscount / 100 AS MONEY,
+		(select YEAR(t3.date) from bill t3) AS YEAR
+from billinfo t1
+inner join Drink t2
+on t1.idDrink = t2.idDrink
+where t1.idBill in (select a.idBill from Bill a where Year(a.date) = 2020)
+group by t2.Price, t1.valueDiscount
