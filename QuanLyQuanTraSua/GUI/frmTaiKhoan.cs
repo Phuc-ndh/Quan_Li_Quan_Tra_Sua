@@ -46,5 +46,40 @@ namespace QuanLyQuanTraSua
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            if (txtName.Enabled == false)
+            {
+                txtUsername.Enabled = false;
+                txtName.Enabled = true;
+                txtPhone.Enabled = true;
+                txtEmail.Enabled = true;
+                btnSua.Text = "Hoàn Tất";
+            }
+            else
+            {
+                if (accountBUS.updateAccount(txtUsername.Text, txtName.Text, txtPhone.Text, txtEmail.Text))
+                {
+                    MessageBox.Show("Cập nhật thành công");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thất bại");
+                }
+                txtUsername.Enabled = false;
+                txtName.Enabled = false;
+                txtPhone.Enabled = false;
+                txtEmail.Enabled = false;
+                btnSua.Text = "Sửa Thông Tin";
+            }
+        }
+
+        private void btnDoiMK_Click(object sender, EventArgs e)
+        {
+            frmChangePass FrmChangePass = new frmChangePass(this.parent.currentUser.Username);
+            FrmChangePass.ShowDialog();
+        }
     }
 }
