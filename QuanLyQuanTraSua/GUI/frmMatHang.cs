@@ -14,7 +14,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmMatHang : Form
     {
-        Image originImage;
+        Image originImage = null;
         DrinkBUS drinkBUS = new DrinkBUS();
         DrinkCategoryBUS drinkCategoryBUS = new DrinkCategoryBUS();
         public frmMatHang()
@@ -73,11 +73,21 @@ namespace QuanLyQuanTraSua
             }
             else
             {
-                //if (drinkBUS.InsertDrink(txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
-                if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
+                if (originImage != null)
                 {
-                    MessageBox.Show("Đã thêm thành công");
-                    gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
+                    {
+                        MessageBox.Show("Đã thêm thành công");
+                        gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    }
+                }
+                else
+                {
+                    if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory))
+                    {
+                        MessageBox.Show("Đã thêm thành công");
+                        gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                    }
                 }
             }
         }

@@ -63,6 +63,14 @@ namespace DAL
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
+        public bool InsertDrink(string name, string price, int idCategory)
+        {
+            string query = "insert into Drink(name, price, idCategory) values(@name, @price, @idCategory)";
+            object[] value = new object[] { name, price, idCategory };
+            DBConnect db = new DBConnect();
+            return ((db.ExecuteNonQuery(query, value)) > 0);
+        }
+
         public bool DeleteDrink(int idDrink)
         {
             string query = "delete from Drink where idDrink = @idDrink";

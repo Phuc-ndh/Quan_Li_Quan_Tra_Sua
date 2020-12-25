@@ -33,6 +33,11 @@ namespace BUS
             return drinkDAL.InsertDrink(name, price, idCategory, image);
         }
 
+        public bool InsertDrink(string name, string price, int idCategory)
+        {
+            return drinkDAL.InsertDrink(name, price, idCategory);
+        }
+
         public bool DeleteDrink(int idDrink)
         {
             return drinkDAL.DeleteDrink(idDrink);
