@@ -14,6 +14,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmMatHang : Form
     {
+        Image originImage;
         DrinkBUS drinkBUS = new DrinkBUS();
         DrinkCategoryBUS drinkCategoryBUS = new DrinkCategoryBUS();
         public frmMatHang()
@@ -44,6 +45,7 @@ namespace QuanLyQuanTraSua
             gDataGridView1.Columns["Giá"].Width = 100;
             gDataGridView1.Columns["idDrink"].Visible = false;
             gDataGridView1.Columns["idCategory"].Visible = false;
+            gDataGridView1.Columns["Image"].Visible = false;
             
             gunaCheckBox1.Size = new Size(90, 90);
         }
@@ -58,6 +60,8 @@ namespace QuanLyQuanTraSua
                 gtxtTenMatHang.Text = gDataGridView1.SelectedRows[0].Cells["Tên"].Value.ToString();
                 gtxtGia.Text = gDataGridView1.SelectedRows[0].Cells["Giá"].Value.ToString();
                 gcbbLoai.SelectedIndex = gcbbLoai.FindStringExact(gDataGridView1.SelectedRows[0].Cells["Loại"].Value.ToString());
+                pboxAnh.Image = ImageHelper.ResizeImage(ImageHelper.ByteArrayToImage((byte[])gDataGridView1.SelectedRows[0].Cells["Image"].Value), 95, 95);
+                originImage = ImageHelper.ByteArrayToImage((byte[])gDataGridView1.SelectedRows[0].Cells["Image"].Value);
             }
         }
 
@@ -70,7 +74,7 @@ namespace QuanLyQuanTraSua
             else
             {
                 //if (drinkBUS.InsertDrink(txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
-                if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory))
+                if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
                 {
                     MessageBox.Show("Đã thêm thành công");
                     gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
@@ -106,7 +110,7 @@ namespace QuanLyQuanTraSua
                 if (gDataGridView1.SelectedRows.Count > 0)
                 {
                     //if (drinkBUS.UpdateDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value), txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
-                    if (drinkBUS.UpdateDrink(Convert.ToInt32(gDataGridView1.SelectedRows[0].Cells["idDrink"].Value), gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory))
+                    if (drinkBUS.UpdateDrink(Convert.ToInt32(gDataGridView1.SelectedRows[0].Cells["idDrink"].Value), gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
                     {
                         MessageBox.Show("Đã sửa thành công");
                         gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
@@ -233,7 +237,8 @@ namespace QuanLyQuanTraSua
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                gtxtAnh.Text = ofd.FileName;
+                originImage = Image.FromFile(ofd.FileName);
+                pboxAnh.Image = ImageHelper.ResizeImage(originImage, 95, 95);
             }
         }
     }

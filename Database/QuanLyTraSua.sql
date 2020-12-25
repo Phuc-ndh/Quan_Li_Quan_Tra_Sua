@@ -2,15 +2,14 @@
 go
 use QuanLyTraSua
 
-
 create table DrinkCategory
 (
-	idCategory int identity not null, constraint PK_idCategory primary key (idCategory),
+	idCategory int identity(0, 1) not null, constraint PK_idCategory primary key (idCategory),
 	Name nvarchar(40)
 )
 create table Drink
 (
-	idDrink int identity not null, constraint PK_idDrink primary key (idDrink),
+	idDrink int identity(0, 1) not null, constraint PK_idDrink primary key (idDrink),
 	Name nvarchar(40),
 	Price int,
 	idCategory int,
@@ -67,7 +66,7 @@ create table Discount
 	valueDiscount int,
 	isUsed int default 0
 )
-
+go
 --Thêm dữ liệu:
 --DBCC CHECKIDENT ('DrinkCategory', RESEED, -1);
 insert into DrinkCategory(Name)

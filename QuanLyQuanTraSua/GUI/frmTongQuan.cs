@@ -34,8 +34,14 @@ namespace QuanLyQuanTraSua
             foreach (Drink drink in listDrink)
             {
                 //Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(150, 150, 150) };
-                Button btn = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(157, 177, 186) };
-                Button btn2 = new Button() { Width = 100, Height = 100, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(150, 150, 150) };
+                Button btn = new Button() { Width = 160, Height = 150, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(157, 177, 186) };
+                Button btn2 = new Button() { Width = 160, Height = 150, Text = drink.Name, Tag = drink, ForeColor = Color.Black, BackColor = Color.FromArgb(157, 177, 186) };
+                btn.Image = ImageHelper.ResizeImage(ImageHelper.ByteArrayToImage(drink.image), 100, 100);
+                btn2.Image = btn.Image;
+                btn.ImageAlign = ContentAlignment.BottomCenter;
+                btn2.ImageAlign = btn.ImageAlign;
+                btn.TextImageRelation = TextImageRelation.ImageAboveText;
+                btn2.TextImageRelation = btn.TextImageRelation;
                 btn.MouseDown += Btn_MouseDown;
                 btn2.MouseDown += Btn_MouseDown;
                 btn.Click += Btn_Click;

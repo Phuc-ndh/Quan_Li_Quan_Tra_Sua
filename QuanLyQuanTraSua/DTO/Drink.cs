@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Security.Policy;
 using System.Text;
@@ -39,16 +40,25 @@ namespace DTO
             get { return _idCategory; }
             set { _idCategory = value; }
         }
-        
+
+        private byte[] _image;
+
+        public byte[] image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+
         public Drink()
         { }
 
-        public Drink(int idDrink, string Name, int Price, int idCategory)
+        public Drink(int idDrink, string Name, int Price, int idCategory, byte[] image)
         {
             this._idDrink = idDrink;
             this._Name = Name;
             this._Price = Price;
             this._idCategory = idCategory;
+            this._image = image;
         }
 
         public Drink(DataRow r)
@@ -57,6 +67,12 @@ namespace DTO
             this._Name = r["Name"].ToString();
             this._Price = (int)r["Price"];
             this._idCategory = (int)r["idCategory"];
+            if (r["Image"] is DBNull)
+            {
+                this._image = new byte[0];
+            }
+            else
+            this._image = (byte[])r["Image"];
         }
     }
 }

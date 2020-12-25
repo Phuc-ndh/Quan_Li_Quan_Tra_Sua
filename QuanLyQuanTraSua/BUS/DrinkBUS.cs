@@ -28,9 +28,9 @@ namespace BUS
             return drinkDAL.GetAllDrinksDetailed();
         }
 
-        public bool InsertDrink(string name, string price, int idCategory)
+        public bool InsertDrink(string name, string price, int idCategory, byte[] image)
         {
-            return drinkDAL.InsertDrink(name, price, idCategory);
+            return drinkDAL.InsertDrink(name, price, idCategory, image);
         }
 
         public bool DeleteDrink(int idDrink)
@@ -38,9 +38,9 @@ namespace BUS
             return drinkDAL.DeleteDrink(idDrink);
         }
 
-        public bool UpdateDrink(int idDrink, string name, string price, int idCategory)
+        public bool UpdateDrink(int idDrink, string name, string price, int idCategory, byte[] image)
         {
-            return drinkDAL.UpdateDrink(idDrink, name, price, idCategory);
+            return drinkDAL.UpdateDrink(idDrink, name, price, idCategory, image);
         }
     }
 }

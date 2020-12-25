@@ -49,16 +49,16 @@ namespace DAL
 
         public DataTable GetAllDrinksDetailed()
         {
-            string query = "SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory, Drink.idDrink FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory";
+            string query = "SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory, Drink.idDrink, Drink.Image FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory";
             DBConnect db = new DBConnect();
             DataTable dt = db.ExecuteQuery(query);
             return dt;
         }
 
-        public bool InsertDrink(string name, string price, int idCategory)
+        public bool InsertDrink(string name, string price, int idCategory, byte[] image)
         {
-            string query = "insert into Drink(name, price, idCategory) values(@name, @price, @idCategory)";
-            object[] value = new object[] { name, price, idCategory };
+            string query = "insert into Drink(name, price, idCategory, image) values(@name, @price, @idCategory, @image)";
+            object[] value = new object[] { name, price, idCategory, image };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
@@ -71,10 +71,10 @@ namespace DAL
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
 
-        public bool UpdateDrink(int idDrink, string name, string price, int idCategory)
+        public bool UpdateDrink(int idDrink, string name, string price, int idCategory, byte[] image)
         {
-            string query = "update Drink set name = @name, price = @price, idCategory = @idCategory where idDrink = @idDrink";
-            object[] value = new object[] { name, price, idCategory, idDrink };
+            string query = "update Drink set name = @name, price = @price, idCategory = @idCategory, image = @image where idDrink = @idDrink";
+            object[] value = new object[] { name, price, idCategory, image, idDrink };
             DBConnect db = new DBConnect();
             return ((db.ExecuteNonQuery(query, value)) > 0);
         }
