@@ -130,11 +130,11 @@ namespace QuanLyQuanTraSua
             List<BillInfo> listBillInfo = new List<BillInfo>();
             int x = 0;
             string date = (DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + DateTime.Now.Year).ToString();
-            billBUS.insertBill(date, (int)totalprice);
+            billBUS.insertBill(date, (int)totalprice, valueDiscount);
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
                 //totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
-                billBUS.insertBillInfo(Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value));
+                billBUS.insertBillInfo(Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value), valueDiscount);
                 listBillInfo.Add(new BillInfo(row.Cells["columnTen"].Value.ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value)));
             }
 
