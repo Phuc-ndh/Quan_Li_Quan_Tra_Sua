@@ -137,7 +137,7 @@ namespace QuanLyQuanTraSua
             }
 
             // in hoa don
-            printReceipt receipt = new printReceipt(gunaDataGridView1);
+            printReceipt receipt = new printReceipt(gunaDataGridView1, totalprice, valueDiscount, gtxtCustomerMoney.Text, gtxtMoneyChange.Text);
              
             Panel orderPanel = new Panel();
             orderPanel.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
@@ -266,10 +266,10 @@ namespace QuanLyQuanTraSua
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
-                e.Handled = true;  
-            }
-            customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
-            changeMoney = customerMoney - totalprice;
+                e.Handled = true;
+                customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
+                changeMoney = customerMoney - totalprice;
+            }  
         }
 
         
