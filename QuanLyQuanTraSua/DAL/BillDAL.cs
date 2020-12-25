@@ -23,9 +23,9 @@ namespace DAL
 
             string query = "SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A " +
                                                                     "where A.idBill in (select B.idBill from Bill B where (DAY(B.Date) = @day) and MONTH(B.Date) = @month and YEAR(B.Date) = @year) ) AS PERCENTAGE_DRINK, " +
-                                "SUM(T1.Quantity)* T2.Price * 1000.00 / (select SUM(C.TotalPrice) from Bill C " +
+                                "(SUM(T1.Quantity)* T2.Price - SUM(T1.Quantity) * T2.Price * T1.valueDiscount / 100)* 1000.00 / (select SUM(C.TotalPrice) from Bill C " +
                                                                     "where DAY(C.Date) = @dayB and MONTH(C.Date) = @monthB and YEAR(C.Date) = @yearB) AS PERCENTAGE_MONEY, " +
-                                "SUM(T1.Quantity)* T2.Price AS MONEY, " +
+                                "SUM(T1.Quantity)* T2.Price - SUM(T1.Quantity) * T2.Price * T1.valueDiscount / 100 AS MONEY, " +
                                 "SUM(T1.Quantity) AS SO_LUONG, " +
                                 "T2.Name, T1.idDrink " +
                            "FROM BillInfo T1 " +
@@ -51,9 +51,9 @@ namespace DAL
 
             string query = "SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A " +
                                                                     "where A.idBill in (select B.idBill from Bill B where MONTH(B.Date) = @month and YEAR(B.Date) = @year) ) AS PERCENTAGE_DRINK, " +
-                                "SUM(T1.Quantity)* T2.Price * 1000.00 / (select SUM(C.TotalPrice) from Bill C " +
+                                "(SUM(T1.Quantity)* T2.Price - SUM(T1.Quantity) * T2.Price * T1.valueDiscount / 100 )* 1000.00 / (select SUM(C.TotalPrice) from Bill C " +
                                                                     "where MONTH(C.Date) = @monthB and YEAR(C.Date) = @yearB) AS PERCENTAGE_MONEY, " +
-                                "SUM(T1.Quantity)* T2.Price AS MONEY, " +
+                                "SUM(T1.Quantity)* T2.Price - SUM(T1.Quantity) * T2.Price * T1.valueDiscount / 100 AS MONEY, " +
                                 "SUM(T1.Quantity) AS SO_LUONG, " +
                                 "T2.Name, T1.idDrink " +
                            "FROM BillInfo T1 " +
