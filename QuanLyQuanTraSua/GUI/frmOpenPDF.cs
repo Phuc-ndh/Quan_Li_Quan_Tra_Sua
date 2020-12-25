@@ -21,5 +21,10 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
             webBrowser1.Navigate(@path);
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
     }
 }
