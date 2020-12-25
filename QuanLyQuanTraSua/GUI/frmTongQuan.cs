@@ -19,6 +19,7 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmTongQuan : Form
     {
+        List<int> waitingList = new List<int> { 0 };
         DrinkBUS drinkBUS = new DrinkBUS();
         BillBUS billBUS = new BillBUS();
         public frmTongQuan()
@@ -28,7 +29,7 @@ namespace QuanLyQuanTraSua
 
         private void frmTongQuan_Load(object sender, EventArgs e)
         {
-            splitContainer1.SplitterDistance = panel3.Width + 110;
+            splitContainer1.SplitterDistance = panel3.Width + 10;
             List<Drink> listDrink = drinkBUS.GetDrinkList();
             foreach (Drink drink in listDrink)
             {
@@ -127,7 +128,8 @@ namespace QuanLyQuanTraSua
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
             List<BillInfo> listBillInfo = new List<BillInfo>();
-            string date = (DateTime.Now.Month + "/" +DateTime.Now.Day  + "/" + DateTime.Now.Year).ToString();
+            int x = 0;
+            string date = (DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + DateTime.Now.Year).ToString();
             billBUS.insertBill(date, (int)totalprice);
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
@@ -138,20 +140,78 @@ namespace QuanLyQuanTraSua
 
             // in hoa don
             printReceipt receipt = new printReceipt(gunaDataGridView1, totalprice, valueDiscount, gtxtCustomerMoney.Text, gtxtMoneyChange.Text);
-             
+
             Panel orderPanel = new Panel();
-            orderPanel.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
+            Label orderLabel = new Label();
+            Button orderButton = new Button();
+            orderPanel.Width = flpDSOrder.Width - 5;
+            orderPanel.Height = 50;
             orderPanel.BackColor = Color.FromArgb(157, 177, 186);
-            orderPanel.Tag = listBillInfo;
-            orderPanel.Click += OrderPanel_Click;        
+            orderLabel.Tag = listBillInfo;
+            orderLabel.Click += OrderLabel_Click;
+            for (int i = 0; i < waitingList.Count(); i++)
+            {
+                if (waitingList[i] == 0)
+                {
+                    x = i + 1;
+                    waitingList[i] = 1;
+                    break;
+                }
+            }
+            if (x == 0)
+            {
+                waitingList.Add(1);
+                x = waitingList.Count();
+            }
+            orderPanel.Controls.Add(orderLabel);
+            orderPanel.Controls.Add(orderButton);
+            orderLabel.Text = "#" + x.ToString() + " Order";
+            orderLabel.Font = new Font(btnLamMoi.Font.FontFamily, 16, FontStyle.Bold);
+            orderLabel.ForeColor = Color.White;
+            orderLabel.Size = orderPanel.Size;
+            orderLabel.Dock = DockStyle.Fill;
+            orderLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            orderButton.Text = "";
+            orderButton.Tag = x;
+            orderButton.ImageAlign = ContentAlignment.MiddleCenter;
+            orderButton.TextImageRelation = TextImageRelation.Overlay;
+            orderButton.Dock = DockStyle.Right;
+            orderButton.Height = orderPanel.Height - 5;
+            orderButton.Width = orderButton.Height;
+            orderButton.Click += OrderButton_Click;
+
+            orderPanel.SizeChanged += OrderPanel_SizeChanged;
             flpDSOrder.Controls.Add(orderPanel);
             gunaDataGridView1.Rows.Clear();
         }
 
-        private void OrderPanel_Click(object sender, EventArgs e)
+        private void OrderButton_Click(object sender, EventArgs e)
+        {
+            flpDSOrder.Controls.Remove((sender as Button).Parent);
+            waitingList[Convert.ToInt32((sender as Button).Tag) - 1] = 0;
+        }
+
+        private void OrderPanel_SizeChanged(object sender, EventArgs e)
+        {
+            foreach (var control in (sender as Panel).Controls)
+            {
+                if (control is Label)
+                {
+                    (control as Label).Size = (sender as Panel).Size;
+                }
+                if (control is Button)
+                {
+                    (control as Button).Height = (sender as Panel).Height - 5;
+                    (control as Button).Width = (control as Button).Height;
+                }
+            }
+        }
+
+        private void OrderLabel_Click(object sender, EventArgs e)
         {
             gunaDataGridView2.Rows.Clear();
-            foreach (BillInfo item in (sender as Panel).Tag as List<BillInfo>)
+            foreach (BillInfo item in (sender as Label).Tag as List<BillInfo>)
             {
                 gunaDataGridView2.Rows.Add(item.DrinkName, item.Quantity);
             }
@@ -200,6 +260,8 @@ namespace QuanLyQuanTraSua
         private void gunaContextMenuStrip1_Click(object sender, EventArgs e)
         {
             gunaDataGridView1.Rows.Clear();
+            totalprice = 0;
+            gtxtTotalMoney.Text = "0";
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -262,27 +324,48 @@ namespace QuanLyQuanTraSua
             gtxtTotalMoney.Text = totalprice.ToString();
         }
 
+        private void gtxtCustomerMoney_TextChanged(object sender, EventArgs e)
+        {
+            double customerMoney;
+            if (gtxtCustomerMoney.Text.Length > 0)
+            {
+                customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
+            }
+            else
+            {
+                customerMoney = 0;
+            }
+            gtxtMoneyChange.Text = (customerMoney - totalprice).ToString();
+        }
+
+        private void flpDSOrder_SizeChanged(object sender, EventArgs e)
+        {
+            foreach (Panel control in flpDSOrder.Controls)
+            {
+                control.Width = flpDSOrder.Width - 5;
+            }
+        }
+
         private void gtxtCustomerMoney_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void gtxtTotalMoney_TextChanged(object sender, EventArgs e)
+        {
+            double customerMoney;
+            if (gtxtCustomerMoney.Text.Length > 0)
+            {
                 customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
-                changeMoney = customerMoney - totalprice;
-            }  
-        }
-
-        
-        private void gtxtMoneyChange_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void gtxtCustomerMoney_TextChanged(object sender, EventArgs e)
-        {
-            
-            gtxtMoneyChange.Text = changeMoney.ToString();
-            
+            }
+            else
+            {
+                customerMoney = 0;
+            }
+            gtxtMoneyChange.Text = (customerMoney - totalprice).ToString();
         }
     }
 }
