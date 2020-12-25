@@ -256,6 +256,13 @@ namespace QuanLyQuanTraSua
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new frmDiscount());
         }
+
+        private void btnChangePass_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            frmChangePass fPass = new frmChangePass(currentUser.Username);
+            fPass.ShowDialog();
+        }
         //End of Change color of button
 
     }

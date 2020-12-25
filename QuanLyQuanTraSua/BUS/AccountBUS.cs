@@ -98,8 +98,13 @@ namespace BUS
         {
             try
             {
-                return (accountDAL.updateAccount(username, name, phone, email));
-
+                if ((accountDAL.updateAccount(username, name, phone, email)))
+                {
+                    return true;
+                } else
+                {
+                    return false;
+                }
             }
             catch (Exception)
             {
@@ -107,16 +112,10 @@ namespace BUS
             }
         }
 
-        public string getPasswordByUsername(string username)
+        public StringBuilder getPasswordByUsername(string username)
         {
-            try
-            {
-                return accountDAL.getPasswordByUsername(username);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            StringBuilder pass = new StringBuilder(accountDAL.getPasswordByUsername(username));
+            return pass;
         }
 
         public StringBuilder getHashMD5(string pass)
