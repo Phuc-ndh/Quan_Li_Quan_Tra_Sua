@@ -157,6 +157,12 @@
     <Compile Include="frmUpdateTK.Designer.cs">
       <DependentUpon>frmUpdateTK.cs</DependentUpon>
     </Compile>
+    <Compile Include="printReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printReceipt.Designer.cs">
+      <DependentUpon>printReceipt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAdmin.resx">

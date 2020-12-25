@@ -69,8 +69,6 @@ namespace QuanLyQuanTraSua
             }
         }
 
-        private double totalprice = 0;
-
         private void Btn_Click(object sender, EventArgs e)
         {
             txtTenMatHang.Text = ((sender as Button).Tag as Drink).Name;
@@ -100,19 +98,6 @@ namespace QuanLyQuanTraSua
             //gunaDataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, numericUpDown1.Value, Convert.ToInt32(txtGia.Text) * (int)numericUpDown1.Value);
             gunaDataGridView1.Rows.Add(txtID.Text, txtTenMatHang.Text, txtGia.Text, gunaNumeric1.Value, Convert.ToInt32(txtGia.Text) * (int)gunaNumeric1.Value);
             totalMoney();
-        }
-
-        private void totalMoney()
-        {
-            foreach (DataGridViewRow row in gunaDataGridView1.Rows)
-            {
-                totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
-            }
-            if (valueDiscount != 0)
-            {
-                totalprice = totalprice - (totalprice * valueDiscount) / 100;
-            }
-            gtxtTotalMoney.Text = totalprice.ToString();
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -151,8 +136,9 @@ namespace QuanLyQuanTraSua
                 listBillInfo.Add(new BillInfo(row.Cells["columnTen"].Value.ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value)));
             }
 
-
-            printReceipt();
+            // in hoa don
+            printReceipt receipt = new printReceipt(gunaDataGridView1);
+             
             Panel orderPanel = new Panel();
             orderPanel.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
             orderPanel.BackColor = Color.FromArgb(157, 177, 186);
@@ -221,71 +207,18 @@ namespace QuanLyQuanTraSua
             gunaDataGridView1.Rows.Clear();
         }
 
-        // print receipt 
-        //-- * chua chuyen qua Bill duoc *
-        private void printReceipt()
+        private double totalprice = 0;
+        private void totalMoney()
         {
-            int point = 0;
-            try
+            foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                PdfDocument pdf = new PdfDocument();
-                pdf.Info.Title = "receipt bill";
-                PdfPage pdfPage = pdf.AddPage();
-                XGraphics g = XGraphics.FromPdfPage(pdfPage);
-                XFont font_regular = new XFont("Verdana", 15, XFontStyle.Regular);
-                XFont font_bold = new XFont("Verdana", 17, XFontStyle.Bold);
-
-                point = point + 100;
-                g.DrawString("HOA DON BAN HANG", font_bold, XBrushes.Black, new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
-                point = point + 50;
-                g.DrawString("Linh Trung   Thu Duc", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                point = point + 20;
-                g.DrawString("----------------------------------------------------------------------------",
-                    font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-
-                point = point + 20;
-                g.DrawString("Ten", font_regular, XBrushes.Black, new XRect(80, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                g.DrawString("So luong", font_regular, XBrushes.Black, new XRect(250, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                g.DrawString("Don gia", font_regular, XBrushes.Black, new XRect(370, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                g.DrawString("Thanh tien", font_regular, XBrushes.Black, new XRect(480, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-
-                point = point + 30;
-                string nameDrink;
-                string numberDrink;
-                string priceDrink;
-                string moneyDrink;
-                foreach (DataGridViewRow row in gunaDataGridView1.Rows)
-                {
-                    nameDrink = Convert.ToString(row.Cells["columnTen"].Value);
-                    numberDrink = Convert.ToString(row.Cells["columnSoLuong"].Value);
-                    priceDrink = Convert.ToString(row.Cells["columnGia"].Value);
-                    moneyDrink = Convert.ToString(row.Cells["columnThanhTien"].Value);
-
-                    g.DrawString(nameDrink, font_regular, XBrushes.Black,
-                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                    g.DrawString(numberDrink, font_regular, XBrushes.Black,
-                        new XRect(-300, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
-                    g.DrawString(priceDrink, font_regular, XBrushes.Black,
-                        new XRect(-170, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
-                    g.DrawString(moneyDrink, font_regular, XBrushes.Black,
-                        new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
-
-                point = point + 20;
-                }
-                string pathPdf = "receipt.pdf";
-                pdf.Save(pathPdf);
-                Process.Start(pathPdf);
-                //Form f = new frmOpenPDF(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\" + pathPdf);// + "\" + pathPdf);
-                //f.Show();
-                //f.Location = new Point(tabControl1.Location.X, tabControl1.Location.Y);
-                //f.Location = new Point(this.DesktopLocation.X, this.DesktopLocation.Y);
-                //f.Location = new Point(this.Bounds.Top+500, this.Bounds.Left);
-                //f.Size = new Size(tabControl1.Width, tabControl1.Height);
+                totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
             }
-            catch (Exception e)
+            if (valueDiscount != 0)
             {
-                MessageBox.Show(e.ToString());
+                totalprice = totalprice - (totalprice * valueDiscount) / 100;
             }
+            gtxtTotalMoney.Text = totalprice.ToString();
         }
 
         protected int valueDiscount = 0;
@@ -333,18 +266,23 @@ namespace QuanLyQuanTraSua
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
             {
-                e.Handled = true;
-                customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
-            }   
+                e.Handled = true;  
+            }
+            customerMoney = Convert.ToDouble(gtxtCustomerMoney.Text);
+            changeMoney = customerMoney - totalprice;
         }
 
+        
         private void gtxtMoneyChange_TextChanged(object sender, EventArgs e)
         {
-            if (customerMoney - totalprice >= 0)
-            {
-                double change = customerMoney - totalprice;
-                gtxtMoneyChange.Text = change.ToString();
-            }
+            
+        }
+
+        private void gtxtCustomerMoney_TextChanged(object sender, EventArgs e)
+        {
+            
+            gtxtMoneyChange.Text = changeMoney.ToString();
+            
         }
     }
 }
