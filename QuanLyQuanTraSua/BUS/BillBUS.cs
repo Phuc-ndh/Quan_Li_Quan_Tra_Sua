@@ -18,11 +18,11 @@ namespace BUS
     public class BillBUS
     {
         BillDAL billDAL = new BillDAL();
-        public object insertBill(string date, int price)
+        public object insertBill(string date, int price, int valueDiscount)
         {
             try
             {
-                return billDAL.insertBill(date, price);
+                return billDAL.insertBill(date, price, valueDiscount);
             }
             catch (Exception)
             {
@@ -30,11 +30,11 @@ namespace BUS
             }
         }
 
-        public bool insertBillInfo(int idDrink, int quantity)
+        public bool insertBillInfo(int idDrink, int quantity, int valueDiscount)
         {
             try
             {
-                if (billDAL.insertBillInfo(idDrink, quantity))
+                if (billDAL.insertBillInfo(idDrink, quantity, valueDiscount))
                     return true;
                 else
                     return false;

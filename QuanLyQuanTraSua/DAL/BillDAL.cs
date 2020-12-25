@@ -71,10 +71,10 @@ namespace DAL
         public int _id;
 
         // them bill
-        public object insertBill(string date, int totalprice)
+        public object insertBill(string date, int totalprice, int valueDiscount)
         {
-            string query = "insert into Bill(Date, TotalPrice) values (@date, @totalprice); select SCOPE_IDENTITY() ";
-            object[] value = new object[] { date, totalprice };
+            string query = "insert into Bill(Date, TotalPrice, valueDiscount) values (@date, @totalprice, @valueDiscount); select SCOPE_IDENTITY() ";
+            object[] value = new object[] { date, totalprice, valueDiscount };
             DBConnect db = new DBConnect();
             //_id = (int)(db.ExecuteScalar(query, value));
             _id = Int32.Parse(db.ExecuteScalar(query, value).ToString());
@@ -83,11 +83,11 @@ namespace DAL
         }
 
         // them BillInfo theo _id
-        public bool insertBillInfo(int idDrink, int quantity)
+        public bool insertBillInfo(int idDrink, int quantity, int valueDiscount)
         {
             int id = this._id;
-            string query = "insert into BillInfo(idBill, idDrink, quantity) values (@id, @idDrink, @quantity)";
-            object[] value = new object[] { id, idDrink, quantity };
+            string query = "insert into BillInfo(idBill, idDrink, quantity, valueDiscount) values (@id, @idDrink, @quantity, @valueDiscount)";
+            object[] value = new object[] { id, idDrink, quantity, valueDiscount };
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);
         }

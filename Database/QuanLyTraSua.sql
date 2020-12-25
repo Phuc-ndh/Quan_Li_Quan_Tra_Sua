@@ -40,8 +40,10 @@ create table Bill
 	idBill int identity not null, constraint PK_idOrder primary key (idBill),
 	Date smalldatetime,
 	TotalPrice int,
-	idTable int
+	idTable int,
+	valueDiscount int,
 )
+
 alter table Bill add
 constraint FK_Bill_idTable foreign key (idTable) references _Table(idTable)
 
@@ -50,8 +52,9 @@ create table BillInfo
 (
 	idBill int not null,
 	idDrink int not null,
-	Quantity int,
-	constraint PK_OrderDetail primary key (idBill, idDrink)	
+	Quantity int not null,
+	valueDiscount int,
+	constraint PK_OrderDetail primary key (idBill, idDrink),	
 )
 alter table BillInfo add
 constraint FK_BillInfo_idBill foreign key (idBill) references Bill(idBill),
@@ -84,6 +87,9 @@ values
 
 select* from bill
 select* from BillInfo
+select* from Discount
+
+drop table bill,BillInfo
 
 create table Discount
 (
@@ -92,21 +98,18 @@ create table Discount
 	isUsed int default 0,
 )
 
-select* from Discount where idDiscount = 'NOR4J9KA'
-go
 
-insert into Bill(Date, TotalPrice) values('2/12/2020', 90000)
-insert into BillInfo(idBill, idDrink,Quantity) values(42, 4, 3)
 
 SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A 
                                                                     where A.idBill in (select B.idBill from Bill B where MONTH(B.Date) = 12 and YEAR(B.Date) = 2020) ) AS PERCENTAGE_DRINK, 
                                 SUM(T1.Quantity)* T2.Price * 1000.00 / (select SUM(C.TotalPrice) from Bill C 
                                                                     where MONTH(C.Date) = 12 and YEAR(C.Date) = 2020) AS PERCENTAGE_MONEY, 
-                                SUM(T1.Quantity)* T2.Price AS MONEY, 
+                                (SUM(T1.Quantity)* T2.Price)  )AS MONEY, 
                                 SUM(T1.Quantity) AS SO_LUONG,
-                                T2.Name, T1.idDrink 
+                                T2.Name, T1.idDrink,
                            FROM BillInfo T1                      
 						   INNER JOIN Drink T2 
                                 ON T1.idDrink = T2.idDrink
                             WHERE T1.idBill in (select T3.idBill from Bill T3 where MONTH(T3.Date) = 12 and YEAR(T3.Date) = 2020)
                            GROUP BY T1.idDrink, T2.Name, T2.Price
+
