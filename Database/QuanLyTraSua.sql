@@ -13,7 +13,8 @@ create table Drink
 	idDrink int identity not null, constraint PK_idDrink primary key (idDrink),
 	Name nvarchar(40),
 	Price int,
-	idCategory int
+	idCategory int,
+	Image varbinary(max)
 )
 alter table Drink add
 constraint FK_Drink_idCategory foreign key (idCategory) references DrinkCategory(idCategory)
@@ -60,8 +61,14 @@ alter table BillInfo add
 constraint FK_BillInfo_idBill foreign key (idBill) references Bill(idBill),
 constraint FK_BillInfo_idDrink foreign key (idDrink) references Drink(idDrink)
 
+create table Discount
+(
+	idDiscount nvarchar(10), constraint PK_idDiscount primary key (idDiscount),
+	valueDiscount int,
+	isUsed int default 0
+)
+
 --Thêm dữ liệu:
-select * from DrinkCategory
 --DBCC CHECKIDENT ('DrinkCategory', RESEED, -1);
 insert into DrinkCategory(Name)
 values
@@ -69,8 +76,7 @@ values
 (N'Hồng Trà'),
 (N'Sinh Tố'),
 (N'Nước Ép')
-
-select * from Drink order by idCategory
+select * from DrinkCategory
 --DBCC CHECKIDENT ('Drink', RESEED, -1);
 insert into Drink(Name, Price, idCategory)
 values
@@ -79,23 +85,9 @@ values
 (N'Trà Sữa Truyền Thống', 40000, 0),
 (N'Nước Ép Dưa Hấu', 35000, 3),
 (N'Hồng Trà Đào', 35000, 1)
-
---SELECT DrinkCategory.Name as Loại, Drink.Name as Tên, Drink.Price as Giá, Drink.idCategory FROM Drink inner join DrinkCategory on Drink.idCategory = DrinkCategory.idCategory order by Drink.idCategory
-
---delete from Drink
---delete from DrinkCategory
-
-select* from bill
-select* from BillInfo
-select* from Discount
-
-drop table bill,BillInfo
-
-create table Discount
-(
-	idDiscount nvarchar(10), constraint PK_idDiscount primary key (idDiscount),
-	valueDiscount int,
-	isUsed int default 0,
+insert into Account(Username, Password)
+values
+('admin', '21232f297a57a5a743894a0e4a801fc3')
 
 
 SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A 

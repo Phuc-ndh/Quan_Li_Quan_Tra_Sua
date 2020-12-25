@@ -228,5 +228,13 @@ namespace QuanLyQuanTraSua
             }
             gDataGridView1.AllowUserToResizeRows = false;
         }
+
+        private void btnThemAnh_Click(object sender, EventArgs e)
+        {
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                gtxtAnh.Text = ofd.FileName;
+            }
+        }
     }
 }
