@@ -32,3 +32,20 @@ C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\BUS.pdb
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.Charting.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DAL.pdb
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\DTO.pdb
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.xml
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\PdfSharp.Charting.xml
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\de\PdfSharp.resources.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.dll
+D:\QLQTS\quan 26-12 9-14pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\BUS\obj\Debug\BUS.pdb

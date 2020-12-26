@@ -281,5 +281,20 @@
   <ItemGroup>
     <None Include="Resources\milktea.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\email_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\name_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\phone_gr.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

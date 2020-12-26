@@ -103,337 +103,175 @@ namespace QuanLyQuanTraSua
                 MessageBox.Show(errorMessage);
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
+        ///Click//========================================
         private void txtUsername_Click(object sender, EventArgs e)
         {
+            txtUsername.Focus();
+
             if (txtUsername.Text == "Tên Đăng Nhập")
             {
                 txtUsername.Clear();
             }
-            //
             this.ptrUser1.Visible = true;
-            pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
-            txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtUsername.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterU.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
+            txtPassword.Focus();
             if (txtPassword.Text == "Mật Khẩu")
             {
                 txtPassword.Clear();
             }
-            //
             this.ptrPass1.Visible = true;
-            pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtPassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
-        private void txtRetypePass_Click(object sender, EventArgs e)
+        private void txtRePassword_Click(object sender, EventArgs e)
         {
+            txtRePassword.Focus();
             if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
             {
                 txtRePassword.Clear();
             }
-            //
             this.ptrRetypePass1.Visible = true;
-            pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtRePassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterRP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtName_Click(object sender, EventArgs e)
         {
+            txtName.Focus();
             if (txtName.Text == "Họ Tên")
             {
                 txtName.Clear();
             }
-            //
             this.ptrName1.Visible = true;
-            pnlName.ForeColor = Color.FromArgb(78, 184, 206);
-            txtName.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
+            txtName.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterN.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtPhone_Click(object sender, EventArgs e)
         {
+            txtPhone.Focus();
             if (txtPhone.Text == "SĐT")
             {
                 txtPhone.Clear();
             }
-            //
             this.ptrPhone1.Visible = true;
-            pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtPhone.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterSDT.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtEmail_Click(object sender, EventArgs e)
         {
+            txtEmail.Focus();
             if (txtEmail.Text == "Email")
             {
                 txtEmail.Clear();
             }
-            //
             this.ptrEmail1.Visible = true;
-            pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
-            txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
+            txtEmail.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterE.BorderColor = Color.FromArgb(100, 88, 255);
+        }
+        
 
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
+
+        ///Leave/======================================
+        private void txtUsername_Leave(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "")
+            {
+                txtUsername.Text = "Tên Đăng Nhập";
+            }
             if (txtUsername.Text == "Tên Đăng Nhập")
                 txtUsername.ForeColor = Color.Gray;
             else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+                txtUsername.ForeColor = Color.Black;
+            gbtnAfterU.BorderColor = Color.Silver;
+            this.ptrUser1.Visible = false;
         }
 
-
-
-        //=== TextChanged ================
-        private void txtUsername_TextChanged(object sender, EventArgs e)
+        private void txtPassword_Leave(object sender, EventArgs e)
         {
-            //
-            this.ptrUser1.Visible = true;
-            pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
-            txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Mật Khẩu";
+                txtPassword.PasswordChar = default;
+            }
             if (txtPassword.Text == "Mật Khẩu")
                 txtPassword.ForeColor = Color.Gray;
             else
-                txtPassword.ForeColor = Color.White;
+                txtPassword.ForeColor = Color.Black;
+            gbtnAfterP.BorderColor = Color.Silver;
+            this.ptrPass1.Visible = false;
+        }
 
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
+        private void txtRePassword_Leave(object sender, EventArgs e)
+        {
+            if (txtRePassword.Text == "")
+            {
+                txtRePassword.Text = "Nhập Lại Mật Khẩu";
+                txtRePassword.PasswordChar = default;
+            }
             if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
                 txtRePassword.ForeColor = Color.Gray;
             else
-                txtRePassword.ForeColor = Color.White;
+                txtRePassword.ForeColor = Color.Black;
+            gbtnAfterRP.BorderColor = Color.Silver;
+            this.ptrRetypePass1.Visible = false;
+        }
 
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
+        private void txtName_Leave(object sender, EventArgs e)
+        {
+            if (txtName.Text == "")
+            {
+                txtName.Text = "Họ Tên";
+            }
             if (txtName.Text == "Họ Tên")
                 txtName.ForeColor = Color.Gray;
             else
-                txtName.ForeColor = Color.White;
+                txtName.ForeColor = Color.Black;
+            gbtnAfterN.BorderColor = Color.Silver;
+            this.ptrName1.Visible = false;
+        }
+
+        private void txtPhone_Leave(object sender, EventArgs e)
+        {
+            if (txtPhone.Text == "")
+            {
+                txtPhone.Text = "SĐT";
+            }
+            if (txtPhone.Text == "SĐT")
+                txtPhone.ForeColor = Color.Gray;
+            else
+                txtPhone.ForeColor = Color.Black;
+            gbtnAfterSDT.BorderColor = Color.Silver;
+            this.ptrPhone1.Visible = false;
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "")
+            {
+                txtEmail.Text = "Email";
+            }
+            if (txtEmail.Text == "Email")
+                txtEmail.ForeColor = Color.Gray;
+            else
+                txtEmail.ForeColor = Color.Black;
+            gbtnAfterE.BorderColor = Color.Silver;
+            this.ptrEmail1.Visible = false;
+        }
+        ///TextChanged//=========================
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            this.ptrUser1.Visible = true;
+            txtUsername.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterU.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
@@ -444,46 +282,11 @@ namespace QuanLyQuanTraSua
             }
             //
             this.ptrPass1.Visible = true;
-            pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtPassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
-        private void txtRetypePass_TextChanged(object sender, EventArgs e)
+        private void txtRePassword_TextChanged(object sender, EventArgs e)
         {
             if (!(txtRePassword.Text == "Nhập Lại Mật Khẩu" || txtRePassword.Text == ""))
             {
@@ -491,239 +294,33 @@ namespace QuanLyQuanTraSua
             }
             //
             this.ptrRetypePass1.Visible = true;
-            pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
+            txtRePassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterRP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //
             this.ptrName1.Visible = true;
-            pnlName.ForeColor = Color.FromArgb(78, 184, 206);
-            txtName.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
+            txtName.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterN.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtPhone_TextChanged(object sender, EventArgs e)
         {
-            //
             this.ptrPhone1.Visible = true;
-            pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrEmail1.Visible = false;
-            pnlEmail.ForeColor = Color.White;
-            if (txtEmail.Text == "Email")
-                txtEmail.ForeColor = Color.Gray;
-            else
-                txtEmail.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtPhone.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterSDT.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            //
             this.ptrEmail1.Visible = true;
-            pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
-            txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
-
-            this.ptrPhone1.Visible = false;
-            pnlPhone.ForeColor = Color.White;
-            if (txtPhone.Text == "SĐT")
-                txtPhone.ForeColor = Color.Gray;
-            else
-                txtPhone.ForeColor = Color.White;
-
-            this.ptrRetypePass1.Visible = false;
-            pnlRetypePass.ForeColor = Color.White;
-            if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
-                txtRePassword.ForeColor = Color.Gray;
-            else
-                txtRePassword.ForeColor = Color.White;
-
-            this.ptrName1.Visible = false;
-            pnlName.ForeColor = Color.White;
-            if (txtName.Text == "Họ Tên")
-                txtName.ForeColor = Color.Gray;
-            else
-                txtName.ForeColor = Color.White;
+            txtEmail.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterE.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void txtUsername_Leave(object sender, EventArgs e)
-        {
-            if (txtUsername.Text == "")
-            {
-                txtUsername.Text = "Tên Đăng Nhập";
-            }
-        }
 
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Mật Khẩu";
-                txtPassword.PasswordChar = default;
-            }
-        }
-
-        private void txtRePassword_Leave(object sender, EventArgs e)
-        {
-            if (txtRePassword.Text == "")
-            {
-                txtRePassword.Text = "Nhập Lại Mật Khẩu";
-                txtRePassword.PasswordChar = default;
-            }
-        }
-
-        private void txtName_Leave(object sender, EventArgs e)
-        {
-            if (txtName.Text == "")
-            {
-                txtName.Text = "Họ Tên";
-            }
-        }
-
-        private void txtPhone_Leave(object sender, EventArgs e)
-        {
-            if (txtPhone.Text == "")
-            {
-                txtPhone.Text = "SĐT";
-            }
-        }
-
-        private void txtEmail_Leave(object sender, EventArgs e)
-        {
-            if (txtEmail.Text == "")
-            {
-                txtEmail.Text = "Email";
-            }
-        }
-
-        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
-            {
-                if (txtPassword.PasswordChar == '*')
-                    txtPassword.PasswordChar = default;
-                else
-                    txtPassword.PasswordChar = '*';
-            }
-        }
 
         private void frmSignUp_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -735,7 +332,7 @@ namespace QuanLyQuanTraSua
 
         private void frmSignUp_Load(object sender, EventArgs e)
         {
-            panel2.MouseDown += panelTitleBar_MouseDown;
+            //panel2.MouseDown += panelTitleBar_MouseDown;
 
         }
 
@@ -752,5 +349,579 @@ namespace QuanLyQuanTraSua
                 SendMessage(this.Handle, 0x112, 0xf012, 0);
             }
         }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void lblMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pctrB_Eye_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
+            {
+                if (txtPassword.PasswordChar == '*')
+                    txtPassword.PasswordChar = default;
+                else
+                    txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }
+
+
+/////
+/////private void txtUsername_Click(object sender, EventArgs e)
+//{
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//    {
+//        txtUsername.Clear();
+//    }
+//    //
+//    this.ptrUser1.Visible = true;
+//    pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtPassword_Click(object sender, EventArgs e)
+//{
+//    if (txtPassword.Text == "Mật Khẩu")
+//    {
+//        txtPassword.Clear();
+//    }
+//    //
+//    this.ptrPass1.Visible = true;
+//    pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtRetypePass_Click(object sender, EventArgs e)
+//{
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//    {
+//        txtRePassword.Clear();
+//    }
+//    //
+//    this.ptrRetypePass1.Visible = true;
+//    pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtName_Click(object sender, EventArgs e)
+//{
+//    if (txtName.Text == "Họ Tên")
+//    {
+//        txtName.Clear();
+//    }
+//    //
+//    this.ptrName1.Visible = true;
+//    pnlName.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtName.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+//}
+
+//private void txtPhone_Click(object sender, EventArgs e)
+//{
+//    if (txtPhone.Text == "SĐT")
+//    {
+//        txtPhone.Clear();
+//    }
+//    //
+//    this.ptrPhone1.Visible = true;
+//    pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtEmail_Click(object sender, EventArgs e)
+//{
+//    if (txtEmail.Text == "Email")
+//    {
+//        txtEmail.Clear();
+//    }
+//    //
+//    this.ptrEmail1.Visible = true;
+//    pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+
+
+//=== TextChanged ================
+//private void txtUsername_TextChanged(object sender, EventArgs e)
+//{
+//    //
+//    this.ptrUser1.Visible = true;
+//    pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtPassword_TextChanged(object sender, EventArgs e)
+//{
+//    if (!(txtPassword.Text == "Mật Khẩu" || txtPassword.Text == ""))
+//    {
+//        txtPassword.PasswordChar = '*';
+//    }
+//    //
+//    this.ptrPass1.Visible = true;
+//    pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtRetypePass_TextChanged(object sender, EventArgs e)
+//{
+//    if (!(txtRePassword.Text == "Nhập Lại Mật Khẩu" || txtRePassword.Text == ""))
+//    {
+//        txtRePassword.PasswordChar = '*';
+//    }
+//    //
+//    this.ptrRetypePass1.Visible = true;
+//    pnlRetypePass.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtRePassword.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+//}
+
+//private void txtName_TextChanged(object sender, EventArgs e)
+//{
+//    //
+//    this.ptrName1.Visible = true;
+//    pnlName.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtName.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+//}
+
+//private void txtPhone_TextChanged(object sender, EventArgs e)
+//{
+//    //
+//    this.ptrPhone1.Visible = true;
+//    pnlPhone.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtPhone.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrEmail1.Visible = false;
+//    pnlEmail.ForeColor = Color.White;
+//    if (txtEmail.Text == "Email")
+//        txtEmail.ForeColor = Color.Gray;
+//    else
+//        txtEmail.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}
+
+//private void txtEmail_TextChanged(object sender, EventArgs e)
+//{
+//    //
+//    this.ptrEmail1.Visible = true;
+//    pnlEmail.ForeColor = Color.FromArgb(78, 184, 206);
+//    txtEmail.ForeColor = Color.FromArgb(78, 184, 206);
+//    //
+//    this.ptrPass1.Visible = false;
+//    pnlPass.ForeColor = Color.White;
+//    if (txtPassword.Text == "Mật Khẩu")
+//        txtPassword.ForeColor = Color.Gray;
+//    else
+//        txtPassword.ForeColor = Color.White;
+
+//    this.ptrUser1.Visible = false;
+//    pnlUser.ForeColor = Color.White;
+//    if (txtUsername.Text == "Tên Đăng Nhập")
+//        txtUsername.ForeColor = Color.Gray;
+//    else
+//        txtUsername.ForeColor = Color.White;
+
+//    this.ptrPhone1.Visible = false;
+//    pnlPhone.ForeColor = Color.White;
+//    if (txtPhone.Text == "SĐT")
+//        txtPhone.ForeColor = Color.Gray;
+//    else
+//        txtPhone.ForeColor = Color.White;
+
+//    this.ptrRetypePass1.Visible = false;
+//    pnlRetypePass.ForeColor = Color.White;
+//    if (txtRePassword.Text == "Nhập Lại Mật Khẩu")
+//        txtRePassword.ForeColor = Color.Gray;
+//    else
+//        txtRePassword.ForeColor = Color.White;
+
+//    this.ptrName1.Visible = false;
+//    pnlName.ForeColor = Color.White;
+//    if (txtName.Text == "Họ Tên")
+//        txtName.ForeColor = Color.Gray;
+//    else
+//        txtName.ForeColor = Color.White;
+//}

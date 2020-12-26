@@ -40,79 +40,44 @@ namespace QuanLyQuanTraSua
             }
         }
 
-        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                btnLogin_Click(sender, e);
-            }
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
         private void txtUsername_Click(object sender, EventArgs e)
         {
+            txtUsername.Focus();
+
             if (txtUsername.Text == "Tên Đăng Nhập")
             {
                 txtUsername.Clear();
             }
-            ptrUsername.BackgroundImage = Properties.Resources.user1;
-            this.ptrUser1.Visible = true;
-            pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
-            txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
+            this.pctrB_User.Visible = true;
+            txtUsername.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterU.BorderColor = Color.FromArgb(100, 88, 255);
             //
-            ptrPassword.BackgroundImage = Properties.Resources.pass;
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
-
+            //ptrPassword.BackgroundImage = Properties.Resources.pass;
         }
 
         private void txtPassword_Click(object sender, EventArgs e)
         {
+            txtPassword.Focus();
             if (txtPassword.Text == "Mật Khẩu")
             {
                 txtPassword.Clear();
             }
-            ptrPassword.BackgroundImage = Properties.Resources.pass1;
-            this.ptrPass1.Visible = true;
-            pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            ptrUsername.BackgroundImage = Properties.Resources.user;
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
+            this.pctrB_Pass.Visible = true;
+            txtPassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
-            //
-            this.ptrUser1.Visible = true;
-            pnlUser.ForeColor = Color.FromArgb(78, 184, 206);
-            txtUsername.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrPass1.Visible = false;
-            pnlPass.ForeColor = Color.White;
-            if (txtPassword.Text == "Mật Khẩu")
-                txtPassword.ForeColor = Color.Gray;
-            else
-                txtPassword.ForeColor = Color.White;
+            this.pctrB_User.Visible = true;
+            txtUsername.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterU.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
@@ -122,16 +87,9 @@ namespace QuanLyQuanTraSua
                 txtPassword.PasswordChar = '*';
             }
             //
-            this.ptrPass1.Visible = true;
-            pnlPass.ForeColor = Color.FromArgb(78, 184, 206);
-            txtPassword.ForeColor = Color.FromArgb(78, 184, 206);
-            //
-            this.ptrUser1.Visible = false;
-            pnlUser.ForeColor = Color.White;
-            if (txtUsername.Text == "Tên Đăng Nhập")
-                txtUsername.ForeColor = Color.Gray;
-            else
-                txtUsername.ForeColor = Color.White;
+            this.pctrB_Pass.Visible = true;
+            txtPassword.ForeColor = Color.FromArgb(100, 88, 255);
+            gbtnAfterP.BorderColor = Color.FromArgb(100, 88, 255);
         }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -153,22 +111,38 @@ namespace QuanLyQuanTraSua
 
         private void txtUsername_Leave(object sender, EventArgs e)
         {
+            gbtnAfterU.BorderColor = Color.Silver;
             if (txtUsername.Text == "")
-            {
                 txtUsername.Text = "Tên Đăng Nhập";
-            }
+            if (txtUsername.Text == "Tên Đăng Nhập")
+                txtUsername.ForeColor = Color.Gray;
+            else
+                txtUsername.ForeColor = Color.Black;
+            this.pctrB_User.Visible = false;
+
         }
 
         private void txtPassword_Leave(object sender, EventArgs e)
         {
+            gbtnAfterP.BorderColor = Color.Silver;
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Mật Khẩu";
                 txtPassword.PasswordChar = default;
             }
+            if (txtPassword.Text == "Mật Khẩu")
+                txtPassword.ForeColor = Color.Gray;
+            else
+                txtPassword.ForeColor = Color.Black;
+            this.pctrB_Pass.Visible = false;
         }
 
-        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        private void lblMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pctrB_Eye_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left && txtPassword.Text != "Mật Khẩu")
             {

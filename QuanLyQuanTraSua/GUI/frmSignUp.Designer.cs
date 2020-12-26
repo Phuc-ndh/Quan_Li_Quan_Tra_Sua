@@ -28,286 +28,254 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSignUp));
-            this.ptrPass1 = new System.Windows.Forms.PictureBox();
-            this.ptrUser1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSignUp = new System.Windows.Forms.Button();
-            this.pnlEmail = new System.Windows.Forms.Panel();
-            this.pnlName = new System.Windows.Forms.Panel();
-            this.pnlPass = new System.Windows.Forms.Panel();
-            this.pnlPhone = new System.Windows.Forms.Panel();
-            this.pnlRetypePass = new System.Windows.Forms.Panel();
-            this.pnlUser = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.gbtnAfterE = new Guna.UI.WinForms.GunaButton();
             this.txtPhone = new System.Windows.Forms.TextBox();
+            this.gbtnAfterSDT = new Guna.UI.WinForms.GunaButton();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.gbtnAfterN = new Guna.UI.WinForms.GunaButton();
             this.txtRePassword = new System.Windows.Forms.TextBox();
+            this.gbtnAfterRP = new Guna.UI.WinForms.GunaButton();
+            this.lblMinimize = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.ptrPassword = new System.Windows.Forms.PictureBox();
-            this.ptrUsername = new System.Windows.Forms.PictureBox();
-            this.ptrRetypePass1 = new System.Windows.Forms.PictureBox();
-            this.ptrRetypePass = new System.Windows.Forms.PictureBox();
-            this.ptrName1 = new System.Windows.Forms.PictureBox();
-            this.ptrPhone1 = new System.Windows.Forms.PictureBox();
+            this.gbtnAfterU = new Guna.UI.WinForms.GunaButton();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.gbtnAfterP = new Guna.UI.WinForms.GunaButton();
+            this.pnlTopM = new System.Windows.Forms.Panel();
+            this.pnlMove = new System.Windows.Forms.Panel();
+            this.gbtnDangKy = new Guna.UI.WinForms.GunaButton();
             this.ptrEmail1 = new System.Windows.Forms.PictureBox();
-            this.ptrName = new System.Windows.Forms.PictureBox();
-            this.ptrPhone = new System.Windows.Forms.PictureBox();
-            this.ptrEmail = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).BeginInit();
+            this.ptrPhone1 = new System.Windows.Forms.PictureBox();
+            this.ptrName1 = new System.Windows.Forms.PictureBox();
+            this.pctrB_Email_Gr = new System.Windows.Forms.PictureBox();
+            this.pctrB_SDT_Gr = new System.Windows.Forms.PictureBox();
+            this.ptrRetypePass1 = new System.Windows.Forms.PictureBox();
+            this.pctrB_Name_Gr = new System.Windows.Forms.PictureBox();
+            this.pctrB_RP_Gr = new System.Windows.Forms.PictureBox();
+            this.pctrB_Eye = new System.Windows.Forms.PictureBox();
+            this.ptrUser1 = new System.Windows.Forms.PictureBox();
+            this.pctrB_User_Gr = new System.Windows.Forms.PictureBox();
+            this.ptrPass1 = new System.Windows.Forms.PictureBox();
+            this.pctrB_Pass_Gr = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.pnlTopM.SuspendLayout();
+            this.pnlMove.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Email_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_SDT_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Name_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_RP_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptrPass1
-            // 
-            this.ptrPass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
-            this.ptrPass1.Location = new System.Drawing.Point(50, 212);
-            this.ptrPass1.Name = "ptrPass1";
-            this.ptrPass1.Size = new System.Drawing.Size(40, 39);
-            this.ptrPass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPass1.TabIndex = 55;
-            this.ptrPass1.TabStop = false;
-            this.ptrPass1.Visible = false;
-            // 
-            // ptrUser1
-            // 
-            this.ptrUser1.Image = global::QuanLyQuanTraSua.Properties.Resources.user1;
-            this.ptrUser1.Location = new System.Drawing.Point(50, 144);
-            this.ptrUser1.Name = "ptrUser1";
-            this.ptrUser1.Size = new System.Drawing.Size(40, 39);
-            this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUser1.TabIndex = 52;
-            this.ptrUser1.TabStop = false;
-            this.ptrUser1.Visible = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(445, 146);
-            this.panel2.TabIndex = 49;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(374, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "-";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(387, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "-";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(414, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(149, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCancel.FlatAppearance.BorderSize = 2;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(51, 656);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(330, 50);
-            this.btnCancel.TabIndex = 36;
-            this.btnCancel.Text = "Thoát";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.Black;
-            this.btnSignUp.Location = new System.Drawing.Point(52, 587);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(330, 50);
-            this.btnSignUp.TabIndex = 6;
-            this.btnSignUp.Text = "Đăng Ký";
-            this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
-            // pnlEmail
-            // 
-            this.pnlEmail.BackColor = System.Drawing.Color.White;
-            this.pnlEmail.Location = new System.Drawing.Point(54, 540);
-            this.pnlEmail.Name = "pnlEmail";
-            this.pnlEmail.Size = new System.Drawing.Size(331, 2);
-            this.pnlEmail.TabIndex = 45;
-            // 
-            // pnlName
-            // 
-            this.pnlName.BackColor = System.Drawing.Color.White;
-            this.pnlName.Location = new System.Drawing.Point(53, 397);
-            this.pnlName.Name = "pnlName";
-            this.pnlName.Size = new System.Drawing.Size(331, 2);
-            this.pnlName.TabIndex = 44;
-            // 
-            // pnlPass
-            // 
-            this.pnlPass.BackColor = System.Drawing.Color.White;
-            this.pnlPass.Location = new System.Drawing.Point(52, 257);
-            this.pnlPass.Name = "pnlPass";
-            this.pnlPass.Size = new System.Drawing.Size(331, 2);
-            this.pnlPass.TabIndex = 43;
-            // 
-            // pnlPhone
-            // 
-            this.pnlPhone.BackColor = System.Drawing.Color.White;
-            this.pnlPhone.Location = new System.Drawing.Point(53, 466);
-            this.pnlPhone.Name = "pnlPhone";
-            this.pnlPhone.Size = new System.Drawing.Size(331, 2);
-            this.pnlPhone.TabIndex = 47;
-            // 
-            // pnlRetypePass
-            // 
-            this.pnlRetypePass.BackColor = System.Drawing.Color.White;
-            this.pnlRetypePass.Location = new System.Drawing.Point(52, 329);
-            this.pnlRetypePass.Name = "pnlRetypePass";
-            this.pnlRetypePass.Size = new System.Drawing.Size(331, 2);
-            this.pnlRetypePass.TabIndex = 46;
-            // 
-            // pnlUser
-            // 
-            this.pnlUser.BackColor = System.Drawing.Color.White;
-            this.pnlUser.Location = new System.Drawing.Point(51, 189);
-            this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(331, 2);
-            this.pnlUser.TabIndex = 48;
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmail.Location = new System.Drawing.Point(110, 508);
+            this.txtEmail.Location = new System.Drawing.Point(117, 471);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(273, 23);
-            this.txtEmail.TabIndex = 5;
+            this.txtEmail.Size = new System.Drawing.Size(238, 24);
+            this.txtEmail.TabIndex = 174;
             this.txtEmail.Text = "Email";
             this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
-            // txtName
+            // gbtnAfterE
             // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.ForeColor = System.Drawing.Color.Gray;
-            this.txtName.Location = new System.Drawing.Point(109, 365);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(273, 23);
-            this.txtName.TabIndex = 3;
-            this.txtName.Text = "Họ Tên";
-            this.txtName.Click += new System.EventHandler(this.txtName_Click);
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
-            this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
+            this.gbtnAfterE.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterE.AnimationSpeed = 0.03F;
+            this.gbtnAfterE.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterE.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterE.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterE.BorderSize = 2;
+            this.gbtnAfterE.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterE.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterE.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterE.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterE.Image = null;
+            this.gbtnAfterE.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterE.Location = new System.Drawing.Point(69, 464);
+            this.gbtnAfterE.Name = "gbtnAfterE";
+            this.gbtnAfterE.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterE.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterE.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterE.OnHoverImage = null;
+            this.gbtnAfterE.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterE.Radius = 8;
+            this.gbtnAfterE.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterE.TabIndex = 177;
+            this.gbtnAfterE.Click += new System.EventHandler(this.txtEmail_Click);
             // 
             // txtPhone
             // 
-            this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtPhone.BackColor = System.Drawing.Color.White;
             this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtPhone.ForeColor = System.Drawing.Color.Gray;
-            this.txtPhone.Location = new System.Drawing.Point(110, 434);
+            this.txtPhone.Location = new System.Drawing.Point(116, 419);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(273, 23);
-            this.txtPhone.TabIndex = 4;
+            this.txtPhone.Size = new System.Drawing.Size(238, 24);
+            this.txtPhone.TabIndex = 170;
             this.txtPhone.Text = "SĐT";
             this.txtPhone.Click += new System.EventHandler(this.txtPhone_Click);
             this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             this.txtPhone.Leave += new System.EventHandler(this.txtPhone_Leave);
             // 
+            // gbtnAfterSDT
+            // 
+            this.gbtnAfterSDT.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterSDT.AnimationSpeed = 0.03F;
+            this.gbtnAfterSDT.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterSDT.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterSDT.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterSDT.BorderSize = 2;
+            this.gbtnAfterSDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterSDT.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterSDT.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterSDT.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterSDT.Image = null;
+            this.gbtnAfterSDT.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterSDT.Location = new System.Drawing.Point(68, 412);
+            this.gbtnAfterSDT.Name = "gbtnAfterSDT";
+            this.gbtnAfterSDT.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterSDT.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterSDT.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterSDT.OnHoverImage = null;
+            this.gbtnAfterSDT.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterSDT.Radius = 8;
+            this.gbtnAfterSDT.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterSDT.TabIndex = 173;
+            this.gbtnAfterSDT.Click += new System.EventHandler(this.txtPhone_Click);
+            // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
+            this.txtName.ForeColor = System.Drawing.Color.Gray;
+            this.txtName.Location = new System.Drawing.Point(116, 353);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(238, 24);
+            this.txtName.TabIndex = 166;
+            this.txtName.Text = "Họ Tên";
+            this.txtName.Click += new System.EventHandler(this.txtName_Click);
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
+            // 
+            // gbtnAfterN
+            // 
+            this.gbtnAfterN.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterN.AnimationSpeed = 0.03F;
+            this.gbtnAfterN.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterN.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterN.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterN.BorderSize = 2;
+            this.gbtnAfterN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterN.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterN.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterN.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterN.Image = null;
+            this.gbtnAfterN.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterN.Location = new System.Drawing.Point(68, 346);
+            this.gbtnAfterN.Name = "gbtnAfterN";
+            this.gbtnAfterN.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterN.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterN.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterN.OnHoverImage = null;
+            this.gbtnAfterN.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterN.Radius = 8;
+            this.gbtnAfterN.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterN.TabIndex = 169;
+            this.gbtnAfterN.Click += new System.EventHandler(this.txtName_Click);
+            // 
             // txtRePassword
             // 
-            this.txtRePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtRePassword.BackColor = System.Drawing.Color.White;
             this.txtRePassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRePassword.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtRePassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtRePassword.Location = new System.Drawing.Point(109, 297);
+            this.txtRePassword.Location = new System.Drawing.Point(116, 294);
             this.txtRePassword.Name = "txtRePassword";
-            this.txtRePassword.Size = new System.Drawing.Size(273, 23);
-            this.txtRePassword.TabIndex = 2;
+            this.txtRePassword.Size = new System.Drawing.Size(238, 24);
+            this.txtRePassword.TabIndex = 162;
             this.txtRePassword.Text = "Nhập Lại Mật Khẩu";
-            this.txtRePassword.Click += new System.EventHandler(this.txtRetypePass_Click);
-            this.txtRePassword.TextChanged += new System.EventHandler(this.txtRetypePass_TextChanged);
+            this.txtRePassword.Click += new System.EventHandler(this.txtRePassword_Click);
+            this.txtRePassword.TextChanged += new System.EventHandler(this.txtRePassword_TextChanged);
             this.txtRePassword.Leave += new System.EventHandler(this.txtRePassword_Leave);
+            // 
+            // gbtnAfterRP
+            // 
+            this.gbtnAfterRP.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterRP.AnimationSpeed = 0.03F;
+            this.gbtnAfterRP.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterRP.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterRP.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterRP.BorderSize = 2;
+            this.gbtnAfterRP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterRP.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterRP.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterRP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterRP.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterRP.Image = null;
+            this.gbtnAfterRP.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterRP.Location = new System.Drawing.Point(68, 287);
+            this.gbtnAfterRP.Name = "gbtnAfterRP";
+            this.gbtnAfterRP.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterRP.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterRP.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterRP.OnHoverImage = null;
+            this.gbtnAfterRP.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterRP.Radius = 8;
+            this.gbtnAfterRP.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterRP.TabIndex = 165;
+            this.gbtnAfterRP.Click += new System.EventHandler(this.txtRePassword_Click);
+            // 
+            // lblMinimize
+            // 
+            this.lblMinimize.AutoSize = true;
+            this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimize.ForeColor = System.Drawing.Color.Snow;
+            this.lblMinimize.Location = new System.Drawing.Point(379, 0);
+            this.lblMinimize.Name = "lblMinimize";
+            this.lblMinimize.Size = new System.Drawing.Size(20, 25);
+            this.lblMinimize.TabIndex = 2;
+            this.lblMinimize.Text = "-";
+            this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 5;
+            this.gunaElipse1.TargetControl = this;
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtPassword.Location = new System.Drawing.Point(108, 225);
+            this.txtPassword.Location = new System.Drawing.Point(116, 236);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(273, 23);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.Size = new System.Drawing.Size(238, 24);
+            this.txtPassword.TabIndex = 154;
             this.txtPassword.Text = "Mật Khẩu";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
@@ -315,191 +283,341 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsername.Location = new System.Drawing.Point(108, 157);
+            this.txtUsername.Location = new System.Drawing.Point(116, 172);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(273, 23);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsername.Size = new System.Drawing.Size(238, 24);
+            this.txtUsername.TabIndex = 153;
             this.txtUsername.Text = "Tên Đăng Nhập";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
             // 
-            // ptrPassword
+            // gbtnAfterU
             // 
-            this.ptrPassword.Image = global::QuanLyQuanTraSua.Properties.Resources.pass;
-            this.ptrPassword.Location = new System.Drawing.Point(50, 212);
-            this.ptrPassword.Name = "ptrPassword";
-            this.ptrPassword.Size = new System.Drawing.Size(40, 39);
-            this.ptrPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPassword.TabIndex = 38;
-            this.ptrPassword.TabStop = false;
+            this.gbtnAfterU.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterU.AnimationSpeed = 0.03F;
+            this.gbtnAfterU.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterU.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterU.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterU.BorderSize = 2;
+            this.gbtnAfterU.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterU.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterU.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterU.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterU.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterU.Image = null;
+            this.gbtnAfterU.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterU.Location = new System.Drawing.Point(68, 165);
+            this.gbtnAfterU.Name = "gbtnAfterU";
+            this.gbtnAfterU.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterU.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterU.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterU.OnHoverImage = null;
+            this.gbtnAfterU.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterU.Radius = 8;
+            this.gbtnAfterU.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterU.TabIndex = 160;
+            this.gbtnAfterU.Click += new System.EventHandler(this.txtUsername_Click);
             // 
-            // ptrUsername
+            // lblClose
             // 
-            this.ptrUsername.Image = global::QuanLyQuanTraSua.Properties.Resources.user;
-            this.ptrUsername.Location = new System.Drawing.Point(50, 144);
-            this.ptrUsername.Name = "ptrUsername";
-            this.ptrUsername.Size = new System.Drawing.Size(40, 39);
-            this.ptrUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUsername.TabIndex = 41;
-            this.ptrUsername.TabStop = false;
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.Snow;
+            this.lblClose.Location = new System.Drawing.Point(406, 2);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(22, 22);
+            this.lblClose.TabIndex = 3;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
-            // ptrRetypePass1
+            // gbtnAfterP
             // 
-            this.ptrRetypePass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
-            this.ptrRetypePass1.Location = new System.Drawing.Point(51, 284);
-            this.ptrRetypePass1.Name = "ptrRetypePass1";
-            this.ptrRetypePass1.Size = new System.Drawing.Size(40, 39);
-            this.ptrRetypePass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrRetypePass1.TabIndex = 50;
-            this.ptrRetypePass1.TabStop = false;
-            this.ptrRetypePass1.Visible = false;
+            this.gbtnAfterP.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterP.AnimationSpeed = 0.03F;
+            this.gbtnAfterP.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterP.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterP.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterP.BorderSize = 2;
+            this.gbtnAfterP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterP.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterP.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterP.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterP.Image = null;
+            this.gbtnAfterP.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterP.Location = new System.Drawing.Point(68, 229);
+            this.gbtnAfterP.Name = "gbtnAfterP";
+            this.gbtnAfterP.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterP.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterP.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterP.OnHoverImage = null;
+            this.gbtnAfterP.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterP.Radius = 8;
+            this.gbtnAfterP.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterP.TabIndex = 161;
+            this.gbtnAfterP.Click += new System.EventHandler(this.txtPassword_Click);
             // 
-            // ptrRetypePass
+            // pnlTopM
             // 
-            this.ptrRetypePass.Image = global::QuanLyQuanTraSua.Properties.Resources.pass;
-            this.ptrRetypePass.Location = new System.Drawing.Point(51, 284);
-            this.ptrRetypePass.Name = "ptrRetypePass";
-            this.ptrRetypePass.Size = new System.Drawing.Size(40, 39);
-            this.ptrRetypePass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrRetypePass.TabIndex = 42;
-            this.ptrRetypePass.TabStop = false;
+            this.pnlTopM.BackColor = System.Drawing.Color.White;
+            this.pnlTopM.Controls.Add(this.pictureBoxIcon);
+            this.pnlTopM.Controls.Add(this.pnlMove);
+            this.pnlTopM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopM.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopM.Name = "pnlTopM";
+            this.pnlTopM.Size = new System.Drawing.Size(429, 138);
+            this.pnlTopM.TabIndex = 151;
             // 
-            // ptrName1
+            // pnlMove
             // 
-            this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
-            this.ptrName1.Location = new System.Drawing.Point(51, 352);
-            this.ptrName1.Name = "ptrName1";
-            this.ptrName1.Size = new System.Drawing.Size(40, 39);
-            this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrName1.TabIndex = 53;
-            this.ptrName1.TabStop = false;
-            this.ptrName1.Visible = false;
+            this.pnlMove.BackColor = System.Drawing.Color.Teal;
+            this.pnlMove.Controls.Add(this.lblMinimize);
+            this.pnlMove.Controls.Add(this.lblClose);
+            this.pnlMove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlMove.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMove.Location = new System.Drawing.Point(0, 0);
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.Size = new System.Drawing.Size(429, 31);
+            this.pnlMove.TabIndex = 2;
+            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
-            // ptrPhone1
+            // gbtnDangKy
             // 
-            this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
-            this.ptrPhone1.Location = new System.Drawing.Point(52, 421);
-            this.ptrPhone1.Name = "ptrPhone1";
-            this.ptrPhone1.Size = new System.Drawing.Size(40, 39);
-            this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPhone1.TabIndex = 51;
-            this.ptrPhone1.TabStop = false;
-            this.ptrPhone1.Visible = false;
+            this.gbtnDangKy.AnimationHoverSpeed = 0.07F;
+            this.gbtnDangKy.AnimationSpeed = 0.03F;
+            this.gbtnDangKy.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnDangKy.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gbtnDangKy.BorderColor = System.Drawing.Color.Black;
+            this.gbtnDangKy.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnDangKy.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnDangKy.Font = new System.Drawing.Font("Segoe UI", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnDangKy.ForeColor = System.Drawing.Color.White;
+            this.gbtnDangKy.Image = null;
+            this.gbtnDangKy.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnDangKy.Location = new System.Drawing.Point(73, 534);
+            this.gbtnDangKy.Name = "gbtnDangKy";
+            this.gbtnDangKy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnDangKy.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnDangKy.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnDangKy.OnHoverImage = null;
+            this.gbtnDangKy.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnDangKy.Radius = 6;
+            this.gbtnDangKy.Size = new System.Drawing.Size(282, 43);
+            this.gbtnDangKy.TabIndex = 152;
+            this.gbtnDangKy.Text = "Đăng Ký";
+            this.gbtnDangKy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnDangKy.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // ptrEmail1
             // 
             this.ptrEmail1.Image = global::QuanLyQuanTraSua.Properties.Resources.email1;
-            this.ptrEmail1.Location = new System.Drawing.Point(52, 495);
+            this.ptrEmail1.Location = new System.Drawing.Point(78, 472);
             this.ptrEmail1.Name = "ptrEmail1";
-            this.ptrEmail1.Size = new System.Drawing.Size(40, 39);
+            this.ptrEmail1.Size = new System.Drawing.Size(28, 27);
             this.ptrEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrEmail1.TabIndex = 54;
+            this.ptrEmail1.TabIndex = 176;
             this.ptrEmail1.TabStop = false;
             this.ptrEmail1.Visible = false;
             // 
-            // ptrName
+            // ptrPhone1
             // 
-            this.ptrName.Image = global::QuanLyQuanTraSua.Properties.Resources.name;
-            this.ptrName.Location = new System.Drawing.Point(51, 352);
-            this.ptrName.Name = "ptrName";
-            this.ptrName.Size = new System.Drawing.Size(40, 39);
-            this.ptrName.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrName.TabIndex = 37;
-            this.ptrName.TabStop = false;
+            this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
+            this.ptrPhone1.Location = new System.Drawing.Point(77, 420);
+            this.ptrPhone1.Name = "ptrPhone1";
+            this.ptrPhone1.Size = new System.Drawing.Size(26, 26);
+            this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrPhone1.TabIndex = 172;
+            this.ptrPhone1.TabStop = false;
+            this.ptrPhone1.Visible = false;
             // 
-            // ptrPhone
+            // ptrName1
             // 
-            this.ptrPhone.Image = global::QuanLyQuanTraSua.Properties.Resources.phone;
-            this.ptrPhone.Location = new System.Drawing.Point(52, 421);
-            this.ptrPhone.Name = "ptrPhone";
-            this.ptrPhone.Size = new System.Drawing.Size(40, 39);
-            this.ptrPhone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPhone.TabIndex = 40;
-            this.ptrPhone.TabStop = false;
+            this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
+            this.ptrName1.Location = new System.Drawing.Point(77, 350);
+            this.ptrName1.Name = "ptrName1";
+            this.ptrName1.Size = new System.Drawing.Size(33, 33);
+            this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrName1.TabIndex = 168;
+            this.ptrName1.TabStop = false;
+            this.ptrName1.Visible = false;
             // 
-            // ptrEmail
+            // pctrB_Email_Gr
             // 
-            this.ptrEmail.Image = global::QuanLyQuanTraSua.Properties.Resources.email;
-            this.ptrEmail.Location = new System.Drawing.Point(52, 495);
-            this.ptrEmail.Name = "ptrEmail";
-            this.ptrEmail.Size = new System.Drawing.Size(40, 39);
-            this.ptrEmail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrEmail.TabIndex = 39;
-            this.ptrEmail.TabStop = false;
+            this.pctrB_Email_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.email_gr;
+            this.pctrB_Email_Gr.Location = new System.Drawing.Point(78, 472);
+            this.pctrB_Email_Gr.Name = "pctrB_Email_Gr";
+            this.pctrB_Email_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Email_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Email_Gr.TabIndex = 175;
+            this.pctrB_Email_Gr.TabStop = false;
             // 
-            // pictureBox2
+            // pctrB_SDT_Gr
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(321, 212);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pctrB_SDT_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.phone_gr;
+            this.pctrB_SDT_Gr.Location = new System.Drawing.Point(77, 420);
+            this.pctrB_SDT_Gr.Name = "pctrB_SDT_Gr";
+            this.pctrB_SDT_Gr.Size = new System.Drawing.Size(26, 26);
+            this.pctrB_SDT_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_SDT_Gr.TabIndex = 171;
+            this.pctrB_SDT_Gr.TabStop = false;
+            // 
+            // ptrRetypePass1
+            // 
+            this.ptrRetypePass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
+            this.ptrRetypePass1.Location = new System.Drawing.Point(77, 295);
+            this.ptrRetypePass1.Name = "ptrRetypePass1";
+            this.ptrRetypePass1.Size = new System.Drawing.Size(28, 27);
+            this.ptrRetypePass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrRetypePass1.TabIndex = 164;
+            this.ptrRetypePass1.TabStop = false;
+            this.ptrRetypePass1.Visible = false;
+            // 
+            // pctrB_Name_Gr
+            // 
+            this.pctrB_Name_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.name_gr;
+            this.pctrB_Name_Gr.Location = new System.Drawing.Point(77, 350);
+            this.pctrB_Name_Gr.Name = "pctrB_Name_Gr";
+            this.pctrB_Name_Gr.Size = new System.Drawing.Size(33, 33);
+            this.pctrB_Name_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Name_Gr.TabIndex = 167;
+            this.pctrB_Name_Gr.TabStop = false;
+            // 
+            // pctrB_RP_Gr
+            // 
+            this.pctrB_RP_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.pass_gr;
+            this.pctrB_RP_Gr.Location = new System.Drawing.Point(77, 295);
+            this.pctrB_RP_Gr.Name = "pctrB_RP_Gr";
+            this.pctrB_RP_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_RP_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_RP_Gr.TabIndex = 163;
+            this.pctrB_RP_Gr.TabStop = false;
+            // 
+            // pctrB_Eye
+            // 
+            this.pctrB_Eye.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Eye.Image")));
+            this.pctrB_Eye.Location = new System.Drawing.Point(312, 234);
+            this.pctrB_Eye.Name = "pctrB_Eye";
+            this.pctrB_Eye.Size = new System.Drawing.Size(42, 30);
+            this.pctrB_Eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Eye.TabIndex = 159;
+            this.pctrB_Eye.TabStop = false;
+            this.pctrB_Eye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctrB_Eye_MouseDown);
+            // 
+            // ptrUser1
+            // 
+            this.ptrUser1.Image = ((System.Drawing.Image)(resources.GetObject("ptrUser1.Image")));
+            this.ptrUser1.Location = new System.Drawing.Point(77, 173);
+            this.ptrUser1.Name = "ptrUser1";
+            this.ptrUser1.Size = new System.Drawing.Size(28, 27);
+            this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrUser1.TabIndex = 157;
+            this.ptrUser1.TabStop = false;
+            this.ptrUser1.Visible = false;
+            // 
+            // pctrB_User_Gr
+            // 
+            this.pctrB_User_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.user_gr;
+            this.pctrB_User_Gr.Location = new System.Drawing.Point(77, 173);
+            this.pctrB_User_Gr.Name = "pctrB_User_Gr";
+            this.pctrB_User_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_User_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_User_Gr.TabIndex = 156;
+            this.pctrB_User_Gr.TabStop = false;
+            // 
+            // ptrPass1
+            // 
+            this.ptrPass1.Image = ((System.Drawing.Image)(resources.GetObject("ptrPass1.Image")));
+            this.ptrPass1.Location = new System.Drawing.Point(77, 237);
+            this.ptrPass1.Name = "ptrPass1";
+            this.ptrPass1.Size = new System.Drawing.Size(28, 27);
+            this.ptrPass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrPass1.TabIndex = 158;
+            this.ptrPass1.TabStop = false;
+            this.ptrPass1.Visible = false;
+            // 
+            // pctrB_Pass_Gr
+            // 
+            this.pctrB_Pass_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.pass_gr;
+            this.pctrB_Pass_Gr.Location = new System.Drawing.Point(77, 237);
+            this.pctrB_Pass_Gr.Name = "pctrB_Pass_Gr";
+            this.pctrB_Pass_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Pass_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Pass_Gr.TabIndex = 155;
+            this.pctrB_Pass_Gr.TabStop = false;
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
+            this.pictureBoxIcon.Location = new System.Drawing.Point(149, 38);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(130, 95);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcon.TabIndex = 0;
+            this.pictureBoxIcon.TabStop = false;
             // 
             // frmSignUp
             // 
-            this.AcceptButton = this.btnSignUp;
+            this.AcceptButton = this.gbtnDangKy;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(445, 736);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pnlEmail);
-            this.Controls.Add(this.pnlName);
-            this.Controls.Add(this.pnlPass);
-            this.Controls.Add(this.pnlPhone);
-            this.Controls.Add(this.pnlRetypePass);
-            this.Controls.Add(this.pnlUser);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(429, 598);
+            this.Controls.Add(this.ptrEmail1);
+            this.Controls.Add(this.ptrPhone1);
+            this.Controls.Add(this.ptrName1);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.pctrB_Email_Gr);
+            this.Controls.Add(this.gbtnAfterE);
             this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.pctrB_SDT_Gr);
+            this.Controls.Add(this.gbtnAfterSDT);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtRePassword);
+            this.Controls.Add(this.ptrRetypePass1);
+            this.Controls.Add(this.pctrB_Name_Gr);
+            this.Controls.Add(this.pctrB_RP_Gr);
+            this.Controls.Add(this.pctrB_Eye);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.ptrUser1);
+            this.Controls.Add(this.pctrB_User_Gr);
             this.Controls.Add(this.ptrPass1);
-            this.Controls.Add(this.ptrRetypePass1);
-            this.Controls.Add(this.ptrName1);
-            this.Controls.Add(this.ptrPhone1);
-            this.Controls.Add(this.ptrEmail1);
-            this.Controls.Add(this.ptrUsername);
-            this.Controls.Add(this.ptrPassword);
-            this.Controls.Add(this.ptrRetypePass);
-            this.Controls.Add(this.ptrName);
-            this.Controls.Add(this.ptrPhone);
-            this.Controls.Add(this.ptrEmail);
+            this.Controls.Add(this.pctrB_Pass_Gr);
+            this.Controls.Add(this.gbtnAfterU);
+            this.Controls.Add(this.gbtnAfterP);
+            this.Controls.Add(this.pnlTopM);
+            this.Controls.Add(this.gbtnDangKy);
+            this.Controls.Add(this.gbtnAfterRP);
+            this.Controls.Add(this.gbtnAfterN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangKy";
             this.Load += new System.EventHandler(this.frmSignUp_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmSignUp_KeyPress);
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).EndInit();
+            this.pnlTopM.ResumeLayout(false);
+            this.pnlMove.ResumeLayout(false);
+            this.pnlMove.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrEmail1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrEmail)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPhone1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrName1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Email_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_SDT_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrRetypePass1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Name_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_RP_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -507,37 +625,37 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox ptrPass1;
-        private System.Windows.Forms.PictureBox ptrUser1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnSignUp;
-        private System.Windows.Forms.Panel pnlEmail;
-        private System.Windows.Forms.Panel pnlName;
-        private System.Windows.Forms.Panel pnlPass;
-        private System.Windows.Forms.Panel pnlPhone;
-        private System.Windows.Forms.Panel pnlRetypePass;
-        private System.Windows.Forms.Panel pnlUser;
+        private System.Windows.Forms.PictureBox ptrEmail1;
+        private System.Windows.Forms.PictureBox ptrPhone1;
+        private System.Windows.Forms.PictureBox ptrName1;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.PictureBox pctrB_Email_Gr;
+        private Guna.UI.WinForms.GunaButton gbtnAfterE;
         private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.PictureBox pctrB_SDT_Gr;
+        private Guna.UI.WinForms.GunaButton gbtnAfterSDT;
+        private System.Windows.Forms.TextBox txtName;
+        private Guna.UI.WinForms.GunaButton gbtnAfterN;
         private System.Windows.Forms.TextBox txtRePassword;
+        private System.Windows.Forms.PictureBox ptrRetypePass1;
+        private Guna.UI.WinForms.GunaButton gbtnAfterRP;
+        private System.Windows.Forms.Label lblMinimize;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
+        private System.Windows.Forms.PictureBox pctrB_Name_Gr;
+        private System.Windows.Forms.PictureBox pctrB_RP_Gr;
+        private System.Windows.Forms.PictureBox pctrB_Eye;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.PictureBox ptrPassword;
-        private System.Windows.Forms.PictureBox ptrUsername;
-        private System.Windows.Forms.PictureBox ptrRetypePass1;
-        private System.Windows.Forms.PictureBox ptrRetypePass;
-        private System.Windows.Forms.PictureBox ptrName1;
-        private System.Windows.Forms.PictureBox ptrPhone1;
-        private System.Windows.Forms.PictureBox ptrEmail1;
-        private System.Windows.Forms.PictureBox ptrName;
-        private System.Windows.Forms.PictureBox ptrPhone;
-        private System.Windows.Forms.PictureBox ptrEmail;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ptrUser1;
+        private System.Windows.Forms.PictureBox pctrB_User_Gr;
+        private System.Windows.Forms.PictureBox ptrPass1;
+        private System.Windows.Forms.PictureBox pctrB_Pass_Gr;
+        private Guna.UI.WinForms.GunaButton gbtnAfterU;
+        private Guna.UI.WinForms.GunaButton gbtnAfterP;
+        private System.Windows.Forms.Panel pnlTopM;
+        private System.Windows.Forms.PictureBox pictureBoxIcon;
+        private System.Windows.Forms.Panel pnlMove;
+        private System.Windows.Forms.Label lblClose;
+        private Guna.UI.WinForms.GunaButton gbtnDangKy;
     }
 }

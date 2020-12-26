@@ -28,160 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlMove = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.pnlPass = new System.Windows.Forms.Panel();
-            this.pnlUser = new System.Windows.Forms.Panel();
+            this.pnlMoveL = new System.Windows.Forms.Panel();
+            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.pnlTopL = new System.Windows.Forms.Panel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.ptrPass1 = new System.Windows.Forms.PictureBox();
-            this.ptrUser1 = new System.Windows.Forms.PictureBox();
-            this.ptrPassword = new System.Windows.Forms.PictureBox();
-            this.ptrUsername = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPassword)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.gbtnAfterU = new Guna.UI.WinForms.GunaButton();
+            this.gbtnAfterP = new Guna.UI.WinForms.GunaButton();
+            this.pnlRight = new System.Windows.Forms.Panel();
+            this.pnlTopM = new System.Windows.Forms.Panel();
+            this.lblMinimize = new System.Windows.Forms.Label();
+            this.pnlTopR = new System.Windows.Forms.Panel();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.glblDangNhap = new Guna.UI.WinForms.GunaLabel();
+            this.pnlMoveR = new System.Windows.Forms.Panel();
+            this.gbtnLogin = new Guna.UI.WinForms.GunaButton();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.pctrB_Eye = new System.Windows.Forms.PictureBox();
+            this.pctrB_User = new System.Windows.Forms.PictureBox();
+            this.pctrB_User_Gr = new System.Windows.Forms.PictureBox();
+            this.pctrB_Pass = new System.Windows.Forms.PictureBox();
+            this.pctrB_Pass_Gr = new System.Windows.Forms.PictureBox();
+            this.pnlLeft.SuspendLayout();
+            this.pnlRight.SuspendLayout();
+            this.pnlTopM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnlMoveL
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.pnlMove);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 146);
-            this.panel2.TabIndex = 26;
+            this.pnlMoveL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlMoveL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlMoveL.Location = new System.Drawing.Point(1, 1);
+            this.pnlMoveL.Name = "pnlMoveL";
+            this.pnlMoveL.Size = new System.Drawing.Size(373, 31);
+            this.pnlMoveL.TabIndex = 69;
+            this.pnlMoveL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
-            // label3
+            // pnlLeft
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(374, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(16, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "-";
+            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pnlLeft.Controls.Add(this.pnlTopL);
+            this.pnlLeft.Controls.Add(this.gunaLabel2);
+            this.pnlLeft.Controls.Add(this.pnlMoveL);
+            this.pnlLeft.Controls.Add(this.pictureBoxIcon);
+            this.pnlLeft.Controls.Add(this.gCircleButton3);
+            this.pnlLeft.Controls.Add(this.gCircleButton2);
+            this.pnlLeft.Controls.Add(this.gCircleButton1);
+            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlLeft.Name = "pnlLeft";
+            this.pnlLeft.Size = new System.Drawing.Size(374, 438);
+            this.pnlLeft.TabIndex = 33;
             // 
-            // label2
+            // pnlTopL
             // 
-            this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Snow;
-            this.label2.Location = new System.Drawing.Point(377, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "-";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.pnlTopL.BackColor = System.Drawing.Color.Teal;
+            this.pnlTopL.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlTopL.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopL.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopL.Name = "pnlTopL";
+            this.pnlTopL.Size = new System.Drawing.Size(374, 3);
+            this.pnlTopL.TabIndex = 5;
             // 
-            // label1
+            // gunaLabel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(404, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.btnCancel_Click);
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(82, 341);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(205, 19);
+            this.gunaLabel2.TabIndex = 3;
+            this.gunaLabel2.Text = "Phần mềm quản lý quán trà sữa";
+            this.gunaLabel2.Visible = false;
             // 
-            // pictureBox1
+            // gCircleButton3
             // 
-            this.pictureBox1.Image = global::QuanLyQuanTraSua.Properties.Resources.bubble_tea___Copy;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.gCircleButton3.AnimationHoverSpeed = 0.07F;
+            this.gCircleButton3.AnimationSpeed = 0.03F;
+            this.gCircleButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gCircleButton3.BorderColor = System.Drawing.Color.Black;
+            this.gCircleButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gCircleButton3.Enabled = false;
+            this.gCircleButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gCircleButton3.ForeColor = System.Drawing.Color.White;
+            this.gCircleButton3.Image = null;
+            this.gCircleButton3.ImageSize = new System.Drawing.Size(52, 52);
+            this.gCircleButton3.Location = new System.Drawing.Point(267, 346);
+            this.gCircleButton3.Name = "gCircleButton3";
+            this.gCircleButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gCircleButton3.OnHoverImage = null;
+            this.gCircleButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gCircleButton3.Size = new System.Drawing.Size(20, 20);
+            this.gCircleButton3.TabIndex = 4;
             // 
-            // pnlMove
+            // gCircleButton2
             // 
-            this.pnlMove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlMove.Location = new System.Drawing.Point(1, 1);
-            this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(433, 31);
-            this.pnlMove.TabIndex = 2;
-            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
+            this.gCircleButton2.AnimationHoverSpeed = 0.07F;
+            this.gCircleButton2.AnimationSpeed = 0.03F;
+            this.gCircleButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gCircleButton2.BorderColor = System.Drawing.Color.Black;
+            this.gCircleButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gCircleButton2.Enabled = false;
+            this.gCircleButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.gCircleButton2.Image = null;
+            this.gCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
+            this.gCircleButton2.Location = new System.Drawing.Point(40, 278);
+            this.gCircleButton2.Name = "gCircleButton2";
+            this.gCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gCircleButton2.OnHoverImage = null;
+            this.gCircleButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gCircleButton2.Size = new System.Drawing.Size(40, 40);
+            this.gCircleButton2.TabIndex = 4;
             // 
-            // btnCancel
+            // gCircleButton1
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCancel.FlatAppearance.BorderSize = 2;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(51, 450);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(330, 50);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Thoát";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Black;
-            this.btnLogin.Location = new System.Drawing.Point(52, 376);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(330, 50);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Đăng Nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            // 
-            // pnlPass
-            // 
-            this.pnlPass.BackColor = System.Drawing.Color.White;
-            this.pnlPass.Location = new System.Drawing.Point(52, 331);
-            this.pnlPass.Name = "pnlPass";
-            this.pnlPass.Size = new System.Drawing.Size(331, 2);
-            this.pnlPass.TabIndex = 22;
-            // 
-            // pnlUser
-            // 
-            this.pnlUser.BackColor = System.Drawing.Color.White;
-            this.pnlUser.Location = new System.Drawing.Point(51, 248);
-            this.pnlUser.Name = "pnlUser";
-            this.pnlUser.Size = new System.Drawing.Size(331, 2);
-            this.pnlUser.TabIndex = 23;
+            this.gCircleButton1.AnimationHoverSpeed = 0.07F;
+            this.gCircleButton1.AnimationSpeed = 0.03F;
+            this.gCircleButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gCircleButton1.BorderColor = System.Drawing.Color.Black;
+            this.gCircleButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gCircleButton1.Enabled = false;
+            this.gCircleButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gCircleButton1.ForeColor = System.Drawing.Color.White;
+            this.gCircleButton1.Image = null;
+            this.gCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
+            this.gCircleButton1.Location = new System.Drawing.Point(285, 105);
+            this.gCircleButton1.Name = "gCircleButton1";
+            this.gCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gCircleButton1.OnHoverImage = null;
+            this.gCircleButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gCircleButton1.Size = new System.Drawing.Size(30, 30);
+            this.gCircleButton1.TabIndex = 4;
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtPassword.Location = new System.Drawing.Point(108, 299);
+            this.txtPassword.Location = new System.Drawing.Point(131, 235);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(273, 23);
+            this.txtPassword.Size = new System.Drawing.Size(238, 24);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "Mật Khẩu";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
@@ -190,127 +200,317 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsername.Location = new System.Drawing.Point(108, 216);
+            this.txtUsername.Location = new System.Drawing.Point(131, 171);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(273, 23);
+            this.txtUsername.Size = new System.Drawing.Size(238, 24);
             this.txtUsername.TabIndex = 0;
             this.txtUsername.Text = "Tên Đăng Nhập";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
             // 
-            // ptrPass1
+            // gbtnAfterU
             // 
-            this.ptrPass1.Image = global::QuanLyQuanTraSua.Properties.Resources.pass1;
-            this.ptrPass1.Location = new System.Drawing.Point(50, 286);
-            this.ptrPass1.Name = "ptrPass1";
-            this.ptrPass1.Size = new System.Drawing.Size(40, 39);
-            this.ptrPass1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPass1.TabIndex = 28;
-            this.ptrPass1.TabStop = false;
-            this.ptrPass1.Visible = false;
+            this.gbtnAfterU.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterU.AnimationSpeed = 0.03F;
+            this.gbtnAfterU.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterU.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterU.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterU.BorderSize = 2;
+            this.gbtnAfterU.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterU.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterU.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterU.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterU.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterU.Image = null;
+            this.gbtnAfterU.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterU.Location = new System.Drawing.Point(83, 164);
+            this.gbtnAfterU.Name = "gbtnAfterU";
+            this.gbtnAfterU.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterU.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterU.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterU.OnHoverImage = null;
+            this.gbtnAfterU.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterU.Radius = 8;
+            this.gbtnAfterU.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterU.TabIndex = 65;
+            this.gbtnAfterU.Click += new System.EventHandler(this.txtUsername_Click);
             // 
-            // ptrUser1
+            // gbtnAfterP
             // 
-            this.ptrUser1.Image = global::QuanLyQuanTraSua.Properties.Resources.user1;
-            this.ptrUser1.Location = new System.Drawing.Point(50, 203);
-            this.ptrUser1.Name = "ptrUser1";
-            this.ptrUser1.Size = new System.Drawing.Size(40, 39);
-            this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUser1.TabIndex = 27;
-            this.ptrUser1.TabStop = false;
-            this.ptrUser1.Visible = false;
+            this.gbtnAfterP.AnimationHoverSpeed = 0.07F;
+            this.gbtnAfterP.AnimationSpeed = 0.03F;
+            this.gbtnAfterP.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnAfterP.BaseColor = System.Drawing.Color.White;
+            this.gbtnAfterP.BorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterP.BorderSize = 2;
+            this.gbtnAfterP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gbtnAfterP.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnAfterP.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnAfterP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gbtnAfterP.ForeColor = System.Drawing.Color.White;
+            this.gbtnAfterP.Image = null;
+            this.gbtnAfterP.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnAfterP.Location = new System.Drawing.Point(83, 228);
+            this.gbtnAfterP.Name = "gbtnAfterP";
+            this.gbtnAfterP.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gbtnAfterP.OnHoverBorderColor = System.Drawing.Color.Silver;
+            this.gbtnAfterP.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnAfterP.OnHoverImage = null;
+            this.gbtnAfterP.OnPressedColor = System.Drawing.Color.White;
+            this.gbtnAfterP.Radius = 8;
+            this.gbtnAfterP.Size = new System.Drawing.Size(292, 40);
+            this.gbtnAfterP.TabIndex = 67;
+            this.gbtnAfterP.Click += new System.EventHandler(this.txtPassword_Click);
             // 
-            // ptrPassword
+            // pnlRight
             // 
-            this.ptrPassword.Image = global::QuanLyQuanTraSua.Properties.Resources.pass;
-            this.ptrPassword.Location = new System.Drawing.Point(50, 286);
-            this.ptrPassword.Name = "ptrPassword";
-            this.ptrPassword.Size = new System.Drawing.Size(40, 39);
-            this.ptrPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrPassword.TabIndex = 18;
-            this.ptrPassword.TabStop = false;
+            this.pnlRight.BackColor = System.Drawing.Color.White;
+            this.pnlRight.Controls.Add(this.pctrB_Eye);
+            this.pnlRight.Controls.Add(this.txtPassword);
+            this.pnlRight.Controls.Add(this.txtUsername);
+            this.pnlRight.Controls.Add(this.pctrB_User);
+            this.pnlRight.Controls.Add(this.pctrB_User_Gr);
+            this.pnlRight.Controls.Add(this.pnlTopM);
+            this.pnlRight.Controls.Add(this.gbtnLogin);
+            this.pnlRight.Controls.Add(this.pctrB_Pass);
+            this.pnlRight.Controls.Add(this.pctrB_Pass_Gr);
+            this.pnlRight.Controls.Add(this.gbtnAfterU);
+            this.pnlRight.Controls.Add(this.gbtnAfterP);
+            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRight.Location = new System.Drawing.Point(374, 0);
+            this.pnlRight.Name = "pnlRight";
+            this.pnlRight.Size = new System.Drawing.Size(450, 438);
+            this.pnlRight.TabIndex = 32;
             // 
-            // ptrUsername
+            // pnlTopM
             // 
-            this.ptrUsername.Image = global::QuanLyQuanTraSua.Properties.Resources.user;
-            this.ptrUsername.Location = new System.Drawing.Point(50, 203);
-            this.ptrUsername.Name = "ptrUsername";
-            this.ptrUsername.Size = new System.Drawing.Size(40, 39);
-            this.ptrUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptrUsername.TabIndex = 19;
-            this.ptrUsername.TabStop = false;
+            this.pnlTopM.BackColor = System.Drawing.Color.White;
+            this.pnlTopM.Controls.Add(this.lblMinimize);
+            this.pnlTopM.Controls.Add(this.pnlTopR);
+            this.pnlTopM.Controls.Add(this.lblClose);
+            this.pnlTopM.Controls.Add(this.glblDangNhap);
+            this.pnlTopM.Controls.Add(this.pnlMoveR);
+            this.pnlTopM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopM.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopM.Name = "pnlTopM";
+            this.pnlTopM.Size = new System.Drawing.Size(450, 130);
+            this.pnlTopM.TabIndex = 47;
             // 
-            // pictureBox2
+            // lblMinimize
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(322, 286);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 43);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.lblMinimize.AutoSize = true;
+            this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimize.ForeColor = System.Drawing.Color.Maroon;
+            this.lblMinimize.Location = new System.Drawing.Point(396, 3);
+            this.lblMinimize.Name = "lblMinimize";
+            this.lblMinimize.Size = new System.Drawing.Size(20, 25);
+            this.lblMinimize.TabIndex = 4;
+            this.lblMinimize.Text = "-";
+            this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
+            // 
+            // pnlTopR
+            // 
+            this.pnlTopR.BackColor = System.Drawing.Color.Teal;
+            this.pnlTopR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlTopR.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopR.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopR.Name = "pnlTopR";
+            this.pnlTopR.Size = new System.Drawing.Size(450, 3);
+            this.pnlTopR.TabIndex = 55;
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.White;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblClose.Location = new System.Drawing.Point(421, 6);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(23, 22);
+            this.lblClose.TabIndex = 54;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // glblDangNhap
+            // 
+            this.glblDangNhap.AutoSize = true;
+            this.glblDangNhap.Font = new System.Drawing.Font("Segoe UI", 16.23529F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.glblDangNhap.Location = new System.Drawing.Point(153, 65);
+            this.glblDangNhap.Name = "glblDangNhap";
+            this.glblDangNhap.Size = new System.Drawing.Size(135, 31);
+            this.glblDangNhap.TabIndex = 3;
+            this.glblDangNhap.Text = "Đăng Nhập";
+            // 
+            // pnlMoveR
+            // 
+            this.pnlMoveR.BackColor = System.Drawing.Color.White;
+            this.pnlMoveR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlMoveR.Location = new System.Drawing.Point(0, 0);
+            this.pnlMoveR.Name = "pnlMoveR";
+            this.pnlMoveR.Size = new System.Drawing.Size(450, 31);
+            this.pnlMoveR.TabIndex = 68;
+            this.pnlMoveR.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
+            // 
+            // gbtnLogin
+            // 
+            this.gbtnLogin.AnimationHoverSpeed = 0.07F;
+            this.gbtnLogin.AnimationSpeed = 0.03F;
+            this.gbtnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnLogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gbtnLogin.BorderColor = System.Drawing.Color.Black;
+            this.gbtnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnLogin.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnLogin.Font = new System.Drawing.Font("Segoe UI", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbtnLogin.ForeColor = System.Drawing.Color.White;
+            this.gbtnLogin.Image = null;
+            this.gbtnLogin.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnLogin.Location = new System.Drawing.Point(86, 331);
+            this.gbtnLogin.Name = "gbtnLogin";
+            this.gbtnLogin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gbtnLogin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnLogin.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnLogin.OnHoverImage = null;
+            this.gbtnLogin.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnLogin.Radius = 6;
+            this.gbtnLogin.Size = new System.Drawing.Size(292, 40);
+            this.gbtnLogin.TabIndex = 53;
+            this.gbtnLogin.Text = "Đăng Nhập";
+            this.gbtnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 7;
+            this.gunaElipse1.TargetControl = this;
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
+            this.pictureBoxIcon.Location = new System.Drawing.Point(86, 121);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(190, 197);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcon.TabIndex = 2;
+            this.pictureBoxIcon.TabStop = false;
+            // 
+            // pctrB_Eye
+            // 
+            this.pctrB_Eye.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Eye.Image")));
+            this.pctrB_Eye.Location = new System.Drawing.Point(327, 233);
+            this.pctrB_Eye.Name = "pctrB_Eye";
+            this.pctrB_Eye.Size = new System.Drawing.Size(42, 30);
+            this.pctrB_Eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Eye.TabIndex = 50;
+            this.pctrB_Eye.TabStop = false;
+            this.pctrB_Eye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctrB_Eye_MouseDown);
+            // 
+            // pctrB_User
+            // 
+            this.pctrB_User.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_User.Image")));
+            this.pctrB_User.Location = new System.Drawing.Point(92, 172);
+            this.pctrB_User.Name = "pctrB_User";
+            this.pctrB_User.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_User.TabIndex = 48;
+            this.pctrB_User.TabStop = false;
+            this.pctrB_User.Visible = false;
+            // 
+            // pctrB_User_Gr
+            // 
+            this.pctrB_User_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.user_gr;
+            this.pctrB_User_Gr.Location = new System.Drawing.Point(92, 172);
+            this.pctrB_User_Gr.Name = "pctrB_User_Gr";
+            this.pctrB_User_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_User_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_User_Gr.TabIndex = 46;
+            this.pctrB_User_Gr.TabStop = false;
+            // 
+            // pctrB_Pass
+            // 
+            this.pctrB_Pass.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Pass.Image")));
+            this.pctrB_Pass.Location = new System.Drawing.Point(92, 236);
+            this.pctrB_Pass.Name = "pctrB_Pass";
+            this.pctrB_Pass.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Pass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Pass.TabIndex = 49;
+            this.pctrB_Pass.TabStop = false;
+            this.pctrB_Pass.Visible = false;
+            // 
+            // pctrB_Pass_Gr
+            // 
+            this.pctrB_Pass_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.pass_gr;
+            this.pctrB_Pass_Gr.Location = new System.Drawing.Point(92, 236);
+            this.pctrB_Pass_Gr.Name = "pctrB_Pass_Gr";
+            this.pctrB_Pass_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Pass_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Pass_Gr.TabIndex = 45;
+            this.pctrB_Pass_Gr.TabStop = false;
             // 
             // frmLogin
             // 
-            this.AcceptButton = this.btnLogin;
+            this.AcceptButton = this.gbtnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(434, 543);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.pnlPass);
-            this.Controls.Add(this.pnlUser);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.ptrUser1);
-            this.Controls.Add(this.ptrUsername);
-            this.Controls.Add(this.ptrPass1);
-            this.Controls.Add(this.ptrPassword);
+            this.ClientSize = new System.Drawing.Size(824, 438);
+            this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.pnlRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPass1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUser1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPassword)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrUsername)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlLeft.ResumeLayout(false);
+            this.pnlLeft.PerformLayout();
+            this.pnlRight.ResumeLayout(false);
+            this.pnlRight.PerformLayout();
+            this.pnlTopM.ResumeLayout(false);
+            this.pnlTopM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox ptrPass1;
-        private System.Windows.Forms.PictureBox ptrUser1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Panel pnlPass;
-        private System.Windows.Forms.Panel pnlUser;
+        private System.Windows.Forms.Panel pnlMoveL;
+        private System.Windows.Forms.PictureBox pictureBoxIcon;
+        private System.Windows.Forms.Panel pnlLeft;
+        private System.Windows.Forms.Panel pnlTopL;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaCircleButton gCircleButton3;
+        private Guna.UI.WinForms.GunaCircleButton gCircleButton2;
+        private Guna.UI.WinForms.GunaCircleButton gCircleButton1;
+        private System.Windows.Forms.PictureBox pctrB_Eye;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.PictureBox ptrPassword;
-        private System.Windows.Forms.PictureBox ptrUsername;
-        private System.Windows.Forms.Panel pnlMove;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pctrB_User;
+        private System.Windows.Forms.PictureBox pctrB_User_Gr;
+        private System.Windows.Forms.PictureBox pctrB_Pass;
+        private System.Windows.Forms.PictureBox pctrB_Pass_Gr;
+        private Guna.UI.WinForms.GunaButton gbtnAfterU;
+        private Guna.UI.WinForms.GunaButton gbtnAfterP;
+        private System.Windows.Forms.Panel pnlRight;
+        private System.Windows.Forms.Panel pnlTopM;
+        private System.Windows.Forms.Label lblMinimize;
+        private System.Windows.Forms.Panel pnlTopR;
+        private System.Windows.Forms.Label lblClose;
+        private Guna.UI.WinForms.GunaLabel glblDangNhap;
+        private System.Windows.Forms.Panel pnlMoveR;
+        private Guna.UI.WinForms.GunaButton gbtnLogin;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }
 
