@@ -79,7 +79,7 @@ namespace QuanLyQuanTraSua
             this.pnlMenu.Controls.Add(this.pnlLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(200, 733);
             this.pnlMenu.TabIndex = 4;
@@ -333,7 +333,7 @@ namespace QuanLyQuanTraSua
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnMinimize.IconSize = 25;
             this.btnMinimize.Location = new System.Drawing.Point(1041, 5);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(25, 28);
             this.btnMinimize.TabIndex = 9;
@@ -350,7 +350,7 @@ namespace QuanLyQuanTraSua
             this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnMaximize.IconSize = 31;
             this.btnMaximize.Location = new System.Drawing.Point(1076, 5);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(2);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(31, 32);
             this.btnMaximize.TabIndex = 8;
@@ -367,7 +367,7 @@ namespace QuanLyQuanTraSua
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnExit.IconSize = 30;
             this.btnExit.Location = new System.Drawing.Point(1118, 5);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(30, 31);
             this.btnExit.TabIndex = 3;

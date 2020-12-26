@@ -98,6 +98,7 @@ namespace QuanLyQuanTraSua
             this.pnlMove.Name = "pnlMove";
             this.pnlMove.Size = new System.Drawing.Size(429, 31);
             this.pnlMove.TabIndex = 2;
+            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
             // lblMinimize
             // 
