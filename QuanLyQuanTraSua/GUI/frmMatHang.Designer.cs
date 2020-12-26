@@ -29,9 +29,9 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.panelThongTinMH = new System.Windows.Forms.Panel();
@@ -40,6 +40,7 @@ namespace QuanLyQuanTraSua
             this.btnThem = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.gunaGroupBoxThongTinMH = new Guna.UI.WinForms.GunaGroupBox();
+            this.pboxAnh = new System.Windows.Forms.PictureBox();
             this.btnThemAnh = new System.Windows.Forms.Button();
             this.lblAnh = new System.Windows.Forms.Label();
             this.lblTenMatHang = new System.Windows.Forms.Label();
@@ -56,19 +57,18 @@ namespace QuanLyQuanTraSua
             this.pnlCustom = new System.Windows.Forms.Panel();
             this.panelFull = new System.Windows.Forms.Panel();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
-            this.pboxAnh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gDataGridView1)).BeginInit();
             this.panelThongTinMH.SuspendLayout();
             this.panelButton.SuspendLayout();
             this.gunaGroupBoxThongTinMH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.panelFull.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -92,35 +92,36 @@ namespace QuanLyQuanTraSua
             this.gDataGridView1.AllowUserToDeleteRows = false;
             this.gDataGridView1.AllowUserToResizeColumns = false;
             this.gDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gDataGridView1.ColumnHeadersHeight = 32;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 13.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 13.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gDataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.gDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gDataGridView1.EnableHeadersVisualStyles = false;
             this.gDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gDataGridView1.Location = new System.Drawing.Point(0, 0);
             this.gDataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.gDataGridView1.MultiSelect = false;
             this.gDataGridView1.Name = "gDataGridView1";
             this.gDataGridView1.ReadOnly = true;
             this.gDataGridView1.RowHeadersVisible = false;
@@ -270,8 +271,17 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.Text = "Thông tin mặt hàng";
             this.gunaGroupBoxThongTinMH.TextLocation = new System.Drawing.Point(10, 8);
             // 
+            // pboxAnh
+            // 
+            this.pboxAnh.Location = new System.Drawing.Point(217, 234);
+            this.pboxAnh.Name = "pboxAnh";
+            this.pboxAnh.Size = new System.Drawing.Size(162, 162);
+            this.pboxAnh.TabIndex = 25;
+            this.pboxAnh.TabStop = false;
+            // 
             // btnThemAnh
             // 
+            this.btnThemAnh.Enabled = false;
             this.btnThemAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemAnh.Location = new System.Drawing.Point(420, 256);
             this.btnThemAnh.Name = "btnThemAnh";
@@ -311,6 +321,7 @@ namespace QuanLyQuanTraSua
             this.gcbbLoai.BorderSize = 1;
             this.gcbbLoai.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gcbbLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gcbbLoai.Enabled = false;
             this.gcbbLoai.FocusedColor = System.Drawing.Color.Empty;
             this.gcbbLoai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gcbbLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -342,6 +353,7 @@ namespace QuanLyQuanTraSua
             this.gtxtGia.BorderColor = System.Drawing.Color.Silver;
             this.gtxtGia.BorderSize = 1;
             this.gtxtGia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtGia.Enabled = false;
             this.gtxtGia.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtGia.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -355,6 +367,7 @@ namespace QuanLyQuanTraSua
             this.gtxtGia.Size = new System.Drawing.Size(197, 46);
             this.gtxtGia.TabIndex = 20;
             this.gtxtGia.TextOffsetX = 10;
+            this.gtxtGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gtxtGia_KeyPress);
             // 
             // gtxtTenMatHang
             // 
@@ -363,6 +376,7 @@ namespace QuanLyQuanTraSua
             this.gtxtTenMatHang.BorderColor = System.Drawing.Color.Silver;
             this.gtxtTenMatHang.BorderSize = 1;
             this.gtxtTenMatHang.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtTenMatHang.Enabled = false;
             this.gtxtTenMatHang.FocusedBaseColor = System.Drawing.Color.White;
             this.gtxtTenMatHang.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtTenMatHang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -493,14 +507,6 @@ namespace QuanLyQuanTraSua
             // 
             this.ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png";
             // 
-            // pboxAnh
-            // 
-            this.pboxAnh.Location = new System.Drawing.Point(217, 234);
-            this.pboxAnh.Name = "pboxAnh";
-            this.pboxAnh.Size = new System.Drawing.Size(162, 162);
-            this.pboxAnh.TabIndex = 25;
-            this.pboxAnh.TabStop = false;
-            // 
             // frmMatHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -518,6 +524,7 @@ namespace QuanLyQuanTraSua
             this.panelButton.ResumeLayout(false);
             this.gunaGroupBoxThongTinMH.ResumeLayout(false);
             this.gunaGroupBoxThongTinMH.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAnh)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -526,7 +533,6 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBox2.PerformLayout();
             this.panelFull.ResumeLayout(false);
             this.panelFull.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxAnh)).EndInit();
             this.ResumeLayout(false);
 
         }

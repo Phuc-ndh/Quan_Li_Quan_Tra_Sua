@@ -67,26 +67,65 @@ namespace QuanLyQuanTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (gtxtTenMatHang.Text == "" || gtxtGia.Text == "")
+            if (btnThem.Text == "Thêm")
             {
-                MessageBox.Show("Điền đủ thông tin trước khi thêm món");
+                btnThem.Text = "OK";
+                btnSua.Enabled = false;
+                btnXoa.Enabled = false;
+                gDataGridView1.Enabled = false;
+                gtxtTenMatHang.Enabled = true;
+                gtxtGia.Enabled = true;
+                gcbbLoai.Enabled = true;
+                btnThemAnh.Enabled = true;
+
+                gtxtTenMatHang.Text = "";
+                gtxtGia.Text = "";
+                gcbbLoai.SelectedIndex = 0;
+                gtxtTenMatHang.Focus();
             }
             else
             {
-                if (originImage != null)
+                if (gtxtTenMatHang.Text == "" || gtxtGia.Text == "")
                 {
-                    if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
-                    {
-                        MessageBox.Show("Đã thêm thành công");
-                        gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
-                    }
+                    MessageBox.Show("Điền đủ thông tin trước khi thêm món");
+                }
+                if (DrinkExisted(gtxtTenMatHang.Text))
+                {
+                    MessageBox.Show("Món đã tồn tại");
                 }
                 else
                 {
-                    if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory))
+                    if (originImage != null)
                     {
-                        MessageBox.Show("Đã thêm thành công");
-                        gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                        if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
+                        {
+                            MessageBox.Show("Đã thêm thành công");
+                            btnThem.Text = "Thêm";
+                            btnSua.Enabled = true;
+                            btnXoa.Enabled = true;
+                            gDataGridView1.Enabled = true;
+                            gtxtTenMatHang.Enabled = false;
+                            gtxtGia.Enabled = false;
+                            gcbbLoai.Enabled = false;
+                            btnThemAnh.Enabled = false;
+                            gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                        }
+                    }
+                    else
+                    {
+                        if (drinkBUS.InsertDrink(gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory))
+                        {
+                            MessageBox.Show("Đã thêm thành công");
+                            btnThem.Text = "Thêm";
+                            btnSua.Enabled = true;
+                            btnXoa.Enabled = true;
+                            gDataGridView1.Enabled = true;
+                            gtxtTenMatHang.Enabled = false;
+                            gtxtGia.Enabled = false;
+                            gcbbLoai.Enabled = false;
+                            btnThemAnh.Enabled = false;
+                            gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                        }
                     }
                 }
             }
@@ -119,11 +158,36 @@ namespace QuanLyQuanTraSua
             {
                 if (gDataGridView1.SelectedRows.Count > 0)
                 {
-                    //if (drinkBUS.UpdateDrink(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idDrink"].Value), txtTenMatHang.Text, txtGia.Text, (cbbLoai.SelectedItem as DrinkCategory).idCategory))
-                    if (drinkBUS.UpdateDrink(Convert.ToInt32(gDataGridView1.SelectedRows[0].Cells["idDrink"].Value), gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
+                    if (btnSua.Text == "Sửa")
                     {
-                        MessageBox.Show("Đã sửa thành công");
-                        gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                        btnSua.Text = "OK";
+                        btnThem.Enabled = false;
+                        btnXoa.Enabled = false;
+                        gDataGridView1.Enabled = false;
+                        gtxtTenMatHang.Enabled = true;
+                        gtxtGia.Enabled = true;
+                        gcbbLoai.Enabled = true;
+                        btnThemAnh.Enabled = true;
+                    }
+                    else
+                    {
+                        if (drinkBUS.UpdateDrink(Convert.ToInt32(gDataGridView1.SelectedRows[0].Cells["idDrink"].Value), gtxtTenMatHang.Text, gtxtGia.Text, (gcbbLoai.SelectedItem as DrinkCategory).idCategory, ImageHelper.ImageToByteArray(originImage)))
+                        {
+                            MessageBox.Show("Đã sửa thành công");
+                            btnSua.Text = "Sửa";
+                            btnThem.Enabled = true;
+                            btnXoa.Enabled = true;
+                            gDataGridView1.Enabled = true;
+                            gtxtTenMatHang.Enabled = false;
+                            gtxtGia.Enabled = false;
+                            gcbbLoai.Enabled = false;
+                            btnThemAnh.Enabled = false;
+                            gDataGridView1.DataSource = drinkBUS.GetAllDrinksDetailed();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa thất bại");
+                        }
                     }
                 }
                 else
@@ -250,6 +314,24 @@ namespace QuanLyQuanTraSua
                 originImage = Image.FromFile(ofd.FileName);
                 pboxAnh.Image = ImageHelper.ResizeImage(originImage, 95, 95);
             }
+        }
+
+        private void gtxtGia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private bool DrinkExisted(string drinkName)
+        {
+            foreach (DataGridViewRow row in gDataGridView1.Rows)
+            {
+                if (drinkName == row.Cells["Tên"].Value.ToString())
+                    return true;
+            }
+            return false;
         }
     }
 }
