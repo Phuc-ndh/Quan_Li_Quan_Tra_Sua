@@ -22,11 +22,6 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void frmTaiKhoan_Load(object sender, EventArgs e)
         {
             Account currentAccount = new Account();
@@ -37,15 +32,6 @@ namespace QuanLyQuanTraSua
             txtEmail.Text = currentAccount.Email;
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-            btnCancel_Click(sender, e);
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
@@ -55,7 +41,7 @@ namespace QuanLyQuanTraSua
                 txtName.Enabled = true;
                 txtPhone.Enabled = true;
                 txtEmail.Enabled = true;
-                btnSua.Text = "Hoàn Tất";
+                gbtnSua.Text = "Hoàn Tất";
             }
             else
             {
@@ -72,7 +58,7 @@ namespace QuanLyQuanTraSua
                 txtName.Enabled = false;
                 txtPhone.Enabled = false;
                 txtEmail.Enabled = false;
-                btnSua.Text = "Sửa Thông Tin";
+                gbtnSua.Text = "Sửa Thông Tin";
             }
         }
 
@@ -80,6 +66,16 @@ namespace QuanLyQuanTraSua
         {
             frmChangePass FrmChangePass = new frmChangePass(this.parent.currentUser.Username);
             FrmChangePass.ShowDialog();
+        }
+
+        private void lblMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
