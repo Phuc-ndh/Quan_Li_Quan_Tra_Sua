@@ -29,19 +29,19 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.gnbtnReportYear = new Guna.UI.WinForms.GunaButton();
             this.gnbtnReportMonth = new Guna.UI.WinForms.GunaButton();
             this.gnbtnDateReport = new Guna.UI.WinForms.GunaButton();
@@ -158,29 +158,29 @@ namespace QuanLyQuanTraSua
             // 
             // chartSellAndMoney
             // 
-            chartArea4.BackColor = System.Drawing.Color.White;
-            chartArea4.Name = "Sell Number";
-            this.chartSellAndMoney.ChartAreas.Add(chartArea4);
-            legend4.BackColor = System.Drawing.Color.White;
-            legend4.Name = "Legend1";
-            this.chartSellAndMoney.Legends.Add(legend4);
+            chartArea1.BackColor = System.Drawing.Color.White;
+            chartArea1.Name = "Sell Number";
+            this.chartSellAndMoney.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.White;
+            legend1.Name = "Legend1";
+            this.chartSellAndMoney.Legends.Add(legend1);
             this.chartSellAndMoney.Location = new System.Drawing.Point(486, 131);
             this.chartSellAndMoney.Name = "chartSellAndMoney";
-            series5.ChartArea = "Sell Number";
-            series5.Legend = "Legend1";
-            series5.Name = "Số lượng";
-            series6.ChartArea = "Sell Number";
-            series6.Legend = "Legend1";
-            series6.Name = "Doanh thu";
-            this.chartSellAndMoney.Series.Add(series5);
-            this.chartSellAndMoney.Series.Add(series6);
+            series1.ChartArea = "Sell Number";
+            series1.Legend = "Legend1";
+            series1.Name = "Số lượng";
+            series2.ChartArea = "Sell Number";
+            series2.Legend = "Legend1";
+            series2.Name = "Doanh thu";
+            this.chartSellAndMoney.Series.Add(series1);
+            this.chartSellAndMoney.Series.Add(series2);
             this.chartSellAndMoney.Size = new System.Drawing.Size(730, 504);
             this.chartSellAndMoney.TabIndex = 9;
             this.chartSellAndMoney.Text = "Collum chart";
-            title4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title4.Name = "Title1";
-            title4.Text = "Số lượng bán và doanh thu";
-            this.chartSellAndMoney.Titles.Add(title4);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title1.Name = "Title1";
+            title1.Text = "Số lượng bán và doanh thu";
+            this.chartSellAndMoney.Titles.Add(title1);
             this.chartSellAndMoney.Visible = false;
             // 
             // gunacbbYear
@@ -306,59 +306,59 @@ namespace QuanLyQuanTraSua
             // chartSellPercent
             // 
             this.chartSellPercent.BorderlineWidth = 5;
-            chartArea5.BackColor = System.Drawing.Color.White;
-            chartArea5.Name = "ChartArea1";
-            this.chartSellPercent.ChartAreas.Add(chartArea5);
-            legend5.BackColor = System.Drawing.Color.White;
-            legend5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend5.IsTextAutoFit = false;
-            legend5.Name = "Legend1";
-            legend5.Title = "Thức uống";
-            legend5.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chartSellPercent.Legends.Add(legend5);
+            chartArea2.BackColor = System.Drawing.Color.White;
+            chartArea2.Name = "ChartArea1";
+            this.chartSellPercent.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.White;
+            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.Name = "Legend1";
+            legend2.Title = "Thức uống";
+            legend2.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chartSellPercent.Legends.Add(legend2);
             this.chartSellPercent.Location = new System.Drawing.Point(50, 98);
             this.chartSellPercent.Name = "chartSellPercent";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series7.IsValueShownAsLabel = true;
-            series7.LabelFormat = "#,##%";
-            series7.Legend = "Legend1";
-            series7.Name = "Drink";
-            this.chartSellPercent.Series.Add(series7);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.IsValueShownAsLabel = true;
+            series3.LabelFormat = "#,##%";
+            series3.Legend = "Legend1";
+            series3.Name = "Drink";
+            this.chartSellPercent.Series.Add(series3);
             this.chartSellPercent.Size = new System.Drawing.Size(459, 294);
             this.chartSellPercent.TabIndex = 8;
             this.chartSellPercent.Text = "Pie Chart";
-            title5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title5.Name = "Title1";
-            title5.Text = "Tỉ lệ số sản phẩm bán ra";
-            this.chartSellPercent.Titles.Add(title5);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title2.Name = "Title1";
+            title2.Text = "Tỉ lệ số sản phẩm bán ra";
+            this.chartSellPercent.Titles.Add(title2);
             this.chartSellPercent.Visible = false;
             // 
             // chartMoneyPercent
             // 
-            chartArea6.BackColor = System.Drawing.Color.White;
-            chartArea6.Name = "ChartArea1";
-            this.chartMoneyPercent.ChartAreas.Add(chartArea6);
-            legend6.BackColor = System.Drawing.Color.White;
-            legend6.Name = "Money";
-            legend6.Title = "Thức uống";
-            this.chartMoneyPercent.Legends.Add(legend6);
+            chartArea3.BackColor = System.Drawing.Color.White;
+            chartArea3.Name = "ChartArea1";
+            this.chartMoneyPercent.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.Color.White;
+            legend3.Name = "Money";
+            legend3.Title = "Thức uống";
+            this.chartMoneyPercent.Legends.Add(legend3);
             this.chartMoneyPercent.Location = new System.Drawing.Point(50, 385);
             this.chartMoneyPercent.Name = "chartMoneyPercent";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.IsValueShownAsLabel = true;
-            series8.LabelFormat = "#,##%";
-            series8.Legend = "Money";
-            series8.Name = "Money";
-            this.chartMoneyPercent.Series.Add(series8);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.IsValueShownAsLabel = true;
+            series4.LabelFormat = "#,##%";
+            series4.Legend = "Money";
+            series4.Name = "Money";
+            this.chartMoneyPercent.Series.Add(series4);
             this.chartMoneyPercent.Size = new System.Drawing.Size(449, 305);
             this.chartMoneyPercent.TabIndex = 10;
             this.chartMoneyPercent.Text = "Pie Chart";
-            title6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title6.Name = "MoneyPercent";
-            title6.Text = "Tỉ lệ doanh thu từng loại";
-            this.chartMoneyPercent.Titles.Add(title6);
+            title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title3.Name = "MoneyPercent";
+            title3.Text = "Tỉ lệ doanh thu từng loại";
+            this.chartMoneyPercent.Titles.Add(title3);
             this.chartMoneyPercent.Visible = false;
             // 
             // panel1
@@ -381,6 +381,7 @@ namespace QuanLyQuanTraSua
             this.gbtnPrint.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gbtnPrint.BorderColor = System.Drawing.Color.Black;
             this.gbtnPrint.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnPrint.Enabled = false;
             this.gbtnPrint.FocusedColor = System.Drawing.Color.Empty;
             this.gbtnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.gbtnPrint.ForeColor = System.Drawing.Color.White;
