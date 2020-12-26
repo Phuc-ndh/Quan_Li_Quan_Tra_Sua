@@ -29,7 +29,11 @@ namespace QuanLyQuanTraSua
             foreach (Account account in listAccount)
             {
                 Button btn = new Button() { Width = 120, Height = 60, Text = account.Username, Tag = account };
-                btn.ForeColor = Color.White;
+                btn.ForeColor = Color.Black;
+                btn.BackColor = Color.FromArgb(192, 255, 255);
+                //btn.FlatStyle = FlatStyle.Flat;
+                //btn.FlatAppearance.BorderSize = 1;
+                //btn.FlatAppearance.BorderColor = Color.FromArgb(151, 143, 255);
                 float size = 14;
                 btn.Font = new Font("Arial", 12f);
                 if (account.Type == 1)
@@ -98,6 +102,18 @@ namespace QuanLyQuanTraSua
             {
                 ReleaseCapture();
                 SendMessage(this.Handle, 0x112, 0xf012, 0);
+            }
+        }
+
+        //viền shadow
+        private const int CS_DropShadow = 0x20000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DropShadow;
+                return cp;
             }
         }
 

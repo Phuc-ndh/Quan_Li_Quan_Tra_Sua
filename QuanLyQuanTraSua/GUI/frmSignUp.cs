@@ -370,6 +370,19 @@ namespace QuanLyQuanTraSua
                     txtPassword.PasswordChar = '*';
             }
         }
+
+
+        //viền shadow
+        private const int CS_DropShadow = 0x20000;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DropShadow;
+                return cp;
+            }
+        }
     }
 }
 
