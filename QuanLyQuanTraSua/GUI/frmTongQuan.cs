@@ -26,6 +26,11 @@ namespace QuanLyQuanTraSua
         {
             InitializeComponent();
         }
+        protected string username;
+        public frmTongQuan(string _username)
+        {
+            this.username = _username;
+        }
 
         private void frmTongQuan_Load(object sender, EventArgs e)
         {
@@ -88,7 +93,7 @@ namespace QuanLyQuanTraSua
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            totalprice = 0;
+            totalPrice = 0;
             //foreach (DataGridViewRow row in dataGridView1.Rows)
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
@@ -136,16 +141,22 @@ namespace QuanLyQuanTraSua
             List<BillInfo> listBillInfo = new List<BillInfo>();
             int x = 0;
             string date = (DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + DateTime.Now.Year).ToString();
-            billBUS.insertBill(date, (int)totalprice, valueDiscount);
+            billBUS.insertBill(date, (int)totalPrice, valueDiscount);
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                //totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
                 billBUS.insertBillInfo(Convert.ToInt32(row.Cells["columnID"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value), valueDiscount);
                 listBillInfo.Add(new BillInfo(row.Cells["columnTen"].Value.ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value)));
+                tempPrice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
             }
 
             // in hoa don
-            printReceipt receipt = new printReceipt(gunaDataGridView1, totalprice, valueDiscount, gtxtCustomerMoney.Text, gtxtMoneyChange.Text);
+            printReceipt receipt = new printReceipt(gunaDataGridView1, totalPrice, tempPrice, valueDiscount, gtxtCustomerMoney.Text, gtxtMoneyChange.Text, username);
+
+            gtxtCustomerMoney.Text = "";
+            gtxtMoneyChange.Text = "";
+            gtxtTotalMoney.Text = "";
+            gtxtValueDiscount.Text = "";
+
 
             Panel orderPanel = new Panel();
             Label orderLabel = new Label();
@@ -246,27 +257,18 @@ namespace QuanLyQuanTraSua
                 gtxtSearch.Visible = false;
                 fabtnSearch.Visible = false;
 
-                //panel3.Location = new Point((panel1.Width-panel3.Width)/2, 20);
-
             }
-                //MessageBox.Show(splitContainer1.Width+"");
+               
             if (WindowState == FormWindowState.Maximized)
             {
-                //groupBox1.Visible = false;
-                //gtxtSearch.Visible = false;
-                //fabtnSearch.Visible = false;
-                //panelChiTiet.Location = new Point(1370,777);
 
             }
-
-            //panel2.Visible = false;
-            //MessageBox.Show("");
         }
 
         private void gunaContextMenuStrip1_Click(object sender, EventArgs e)
         {
             gunaDataGridView1.Rows.Clear();
-            totalprice = 0;
+            totalPrice = 0;
             gtxtTotalMoney.Text = "0";
         }
 
@@ -275,18 +277,19 @@ namespace QuanLyQuanTraSua
             gunaDataGridView1.Rows.Clear();
         }
 
-        private double totalprice = 0;
+        private double totalPrice = 0;
+        private double tempPrice = 0;
         private void totalMoney()
         {
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                totalprice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
+                totalPrice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
             }
             if (valueDiscount != 0)
             {
-                totalprice = totalprice - (totalprice * valueDiscount) / 100;
+                totalPrice = totalPrice - (totalPrice * valueDiscount) / 100;
             }
-            gtxtTotalMoney.Text = totalprice.ToString();
+            gtxtTotalMoney.Text = totalPrice.ToString();
         }
 
         protected int valueDiscount = 0;
@@ -325,9 +328,9 @@ namespace QuanLyQuanTraSua
         {
             if (isUsed)
             {
-                totalprice = totalprice - (totalprice * valueDiscount) / 100;
+                totalPrice = totalPrice - (totalPrice * valueDiscount) / 100;
             }
-            gtxtTotalMoney.Text = totalprice.ToString();
+            gtxtTotalMoney.Text = totalPrice.ToString();
         }
 
         private void gtxtCustomerMoney_TextChanged(object sender, EventArgs e)
@@ -341,7 +344,7 @@ namespace QuanLyQuanTraSua
             {
                 customerMoney = 0;
             }
-            gtxtMoneyChange.Text = (customerMoney - totalprice).ToString();
+            gtxtMoneyChange.Text = (customerMoney - totalPrice).ToString();
         }
 
         private void flpDSOrder_SizeChanged(object sender, EventArgs e)
@@ -371,7 +374,7 @@ namespace QuanLyQuanTraSua
             {
                 customerMoney = 0;
             }
-            gtxtMoneyChange.Text = (customerMoney - totalprice).ToString();
+            gtxtMoneyChange.Text = (customerMoney - totalPrice).ToString();
         }
     }
 }

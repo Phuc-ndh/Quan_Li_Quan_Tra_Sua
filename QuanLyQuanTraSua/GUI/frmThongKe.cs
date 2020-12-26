@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Diagnostics;
 using BUS;
-using System.Windows.Media.Imaging;
+using System.IO;
 
 namespace QuanLyQuanTraSua
 {
@@ -19,8 +19,11 @@ namespace QuanLyQuanTraSua
         public frmThongKe()
         {
             InitializeComponent();
-            
 
+            // xoa dum file tmp hoac anh trong do cx dc
+            //File.Delete("tmp");
+            // tao lai file tmp
+            //File.Create("tmp");
         }
         public void CanChinhViTri()
         {
@@ -33,10 +36,10 @@ namespace QuanLyQuanTraSua
             //chartPie.Location = new Point(260, 40);
             //chartPie.Location = new Point(chartPie.Location.X + 30, chartPie.Location.Y + 30);
             //chartPie.Location = new Point(30, 60);
-            chartSellPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
-                (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 26 / 50 + gbtnReport.Height);
-            chartMoneyPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
-                (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 4 / 5 + gbtnReport.Height +chartSellPercent.Height);
+            // chartSellPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
+            //    (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 26 / 50 + gbtnReport.Height);
+            //chartMoneyPercent.Location = new Point((splitContainer2.Panel1.Width - chartSellPercent.Width) / 2,
+            //    (splitContainer2.Panel1.Height - gbtnReport.Height - chartSellPercent.Height - chartMoneyPercent.Height) * 4 / 5 + gbtnReport.Height +chartSellPercent.Height);
             // chia docj theo 1,2,1,1 =>5 === 2,2,1
             //chartPie.ChartAreas(0).BackColor = Color.Orange;
             //chartPie.ChartAreas[0].BackColor = Color.Orange;
@@ -44,19 +47,19 @@ namespace QuanLyQuanTraSua
 
         public void CanChinhKichThuoc()
         {
-            chartSellPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
-            chartMoneyPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
-            chartSellAndMoney.Size = new Size(splitContainer2.Panel2.Width * 99 / 100, splitContainer2.Panel2.Height * 7 / 10);
+            //chartSellPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
+            //chartMoneyPercent.Size = new Size(splitContainer2.Panel1.Width * 95 / 100, splitContainer2.Panel1.Height * 4 / 10);
+            //chartSellAndMoney.Size = new Size(splitContainer2.Panel2.Width * 99 / 100, splitContainer2.Panel2.Height * 7 / 10);
 
             //============
             //chartPie.Titles.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             //MessageBox.Show(splitContainer2.Panel1.Width + "");
 
             var fontsiz = 1F;
-            int x = splitContainer2.Panel1.Width * 10 / 348;
+            //int x = splitContainer2.Panel1.Width * 10 / 348;
             //MessageBox.Show(typeof(splitContainer2.Panel1.Width)+"");
-            for (int j = 0; j < x; j++)
-                fontsiz += 1;
+            //for (int j = 0; j < x; j++)
+            //   fontsiz += 1;
             //if (fontsiz == 0)
             //fontsiz = 1;
             //MessageBox.Show(x + "");
@@ -118,7 +121,8 @@ namespace QuanLyQuanTraSua
             {
                 
                 //_month = (this.cbbMonth.SelectedIndex) + 1;               
-                _month = (this.gunacbbMonth.SelectedIndex) + 1;               
+                _month = (this.gunacbbMonth.SelectedIndex) + 1;
+                _year = DateTime.Now.Year;
             }
             if (yearReport)
             {
@@ -126,9 +130,8 @@ namespace QuanLyQuanTraSua
             }
         }
 
-        // ve chart
-        private void paintChart()
-        {           
+        private void getData()
+        {
             if (dateReport)
             {
                 dt = billBUS.getReportByDate(_day, _month, _year);
@@ -139,9 +142,17 @@ namespace QuanLyQuanTraSua
                     dt = billBUS.getReportByMonth(_month);
                 } else
                 {
-                    // year report
+                    if (yearReport)
+                    {
+                        //
+                    }
                 }
             }
+        }
+
+        // ve chart
+        private void paintChart()
+        {
 
             // bieu do tron ti le so hang ban ra
             chartSellPercent.DataSource = dt;          
@@ -197,12 +208,14 @@ namespace QuanLyQuanTraSua
             chartSellAndMoney.Visible = false;
             chartMoneyPercent.Visible = false;
             lblIncomeMoney.Visible = false;
+            lblNumber.Visible = false;
         }
 
         // nut bao cao theo ngay
         private void gnbtnDateReport_Click(object sender, EventArgs e)
         {
             hideChart();
+            dt = new DataTable();
 
             dateReport = true;
             monthReport = false;
@@ -219,6 +232,8 @@ namespace QuanLyQuanTraSua
         private void gnbtnMonthReport_Click(object sender, EventArgs e)
         {
             hideChart();
+            dt = new DataTable();
+            gbtnPrint.Enabled = false;
 
             dateReport = false;
             monthReport = true;
@@ -236,6 +251,7 @@ namespace QuanLyQuanTraSua
         private void gnbtnReportYear_Click(object sender, EventArgs e)
         {
             hideChart();
+            gbtnPrint.Enabled = false;
 
             dateReport = false;
             monthReport = false;
@@ -251,61 +267,110 @@ namespace QuanLyQuanTraSua
         private void gbtnReport_Click(object sender, EventArgs e)
         {
             getDateTime();
-
-            chartSellPercent.Update();
-            chartMoneyPercent.Update();
-            chartSellAndMoney.Update();
-
-            if (dateReport || monthReport)
+            getData();
+            gbtnPrint.Enabled = false;
+            
+            if (dt.Rows.Count == 0)
             {
-                chartSellAndMoney.Visible = true;
-                chartSellPercent.Visible = true;
-                chartMoneyPercent.Visible = true;
+                lblDataNull.Visible = true;
+                hideChart();
+                return;
             } else
             {
+                lblDataNull.Visible = false;
 
+                chartSellPercent.Update();
+                chartMoneyPercent.Update();
+                chartSellAndMoney.Update();
+                gbtnPrint.Enabled = true;
+                if (dateReport || monthReport)
+                {
+                    chartSellAndMoney.Visible = true;
+                    chartSellPercent.Visible = true;
+                    chartMoneyPercent.Visible = true;
+                }
+                else
+                {
+
+                }
+
+                paintChart();
+                reportInfoChart();
+                
             }
-      
-            paintChart();
-            reportIncomeMoney();
+
+            
             //
-            CanChinhViTri();
+            //CanChinhViTri();
         }
 
-        private void reportIncomeMoney()
+        private void reportInfoChart()
         {
-            getIncomeMoney();
+            getInfoFromChart();
             lblIncomeMoney.Visible = true;
-            lblIncomeMoney.Location = new Point(chartSellAndMoney.Location.X + chartSellAndMoney.Width / 4,
-                chartSellAndMoney.Location.Y + chartSellAndMoney.Height + 30);
+            lblNumber.Visible = true;
             if (dateReport)
             {
-                lblIncomeMoney.Text = " Doang thu ngày " + _day.ToString() + " tháng " + _month.ToString() + " năm " + _year.ToString() + ": " + incomeMoney.ToString();
+                lblIncomeMoney.Text = "Doanh thu ngay " + _day.ToString() + " thang " + _month.ToString() + " nam " + _year.ToString() + ": " + incomeMoney.ToString();
+                lblNumber.Text = "So luong hom nay da ban: " + numberSell.ToString();
             } else
             {
                 if (monthReport)
                 {
-                    lblIncomeMoney.Text = "Doanh thu tháng " + _month.ToString() + ": " + incomeMoney.ToString();
+                    lblIncomeMoney.Text = "Doanh thu thang " + _month.ToString() + ": " + incomeMoney.ToString();
+                    lblNumber.Text = "So luong thang nay da ban: " + numberSell.ToString();
                 }
             }
         }
 
         private double incomeMoney;
-        private void getIncomeMoney()
+        private int numberSell;
+        private void getInfoFromChart()
         {
             incomeMoney = 0;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 incomeMoney += Convert.ToInt32(dt.Rows[i].ItemArray[2].ToString());
+                numberSell += Convert.ToInt32(dt.Rows[i].ItemArray[3].ToString());
             }
         }
 
         private void frmThongKe_SizeChanged(object sender, EventArgs e)
         {
-            CanChinhKichThuoc();
-            CanChinhViTri();
+            //CanChinhKichThuoc();
+            //CanChinhViTri();
         }
 
-        
+        private int i = 0;
+        private void gbtnPrint_Click(object sender, EventArgs e)
+        {
+           
+            try
+            {
+                i++;
+                chartSellPercent.SaveImage("tmp/sell_percent_tmp"+ i.ToString() +".jpg", ChartImageFormat.Jpeg);
+                chartMoneyPercent.SaveImage("tmp/money_percent_tmp" + i.ToString() +".jpg", ChartImageFormat.Jpeg);
+                chartSellAndMoney.SaveImage("tmp/sell_money_tmp"+ i.ToString() +".jpg", ChartImageFormat.Jpeg);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Loi");
+            }
+            
+            if (dateReport)
+            {
+                printReport pr = new printReport(_day, _month, _year, i, lblIncomeMoney.Text, lblNumber.Text);
+                pr.exportReport();
+            } 
+            else
+            {
+                if (monthReport)
+                {
+                   printReport pr = new printReport(_month, _year, i, lblIncomeMoney.Text, lblNumber.Text);
+                    pr.exportReport();
+                }
+            }
+            
+        }
     }
 }

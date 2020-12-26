@@ -11,6 +11,8 @@ using System.Diagnostics;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using System.Drawing;
+using System.IO;
+using BUS;
 
 namespace QuanLyQuanTraSua
 {
@@ -21,26 +23,34 @@ namespace QuanLyQuanTraSua
             InitializeComponent();
         }
 
+        BillBUS billBus = new BillBUS();
+
         private DataGridView dtgv;
         private double totalPrice;
+        private double tempPrice;
         private int valueDiscount;
         private string customerMoney;
         private string changeMoney;
+        private string idNhanvien;
 
         // lay datagridview tu fromTongQuan
-        public printReceipt(DataGridView _dtgv, double _totalPrice, int _valueDiscount, string _customerMoney, string _changeMoney):this()
+        public printReceipt(DataGridView _dtgv, double _totalPrice, double _tempPrice, int _valueDiscount, string _customerMoney, string _changeMoney, string _idNhanvien):this()
         {
             this.dtgv = _dtgv;
             this.totalPrice = _totalPrice;
+            this.tempPrice = _tempPrice;
             this.valueDiscount = _valueDiscount;
             this.customerMoney = _customerMoney;
             this.changeMoney = _changeMoney;
+            this.idNhanvien = _idNhanvien;
 
             printPdfReceipt();
         }
 
         private void printPdfReceipt()
-        {   
+        {
+            readInfoTxt();
+
             int point = 0;
             try
             {
@@ -52,19 +62,22 @@ namespace QuanLyQuanTraSua
                 XFont font_bold = new XFont("Verdana", 17, XFontStyle.Bold);
 
                 point = point + 100;
-                g.DrawString("HOA DON BAN HANG", font_bold, XBrushes.Black, new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
+                g.DrawString(nameShop, font_bold, XBrushes.Black, new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
+
+                point = point + 50;
+                g.DrawString("HOA DON BAN HANG", font_regular, XBrushes.Black, new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
                 
                 // in dia chi tren hoa don
                 point = point + 50;
-                g.DrawString("Linh Trung   Thu Duc", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString(address, font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ten nhan vien
                 point = point + 40;
-                g.DrawString("Nhan vien: " + "MaNV", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString("Nhan vien: " + idNhanvien, font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ten id hoa don
                 point = point + 20;
-                g.DrawString("Hoa don: " + "idHoaDon", font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString("Hoa don: " + billBus.getIdBill().ToString(), font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ngay tren hoa don
                 point = point + 40;
@@ -104,12 +117,26 @@ namespace QuanLyQuanTraSua
                     point = point + 20;
                 }
 
-                g.DrawString("----------------------------------------------------------------------------",
+                g.DrawString("===========================================================================",
                         font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 point = point + 50;
 
+                // in tien tam tinh chua giam gia
+                g.DrawString("Tam tinh: ", font_regular, XBrushes.Black,
+                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString(tempPrice.ToString(), font_regular, XBrushes.Black,
+                        new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
+                point = point + 30;
+
+                // in gia tri % code giam gia
+                g.DrawString("Giam gia: ", font_regular, XBrushes.Black,
+                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                g.DrawString(this.valueDiscount.ToString() + "%", font_regular, XBrushes.Black,
+                        new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
+                point = point + 30;
+
                 // in tong tien
-                g.DrawString("Tong tien:", font_regular, XBrushes.Black,
+                g.DrawString("Tong tien:", font_bold, XBrushes.Black,
                         new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 g.DrawString(this.totalPrice.ToString(), font_regular, XBrushes.Black,
                         new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
@@ -122,26 +149,23 @@ namespace QuanLyQuanTraSua
                         new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
                 point = point + 30;
 
-                // in gia tri % code giam gia
-                g.DrawString("Da giam gia: ", font_regular, XBrushes.Black,
-                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                g.DrawString(this.valueDiscount.ToString() + "%", font_regular, XBrushes.Black,
-                        new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
-                point = point + 30;
-
                 // in tien tra lai
                 g.DrawString("Tien tra lai: ", font_regular, XBrushes.Black,
                         new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 g.DrawString(this.changeMoney, font_regular, XBrushes.Black,
                         new XRect(-40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopRight);
                 point = point + 30;
-
-                g.DrawString("----------------------------------------------------------------------------",
+                              
+                g.DrawString("===========================================================================",
                         font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
                 point = point + 30;
 
                 g.DrawString("Xin cam on", font_regular, XBrushes.Black,
-                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Width.Point), XStringFormats.TopCenter);
+                        new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
+                point = point + 30;
+
+                g.DrawString(passWifi, font_regular, XBrushes.Black,
+                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
 
                 string pathPdf = "receipt.pdf";
                 pdf.Save(pathPdf);
@@ -151,6 +175,22 @@ namespace QuanLyQuanTraSua
             {
                 MessageBox.Show(e.ToString());
             }
+        }
+
+        private string address;
+        private string nameShop;
+        private string passWifi;
+        private void readInfoTxt()
+        {
+            string[] lines = File.ReadAllLines("info.txt");
+            address = lines[0];
+            nameShop = lines[1];
+            passWifi = lines[2];
+        }
+
+        private void printReceipt_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -315,9 +315,9 @@ namespace QuanLyQuanTraSua
             this.lblName.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblName.Font = new System.Drawing.Font("Microsoft New Tai Lue", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(296, 0);
+            this.lblName.Location = new System.Drawing.Point(311, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(149, 27);
+            this.lblName.Size = new System.Drawing.Size(134, 25);
             this.lblName.TabIndex = 10;
             this.lblName.Text = "Nguyễn Văn A";
             this.lblName.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
@@ -381,7 +381,7 @@ namespace QuanLyQuanTraSua
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.Black;
             this.lblTitleChildForm.Location = new System.Drawing.Point(63, 10);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(54, 20);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(52, 20);
             this.lblTitleChildForm.TabIndex = 1;
             this.lblTitleChildForm.Text = "Home";
             // 
@@ -429,7 +429,7 @@ namespace QuanLyQuanTraSua
             this.lblTitle.Location = new System.Drawing.Point(351, 74);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(549, 59);
+            this.lblTitle.Size = new System.Drawing.Size(521, 55);
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "Quản Lý Quán Trà Sữa";
             // 

@@ -103,5 +103,10 @@ namespace BUS
         {
             return billDAL.getDiscountList();
         }
+
+        public int getIdBill()
+        {
+            return billDAL._id;
+        }
     }
 }
