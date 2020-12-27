@@ -30,11 +30,11 @@ namespace BUS
             }
         }
 
-        public bool insertBillInfo(int idDrink, int quantity, int valueDiscount)
+        public bool insertBillInfo(string nameDrink, int quantity, int totalPrice)
         {
             try
             {
-                if (billDAL.insertBillInfo(idDrink, quantity, valueDiscount))
+                if (billDAL.insertBillInfo(nameDrink, quantity, totalPrice))
                     return true;
                 else
                     return false;
@@ -52,14 +52,10 @@ namespace BUS
 
         public DataTable getReportByMonth(int month)
         {
-            try
-            {
-                return billDAL.reportByMonth(month);
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            
+            return billDAL.reportByMonth(month);
+            
+            
         }
 
         public DataTable getIdDiscount(string id)

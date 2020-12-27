@@ -145,24 +145,24 @@ namespace QuanLyQuanTraSua
 
             // bieu do tron ti le so hang ban ra
             chartSellPercent.DataSource = dt;          
-            chartSellPercent.Series["Drink"].XValueMember = "Name";
+            chartSellPercent.Series["Drink"].XValueMember = "nameDrink";
             chartSellPercent.Series["Drink"].YValueMembers = "PERCENTAGE_DRINK";
             chartSellPercent.Series["Drink"].ChartType = SeriesChartType.Pie;
 
             // bieu do tron ti le doanh thu   
             chartMoneyPercent.DataSource = dt;
-            chartMoneyPercent.Series["Money"].XValueMember = "Name";
+            chartMoneyPercent.Series["Money"].XValueMember = "nameDrink";
             chartMoneyPercent.Series["Money"].YValueMembers = "PERCENTAGE_MONEY";
             chartMoneyPercent.Series["Money"].ChartType = SeriesChartType.Pie;
 
             // bieu do cot doanh thu va so luong ban ra     
             chartSellAndMoney.DataSource = dt;
-            chartSellAndMoney.Series[0].XValueMember = "Name";
+            chartSellAndMoney.Series[0].XValueMember = "nameDrink";
             chartSellAndMoney.Series[0].YValueMembers = "SO_LUONG";
             chartSellAndMoney.ChartAreas[0].AxisX.Title = "Loại đồ uống";
             chartSellAndMoney.ChartAreas[0].AxisY.Title = "Số lượng";
 
-            chartSellAndMoney.Series[1].XValueMember = "Name";
+            chartSellAndMoney.Series[1].XValueMember = "nameDrink";
             chartSellAndMoney.Series[1].YValueMembers = "MONEY";
 
             chartSellAndMoney.Series[1].YAxisType = AxisType.Secondary;
@@ -197,7 +197,9 @@ namespace QuanLyQuanTraSua
             chartSellAndMoney.Visible = false;
             chartMoneyPercent.Visible = false;
             lblIncomeMoney.Visible = false;
+            lblIncomeMoney.Text = 0.ToString();
             lblNumber.Visible = false;
+            lblNumber.Text = 0.ToString();
             gbtnPrint.Enabled = false;
             gpnlSumary.Visible = false;
         }
@@ -215,7 +217,7 @@ namespace QuanLyQuanTraSua
             gunacbbMonth.Visible = false;
             gbtnReport.Visible = true;
 
-            gbtnReport_Click(sender, e);
+            //gbtnReport_Click(sender, e);
         }
 
         // nut bao cao theo thang
@@ -235,7 +237,7 @@ namespace QuanLyQuanTraSua
             // lay gia tri thang hien tai
             this.gunacbbMonth.SelectedIndex = DateTime.Now.Month - 1;
 
-            gbtnReport_Click(sender, e);
+            //gbtnReport_Click(sender, e);
         }
 
         // click report botton
@@ -302,7 +304,7 @@ namespace QuanLyQuanTraSua
             incomeMoney = 0;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                incomeMoney += Convert.ToInt32(dt.Rows[i].ItemArray[2].ToString());
+                incomeMoney += int.Parse(dt.Rows[i].ItemArray[2].ToString(), System.Globalization.NumberStyles.Currency);
                 numberSell += Convert.ToInt32(dt.Rows[i].ItemArray[3].ToString());
             }
         }
