@@ -244,6 +244,10 @@ namespace QuanLyQuanTraSua
         {
             if (parent.currentUser.Type == 0)
             {
+                btnThongKe.Visible = false;
+                btnAdmin.Visible = false;
+                btnMatHang.Visible = false;
+                btnDiscount.Visible = false;
                 lblName.Text = "NV: " + parent.currentUser.Realname;
             }
             else
