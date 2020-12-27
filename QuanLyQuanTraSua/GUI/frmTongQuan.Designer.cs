@@ -147,10 +147,6 @@ namespace QuanLyQuanTraSua
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
-            this.panel1.Controls.Add(this.gtxtValueDiscount);
-            this.panel1.Controls.Add(this.gbtnCheckDiscount);
-            this.panel1.Controls.Add(this.labelValueDiscount);
-            this.panel1.Controls.Add(this.gtxtIdDicount);
             this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel3);
@@ -173,13 +169,13 @@ namespace QuanLyQuanTraSua
             this.gtxtValueDiscount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtValueDiscount.Location = new System.Drawing.Point(481, 764);
+            this.gtxtValueDiscount.Location = new System.Drawing.Point(164, 599);
             this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtValueDiscount.Name = "gtxtValueDiscount";
             this.gtxtValueDiscount.PasswordChar = '\0';
             this.gtxtValueDiscount.Radius = 8;
             this.gtxtValueDiscount.SelectedText = "";
-            this.gtxtValueDiscount.Size = new System.Drawing.Size(144, 44);
+            this.gtxtValueDiscount.Size = new System.Drawing.Size(105, 44);
             this.gtxtValueDiscount.TabIndex = 29;
             this.gtxtValueDiscount.TextOffsetX = 10;
             // 
@@ -196,7 +192,7 @@ namespace QuanLyQuanTraSua
             this.gbtnCheckDiscount.ForeColor = System.Drawing.Color.White;
             this.gbtnCheckDiscount.Image = null;
             this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnCheckDiscount.Location = new System.Drawing.Point(245, 763);
+            this.gbtnCheckDiscount.Location = new System.Drawing.Point(51, 605);
             this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
             this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
@@ -217,7 +213,7 @@ namespace QuanLyQuanTraSua
             this.labelValueDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.labelValueDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelValueDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.labelValueDiscount.Location = new System.Drawing.Point(377, 777);
+            this.labelValueDiscount.Location = new System.Drawing.Point(47, 525);
             this.labelValueDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelValueDiscount.Name = "labelValueDiscount";
             this.labelValueDiscount.Size = new System.Drawing.Size(84, 24);
@@ -235,7 +231,7 @@ namespace QuanLyQuanTraSua
             this.gtxtIdDicount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtIdDicount.Location = new System.Drawing.Point(16, 762);
+            this.gtxtIdDicount.Location = new System.Drawing.Point(51, 553);
             this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtIdDicount.Name = "gtxtIdDicount";
             this.gtxtIdDicount.PasswordChar = '\0';
@@ -518,9 +514,13 @@ namespace QuanLyQuanTraSua
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.panel3.Controls.Add(this.gtxtValueDiscount);
             this.panel3.Controls.Add(this.gtxtMoneyChange);
+            this.panel3.Controls.Add(this.labelValueDiscount);
+            this.panel3.Controls.Add(this.gbtnCheckDiscount);
             this.panel3.Controls.Add(this.lblMoneyChange);
             this.panel3.Controls.Add(this.lblCustomerMoney);
+            this.panel3.Controls.Add(this.gtxtIdDicount);
             this.panel3.Controls.Add(this.gtxtCustomerMoney);
             this.panel3.Controls.Add(this.gunaDataGridView1);
             this.panel3.Controls.Add(this.lblHoaDon);
