@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using BUS;
 using System.Runtime.InteropServices;
 using DTO;
+using System.Configuration;
 
 namespace QuanLyQuanTraSua
 {

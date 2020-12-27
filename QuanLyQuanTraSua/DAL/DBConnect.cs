@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DAL
 {
@@ -14,8 +15,7 @@ namespace DAL
         private SqlConnection connection;
         public DBConnect()
         {
-            //connection = new SqlConnection(@"Data Source=DESKTOP-JSEKHS1;Initial Catalog=QUANLYTRASUA;Integrated Security=True");
-            connection = new SqlConnection(@"Data Source = .\sqlexpress;Initial catalog = QuanLyTraSua;Integrated Security = True");
+            connection = new SqlConnection(ConfigurationManager.ConnectionStrings["Connection"].ConnectionString);
         }
 
         public DataTable ExecuteQuery(string query, object[] parameterValue = null)
