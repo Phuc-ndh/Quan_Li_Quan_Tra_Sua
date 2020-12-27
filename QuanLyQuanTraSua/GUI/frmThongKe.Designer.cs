@@ -42,7 +42,6 @@ namespace QuanLyQuanTraSua
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            this.gnbtnReportYear = new Guna.UI.WinForms.GunaButton();
             this.gnbtnReportMonth = new Guna.UI.WinForms.GunaButton();
             this.gnbtnDateReport = new Guna.UI.WinForms.GunaButton();
             this.lblIncomeMoney = new System.Windows.Forms.Label();
@@ -63,33 +62,6 @@ namespace QuanLyQuanTraSua
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gnbtnReportYear
-            // 
-            this.gnbtnReportYear.AnimationHoverSpeed = 0.07F;
-            this.gnbtnReportYear.AnimationSpeed = 0.03F;
-            this.gnbtnReportYear.BackColor = System.Drawing.Color.Transparent;
-            this.gnbtnReportYear.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.gnbtnReportYear.BorderColor = System.Drawing.Color.Black;
-            this.gnbtnReportYear.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gnbtnReportYear.FocusedColor = System.Drawing.Color.Empty;
-            this.gnbtnReportYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.gnbtnReportYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gnbtnReportYear.Image = null;
-            this.gnbtnReportYear.ImageSize = new System.Drawing.Size(20, 20);
-            this.gnbtnReportYear.Location = new System.Drawing.Point(340, 3);
-            this.gnbtnReportYear.Name = "gnbtnReportYear";
-            this.gnbtnReportYear.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
-            this.gnbtnReportYear.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(114)))), ((int)(((byte)(239)))));
-            this.gnbtnReportYear.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(114)))), ((int)(((byte)(239)))));
-            this.gnbtnReportYear.OnHoverImage = null;
-            this.gnbtnReportYear.OnPressedColor = System.Drawing.Color.Black;
-            this.gnbtnReportYear.Radius = 10;
-            this.gnbtnReportYear.Size = new System.Drawing.Size(159, 44);
-            this.gnbtnReportYear.TabIndex = 14;
-            this.gnbtnReportYear.Text = "Năm";
-            this.gnbtnReportYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gnbtnReportYear.Click += new System.EventHandler(this.gnbtnReportYear_Click);
-            // 
             // gnbtnReportMonth
             // 
             this.gnbtnReportMonth.AnimationHoverSpeed = 0.07F;
@@ -103,7 +75,8 @@ namespace QuanLyQuanTraSua
             this.gnbtnReportMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gnbtnReportMonth.Image = null;
             this.gnbtnReportMonth.ImageSize = new System.Drawing.Size(20, 20);
-            this.gnbtnReportMonth.Location = new System.Drawing.Point(170, 3);
+            this.gnbtnReportMonth.Location = new System.Drawing.Point(227, 4);
+            this.gnbtnReportMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gnbtnReportMonth.Name = "gnbtnReportMonth";
             this.gnbtnReportMonth.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
             this.gnbtnReportMonth.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(114)))), ((int)(((byte)(239)))));
@@ -111,7 +84,7 @@ namespace QuanLyQuanTraSua
             this.gnbtnReportMonth.OnHoverImage = null;
             this.gnbtnReportMonth.OnPressedColor = System.Drawing.Color.Black;
             this.gnbtnReportMonth.Radius = 10;
-            this.gnbtnReportMonth.Size = new System.Drawing.Size(164, 44);
+            this.gnbtnReportMonth.Size = new System.Drawing.Size(219, 54);
             this.gnbtnReportMonth.TabIndex = 14;
             this.gnbtnReportMonth.Text = "Tháng";
             this.gnbtnReportMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -130,7 +103,8 @@ namespace QuanLyQuanTraSua
             this.gnbtnDateReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gnbtnDateReport.Image = null;
             this.gnbtnDateReport.ImageSize = new System.Drawing.Size(20, 20);
-            this.gnbtnDateReport.Location = new System.Drawing.Point(3, 3);
+            this.gnbtnDateReport.Location = new System.Drawing.Point(4, 4);
+            this.gnbtnDateReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gnbtnDateReport.Name = "gnbtnDateReport";
             this.gnbtnDateReport.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(247)))), ((int)(((byte)(240)))));
             this.gnbtnDateReport.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(114)))), ((int)(((byte)(239)))));
@@ -138,7 +112,7 @@ namespace QuanLyQuanTraSua
             this.gnbtnDateReport.OnHoverImage = null;
             this.gnbtnDateReport.OnPressedColor = System.Drawing.Color.Black;
             this.gnbtnDateReport.Radius = 10;
-            this.gnbtnDateReport.Size = new System.Drawing.Size(167, 44);
+            this.gnbtnDateReport.Size = new System.Drawing.Size(223, 54);
             this.gnbtnDateReport.TabIndex = 14;
             this.gnbtnDateReport.Text = "Ngày";
             this.gnbtnDateReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -149,9 +123,10 @@ namespace QuanLyQuanTraSua
             this.lblIncomeMoney.AutoSize = true;
             this.lblIncomeMoney.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblIncomeMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblIncomeMoney.Location = new System.Drawing.Point(630, 67);
+            this.lblIncomeMoney.Location = new System.Drawing.Point(840, 82);
+            this.lblIncomeMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIncomeMoney.Name = "lblIncomeMoney";
-            this.lblIncomeMoney.Size = new System.Drawing.Size(147, 18);
+            this.lblIncomeMoney.Size = new System.Drawing.Size(188, 25);
             this.lblIncomeMoney.TabIndex = 15;
             this.lblIncomeMoney.Text = "Tổng doanh thu";
             this.lblIncomeMoney.Visible = false;
@@ -164,7 +139,8 @@ namespace QuanLyQuanTraSua
             legend1.BackColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
             this.chartSellAndMoney.Legends.Add(legend1);
-            this.chartSellAndMoney.Location = new System.Drawing.Point(486, 131);
+            this.chartSellAndMoney.Location = new System.Drawing.Point(648, 161);
+            this.chartSellAndMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartSellAndMoney.Name = "chartSellAndMoney";
             series1.ChartArea = "Sell Number";
             series1.Legend = "Legend1";
@@ -174,7 +150,7 @@ namespace QuanLyQuanTraSua
             series2.Name = "Doanh thu";
             this.chartSellAndMoney.Series.Add(series1);
             this.chartSellAndMoney.Series.Add(series2);
-            this.chartSellAndMoney.Size = new System.Drawing.Size(730, 504);
+            this.chartSellAndMoney.Size = new System.Drawing.Size(973, 620);
             this.chartSellAndMoney.TabIndex = 9;
             this.chartSellAndMoney.Text = "Collum chart";
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -205,12 +181,13 @@ namespace QuanLyQuanTraSua
             "2023",
             "2024",
             "2025"});
-            this.gunacbbYear.Location = new System.Drawing.Point(323, 56);
+            this.gunacbbYear.Location = new System.Drawing.Point(431, 69);
+            this.gunacbbYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunacbbYear.Name = "gunacbbYear";
             this.gunacbbYear.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunacbbYear.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gunacbbYear.Radius = 5;
-            this.gunacbbYear.Size = new System.Drawing.Size(152, 31);
+            this.gunacbbYear.Size = new System.Drawing.Size(201, 37);
             this.gunacbbYear.TabIndex = 15;
             this.gunacbbYear.Visible = false;
             // 
@@ -241,12 +218,13 @@ namespace QuanLyQuanTraSua
             "Tháng Mười",
             "Tháng Mười Một",
             "Tháng Mười Hai"});
-            this.gunacbbMonth.Location = new System.Drawing.Point(335, 56);
+            this.gunacbbMonth.Location = new System.Drawing.Point(447, 69);
+            this.gunacbbMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunacbbMonth.Name = "gunacbbMonth";
             this.gunacbbMonth.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunacbbMonth.OnHoverItemForeColor = System.Drawing.Color.White;
             this.gunacbbMonth.Radius = 5;
-            this.gunacbbMonth.Size = new System.Drawing.Size(174, 31);
+            this.gunacbbMonth.Size = new System.Drawing.Size(231, 37);
             this.gunacbbMonth.TabIndex = 12;
             this.gunacbbMonth.Visible = false;
             // 
@@ -261,7 +239,8 @@ namespace QuanLyQuanTraSua
             this.gunacldDateTime.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunacldDateTime.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunacldDateTime.ForeColor = System.Drawing.Color.Black;
-            this.gunacldDateTime.Location = new System.Drawing.Point(232, 53);
+            this.gunacldDateTime.Location = new System.Drawing.Point(309, 65);
+            this.gunacldDateTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunacldDateTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunacldDateTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunacldDateTime.Name = "gunacldDateTime";
@@ -270,9 +249,9 @@ namespace QuanLyQuanTraSua
             this.gunacldDateTime.OnHoverForeColor = System.Drawing.Color.Black;
             this.gunacldDateTime.OnPressedColor = System.Drawing.Color.Black;
             this.gunacldDateTime.Radius = 5;
-            this.gunacldDateTime.Size = new System.Drawing.Size(277, 36);
+            this.gunacldDateTime.Size = new System.Drawing.Size(369, 44);
             this.gunacldDateTime.TabIndex = 11;
-            this.gunacldDateTime.Text = "09 Tháng Mười Hai 2020";
+            this.gunacldDateTime.Text = "Wednesday, December 9, 2020";
             this.gunacldDateTime.Value = new System.DateTime(2020, 12, 9, 10, 58, 29, 705);
             this.gunacldDateTime.Visible = false;
             // 
@@ -289,7 +268,8 @@ namespace QuanLyQuanTraSua
             this.gbtnReport.ForeColor = System.Drawing.Color.White;
             this.gbtnReport.Image = null;
             this.gbtnReport.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnReport.Location = new System.Drawing.Point(91, 53);
+            this.gbtnReport.Location = new System.Drawing.Point(121, 65);
+            this.gbtnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbtnReport.Name = "gbtnReport";
             this.gbtnReport.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
             this.gbtnReport.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -297,7 +277,7 @@ namespace QuanLyQuanTraSua
             this.gbtnReport.OnHoverImage = null;
             this.gbtnReport.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnReport.Radius = 10;
-            this.gbtnReport.Size = new System.Drawing.Size(79, 31);
+            this.gbtnReport.Size = new System.Drawing.Size(105, 38);
             this.gbtnReport.TabIndex = 14;
             this.gbtnReport.Text = "Report";
             this.gbtnReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -316,7 +296,8 @@ namespace QuanLyQuanTraSua
             legend2.Title = "Thức uống";
             legend2.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chartSellPercent.Legends.Add(legend2);
-            this.chartSellPercent.Location = new System.Drawing.Point(50, 98);
+            this.chartSellPercent.Location = new System.Drawing.Point(67, 121);
+            this.chartSellPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartSellPercent.Name = "chartSellPercent";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -325,7 +306,7 @@ namespace QuanLyQuanTraSua
             series3.Legend = "Legend1";
             series3.Name = "Drink";
             this.chartSellPercent.Series.Add(series3);
-            this.chartSellPercent.Size = new System.Drawing.Size(459, 294);
+            this.chartSellPercent.Size = new System.Drawing.Size(612, 362);
             this.chartSellPercent.TabIndex = 8;
             this.chartSellPercent.Text = "Pie Chart";
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -343,7 +324,8 @@ namespace QuanLyQuanTraSua
             legend3.Name = "Money";
             legend3.Title = "Thức uống";
             this.chartMoneyPercent.Legends.Add(legend3);
-            this.chartMoneyPercent.Location = new System.Drawing.Point(50, 385);
+            this.chartMoneyPercent.Location = new System.Drawing.Point(67, 474);
+            this.chartMoneyPercent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chartMoneyPercent.Name = "chartMoneyPercent";
             series4.ChartArea = "ChartArea1";
             series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -352,7 +334,7 @@ namespace QuanLyQuanTraSua
             series4.Legend = "Money";
             series4.Name = "Money";
             this.chartMoneyPercent.Series.Add(series4);
-            this.chartMoneyPercent.Size = new System.Drawing.Size(449, 305);
+            this.chartMoneyPercent.Size = new System.Drawing.Size(599, 375);
             this.chartMoneyPercent.TabIndex = 10;
             this.chartMoneyPercent.Text = "Pie Chart";
             title3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -366,11 +348,11 @@ namespace QuanLyQuanTraSua
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
             this.panel1.Controls.Add(this.gnbtnDateReport);
             this.panel1.Controls.Add(this.gnbtnReportMonth);
-            this.panel1.Controls.Add(this.gnbtnReportYear);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1016, 50);
+            this.panel1.Size = new System.Drawing.Size(1355, 62);
             this.panel1.TabIndex = 16;
             // 
             // gbtnPrint
@@ -387,7 +369,8 @@ namespace QuanLyQuanTraSua
             this.gbtnPrint.ForeColor = System.Drawing.Color.White;
             this.gbtnPrint.Image = null;
             this.gbtnPrint.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnPrint.Location = new System.Drawing.Point(3, 53);
+            this.gbtnPrint.Location = new System.Drawing.Point(4, 65);
+            this.gbtnPrint.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbtnPrint.Name = "gbtnPrint";
             this.gbtnPrint.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
             this.gbtnPrint.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -395,7 +378,7 @@ namespace QuanLyQuanTraSua
             this.gbtnPrint.OnHoverImage = null;
             this.gbtnPrint.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnPrint.Radius = 10;
-            this.gbtnPrint.Size = new System.Drawing.Size(79, 31);
+            this.gbtnPrint.Size = new System.Drawing.Size(105, 38);
             this.gbtnPrint.TabIndex = 17;
             this.gbtnPrint.Text = "Print";
             this.gbtnPrint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -405,9 +388,10 @@ namespace QuanLyQuanTraSua
             // 
             this.lblDataNull.AutoSize = true;
             this.lblDataNull.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblDataNull.Location = new System.Drawing.Point(381, 385);
+            this.lblDataNull.Location = new System.Drawing.Point(508, 474);
+            this.lblDataNull.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDataNull.Name = "lblDataNull";
-            this.lblDataNull.Size = new System.Drawing.Size(418, 32);
+            this.lblDataNull.Size = new System.Drawing.Size(529, 41);
             this.lblDataNull.TabIndex = 18;
             this.lblDataNull.Text = "Chưa có data thời gian này";
             this.lblDataNull.Visible = false;
@@ -417,19 +401,20 @@ namespace QuanLyQuanTraSua
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblNumber.Location = new System.Drawing.Point(630, 98);
+            this.lblNumber.Location = new System.Drawing.Point(840, 121);
+            this.lblNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(149, 18);
+            this.lblNumber.Size = new System.Drawing.Size(192, 25);
             this.lblNumber.TabIndex = 19;
             this.lblNumber.Text = "Số lượng đã bán";
             this.lblNumber.Visible = false;
             // 
             // frmThongKe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1016, 616);
+            this.ClientSize = new System.Drawing.Size(1355, 758);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.lblDataNull);
             this.Controls.Add(this.gbtnPrint);
@@ -442,6 +427,7 @@ namespace QuanLyQuanTraSua
             this.Controls.Add(this.gunacbbYear);
             this.Controls.Add(this.lblIncomeMoney);
             this.Controls.Add(this.chartSellAndMoney);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmThongKe";
             this.Text = "frmThongKe";
             this.SizeChanged += new System.EventHandler(this.frmThongKe_SizeChanged);
@@ -461,7 +447,6 @@ namespace QuanLyQuanTraSua
         private Guna.UI.WinForms.GunaDateTimePicker gunacldDateTime;
         private Guna.UI.WinForms.GunaComboBox gunacbbMonth;
         private Guna.UI.WinForms.GunaButton gnbtnDateReport;
-        private Guna.UI.WinForms.GunaButton gnbtnReportYear;
         private Guna.UI.WinForms.GunaButton gnbtnReportMonth;
         private Guna.UI.WinForms.GunaButton gbtnReport;
         private System.Windows.Forms.Label lblIncomeMoney;
