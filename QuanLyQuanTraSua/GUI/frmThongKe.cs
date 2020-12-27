@@ -203,6 +203,7 @@ namespace QuanLyQuanTraSua
         // nut bao cao theo ngay
         private void gnbtnDateReport_Click(object sender, EventArgs e)
         {
+            gbtnReport.Enabled = true;
             hideChart();
             dt = new DataTable();
 
@@ -219,6 +220,7 @@ namespace QuanLyQuanTraSua
         // nut bao cao theo thang
         private void gnbtnMonthReport_Click(object sender, EventArgs e)
         {
+            gbtnReport.Enabled = true;
             hideChart();
             dt = new DataTable();
             gbtnPrint.Enabled = false;
