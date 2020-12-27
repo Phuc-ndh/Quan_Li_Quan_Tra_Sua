@@ -30,20 +30,16 @@ namespace QuanLyQuanTraSua
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gtxtValueDiscount = new Guna.UI.WinForms.GunaTextBox();
-            this.gbtnCheckDiscount = new Guna.UI.WinForms.GunaButton();
-            this.labelValueDiscount = new System.Windows.Forms.Label();
-            this.gtxtIdDicount = new Guna.UI.WinForms.GunaTextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fabtnGoTo1 = new FontAwesome.Sharp.IconButton();
@@ -61,9 +57,13 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong = new System.Windows.Forms.Label();
             this.lblTenMatHang = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.gtxtValueDiscount = new Guna.UI.WinForms.GunaTextBox();
             this.gtxtMoneyChange = new Guna.UI.WinForms.GunaTextBox();
+            this.labelValueDiscount = new System.Windows.Forms.Label();
+            this.gbtnCheckDiscount = new Guna.UI.WinForms.GunaButton();
             this.lblMoneyChange = new System.Windows.Forms.Label();
             this.lblCustomerMoney = new System.Windows.Forms.Label();
+            this.gtxtIdDicount = new Guna.UI.WinForms.GunaTextBox();
             this.gtxtCustomerMoney = new Guna.UI.WinForms.GunaTextBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.columnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -156,90 +156,6 @@ namespace QuanLyQuanTraSua
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 817);
             this.panel1.TabIndex = 14;
-            // 
-            // gtxtValueDiscount
-            // 
-            this.gtxtValueDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.gtxtValueDiscount.BaseColor = System.Drawing.Color.White;
-            this.gtxtValueDiscount.BorderColor = System.Drawing.Color.Silver;
-            this.gtxtValueDiscount.BorderSize = 3;
-            this.gtxtValueDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtxtValueDiscount.Enabled = false;
-            this.gtxtValueDiscount.FocusedBaseColor = System.Drawing.Color.White;
-            this.gtxtValueDiscount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtValueDiscount.Location = new System.Drawing.Point(164, 599);
-            this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4);
-            this.gtxtValueDiscount.Name = "gtxtValueDiscount";
-            this.gtxtValueDiscount.PasswordChar = '\0';
-            this.gtxtValueDiscount.Radius = 8;
-            this.gtxtValueDiscount.SelectedText = "";
-            this.gtxtValueDiscount.Size = new System.Drawing.Size(105, 44);
-            this.gtxtValueDiscount.TabIndex = 29;
-            this.gtxtValueDiscount.TextOffsetX = 10;
-            // 
-            // gbtnCheckDiscount
-            // 
-            this.gbtnCheckDiscount.AnimationHoverSpeed = 0.07F;
-            this.gbtnCheckDiscount.AnimationSpeed = 0.03F;
-            this.gbtnCheckDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.gbtnCheckDiscount.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gbtnCheckDiscount.BorderColor = System.Drawing.Color.Black;
-            this.gbtnCheckDiscount.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnCheckDiscount.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnCheckDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.gbtnCheckDiscount.ForeColor = System.Drawing.Color.White;
-            this.gbtnCheckDiscount.Image = null;
-            this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnCheckDiscount.Location = new System.Drawing.Point(51, 605);
-            this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4);
-            this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
-            this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
-            this.gbtnCheckDiscount.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnCheckDiscount.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnCheckDiscount.OnHoverImage = null;
-            this.gbtnCheckDiscount.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnCheckDiscount.Radius = 10;
-            this.gbtnCheckDiscount.Size = new System.Drawing.Size(105, 38);
-            this.gbtnCheckDiscount.TabIndex = 28;
-            this.gbtnCheckDiscount.Text = "Check";
-            this.gbtnCheckDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gbtnCheckDiscount.Click += new System.EventHandler(this.gbtnCheckDiscount_Click);
-            // 
-            // labelValueDiscount
-            // 
-            this.labelValueDiscount.AutoSize = true;
-            this.labelValueDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
-            this.labelValueDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValueDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.labelValueDiscount.Location = new System.Drawing.Point(47, 525);
-            this.labelValueDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelValueDiscount.Name = "labelValueDiscount";
-            this.labelValueDiscount.Size = new System.Drawing.Size(84, 24);
-            this.labelValueDiscount.TabIndex = 28;
-            this.labelValueDiscount.Text = "Giảm giá";
-            // 
-            // gtxtIdDicount
-            // 
-            this.gtxtIdDicount.BackColor = System.Drawing.Color.Transparent;
-            this.gtxtIdDicount.BaseColor = System.Drawing.Color.White;
-            this.gtxtIdDicount.BorderColor = System.Drawing.Color.Silver;
-            this.gtxtIdDicount.BorderSize = 3;
-            this.gtxtIdDicount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtxtIdDicount.FocusedBaseColor = System.Drawing.Color.White;
-            this.gtxtIdDicount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtIdDicount.Location = new System.Drawing.Point(51, 553);
-            this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4);
-            this.gtxtIdDicount.Name = "gtxtIdDicount";
-            this.gtxtIdDicount.PasswordChar = '\0';
-            this.gtxtIdDicount.Radius = 8;
-            this.gtxtIdDicount.SelectedText = "";
-            this.gtxtIdDicount.Size = new System.Drawing.Size(221, 44);
-            this.gtxtIdDicount.TabIndex = 28;
-            this.gtxtIdDicount.TextOffsetX = 10;
             // 
             // txtID
             // 
@@ -533,6 +449,29 @@ namespace QuanLyQuanTraSua
             this.panel3.Size = new System.Drawing.Size(835, 751);
             this.panel3.TabIndex = 22;
             // 
+            // gtxtValueDiscount
+            // 
+            this.gtxtValueDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtValueDiscount.BaseColor = System.Drawing.Color.White;
+            this.gtxtValueDiscount.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtValueDiscount.BorderSize = 3;
+            this.gtxtValueDiscount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtValueDiscount.Enabled = false;
+            this.gtxtValueDiscount.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtValueDiscount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtValueDiscount.Location = new System.Drawing.Point(164, 599);
+            this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.gtxtValueDiscount.Name = "gtxtValueDiscount";
+            this.gtxtValueDiscount.PasswordChar = '\0';
+            this.gtxtValueDiscount.Radius = 8;
+            this.gtxtValueDiscount.SelectedText = "";
+            this.gtxtValueDiscount.Size = new System.Drawing.Size(105, 44);
+            this.gtxtValueDiscount.TabIndex = 29;
+            this.gtxtValueDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gtxtValueDiscount.TextOffsetX = 10;
+            // 
             // gtxtMoneyChange
             // 
             this.gtxtMoneyChange.BackColor = System.Drawing.Color.Transparent;
@@ -554,6 +493,47 @@ namespace QuanLyQuanTraSua
             this.gtxtMoneyChange.Size = new System.Drawing.Size(245, 44);
             this.gtxtMoneyChange.TabIndex = 31;
             this.gtxtMoneyChange.Text = "0";
+            // 
+            // labelValueDiscount
+            // 
+            this.labelValueDiscount.AutoSize = true;
+            this.labelValueDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
+            this.labelValueDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelValueDiscount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.labelValueDiscount.Location = new System.Drawing.Point(53, 523);
+            this.labelValueDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelValueDiscount.Name = "labelValueDiscount";
+            this.labelValueDiscount.Size = new System.Drawing.Size(84, 24);
+            this.labelValueDiscount.TabIndex = 28;
+            this.labelValueDiscount.Text = "Giảm giá";
+            // 
+            // gbtnCheckDiscount
+            // 
+            this.gbtnCheckDiscount.AnimationHoverSpeed = 0.07F;
+            this.gbtnCheckDiscount.AnimationSpeed = 0.03F;
+            this.gbtnCheckDiscount.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnCheckDiscount.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gbtnCheckDiscount.BorderColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnCheckDiscount.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnCheckDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.gbtnCheckDiscount.ForeColor = System.Drawing.Color.White;
+            this.gbtnCheckDiscount.Image = null;
+            this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
+            this.gbtnCheckDiscount.Location = new System.Drawing.Point(51, 599);
+            this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4);
+            this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
+            this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
+            this.gbtnCheckDiscount.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnCheckDiscount.OnHoverImage = null;
+            this.gbtnCheckDiscount.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnCheckDiscount.Radius = 10;
+            this.gbtnCheckDiscount.Size = new System.Drawing.Size(105, 44);
+            this.gbtnCheckDiscount.TabIndex = 28;
+            this.gbtnCheckDiscount.Text = "Check";
+            this.gbtnCheckDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gbtnCheckDiscount.Click += new System.EventHandler(this.gbtnCheckDiscount_Click);
             // 
             // lblMoneyChange
             // 
@@ -580,6 +560,27 @@ namespace QuanLyQuanTraSua
             this.lblCustomerMoney.Size = new System.Drawing.Size(142, 24);
             this.lblCustomerMoney.TabIndex = 29;
             this.lblCustomerMoney.Text = "Tiền khách đưa";
+            // 
+            // gtxtIdDicount
+            // 
+            this.gtxtIdDicount.BackColor = System.Drawing.Color.Transparent;
+            this.gtxtIdDicount.BaseColor = System.Drawing.Color.White;
+            this.gtxtIdDicount.BorderColor = System.Drawing.Color.Silver;
+            this.gtxtIdDicount.BorderSize = 3;
+            this.gtxtIdDicount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gtxtIdDicount.FocusedBaseColor = System.Drawing.Color.White;
+            this.gtxtIdDicount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gtxtIdDicount.Location = new System.Drawing.Point(51, 553);
+            this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4);
+            this.gtxtIdDicount.Name = "gtxtIdDicount";
+            this.gtxtIdDicount.PasswordChar = '\0';
+            this.gtxtIdDicount.Radius = 8;
+            this.gtxtIdDicount.SelectedText = "";
+            this.gtxtIdDicount.Size = new System.Drawing.Size(221, 44);
+            this.gtxtIdDicount.TabIndex = 28;
+            this.gtxtIdDicount.TextOffsetX = 10;
             // 
             // gtxtCustomerMoney
             // 
@@ -608,21 +609,21 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView1.AllowUserToAddRows = false;
             this.gunaDataGridView1.AllowUserToDeleteRows = false;
             this.gunaDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.gunaDataGridView1.ColumnHeadersHeight = 22;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnID,
@@ -631,28 +632,28 @@ namespace QuanLyQuanTraSua
             this.columnSoLuong,
             this.columnThanhTien});
             this.gunaDataGridView1.ContextMenuStrip = this.gunaContextMenuStrip1;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(51, 96);
             this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.764706F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.764706F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowHeadersWidth = 44;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -683,8 +684,8 @@ namespace QuanLyQuanTraSua
             // 
             // columnID
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.columnID.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.columnID.DefaultCellStyle = dataGridViewCellStyle23;
             this.columnID.HeaderText = "idDrink";
             this.columnID.MinimumWidth = 6;
             this.columnID.Name = "columnID";
@@ -990,8 +991,8 @@ namespace QuanLyQuanTraSua
             // 
             // gunaDataGridView2
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.gunaDataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1000,26 +1001,26 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.gunaDataGridView2.ColumnHeadersHeight = 27;
             this.gunaDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnTen1,
             this.ColumnSL1});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView2.DefaultCellStyle = dataGridViewCellStyle20;
             this.gunaDataGridView2.Enabled = false;
             this.gunaDataGridView2.EnableHeadersVisualStyles = false;
             this.gunaDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
