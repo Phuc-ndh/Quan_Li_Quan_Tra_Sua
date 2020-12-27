@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
-using System.Drawing;
 using System.IO;
 using BUS;
 

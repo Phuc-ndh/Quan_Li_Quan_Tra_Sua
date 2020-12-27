@@ -176,7 +176,7 @@ namespace QuanLyQuanTraSua
             else
             {
                 this.Hide();
-                frmTaiKhoan formTK = new frmTaiKhoan(this);
+                frmTaiKhoan formTK = new frmTaiKhoan(this.parent.currentUser.Username);
                 formTK.ShowDialog();
             }
             btnHome_Click(sender, e);

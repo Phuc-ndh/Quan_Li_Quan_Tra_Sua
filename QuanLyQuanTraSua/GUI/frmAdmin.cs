@@ -34,7 +34,6 @@ namespace QuanLyQuanTraSua
                 //btn.FlatStyle = FlatStyle.Flat;
                 //btn.FlatAppearance.BorderSize = 1;
                 //btn.FlatAppearance.BorderColor = Color.FromArgb(151, 143, 255);
-                float size = 14;
                 btn.Font = new Font("Arial", 12f);
                 if (account.Type == 1)
                 {
@@ -64,31 +63,41 @@ namespace QuanLyQuanTraSua
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (selectedAccount.Username == "admin")
+            if (selectedAccount.Username != null)
             {
-                MessageBox.Show("Không thể xóa tài khoản này");
-            }
-            else
-            {
-                if (accountBUS.deleteAccount(selectedAccount.Username))
+                if (selectedAccount.Username == "admin")
                 {
-                    MessageBox.Show("Đã xóa thành công");
-                    flowLayoutPanel1.Controls.Clear();
-                    frmAdmin_Load(sender, e);
+                    MessageBox.Show("Không thể xóa tài khoản này");
                 }
                 else
                 {
-                    MessageBox.Show("Xóa thất bại");
+                    if (accountBUS.deleteAccount(selectedAccount.Username))
+                    {
+                        MessageBox.Show("Đã xóa thành công");
+                        flowLayoutPanel1.Controls.Clear();
+                        frmAdmin_Load(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thất bại");
+                    }
                 }
             }
+            else
+                MessageBox.Show("Chọn một tài khoản trước khi xóa");
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
-            frmUpdateTK frm1 = new frmUpdateTK(this);
-            frm1.ShowDialog();
-            flowLayoutPanel1.Controls.Clear();
-            frmAdmin_Load(sender, e);
+            if (selectedAccount.Username != null)
+            {
+                frmTaiKhoan frm1 = new frmTaiKhoan(selectedAccount.Username);
+                frm1.ShowDialog();
+                flowLayoutPanel1.Controls.Clear();
+                frmAdmin_Load(sender, e);
+            }
+            else
+                MessageBox.Show("Chọn một tài khoản để sửa thông tin");
         }
 
         //Drag Form

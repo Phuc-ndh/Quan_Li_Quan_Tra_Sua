@@ -73,16 +73,18 @@ namespace QuanLyQuanTraSua
             this.pnlTopM.Controls.Add(this.pnlMove);
             this.pnlTopM.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopM.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopM.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTopM.Name = "pnlTopM";
-            this.pnlTopM.Size = new System.Drawing.Size(429, 138);
+            this.pnlTopM.Size = new System.Drawing.Size(572, 170);
             this.pnlTopM.TabIndex = 152;
             // 
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
-            this.pictureBoxIcon.Location = new System.Drawing.Point(149, 38);
+            this.pictureBoxIcon.Location = new System.Drawing.Point(199, 47);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(130, 95);
+            this.pictureBoxIcon.Size = new System.Drawing.Size(173, 117);
             this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIcon.TabIndex = 0;
             this.pictureBoxIcon.TabStop = false;
@@ -95,8 +97,9 @@ namespace QuanLyQuanTraSua
             this.pnlMove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlMove.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMove.Location = new System.Drawing.Point(0, 0);
+            this.pnlMove.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMove.Name = "pnlMove";
-            this.pnlMove.Size = new System.Drawing.Size(429, 31);
+            this.pnlMove.Size = new System.Drawing.Size(572, 38);
             this.pnlMove.TabIndex = 2;
             this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
@@ -106,9 +109,10 @@ namespace QuanLyQuanTraSua
             this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimize.ForeColor = System.Drawing.Color.Snow;
-            this.lblMinimize.Location = new System.Drawing.Point(379, 0);
+            this.lblMinimize.Location = new System.Drawing.Point(505, 0);
+            this.lblMinimize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinimize.Name = "lblMinimize";
-            this.lblMinimize.Size = new System.Drawing.Size(20, 25);
+            this.lblMinimize.Size = new System.Drawing.Size(22, 29);
             this.lblMinimize.TabIndex = 2;
             this.lblMinimize.Text = "-";
             this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
@@ -119,9 +123,10 @@ namespace QuanLyQuanTraSua
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.Snow;
-            this.lblClose.Location = new System.Drawing.Point(406, 2);
+            this.lblClose.Location = new System.Drawing.Point(541, 2);
+            this.lblClose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(22, 22);
+            this.lblClose.Size = new System.Drawing.Size(27, 26);
             this.lblClose.TabIndex = 3;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -129,9 +134,10 @@ namespace QuanLyQuanTraSua
             // ptrEmail1
             // 
             this.ptrEmail1.Image = global::QuanLyQuanTraSua.Properties.Resources.email1;
-            this.ptrEmail1.Location = new System.Drawing.Point(66, 386);
+            this.ptrEmail1.Location = new System.Drawing.Point(88, 475);
+            this.ptrEmail1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrEmail1.Name = "ptrEmail1";
-            this.ptrEmail1.Size = new System.Drawing.Size(28, 27);
+            this.ptrEmail1.Size = new System.Drawing.Size(37, 33);
             this.ptrEmail1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrEmail1.TabIndex = 201;
             this.ptrEmail1.TabStop = false;
@@ -140,9 +146,10 @@ namespace QuanLyQuanTraSua
             // ptrPhone1
             // 
             this.ptrPhone1.Image = global::QuanLyQuanTraSua.Properties.Resources.phone1;
-            this.ptrPhone1.Location = new System.Drawing.Point(65, 321);
+            this.ptrPhone1.Location = new System.Drawing.Point(87, 395);
+            this.ptrPhone1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrPhone1.Name = "ptrPhone1";
-            this.ptrPhone1.Size = new System.Drawing.Size(26, 26);
+            this.ptrPhone1.Size = new System.Drawing.Size(35, 32);
             this.ptrPhone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrPhone1.TabIndex = 197;
             this.ptrPhone1.TabStop = false;
@@ -151,9 +158,10 @@ namespace QuanLyQuanTraSua
             // ptrName1
             // 
             this.ptrName1.Image = global::QuanLyQuanTraSua.Properties.Resources.name1;
-            this.ptrName1.Location = new System.Drawing.Point(65, 251);
+            this.ptrName1.Location = new System.Drawing.Point(87, 309);
+            this.ptrName1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrName1.Name = "ptrName1";
-            this.ptrName1.Size = new System.Drawing.Size(33, 33);
+            this.ptrName1.Size = new System.Drawing.Size(44, 41);
             this.ptrName1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrName1.TabIndex = 193;
             this.ptrName1.TabStop = false;
@@ -163,20 +171,23 @@ namespace QuanLyQuanTraSua
             // 
             this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Enabled = false;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
-            this.txtEmail.Location = new System.Drawing.Point(105, 385);
+            this.txtEmail.Location = new System.Drawing.Point(140, 474);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(261, 24);
+            this.txtEmail.Size = new System.Drawing.Size(348, 29);
             this.txtEmail.TabIndex = 199;
             this.txtEmail.Text = "Email";
             // 
             // pctrB_Email_Gr
             // 
             this.pctrB_Email_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.email_gr;
-            this.pctrB_Email_Gr.Location = new System.Drawing.Point(66, 386);
+            this.pctrB_Email_Gr.Location = new System.Drawing.Point(88, 475);
+            this.pctrB_Email_Gr.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_Email_Gr.Name = "pctrB_Email_Gr";
-            this.pctrB_Email_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Email_Gr.Size = new System.Drawing.Size(37, 33);
             this.pctrB_Email_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_Email_Gr.TabIndex = 200;
             this.pctrB_Email_Gr.TabStop = false;
@@ -196,7 +207,8 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterE.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterE.Image = null;
             this.gbtnAfterE.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterE.Location = new System.Drawing.Point(57, 378);
+            this.gbtnAfterE.Location = new System.Drawing.Point(76, 465);
+            this.gbtnAfterE.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterE.Name = "gbtnAfterE";
             this.gbtnAfterE.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterE.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -204,27 +216,31 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterE.OnHoverImage = null;
             this.gbtnAfterE.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterE.Radius = 8;
-            this.gbtnAfterE.Size = new System.Drawing.Size(315, 40);
+            this.gbtnAfterE.Size = new System.Drawing.Size(420, 49);
             this.gbtnAfterE.TabIndex = 202;
             // 
             // txtPhone
             // 
             this.txtPhone.BackColor = System.Drawing.Color.White;
             this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPhone.Enabled = false;
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtPhone.ForeColor = System.Drawing.Color.Gray;
-            this.txtPhone.Location = new System.Drawing.Point(104, 320);
+            this.txtPhone.Location = new System.Drawing.Point(139, 394);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(261, 24);
+            this.txtPhone.Size = new System.Drawing.Size(348, 29);
             this.txtPhone.TabIndex = 195;
             this.txtPhone.Text = "SĐT";
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // pctrB_SDT_Gr
             // 
             this.pctrB_SDT_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.phone_gr;
-            this.pctrB_SDT_Gr.Location = new System.Drawing.Point(65, 321);
+            this.pctrB_SDT_Gr.Location = new System.Drawing.Point(87, 395);
+            this.pctrB_SDT_Gr.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_SDT_Gr.Name = "pctrB_SDT_Gr";
-            this.pctrB_SDT_Gr.Size = new System.Drawing.Size(26, 26);
+            this.pctrB_SDT_Gr.Size = new System.Drawing.Size(35, 32);
             this.pctrB_SDT_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_SDT_Gr.TabIndex = 196;
             this.pctrB_SDT_Gr.TabStop = false;
@@ -244,7 +260,8 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterSDT.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterSDT.Image = null;
             this.gbtnAfterSDT.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterSDT.Location = new System.Drawing.Point(56, 313);
+            this.gbtnAfterSDT.Location = new System.Drawing.Point(75, 385);
+            this.gbtnAfterSDT.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterSDT.Name = "gbtnAfterSDT";
             this.gbtnAfterSDT.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterSDT.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -252,27 +269,30 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterSDT.OnHoverImage = null;
             this.gbtnAfterSDT.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterSDT.Radius = 8;
-            this.gbtnAfterSDT.Size = new System.Drawing.Size(315, 40);
+            this.gbtnAfterSDT.Size = new System.Drawing.Size(420, 49);
             this.gbtnAfterSDT.TabIndex = 198;
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.Color.White;
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Enabled = false;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtName.ForeColor = System.Drawing.Color.Gray;
-            this.txtName.Location = new System.Drawing.Point(104, 254);
+            this.txtName.Location = new System.Drawing.Point(139, 313);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(261, 24);
+            this.txtName.Size = new System.Drawing.Size(348, 29);
             this.txtName.TabIndex = 191;
             this.txtName.Text = "Họ Tên";
             // 
             // pctrB_Name_Gr
             // 
             this.pctrB_Name_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.name_gr;
-            this.pctrB_Name_Gr.Location = new System.Drawing.Point(65, 251);
+            this.pctrB_Name_Gr.Location = new System.Drawing.Point(87, 309);
+            this.pctrB_Name_Gr.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_Name_Gr.Name = "pctrB_Name_Gr";
-            this.pctrB_Name_Gr.Size = new System.Drawing.Size(33, 33);
+            this.pctrB_Name_Gr.Size = new System.Drawing.Size(44, 41);
             this.pctrB_Name_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_Name_Gr.TabIndex = 192;
             this.pctrB_Name_Gr.TabStop = false;
@@ -281,20 +301,23 @@ namespace QuanLyQuanTraSua
             // 
             this.txtUsername.BackColor = System.Drawing.Color.White;
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Enabled = false;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsername.Location = new System.Drawing.Point(104, 188);
+            this.txtUsername.Location = new System.Drawing.Point(139, 231);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(261, 24);
+            this.txtUsername.Size = new System.Drawing.Size(348, 29);
             this.txtUsername.TabIndex = 178;
             this.txtUsername.Text = "Tên Đăng Nhập";
             // 
             // ptrUser1
             // 
             this.ptrUser1.Image = ((System.Drawing.Image)(resources.GetObject("ptrUser1.Image")));
-            this.ptrUser1.Location = new System.Drawing.Point(65, 189);
+            this.ptrUser1.Location = new System.Drawing.Point(87, 233);
+            this.ptrUser1.Margin = new System.Windows.Forms.Padding(4);
             this.ptrUser1.Name = "ptrUser1";
-            this.ptrUser1.Size = new System.Drawing.Size(28, 27);
+            this.ptrUser1.Size = new System.Drawing.Size(37, 33);
             this.ptrUser1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptrUser1.TabIndex = 182;
             this.ptrUser1.TabStop = false;
@@ -303,9 +326,10 @@ namespace QuanLyQuanTraSua
             // pctrB_User_Gr
             // 
             this.pctrB_User_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.user_gr;
-            this.pctrB_User_Gr.Location = new System.Drawing.Point(65, 189);
+            this.pctrB_User_Gr.Location = new System.Drawing.Point(87, 233);
+            this.pctrB_User_Gr.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_User_Gr.Name = "pctrB_User_Gr";
-            this.pctrB_User_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_User_Gr.Size = new System.Drawing.Size(37, 33);
             this.pctrB_User_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_User_Gr.TabIndex = 181;
             this.pctrB_User_Gr.TabStop = false;
@@ -325,7 +349,8 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterU.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterU.Image = null;
             this.gbtnAfterU.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterU.Location = new System.Drawing.Point(56, 181);
+            this.gbtnAfterU.Location = new System.Drawing.Point(75, 223);
+            this.gbtnAfterU.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterU.Name = "gbtnAfterU";
             this.gbtnAfterU.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterU.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -333,7 +358,7 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterU.OnHoverImage = null;
             this.gbtnAfterU.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterU.Radius = 8;
-            this.gbtnAfterU.Size = new System.Drawing.Size(315, 40);
+            this.gbtnAfterU.Size = new System.Drawing.Size(420, 49);
             this.gbtnAfterU.TabIndex = 185;
             // 
             // gbtnAfterN
@@ -351,7 +376,8 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterN.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterN.Image = null;
             this.gbtnAfterN.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterN.Location = new System.Drawing.Point(56, 247);
+            this.gbtnAfterN.Location = new System.Drawing.Point(75, 304);
+            this.gbtnAfterN.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterN.Name = "gbtnAfterN";
             this.gbtnAfterN.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterN.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -359,7 +385,7 @@ namespace QuanLyQuanTraSua
             this.gbtnAfterN.OnHoverImage = null;
             this.gbtnAfterN.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterN.Radius = 8;
-            this.gbtnAfterN.Size = new System.Drawing.Size(315, 40);
+            this.gbtnAfterN.Size = new System.Drawing.Size(420, 49);
             this.gbtnAfterN.TabIndex = 194;
             // 
             // gbtnSua
@@ -375,7 +401,8 @@ namespace QuanLyQuanTraSua
             this.gbtnSua.ForeColor = System.Drawing.Color.White;
             this.gbtnSua.Image = null;
             this.gbtnSua.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnSua.Location = new System.Drawing.Point(57, 477);
+            this.gbtnSua.Location = new System.Drawing.Point(76, 587);
+            this.gbtnSua.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnSua.Name = "gbtnSua";
             this.gbtnSua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnSua.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -383,7 +410,7 @@ namespace QuanLyQuanTraSua
             this.gbtnSua.OnHoverImage = null;
             this.gbtnSua.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnSua.Radius = 6;
-            this.gbtnSua.Size = new System.Drawing.Size(315, 43);
+            this.gbtnSua.Size = new System.Drawing.Size(420, 53);
             this.gbtnSua.TabIndex = 203;
             this.gbtnSua.Text = "Sửa Thông Tin";
             this.gbtnSua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -402,7 +429,8 @@ namespace QuanLyQuanTraSua
             this.gbtnDoiMK.ForeColor = System.Drawing.Color.White;
             this.gbtnDoiMK.Image = null;
             this.gbtnDoiMK.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnDoiMK.Location = new System.Drawing.Point(57, 545);
+            this.gbtnDoiMK.Location = new System.Drawing.Point(76, 671);
+            this.gbtnDoiMK.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnDoiMK.Name = "gbtnDoiMK";
             this.gbtnDoiMK.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnDoiMK.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -410,7 +438,7 @@ namespace QuanLyQuanTraSua
             this.gbtnDoiMK.OnHoverImage = null;
             this.gbtnDoiMK.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnDoiMK.Radius = 6;
-            this.gbtnDoiMK.Size = new System.Drawing.Size(315, 43);
+            this.gbtnDoiMK.Size = new System.Drawing.Size(420, 53);
             this.gbtnDoiMK.TabIndex = 203;
             this.gbtnDoiMK.Text = "Thay Đổi Mật Khẩu";
             this.gbtnDoiMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -418,10 +446,10 @@ namespace QuanLyQuanTraSua
             // 
             // frmTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(429, 625);
+            this.ClientSize = new System.Drawing.Size(572, 769);
             this.Controls.Add(this.gbtnDoiMK);
             this.Controls.Add(this.gbtnSua);
             this.Controls.Add(this.ptrEmail1);
@@ -442,6 +470,7 @@ namespace QuanLyQuanTraSua
             this.Controls.Add(this.gbtnAfterN);
             this.Controls.Add(this.pnlTopM);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông Tin Tài Khoản";

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
@@ -33,6 +34,7 @@ namespace QuanLyQuanTraSua
 
         private void btnChangePass_Click(object sender, EventArgs e)
         {
+            Regex passwordRegex = new Regex(@"^[A-z0-9]{5,12}$");
             if (accountBus.getHashMD5(txtCurrentPass.Text).ToString() == accountBus.getPasswordByUsername(username).ToString())
             {
                 checkCurrentPass = true;
@@ -42,23 +44,23 @@ namespace QuanLyQuanTraSua
                 checkReType = true;
             }
 
-            if (checkReType && checkCurrentPass)
+            if (checkReType && checkCurrentPass && passwordRegex.IsMatch(txtNewPass.Text))
             {
                 accountBus.updatePassword(username, txtNewPass.Text);
-                MessageBox.Show("Doi mk thanh cong");
+                MessageBox.Show("Đổi mật khẩu thành công");
             } else
             {
                 if (!checkCurrentPass)
                 {
-                    MessageBox.Show("Mat khau hien tai khong dung");
-                    // hien label mk hien tai sai
-                } else
+                    MessageBox.Show("Mật khẩu hiện tại không đúng");
+                } 
+                else if (!checkReType)
                 {
-                    if (!checkReType)
-                    {
-                        MessageBox.Show("Mat khau moi khong khop");
-                        // hien label mk ko khop
-                    }
+                    MessageBox.Show("Mật khẩu nhập lại không khớp");
+                }
+                else
+                {
+                    MessageBox.Show("Mật khẩu mới không phù hợp");
                 }
             }
             btnCancel_Click(sender, e);

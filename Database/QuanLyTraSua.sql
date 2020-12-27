@@ -84,9 +84,9 @@ values
 (N'Trà Sữa Truyền Thống', 40000, 0),
 (N'Nước Ép Dưa Hấu', 35000, 3),
 (N'Hồng Trà Đào', 35000, 1)
-insert into Account(Username, Password)
+insert into Account(Username, Password, Type)
 values
-('admin', '21232f297a57a5a743894a0e4a801fc3')
+('admin', '21232f297a57a5a743894a0e4a801fc3', 1)
 
 
 SELECT SUM(T1.Quantity) * 1000.00 / (select sum(A.Quantity) from BillInfo A 
