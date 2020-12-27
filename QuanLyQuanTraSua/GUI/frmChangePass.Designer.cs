@@ -60,7 +60,7 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.Location = new System.Drawing.Point(-1, 0);
             this.gunaGroupBoxThongTinMH.Name = "gunaGroupBoxThongTinMH";
             this.gunaGroupBoxThongTinMH.Radius = 10;
-            this.gunaGroupBoxThongTinMH.Size = new System.Drawing.Size(470, 266);
+            this.gunaGroupBoxThongTinMH.Size = new System.Drawing.Size(396, 266);
             this.gunaGroupBoxThongTinMH.TabIndex = 23;
             this.gunaGroupBoxThongTinMH.Text = "Đổi password";
             this.gunaGroupBoxThongTinMH.TextLocation = new System.Drawing.Point(10, 8);
@@ -203,11 +203,12 @@ namespace QuanLyQuanTraSua
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(469, 268);
+            this.ClientSize = new System.Drawing.Size(395, 268);
             this.Controls.Add(this.gunaGroupBoxThongTinMH);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmChangePass";
-            this.Text = "frmChangePass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmChangePass_Load);
             this.gunaGroupBoxThongTinMH.ResumeLayout(false);
             this.ResumeLayout(false);
