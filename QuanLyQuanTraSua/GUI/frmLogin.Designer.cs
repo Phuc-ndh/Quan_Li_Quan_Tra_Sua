@@ -34,6 +34,7 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlTopL = new System.Windows.Forms.Panel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.gCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
             this.gCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
             this.gCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
@@ -42,6 +43,9 @@
             this.gbtnAfterU = new Guna.UI.WinForms.GunaButton();
             this.gbtnAfterP = new Guna.UI.WinForms.GunaButton();
             this.pnlRight = new System.Windows.Forms.Panel();
+            this.pctrB_Eye = new System.Windows.Forms.PictureBox();
+            this.pctrB_User = new System.Windows.Forms.PictureBox();
+            this.pctrB_User_Gr = new System.Windows.Forms.PictureBox();
             this.pnlTopM = new System.Windows.Forms.Panel();
             this.lblMinimize = new System.Windows.Forms.Label();
             this.pnlTopR = new System.Windows.Forms.Panel();
@@ -49,20 +53,16 @@
             this.glblDangNhap = new Guna.UI.WinForms.GunaLabel();
             this.pnlMoveR = new System.Windows.Forms.Panel();
             this.gbtnLogin = new Guna.UI.WinForms.GunaButton();
-            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
-            this.pctrB_Eye = new System.Windows.Forms.PictureBox();
-            this.pctrB_User = new System.Windows.Forms.PictureBox();
-            this.pctrB_User_Gr = new System.Windows.Forms.PictureBox();
             this.pctrB_Pass = new System.Windows.Forms.PictureBox();
             this.pctrB_Pass_Gr = new System.Windows.Forms.PictureBox();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlLeft.SuspendLayout();
-            this.pnlRight.SuspendLayout();
-            this.pnlTopM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
+            this.pnlRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_User)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).BeginInit();
+            this.pnlTopM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).BeginInit();
             this.SuspendLayout();
@@ -72,8 +72,9 @@
             this.pnlMoveL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pnlMoveL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlMoveL.Location = new System.Drawing.Point(1, 1);
+            this.pnlMoveL.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMoveL.Name = "pnlMoveL";
-            this.pnlMoveL.Size = new System.Drawing.Size(373, 31);
+            this.pnlMoveL.Size = new System.Drawing.Size(497, 38);
             this.pnlMoveL.TabIndex = 69;
             this.pnlMoveL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
@@ -89,8 +90,9 @@
             this.pnlLeft.Controls.Add(this.gCircleButton1);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
+            this.pnlLeft.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(374, 438);
+            this.pnlLeft.Size = new System.Drawing.Size(499, 539);
             this.pnlLeft.TabIndex = 33;
             // 
             // pnlTopL
@@ -99,20 +101,33 @@
             this.pnlTopL.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlTopL.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopL.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopL.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTopL.Name = "pnlTopL";
-            this.pnlTopL.Size = new System.Drawing.Size(374, 3);
+            this.pnlTopL.Size = new System.Drawing.Size(499, 4);
             this.pnlTopL.TabIndex = 5;
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(82, 341);
+            this.gunaLabel2.Location = new System.Drawing.Point(109, 420);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(205, 19);
+            this.gunaLabel2.Size = new System.Drawing.Size(255, 23);
             this.gunaLabel2.TabIndex = 3;
             this.gunaLabel2.Text = "Phần mềm quản lý quán trà sữa";
             this.gunaLabel2.Visible = false;
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
+            this.pictureBoxIcon.Location = new System.Drawing.Point(115, 149);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(253, 242);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcon.TabIndex = 2;
+            this.pictureBoxIcon.TabStop = false;
             // 
             // gCircleButton3
             // 
@@ -127,14 +142,15 @@
             this.gCircleButton3.ForeColor = System.Drawing.Color.White;
             this.gCircleButton3.Image = null;
             this.gCircleButton3.ImageSize = new System.Drawing.Size(52, 52);
-            this.gCircleButton3.Location = new System.Drawing.Point(267, 346);
+            this.gCircleButton3.Location = new System.Drawing.Point(356, 426);
+            this.gCircleButton3.Margin = new System.Windows.Forms.Padding(4);
             this.gCircleButton3.Name = "gCircleButton3";
             this.gCircleButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
             this.gCircleButton3.OnHoverImage = null;
             this.gCircleButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gCircleButton3.Size = new System.Drawing.Size(20, 20);
+            this.gCircleButton3.Size = new System.Drawing.Size(27, 25);
             this.gCircleButton3.TabIndex = 4;
             // 
             // gCircleButton2
@@ -150,14 +166,15 @@
             this.gCircleButton2.ForeColor = System.Drawing.Color.White;
             this.gCircleButton2.Image = null;
             this.gCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gCircleButton2.Location = new System.Drawing.Point(40, 278);
+            this.gCircleButton2.Location = new System.Drawing.Point(53, 342);
+            this.gCircleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.gCircleButton2.Name = "gCircleButton2";
             this.gCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
             this.gCircleButton2.OnHoverImage = null;
             this.gCircleButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gCircleButton2.Size = new System.Drawing.Size(40, 40);
+            this.gCircleButton2.Size = new System.Drawing.Size(53, 49);
             this.gCircleButton2.TabIndex = 4;
             // 
             // gCircleButton1
@@ -173,14 +190,15 @@
             this.gCircleButton1.ForeColor = System.Drawing.Color.White;
             this.gCircleButton1.Image = null;
             this.gCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gCircleButton1.Location = new System.Drawing.Point(285, 105);
+            this.gCircleButton1.Location = new System.Drawing.Point(380, 129);
+            this.gCircleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.gCircleButton1.Name = "gCircleButton1";
             this.gCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
             this.gCircleButton1.OnHoverImage = null;
             this.gCircleButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gCircleButton1.Size = new System.Drawing.Size(30, 30);
+            this.gCircleButton1.Size = new System.Drawing.Size(40, 37);
             this.gCircleButton1.TabIndex = 4;
             // 
             // txtPassword
@@ -189,13 +207,15 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtPassword.Location = new System.Drawing.Point(131, 235);
+            this.txtPassword.Location = new System.Drawing.Point(175, 289);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(238, 24);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.Size = new System.Drawing.Size(317, 29);
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.Text = "Mật Khẩu";
             this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Click);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // txtUsername
@@ -204,13 +224,15 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12.70588F);
             this.txtUsername.ForeColor = System.Drawing.Color.Gray;
-            this.txtUsername.Location = new System.Drawing.Point(131, 171);
+            this.txtUsername.Location = new System.Drawing.Point(175, 210);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(238, 24);
-            this.txtUsername.TabIndex = 0;
+            this.txtUsername.Size = new System.Drawing.Size(317, 29);
+            this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "Tên Đăng Nhập";
             this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            this.txtUsername.Enter += new System.EventHandler(this.txtUsername_Click);
             this.txtUsername.Leave += new System.EventHandler(this.txtUsername_Leave);
             // 
             // gbtnAfterU
@@ -228,7 +250,8 @@
             this.gbtnAfterU.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterU.Image = null;
             this.gbtnAfterU.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterU.Location = new System.Drawing.Point(83, 164);
+            this.gbtnAfterU.Location = new System.Drawing.Point(111, 202);
+            this.gbtnAfterU.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterU.Name = "gbtnAfterU";
             this.gbtnAfterU.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterU.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -236,8 +259,8 @@
             this.gbtnAfterU.OnHoverImage = null;
             this.gbtnAfterU.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterU.Radius = 8;
-            this.gbtnAfterU.Size = new System.Drawing.Size(292, 40);
-            this.gbtnAfterU.TabIndex = 65;
+            this.gbtnAfterU.Size = new System.Drawing.Size(389, 49);
+            this.gbtnAfterU.TabIndex = 4;
             this.gbtnAfterU.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // gbtnAfterP
@@ -255,7 +278,8 @@
             this.gbtnAfterP.ForeColor = System.Drawing.Color.White;
             this.gbtnAfterP.Image = null;
             this.gbtnAfterP.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnAfterP.Location = new System.Drawing.Point(83, 228);
+            this.gbtnAfterP.Location = new System.Drawing.Point(111, 281);
+            this.gbtnAfterP.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnAfterP.Name = "gbtnAfterP";
             this.gbtnAfterP.OnHoverBaseColor = System.Drawing.Color.White;
             this.gbtnAfterP.OnHoverBorderColor = System.Drawing.Color.Silver;
@@ -263,8 +287,8 @@
             this.gbtnAfterP.OnHoverImage = null;
             this.gbtnAfterP.OnPressedColor = System.Drawing.Color.White;
             this.gbtnAfterP.Radius = 8;
-            this.gbtnAfterP.Size = new System.Drawing.Size(292, 40);
-            this.gbtnAfterP.TabIndex = 67;
+            this.gbtnAfterP.Size = new System.Drawing.Size(389, 49);
+            this.gbtnAfterP.TabIndex = 4;
             this.gbtnAfterP.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // pnlRight
@@ -282,10 +306,46 @@
             this.pnlRight.Controls.Add(this.gbtnAfterU);
             this.pnlRight.Controls.Add(this.gbtnAfterP);
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlRight.Location = new System.Drawing.Point(374, 0);
+            this.pnlRight.Location = new System.Drawing.Point(499, 0);
+            this.pnlRight.Margin = new System.Windows.Forms.Padding(4);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(450, 438);
+            this.pnlRight.Size = new System.Drawing.Size(600, 539);
             this.pnlRight.TabIndex = 32;
+            // 
+            // pctrB_Eye
+            // 
+            this.pctrB_Eye.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Eye.Image")));
+            this.pctrB_Eye.Location = new System.Drawing.Point(436, 287);
+            this.pctrB_Eye.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrB_Eye.Name = "pctrB_Eye";
+            this.pctrB_Eye.Size = new System.Drawing.Size(56, 37);
+            this.pctrB_Eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_Eye.TabIndex = 50;
+            this.pctrB_Eye.TabStop = false;
+            this.pctrB_Eye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctrB_Eye_MouseDown);
+            // 
+            // pctrB_User
+            // 
+            this.pctrB_User.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_User.Image")));
+            this.pctrB_User.Location = new System.Drawing.Point(123, 212);
+            this.pctrB_User.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrB_User.Name = "pctrB_User";
+            this.pctrB_User.Size = new System.Drawing.Size(37, 33);
+            this.pctrB_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_User.TabIndex = 48;
+            this.pctrB_User.TabStop = false;
+            this.pctrB_User.Visible = false;
+            // 
+            // pctrB_User_Gr
+            // 
+            this.pctrB_User_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.user_gr;
+            this.pctrB_User_Gr.Location = new System.Drawing.Point(123, 212);
+            this.pctrB_User_Gr.Margin = new System.Windows.Forms.Padding(4);
+            this.pctrB_User_Gr.Name = "pctrB_User_Gr";
+            this.pctrB_User_Gr.Size = new System.Drawing.Size(37, 33);
+            this.pctrB_User_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pctrB_User_Gr.TabIndex = 46;
+            this.pctrB_User_Gr.TabStop = false;
             // 
             // pnlTopM
             // 
@@ -297,8 +357,9 @@
             this.pnlTopM.Controls.Add(this.pnlMoveR);
             this.pnlTopM.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopM.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopM.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTopM.Name = "pnlTopM";
-            this.pnlTopM.Size = new System.Drawing.Size(450, 130);
+            this.pnlTopM.Size = new System.Drawing.Size(600, 160);
             this.pnlTopM.TabIndex = 47;
             // 
             // lblMinimize
@@ -307,9 +368,10 @@
             this.lblMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimize.ForeColor = System.Drawing.Color.Maroon;
-            this.lblMinimize.Location = new System.Drawing.Point(396, 3);
+            this.lblMinimize.Location = new System.Drawing.Point(528, 4);
+            this.lblMinimize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMinimize.Name = "lblMinimize";
-            this.lblMinimize.Size = new System.Drawing.Size(20, 25);
+            this.lblMinimize.Size = new System.Drawing.Size(22, 29);
             this.lblMinimize.TabIndex = 4;
             this.lblMinimize.Text = "-";
             this.lblMinimize.Click += new System.EventHandler(this.lblMinimize_Click);
@@ -320,8 +382,9 @@
             this.pnlTopR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlTopR.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopR.Location = new System.Drawing.Point(0, 0);
+            this.pnlTopR.Margin = new System.Windows.Forms.Padding(4);
             this.pnlTopR.Name = "pnlTopR";
-            this.pnlTopR.Size = new System.Drawing.Size(450, 3);
+            this.pnlTopR.Size = new System.Drawing.Size(600, 4);
             this.pnlTopR.TabIndex = 55;
             // 
             // lblClose
@@ -331,9 +394,10 @@
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblClose.Location = new System.Drawing.Point(421, 6);
+            this.lblClose.Location = new System.Drawing.Point(561, 7);
+            this.lblClose.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(23, 22);
+            this.lblClose.Size = new System.Drawing.Size(28, 26);
             this.lblClose.TabIndex = 54;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.btnCancel_Click);
@@ -342,10 +406,11 @@
             // 
             this.glblDangNhap.AutoSize = true;
             this.glblDangNhap.Font = new System.Drawing.Font("Segoe UI", 16.23529F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glblDangNhap.Location = new System.Drawing.Point(153, 65);
+            this.glblDangNhap.Location = new System.Drawing.Point(204, 80);
+            this.glblDangNhap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.glblDangNhap.Name = "glblDangNhap";
-            this.glblDangNhap.Size = new System.Drawing.Size(135, 31);
-            this.glblDangNhap.TabIndex = 3;
+            this.glblDangNhap.Size = new System.Drawing.Size(166, 38);
+            this.glblDangNhap.TabIndex = 4;
             this.glblDangNhap.Text = "Đăng Nhập";
             // 
             // pnlMoveR
@@ -353,8 +418,9 @@
             this.pnlMoveR.BackColor = System.Drawing.Color.White;
             this.pnlMoveR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlMoveR.Location = new System.Drawing.Point(0, 0);
+            this.pnlMoveR.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMoveR.Name = "pnlMoveR";
-            this.pnlMoveR.Size = new System.Drawing.Size(450, 31);
+            this.pnlMoveR.Size = new System.Drawing.Size(600, 38);
             this.pnlMoveR.TabIndex = 68;
             this.pnlMoveR.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
             // 
@@ -371,7 +437,8 @@
             this.gbtnLogin.ForeColor = System.Drawing.Color.White;
             this.gbtnLogin.Image = null;
             this.gbtnLogin.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnLogin.Location = new System.Drawing.Point(86, 331);
+            this.gbtnLogin.Location = new System.Drawing.Point(115, 407);
+            this.gbtnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnLogin.Name = "gbtnLogin";
             this.gbtnLogin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gbtnLogin.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -379,65 +446,19 @@
             this.gbtnLogin.OnHoverImage = null;
             this.gbtnLogin.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnLogin.Radius = 6;
-            this.gbtnLogin.Size = new System.Drawing.Size(292, 40);
-            this.gbtnLogin.TabIndex = 53;
+            this.gbtnLogin.Size = new System.Drawing.Size(389, 49);
+            this.gbtnLogin.TabIndex = 3;
             this.gbtnLogin.Text = "Đăng Nhập";
             this.gbtnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gbtnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // gunaElipse1
-            // 
-            this.gunaElipse1.Radius = 7;
-            this.gunaElipse1.TargetControl = this;
-            // 
-            // pictureBoxIcon
-            // 
-            this.pictureBoxIcon.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIcon.Image")));
-            this.pictureBoxIcon.Location = new System.Drawing.Point(86, 121);
-            this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(190, 197);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxIcon.TabIndex = 2;
-            this.pictureBoxIcon.TabStop = false;
-            // 
-            // pctrB_Eye
-            // 
-            this.pctrB_Eye.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Eye.Image")));
-            this.pctrB_Eye.Location = new System.Drawing.Point(327, 233);
-            this.pctrB_Eye.Name = "pctrB_Eye";
-            this.pctrB_Eye.Size = new System.Drawing.Size(42, 30);
-            this.pctrB_Eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctrB_Eye.TabIndex = 50;
-            this.pctrB_Eye.TabStop = false;
-            this.pctrB_Eye.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctrB_Eye_MouseDown);
-            // 
-            // pctrB_User
-            // 
-            this.pctrB_User.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_User.Image")));
-            this.pctrB_User.Location = new System.Drawing.Point(92, 172);
-            this.pctrB_User.Name = "pctrB_User";
-            this.pctrB_User.Size = new System.Drawing.Size(28, 27);
-            this.pctrB_User.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctrB_User.TabIndex = 48;
-            this.pctrB_User.TabStop = false;
-            this.pctrB_User.Visible = false;
-            // 
-            // pctrB_User_Gr
-            // 
-            this.pctrB_User_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.user_gr;
-            this.pctrB_User_Gr.Location = new System.Drawing.Point(92, 172);
-            this.pctrB_User_Gr.Name = "pctrB_User_Gr";
-            this.pctrB_User_Gr.Size = new System.Drawing.Size(28, 27);
-            this.pctrB_User_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctrB_User_Gr.TabIndex = 46;
-            this.pctrB_User_Gr.TabStop = false;
-            // 
             // pctrB_Pass
             // 
             this.pctrB_Pass.Image = ((System.Drawing.Image)(resources.GetObject("pctrB_Pass.Image")));
-            this.pctrB_Pass.Location = new System.Drawing.Point(92, 236);
+            this.pctrB_Pass.Location = new System.Drawing.Point(123, 290);
+            this.pctrB_Pass.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_Pass.Name = "pctrB_Pass";
-            this.pctrB_Pass.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Pass.Size = new System.Drawing.Size(37, 33);
             this.pctrB_Pass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_Pass.TabIndex = 49;
             this.pctrB_Pass.TabStop = false;
@@ -446,37 +467,44 @@
             // pctrB_Pass_Gr
             // 
             this.pctrB_Pass_Gr.Image = global::QuanLyQuanTraSua.Properties.Resources.pass_gr;
-            this.pctrB_Pass_Gr.Location = new System.Drawing.Point(92, 236);
+            this.pctrB_Pass_Gr.Location = new System.Drawing.Point(123, 290);
+            this.pctrB_Pass_Gr.Margin = new System.Windows.Forms.Padding(4);
             this.pctrB_Pass_Gr.Name = "pctrB_Pass_Gr";
-            this.pctrB_Pass_Gr.Size = new System.Drawing.Size(28, 27);
+            this.pctrB_Pass_Gr.Size = new System.Drawing.Size(37, 33);
             this.pctrB_Pass_Gr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctrB_Pass_Gr.TabIndex = 45;
             this.pctrB_Pass_Gr.TabStop = false;
             // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.Radius = 7;
+            this.gunaElipse1.TargetControl = this;
+            // 
             // frmLogin
             // 
             this.AcceptButton = this.gbtnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(824, 438);
+            this.ClientSize = new System.Drawing.Size(1099, 539);
             this.Controls.Add(this.pnlLeft);
             this.Controls.Add(this.pnlRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng Nhập";
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.pnlRight.ResumeLayout(false);
             this.pnlRight.PerformLayout();
-            this.pnlTopM.ResumeLayout(false);
-            this.pnlTopM.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Eye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_User)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_User_Gr)).EndInit();
+            this.pnlTopM.ResumeLayout(false);
+            this.pnlTopM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrB_Pass_Gr)).EndInit();
             this.ResumeLayout(false);

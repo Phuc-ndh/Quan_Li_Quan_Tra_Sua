@@ -12,6 +12,7 @@ using PdfSharp.Pdf;
 using PdfSharp.Drawing;
 using System.IO;
 using BUS;
+using System.Configuration;
 
 namespace QuanLyQuanTraSua
 {
@@ -166,7 +167,7 @@ namespace QuanLyQuanTraSua
                 g.DrawString(passWifi, font_regular, XBrushes.Black,
                         new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
 
-                string pathPdf = "receipt.pdf";
+                string pathPdf = ConfigurationManager.AppSettings["Path"] + "receipt.pdf";
                 pdf.Save(pathPdf);
                 Process.Start(pathPdf);
             }

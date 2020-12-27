@@ -30,14 +30,14 @@ namespace QuanLyQuanTraSua
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -129,7 +129,7 @@ namespace QuanLyQuanTraSua
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -141,9 +141,8 @@ namespace QuanLyQuanTraSua
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1178, 645);
-            this.splitContainer1.SplitterDistance = 880;
-            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.Size = new System.Drawing.Size(1571, 794);
+            this.splitContainer1.SplitterDistance = 1173;
             this.splitContainer1.TabIndex = 5;
             // 
             // panel1
@@ -154,18 +153,19 @@ namespace QuanLyQuanTraSua
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 664);
+            this.panel1.Size = new System.Drawing.Size(1173, 817);
             this.panel1.TabIndex = 14;
             // 
             // txtID
             // 
             this.txtID.BackColor = System.Drawing.Color.Gray;
             this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtID.Location = new System.Drawing.Point(886, 389);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtID.Location = new System.Drawing.Point(1181, 479);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(75, 13);
+            this.txtID.Size = new System.Drawing.Size(100, 15);
             this.txtID.TabIndex = 23;
             this.txtID.TabStop = false;
             this.txtID.Visible = false;
@@ -186,9 +186,11 @@ namespace QuanLyQuanTraSua
             this.groupBox1.Controls.Add(this.txtTenMatHang);
             this.groupBox1.Controls.Add(this.lblSoLuong);
             this.groupBox1.Controls.Add(this.lblTenMatHang);
-            this.groupBox1.Location = new System.Drawing.Point(674, 116);
+            this.groupBox1.Location = new System.Drawing.Point(899, 143);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(206, 291);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(275, 358);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             // 
@@ -201,9 +203,10 @@ namespace QuanLyQuanTraSua
             this.fabtnGoTo1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.fabtnGoTo1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.fabtnGoTo1.IconSize = 30;
-            this.fabtnGoTo1.Location = new System.Drawing.Point(105, 157);
+            this.fabtnGoTo1.Location = new System.Drawing.Point(140, 193);
+            this.fabtnGoTo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fabtnGoTo1.Name = "fabtnGoTo1";
-            this.fabtnGoTo1.Size = new System.Drawing.Size(30, 30);
+            this.fabtnGoTo1.Size = new System.Drawing.Size(40, 37);
             this.fabtnGoTo1.TabIndex = 25;
             this.fabtnGoTo1.UseVisualStyleBackColor = false;
             this.fabtnGoTo1.Click += new System.EventHandler(this.fabtnGoTo1_Click);
@@ -219,9 +222,10 @@ namespace QuanLyQuanTraSua
             this.fabtnHuy.IconColor = System.Drawing.Color.White;
             this.fabtnHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnHuy.IconSize = 22;
-            this.fabtnHuy.Location = new System.Drawing.Point(109, 232);
+            this.fabtnHuy.Location = new System.Drawing.Point(145, 286);
+            this.fabtnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fabtnHuy.Name = "fabtnHuy";
-            this.fabtnHuy.Size = new System.Drawing.Size(81, 38);
+            this.fabtnHuy.Size = new System.Drawing.Size(108, 47);
             this.fabtnHuy.TabIndex = 25;
             this.fabtnHuy.Text = "Hủy";
             this.fabtnHuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -239,9 +243,10 @@ namespace QuanLyQuanTraSua
             this.fabtnThem.IconColor = System.Drawing.Color.White;
             this.fabtnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnThem.IconSize = 22;
-            this.fabtnThem.Location = new System.Drawing.Point(15, 232);
+            this.fabtnThem.Location = new System.Drawing.Point(20, 286);
+            this.fabtnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fabtnThem.Name = "fabtnThem";
-            this.fabtnThem.Size = new System.Drawing.Size(81, 38);
+            this.fabtnThem.Size = new System.Drawing.Size(108, 47);
             this.fabtnThem.TabIndex = 25;
             this.fabtnThem.Text = "Thêm";
             this.fabtnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -260,12 +265,13 @@ namespace QuanLyQuanTraSua
             this.gtxtGia.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtGia.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtGia.Location = new System.Drawing.Point(19, 99);
+            this.gtxtGia.Location = new System.Drawing.Point(25, 122);
+            this.gtxtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtGia.Name = "gtxtGia";
             this.gtxtGia.PasswordChar = '\0';
             this.gtxtGia.Radius = 10;
             this.gtxtGia.SelectedText = "";
-            this.gtxtGia.Size = new System.Drawing.Size(173, 36);
+            this.gtxtGia.Size = new System.Drawing.Size(231, 44);
             this.gtxtGia.TabIndex = 21;
             // 
             // gunaNumeric1
@@ -277,12 +283,13 @@ namespace QuanLyQuanTraSua
             this.gunaNumeric1.ButtonForeColor = System.Drawing.Color.White;
             this.gunaNumeric1.Font = new System.Drawing.Font("Segoe UI", 9.882353F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaNumeric1.ForeColor = System.Drawing.Color.Gray;
-            this.gunaNumeric1.Location = new System.Drawing.Point(20, 157);
+            this.gunaNumeric1.Location = new System.Drawing.Point(27, 193);
+            this.gunaNumeric1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaNumeric1.Maximum = ((long)(9999999));
             this.gunaNumeric1.Minimum = ((long)(1));
             this.gunaNumeric1.Name = "gunaNumeric1";
             this.gunaNumeric1.Radius = 10;
-            this.gunaNumeric1.Size = new System.Drawing.Size(75, 30);
+            this.gunaNumeric1.Size = new System.Drawing.Size(100, 30);
             this.gunaNumeric1.TabIndex = 19;
             this.gunaNumeric1.Text = "gunaNumeric1";
             this.gunaNumeric1.Value = ((long)(1));
@@ -299,12 +306,13 @@ namespace QuanLyQuanTraSua
             this.gtxtTenMatHang.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtTenMatHang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtTenMatHang.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtTenMatHang.Location = new System.Drawing.Point(19, 38);
+            this.gtxtTenMatHang.Location = new System.Drawing.Point(25, 47);
+            this.gtxtTenMatHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtTenMatHang.Name = "gtxtTenMatHang";
             this.gtxtTenMatHang.PasswordChar = '\0';
             this.gtxtTenMatHang.Radius = 10;
             this.gtxtTenMatHang.SelectedText = "";
-            this.gtxtTenMatHang.Size = new System.Drawing.Size(173, 36);
+            this.gtxtTenMatHang.Size = new System.Drawing.Size(231, 44);
             this.gtxtTenMatHang.TabIndex = 21;
             // 
             // btnGiam
@@ -315,9 +323,10 @@ namespace QuanLyQuanTraSua
             this.btnGiam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGiam.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnGiam.ForeColor = System.Drawing.Color.White;
-            this.btnGiam.Location = new System.Drawing.Point(114, 232);
+            this.btnGiam.Location = new System.Drawing.Point(152, 286);
+            this.btnGiam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGiam.Name = "btnGiam";
-            this.btnGiam.Size = new System.Drawing.Size(76, 38);
+            this.btnGiam.Size = new System.Drawing.Size(101, 47);
             this.btnGiam.TabIndex = 16;
             this.btnGiam.Text = "Hủy";
             this.btnGiam.UseVisualStyleBackColor = false;
@@ -331,9 +340,10 @@ namespace QuanLyQuanTraSua
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThem.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Location = new System.Drawing.Point(19, 232);
+            this.btnThem.Location = new System.Drawing.Point(25, 286);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(76, 38);
+            this.btnThem.Size = new System.Drawing.Size(101, 47);
             this.btnThem.TabIndex = 18;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -343,10 +353,11 @@ namespace QuanLyQuanTraSua
             // 
             this.txtGia.Enabled = false;
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(19, 100);
+            this.txtGia.Location = new System.Drawing.Point(25, 123);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
-            this.txtGia.Size = new System.Drawing.Size(173, 26);
+            this.txtGia.Size = new System.Drawing.Size(229, 29);
             this.txtGia.TabIndex = 12;
             // 
             // lblGia
@@ -354,23 +365,25 @@ namespace QuanLyQuanTraSua
             this.lblGia.AutoSize = true;
             this.lblGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblGia.Location = new System.Drawing.Point(16, 77);
+            this.lblGia.Location = new System.Drawing.Point(21, 95);
+            this.lblGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGia.Name = "lblGia";
-            this.lblGia.Size = new System.Drawing.Size(87, 20);
+            this.lblGia.Size = new System.Drawing.Size(95, 24);
             this.lblGia.TabIndex = 11;
             this.lblGia.Text = "Giá (VNĐ)";
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(19, 157);
+            this.numericUpDown1.Location = new System.Drawing.Point(25, 193);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(76, 26);
+            this.numericUpDown1.Size = new System.Drawing.Size(101, 29);
             this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numericUpDown1.Value = new decimal(new int[] {
@@ -383,10 +396,11 @@ namespace QuanLyQuanTraSua
             // 
             this.txtTenMatHang.Enabled = false;
             this.txtTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenMatHang.Location = new System.Drawing.Point(19, 38);
+            this.txtTenMatHang.Location = new System.Drawing.Point(25, 47);
+            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
-            this.txtTenMatHang.Size = new System.Drawing.Size(173, 26);
+            this.txtTenMatHang.Size = new System.Drawing.Size(229, 29);
             this.txtTenMatHang.TabIndex = 3;
             // 
             // lblSoLuong
@@ -394,9 +408,10 @@ namespace QuanLyQuanTraSua
             this.lblSoLuong.AutoSize = true;
             this.lblSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblSoLuong.Location = new System.Drawing.Point(16, 134);
+            this.lblSoLuong.Location = new System.Drawing.Point(21, 165);
+            this.lblSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(74, 20);
+            this.lblSoLuong.Size = new System.Drawing.Size(86, 24);
             this.lblSoLuong.TabIndex = 1;
             this.lblSoLuong.Text = "Số lượng";
             // 
@@ -406,9 +421,10 @@ namespace QuanLyQuanTraSua
             this.lblTenMatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.lblTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenMatHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblTenMatHang.Location = new System.Drawing.Point(16, 15);
+            this.lblTenMatHang.Location = new System.Drawing.Point(21, 18);
+            this.lblTenMatHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTenMatHang.Name = "lblTenMatHang";
-            this.lblTenMatHang.Size = new System.Drawing.Size(111, 20);
+            this.lblTenMatHang.Size = new System.Drawing.Size(127, 24);
             this.lblTenMatHang.TabIndex = 0;
             this.lblTenMatHang.Text = "Tên mặt hàng";
             // 
@@ -426,8 +442,9 @@ namespace QuanLyQuanTraSua
             this.panel3.Controls.Add(this.fabtnThanhToan);
             this.panel3.Controls.Add(this.gunaGroupBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(626, 641);
+            this.panel3.Size = new System.Drawing.Size(835, 789);
             this.panel3.TabIndex = 22;
             // 
             // gtxtMoneyChange
@@ -442,13 +459,14 @@ namespace QuanLyQuanTraSua
             this.gtxtMoneyChange.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtMoneyChange.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtMoneyChange.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtMoneyChange.Location = new System.Drawing.Point(430, 543);
+            this.gtxtMoneyChange.Location = new System.Drawing.Point(573, 668);
+            this.gtxtMoneyChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtMoneyChange.Name = "gtxtMoneyChange";
             this.gtxtMoneyChange.PasswordChar = '\0';
             this.gtxtMoneyChange.Radius = 10;
-            this.gtxtMoneyChange.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gtxtMoneyChange.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gtxtMoneyChange.SelectedText = "";
-            this.gtxtMoneyChange.Size = new System.Drawing.Size(184, 36);
+            this.gtxtMoneyChange.Size = new System.Drawing.Size(245, 44);
             this.gtxtMoneyChange.TabIndex = 31;
             this.gtxtMoneyChange.Text = "0";
             // 
@@ -458,9 +476,10 @@ namespace QuanLyQuanTraSua
             this.lblMoneyChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.lblMoneyChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoneyChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblMoneyChange.Location = new System.Drawing.Point(428, 520);
+            this.lblMoneyChange.Location = new System.Drawing.Point(571, 640);
+            this.lblMoneyChange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMoneyChange.Name = "lblMoneyChange";
-            this.lblMoneyChange.Size = new System.Drawing.Size(88, 20);
+            this.lblMoneyChange.Size = new System.Drawing.Size(96, 24);
             this.lblMoneyChange.TabIndex = 30;
             this.lblMoneyChange.Text = "Tiền trả lại";
             // 
@@ -470,9 +489,10 @@ namespace QuanLyQuanTraSua
             this.lblCustomerMoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.lblCustomerMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblCustomerMoney.Location = new System.Drawing.Point(428, 459);
+            this.lblCustomerMoney.Location = new System.Drawing.Point(571, 565);
+            this.lblCustomerMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCustomerMoney.Name = "lblCustomerMoney";
-            this.lblCustomerMoney.Size = new System.Drawing.Size(122, 20);
+            this.lblCustomerMoney.Size = new System.Drawing.Size(142, 24);
             this.lblCustomerMoney.TabIndex = 29;
             this.lblCustomerMoney.Text = "Tiền khách đưa";
             // 
@@ -487,13 +507,14 @@ namespace QuanLyQuanTraSua
             this.gtxtCustomerMoney.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtCustomerMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtCustomerMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtCustomerMoney.Location = new System.Drawing.Point(430, 482);
+            this.gtxtCustomerMoney.Location = new System.Drawing.Point(573, 593);
+            this.gtxtCustomerMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtCustomerMoney.Name = "gtxtCustomerMoney";
             this.gtxtCustomerMoney.PasswordChar = '\0';
             this.gtxtCustomerMoney.Radius = 10;
-            this.gtxtCustomerMoney.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gtxtCustomerMoney.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gtxtCustomerMoney.SelectedText = "";
-            this.gtxtCustomerMoney.Size = new System.Drawing.Size(184, 36);
+            this.gtxtCustomerMoney.Size = new System.Drawing.Size(245, 44);
             this.gtxtCustomerMoney.TabIndex = 28;
             this.gtxtCustomerMoney.TextChanged += new System.EventHandler(this.gtxtCustomerMoney_TextChanged);
             this.gtxtCustomerMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gtxtCustomerMoney_KeyPress);
@@ -503,21 +524,21 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView1.AllowUserToAddRows = false;
             this.gunaDataGridView1.AllowUserToDeleteRows = false;
             this.gunaDataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.gunaDataGridView1.ColumnHeadersHeight = 22;
             this.gunaDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.columnID,
@@ -526,31 +547,32 @@ namespace QuanLyQuanTraSua
             this.columnSoLuong,
             this.columnThanhTien});
             this.gunaDataGridView1.ContextMenuStrip = this.gunaContextMenuStrip1;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(38, 56);
+            this.gunaDataGridView1.Location = new System.Drawing.Point(51, 69);
+            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.764706F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.764706F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.gunaDataGridView1.RowHeadersVisible = false;
             this.gunaDataGridView1.RowHeadersWidth = 44;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(580, 329);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(773, 405);
             this.gunaDataGridView1.TabIndex = 19;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -577,8 +599,8 @@ namespace QuanLyQuanTraSua
             // 
             // columnID
             // 
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.columnID.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.882353F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.columnID.DefaultCellStyle = dataGridViewCellStyle11;
             this.columnID.HeaderText = "idDrink";
             this.columnID.MinimumWidth = 6;
             this.columnID.Name = "columnID";
@@ -628,13 +650,13 @@ namespace QuanLyQuanTraSua
             this.gunaContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gunaContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.gunaContextMenuStrip1.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(119, 36);
+            this.gunaContextMenuStrip1.Size = new System.Drawing.Size(105, 28);
             this.gunaContextMenuStrip1.Click += new System.EventHandler(this.gunaContextMenuStrip1_Click);
             // 
             // xóaToolStripMenuItem
             // 
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(118, 32);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.xóaToolStripMenuItem.Text = "Xóa";
             // 
             // lblHoaDon
@@ -642,9 +664,10 @@ namespace QuanLyQuanTraSua
             this.lblHoaDon.AutoSize = true;
             this.lblHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoaDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblHoaDon.Location = new System.Drawing.Point(35, 26);
+            this.lblHoaDon.Location = new System.Drawing.Point(47, 32);
+            this.lblHoaDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoaDon.Name = "lblHoaDon";
-            this.lblHoaDon.Size = new System.Drawing.Size(72, 20);
+            this.lblHoaDon.Size = new System.Drawing.Size(84, 24);
             this.lblHoaDon.TabIndex = 14;
             this.lblHoaDon.Text = "Hóa đơn";
             // 
@@ -654,9 +677,10 @@ namespace QuanLyQuanTraSua
             this.lblTotalMoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
             this.lblTotalMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.lblTotalMoney.Location = new System.Drawing.Point(428, 399);
+            this.lblTotalMoney.Location = new System.Drawing.Point(571, 491);
+            this.lblTotalMoney.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalMoney.Name = "lblTotalMoney";
-            this.lblTotalMoney.Size = new System.Drawing.Size(83, 20);
+            this.lblTotalMoney.Size = new System.Drawing.Size(98, 24);
             this.lblTotalMoney.TabIndex = 27;
             this.lblTotalMoney.Text = "Tổng Tiền";
             // 
@@ -672,13 +696,14 @@ namespace QuanLyQuanTraSua
             this.gtxtTotalMoney.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtTotalMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtTotalMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtTotalMoney.Location = new System.Drawing.Point(430, 422);
+            this.gtxtTotalMoney.Location = new System.Drawing.Point(573, 519);
+            this.gtxtTotalMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtTotalMoney.Name = "gtxtTotalMoney";
             this.gtxtTotalMoney.PasswordChar = '\0';
             this.gtxtTotalMoney.Radius = 10;
-            this.gtxtTotalMoney.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.gtxtTotalMoney.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.gtxtTotalMoney.SelectedText = "";
-            this.gtxtTotalMoney.Size = new System.Drawing.Size(184, 36);
+            this.gtxtTotalMoney.Size = new System.Drawing.Size(245, 44);
             this.gtxtTotalMoney.TabIndex = 26;
             this.gtxtTotalMoney.Text = "0";
             this.gtxtTotalMoney.TextChanged += new System.EventHandler(this.gtxtTotalMoney_TextChanged);
@@ -694,9 +719,10 @@ namespace QuanLyQuanTraSua
             this.fabtnThanhToan.IconColor = System.Drawing.Color.White;
             this.fabtnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnThanhToan.IconSize = 33;
-            this.fabtnThanhToan.Location = new System.Drawing.Point(475, 593);
+            this.fabtnThanhToan.Location = new System.Drawing.Point(633, 730);
+            this.fabtnThanhToan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fabtnThanhToan.Name = "fabtnThanhToan";
-            this.fabtnThanhToan.Size = new System.Drawing.Size(139, 45);
+            this.fabtnThanhToan.Size = new System.Drawing.Size(185, 55);
             this.fabtnThanhToan.TabIndex = 25;
             this.fabtnThanhToan.Text = "Thanh Toán";
             this.fabtnThanhToan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -713,10 +739,11 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBox1.Controls.Add(this.gbtnCheckDiscount);
             this.gunaGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaGroupBox1.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(207, 447);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(276, 550);
+            this.gunaGroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
             this.gunaGroupBox1.Radius = 8;
-            this.gunaGroupBox1.Size = new System.Drawing.Size(198, 132);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(266, 162);
             this.gunaGroupBox1.TabIndex = 32;
             this.gunaGroupBox1.Text = "Giảm giá";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
@@ -733,12 +760,13 @@ namespace QuanLyQuanTraSua
             this.gtxtValueDiscount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtValueDiscount.Location = new System.Drawing.Point(100, 89);
+            this.gtxtValueDiscount.Location = new System.Drawing.Point(133, 110);
+            this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtValueDiscount.Name = "gtxtValueDiscount";
             this.gtxtValueDiscount.PasswordChar = '\0';
             this.gtxtValueDiscount.Radius = 8;
             this.gtxtValueDiscount.SelectedText = "";
-            this.gtxtValueDiscount.Size = new System.Drawing.Size(79, 36);
+            this.gtxtValueDiscount.Size = new System.Drawing.Size(105, 44);
             this.gtxtValueDiscount.TabIndex = 29;
             this.gtxtValueDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gtxtValueDiscount.TextOffsetX = 10;
@@ -754,12 +782,13 @@ namespace QuanLyQuanTraSua
             this.gtxtIdDicount.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtIdDicount.Location = new System.Drawing.Point(15, 40);
+            this.gtxtIdDicount.Location = new System.Drawing.Point(20, 49);
+            this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gtxtIdDicount.Name = "gtxtIdDicount";
             this.gtxtIdDicount.PasswordChar = '\0';
             this.gtxtIdDicount.Radius = 8;
             this.gtxtIdDicount.SelectedText = "";
-            this.gtxtIdDicount.Size = new System.Drawing.Size(166, 36);
+            this.gtxtIdDicount.Size = new System.Drawing.Size(221, 44);
             this.gtxtIdDicount.TabIndex = 28;
             this.gtxtIdDicount.TextOffsetX = 10;
             // 
@@ -776,7 +805,8 @@ namespace QuanLyQuanTraSua
             this.gbtnCheckDiscount.ForeColor = System.Drawing.Color.White;
             this.gbtnCheckDiscount.Image = null;
             this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
-            this.gbtnCheckDiscount.Location = new System.Drawing.Point(15, 89);
+            this.gbtnCheckDiscount.Location = new System.Drawing.Point(20, 110);
+            this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
             this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
             this.gbtnCheckDiscount.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -784,7 +814,7 @@ namespace QuanLyQuanTraSua
             this.gbtnCheckDiscount.OnHoverImage = null;
             this.gbtnCheckDiscount.OnPressedColor = System.Drawing.Color.Black;
             this.gbtnCheckDiscount.Radius = 10;
-            this.gbtnCheckDiscount.Size = new System.Drawing.Size(79, 36);
+            this.gbtnCheckDiscount.Size = new System.Drawing.Size(105, 44);
             this.gbtnCheckDiscount.TabIndex = 28;
             this.gbtnCheckDiscount.Text = "Check";
             this.gbtnCheckDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -798,10 +828,10 @@ namespace QuanLyQuanTraSua
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabControl1.ItemSize = new System.Drawing.Size(160, 40);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(295, 645);
+            this.tabControl1.Size = new System.Drawing.Size(394, 794);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -809,10 +839,10 @@ namespace QuanLyQuanTraSua
             // 
             this.tabPage1.Controls.Add(this.tabControl2);
             this.tabPage1.Location = new System.Drawing.Point(4, 44);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(287, 597);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(386, 746);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -827,11 +857,11 @@ namespace QuanLyQuanTraSua
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl2.ItemSize = new System.Drawing.Size(80, 30);
-            this.tabControl2.Location = new System.Drawing.Point(2, 2);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl2.Location = new System.Drawing.Point(3, 2);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(283, 593);
+            this.tabControl2.Size = new System.Drawing.Size(380, 742);
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl2.TabIndex = 0;
             // 
@@ -840,20 +870,20 @@ namespace QuanLyQuanTraSua
             this.tabPage3.BackColor = System.Drawing.Color.White;
             this.tabPage3.Controls.Add(this.flpTatCa);
             this.tabPage3.Location = new System.Drawing.Point(4, 34);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage3.Size = new System.Drawing.Size(275, 555);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Size = new System.Drawing.Size(372, 704);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Tất Cả";
             // 
             // flpTatCa
             // 
             this.flpTatCa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpTatCa.Location = new System.Drawing.Point(2, 2);
-            this.flpTatCa.Margin = new System.Windows.Forms.Padding(2);
+            this.flpTatCa.Location = new System.Drawing.Point(3, 2);
+            this.flpTatCa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpTatCa.Name = "flpTatCa";
-            this.flpTatCa.Size = new System.Drawing.Size(271, 551);
+            this.flpTatCa.Size = new System.Drawing.Size(366, 700);
             this.flpTatCa.TabIndex = 0;
             // 
             // tabPage7
@@ -861,9 +891,9 @@ namespace QuanLyQuanTraSua
             this.tabPage7.BackColor = System.Drawing.Color.White;
             this.tabPage7.Controls.Add(this.flpTraSua);
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(275, 555);
+            this.tabPage7.Size = new System.Drawing.Size(369, 692);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Trà Sữa";
             // 
@@ -871,9 +901,9 @@ namespace QuanLyQuanTraSua
             // 
             this.flpTraSua.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpTraSua.Location = new System.Drawing.Point(0, 0);
-            this.flpTraSua.Margin = new System.Windows.Forms.Padding(2);
+            this.flpTraSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpTraSua.Name = "flpTraSua";
-            this.flpTraSua.Size = new System.Drawing.Size(275, 555);
+            this.flpTraSua.Size = new System.Drawing.Size(369, 692);
             this.flpTraSua.TabIndex = 0;
             // 
             // tabPage6
@@ -881,20 +911,20 @@ namespace QuanLyQuanTraSua
             this.tabPage6.BackColor = System.Drawing.Color.White;
             this.tabPage6.Controls.Add(this.flpHongTra);
             this.tabPage6.Location = new System.Drawing.Point(4, 34);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage6.Size = new System.Drawing.Size(275, 555);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage6.Size = new System.Drawing.Size(369, 692);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Hồng Trà";
             // 
             // flpHongTra
             // 
             this.flpHongTra.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpHongTra.Location = new System.Drawing.Point(2, 2);
-            this.flpHongTra.Margin = new System.Windows.Forms.Padding(2);
+            this.flpHongTra.Location = new System.Drawing.Point(3, 2);
+            this.flpHongTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpHongTra.Name = "flpHongTra";
-            this.flpHongTra.Size = new System.Drawing.Size(271, 551);
+            this.flpHongTra.Size = new System.Drawing.Size(363, 688);
             this.flpHongTra.TabIndex = 1;
             // 
             // tabPage4
@@ -902,20 +932,20 @@ namespace QuanLyQuanTraSua
             this.tabPage4.BackColor = System.Drawing.Color.White;
             this.tabPage4.Controls.Add(this.flpSinhTo);
             this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage4.Size = new System.Drawing.Size(275, 555);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Size = new System.Drawing.Size(369, 692);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Sinh Tố";
             // 
             // flpSinhTo
             // 
             this.flpSinhTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpSinhTo.Location = new System.Drawing.Point(2, 2);
-            this.flpSinhTo.Margin = new System.Windows.Forms.Padding(2);
+            this.flpSinhTo.Location = new System.Drawing.Point(3, 2);
+            this.flpSinhTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpSinhTo.Name = "flpSinhTo";
-            this.flpSinhTo.Size = new System.Drawing.Size(271, 551);
+            this.flpSinhTo.Size = new System.Drawing.Size(363, 688);
             this.flpSinhTo.TabIndex = 1;
             // 
             // tabPage5
@@ -923,20 +953,20 @@ namespace QuanLyQuanTraSua
             this.tabPage5.BackColor = System.Drawing.Color.White;
             this.tabPage5.Controls.Add(this.flpNuocEp);
             this.tabPage5.Location = new System.Drawing.Point(4, 34);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage5.Size = new System.Drawing.Size(275, 555);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage5.Size = new System.Drawing.Size(369, 692);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Nước Ép";
             // 
             // flpNuocEp
             // 
             this.flpNuocEp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpNuocEp.Location = new System.Drawing.Point(2, 2);
-            this.flpNuocEp.Margin = new System.Windows.Forms.Padding(2);
+            this.flpNuocEp.Location = new System.Drawing.Point(3, 2);
+            this.flpNuocEp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpNuocEp.Name = "flpNuocEp";
-            this.flpNuocEp.Size = new System.Drawing.Size(271, 551);
+            this.flpNuocEp.Size = new System.Drawing.Size(363, 688);
             this.flpNuocEp.TabIndex = 1;
             // 
             // tabPage2
@@ -946,10 +976,10 @@ namespace QuanLyQuanTraSua
             this.tabPage2.Controls.Add(this.flpDSOrder);
             this.tabPage2.Controls.Add(this.btnLamMoi);
             this.tabPage2.Location = new System.Drawing.Point(4, 44);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(287, 597);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(385, 746);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách order";
             // 
@@ -960,16 +990,16 @@ namespace QuanLyQuanTraSua
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.gunaDataGridView2);
-            this.panel2.Location = new System.Drawing.Point(1, 513);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(1, 631);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(284, 168);
+            this.panel2.Size = new System.Drawing.Size(379, 207);
             this.panel2.TabIndex = 6;
             // 
             // gunaDataGridView2
             // 
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gunaDataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gunaDataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -978,37 +1008,37 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaDataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gunaDataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gunaDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gunaDataGridView2.ColumnHeadersHeight = 27;
             this.gunaDataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnTen1,
             this.ColumnSL1});
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView2.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gunaDataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
             this.gunaDataGridView2.Enabled = false;
             this.gunaDataGridView2.EnableHeadersVisualStyles = false;
             this.gunaDataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.gunaDataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaDataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaDataGridView2.Name = "gunaDataGridView2";
             this.gunaDataGridView2.RowHeadersVisible = false;
             this.gunaDataGridView2.RowHeadersWidth = 51;
             this.gunaDataGridView2.RowTemplate.Height = 24;
             this.gunaDataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView2.Size = new System.Drawing.Size(285, 213);
+            this.gunaDataGridView2.Size = new System.Drawing.Size(380, 262);
             this.gunaDataGridView2.TabIndex = 0;
             this.gunaDataGridView2.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -1052,9 +1082,10 @@ namespace QuanLyQuanTraSua
             this.flpDSOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpDSOrder.Location = new System.Drawing.Point(0, 36);
+            this.flpDSOrder.Location = new System.Drawing.Point(0, 44);
+            this.flpDSOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpDSOrder.Name = "flpDSOrder";
-            this.flpDSOrder.Size = new System.Drawing.Size(285, 471);
+            this.flpDSOrder.Size = new System.Drawing.Size(380, 580);
             this.flpDSOrder.TabIndex = 5;
             this.flpDSOrder.SizeChanged += new System.EventHandler(this.flpDSOrder_SizeChanged);
             // 
@@ -1068,10 +1099,10 @@ namespace QuanLyQuanTraSua
             this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(2, 2);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLamMoi.Location = new System.Drawing.Point(3, 2);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(283, 30);
+            this.btnLamMoi.Size = new System.Drawing.Size(379, 37);
             this.btnLamMoi.TabIndex = 4;
             this.btnLamMoi.Text = "Làm mới";
             this.btnLamMoi.UseVisualStyleBackColor = false;
@@ -1082,21 +1113,22 @@ namespace QuanLyQuanTraSua
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(119, 36);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(105, 28);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(118, 32);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(104, 24);
             this.toolStripMenuItem1.Text = "Xóa";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // frmTongQuan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1178, 645);
+            this.ClientSize = new System.Drawing.Size(1571, 794);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmTongQuan";
             this.Text = "Tổng Quan";
             this.Load += new System.EventHandler(this.frmTongQuan_Load);

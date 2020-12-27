@@ -7,7 +7,7 @@
     <ProjectGuid>{DB6B7EDA-C22B-40CF-8D70-8C70C02417D1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLyQuanTraSua</RootNamespace>
-    <AssemblyName>QuanLyQuanTraSua</AssemblyName>
+    <AssemblyName>Milktea Manager</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -354,6 +357,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\images\phone_gr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

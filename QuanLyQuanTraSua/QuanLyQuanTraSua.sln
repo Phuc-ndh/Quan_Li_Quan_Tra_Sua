@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{DA109B02-AF92-4BD4-BE36-2537816695A0}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MilkteaManagerInstaller", "MilkteaManagerInstaller\MilkteaManagerInstaller.vdproj", "{6678B48E-1AC9-43BC-892F-3C8212D5CF9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,8 @@ Global
 		{DA109B02-AF92-4BD4-BE36-2537816695A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA109B02-AF92-4BD4-BE36-2537816695A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA109B02-AF92-4BD4-BE36-2537816695A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6678B48E-1AC9-43BC-892F-3C8212D5CF9C}.Debug|Any CPU.ActiveCfg = Debug
+		{6678B48E-1AC9-43BC-892F-3C8212D5CF9C}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
