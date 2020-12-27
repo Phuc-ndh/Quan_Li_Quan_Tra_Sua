@@ -74,7 +74,6 @@ C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTaiKhoan.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmThongKe.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTongQuan.resources
-C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmUpdateTK.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.Properties.Resources.resources
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
@@ -316,3 +315,11 @@ C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\b
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.AccessControl.xml
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Permissions.xml
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.AccessControl.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Permissions.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.AccessControl.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Permissions.xml
+C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\bin\Debug\System.Security.Principal.Windows.xml

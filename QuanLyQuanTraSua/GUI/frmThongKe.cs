@@ -100,7 +100,6 @@ namespace QuanLyQuanTraSua
 
         private bool dateReport = false;
         private bool monthReport = false;
-        private bool yearReport = false;
 
         private int _day;
         private int _month;
@@ -124,10 +123,6 @@ namespace QuanLyQuanTraSua
                 _month = (this.gunacbbMonth.SelectedIndex) + 1;
                 _year = DateTime.Now.Year;
             }
-            if (yearReport)
-            {
-                _year = Convert.ToInt32(this.gunacbbYear.SelectedText);
-            }
         }
 
         private void getData()
@@ -140,12 +135,6 @@ namespace QuanLyQuanTraSua
                 if (monthReport)
                 {
                     dt = billBUS.getReportByMonth(_month);
-                } else
-                {
-                    if (yearReport)
-                    {
-                        //
-                    }
                 }
             }
         }
@@ -209,6 +198,8 @@ namespace QuanLyQuanTraSua
             chartMoneyPercent.Visible = false;
             lblIncomeMoney.Visible = false;
             lblNumber.Visible = false;
+            gbtnPrint.Enabled = false;
+            gpnlSumary.Visible = false;
         }
 
         // nut bao cao theo ngay
@@ -219,13 +210,12 @@ namespace QuanLyQuanTraSua
 
             dateReport = true;
             monthReport = false;
-            yearReport = false;
 
-            //cldDateTime.Visible = true;
             gunacldDateTime.Visible = true;
-            //cbbMonth.Visible = false;
             gunacbbMonth.Visible = false;
             gbtnReport.Visible = true;
+
+            gbtnReport_Click(sender, e);
         }
 
         // nut bao cao theo thang
@@ -237,30 +227,15 @@ namespace QuanLyQuanTraSua
 
             dateReport = false;
             monthReport = true;
-            yearReport = false;
 
             gbtnReport.Visible = true;           
             gunacbbMonth.Visible = true;
             gunacldDateTime.Visible = false;
-            gunacbbYear.Visible = false;
 
             // lay gia tri thang hien tai
             this.gunacbbMonth.SelectedIndex = DateTime.Now.Month - 1;
-        }
 
-        private void gnbtnReportYear_Click(object sender, EventArgs e)
-        {
-            hideChart();
-            gbtnPrint.Enabled = false;
-
-            dateReport = false;
-            monthReport = false;
-            yearReport = true;
-
-            gbtnReport.Visible = true;
-            gunacldDateTime.Visible = false;
-            gunacbbMonth.Visible = false;
-            gunacbbYear.Visible = true;
+            gbtnReport_Click(sender, e);
         }
 
         // click report botton
@@ -273,27 +248,24 @@ namespace QuanLyQuanTraSua
             if (dt.Rows.Count == 0)
             {
                 lblDataNull.Visible = true;
+                gbtnPrint.Enabled = false;
                 hideChart();
                 return;
             } else
             {
                 lblDataNull.Visible = false;
+                gbtnPrint.Enabled = true; 
+                gpnlSumary.Visible = true;
 
                 chartSellPercent.Update();
                 chartMoneyPercent.Update();
                 chartSellAndMoney.Update();
                 gbtnPrint.Enabled = true;
-                if (dateReport || monthReport)
-                {
-                    chartSellAndMoney.Visible = true;
-                    chartSellPercent.Visible = true;
-                    chartMoneyPercent.Visible = true;
-                }
-                else
-                {
-
-                }
-
+                
+                chartSellAndMoney.Visible = true;
+                chartSellPercent.Visible = true;
+                chartMoneyPercent.Visible = true;
+                
                 paintChart();
                 reportInfoChart();
                 
@@ -371,6 +343,11 @@ namespace QuanLyQuanTraSua
                 }
             }
             
+        }
+
+        private void frmThongKe_Load(object sender, EventArgs e)
+        {
+            gunacldDateTime.Value = DateTime.Now;
         }
     }
 }
