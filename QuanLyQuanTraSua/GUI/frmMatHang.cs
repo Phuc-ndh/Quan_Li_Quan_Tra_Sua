@@ -47,7 +47,6 @@ namespace QuanLyQuanTraSua
             gDataGridView1.Columns["idCategory"].Visible = false;
             gDataGridView1.Columns["Image"].Visible = false;
             
-            gunaCheckBox1.Size = new Size(90, 90);
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -286,27 +285,6 @@ namespace QuanLyQuanTraSua
             //panelButton.Location = new Point(gunaGroupBoxThongTinMH.Location.X, gunaGroupBoxThongTinMH.Location.Y
             //    + gunaGroupBoxThongTinMH.Height + panelThongTinMH.Height * 7222 / 100000);
         }
-
-        private void gunaCheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (gunaCheckBox1.Checked)
-            {
-                gDataGridView1.AllowUserToResizeColumns = true;
-                return;
-            }
-            gDataGridView1.AllowUserToResizeColumns = false;
-        }
-
-        private void gunaCheckBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (gunaCheckBox2.Checked)
-            {
-                gDataGridView1.AllowUserToResizeRows = true;
-                return;
-            }
-            gDataGridView1.AllowUserToResizeRows = false;
-        }
-
         private void btnThemAnh_Click(object sender, EventArgs e)
         {
             if (ofd.ShowDialog() == DialogResult.OK)
