@@ -296,7 +296,7 @@ namespace QuanLyQuanTraSua
 
             if (dtDiscout == null)
             {
-                MessageBox.Show("Ma giam gia khong hop le");
+                MessageBox.Show("Mã giảm giá không hợp lệ");
                 return;
             } else
             {
@@ -304,11 +304,10 @@ namespace QuanLyQuanTraSua
                 {
                     if (item["isUsed"].ToString() == "1")
                     {
-                        MessageBox.Show("Ma da duoc su dung");
+                        MessageBox.Show("Mã đã được sử dụng");
                         return;
                     } else
                     {
-                        MessageBox.Show("Ma giam gia co the su dung duoc");
                         isUsed = true;
                         valueDiscount += Convert.ToInt32(item["valueDiscount"]);
                         gtxtValueDiscount.Text = valueDiscount.ToString() + "%";

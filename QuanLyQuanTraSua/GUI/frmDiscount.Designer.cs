@@ -35,7 +35,6 @@ namespace QuanLyQuanTraSua
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panelThongTinGG = new System.Windows.Forms.Panel();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.btnSua = new FontAwesome.Sharp.IconButton();
             this.btnThem = new FontAwesome.Sharp.IconButton();
             this.btnXoa = new FontAwesome.Sharp.IconButton();
             this.gunaGroupBoxThongTinGG = new Guna.UI.WinForms.GunaGroupBox();
@@ -91,35 +90,13 @@ namespace QuanLyQuanTraSua
             // panelButton
             // 
             this.panelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
-            this.panelButton.Controls.Add(this.btnSua);
             this.panelButton.Controls.Add(this.btnThem);
             this.panelButton.Controls.Add(this.btnXoa);
-            this.panelButton.Location = new System.Drawing.Point(37, 318);
+            this.panelButton.Location = new System.Drawing.Point(99, 318);
             this.panelButton.Margin = new System.Windows.Forms.Padding(4);
             this.panelButton.Name = "panelButton";
-            this.panelButton.Size = new System.Drawing.Size(601, 55);
+            this.panelButton.Size = new System.Drawing.Size(463, 55);
             this.panelButton.TabIndex = 10;
-            // 
-            // btnSua
-            // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnSua.FlatAppearance.BorderSize = 0;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.btnSua.IconColor = System.Drawing.Color.White;
-            this.btnSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSua.IconSize = 30;
-            this.btnSua.Location = new System.Drawing.Point(216, 0);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.btnSua.Size = new System.Drawing.Size(172, 55);
-            this.btnSua.TabIndex = 8;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // btnThem
             // 
@@ -156,7 +133,7 @@ namespace QuanLyQuanTraSua
             this.btnXoa.IconColor = System.Drawing.Color.White;
             this.btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnXoa.IconSize = 30;
-            this.btnXoa.Location = new System.Drawing.Point(429, 0);
+            this.btnXoa.Location = new System.Drawing.Point(291, 0);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
@@ -361,7 +338,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panelThongTinGG;
         private System.Windows.Forms.Panel panelButton;
-        private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnThem;
         private FontAwesome.Sharp.IconButton btnXoa;
         private Guna.UI.WinForms.GunaGroupBox gunaGroupBoxThongTinGG;

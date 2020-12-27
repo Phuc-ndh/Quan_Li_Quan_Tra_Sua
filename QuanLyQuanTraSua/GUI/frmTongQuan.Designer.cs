@@ -140,7 +140,7 @@ namespace QuanLyQuanTraSua
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1571, 722);
+            this.splitContainer1.Size = new System.Drawing.Size(1571, 794);
             this.splitContainer1.SplitterDistance = 1174;
             this.splitContainer1.TabIndex = 5;
             // 
@@ -243,7 +243,6 @@ namespace QuanLyQuanTraSua
             this.gtxtIdDicount.SelectedText = "";
             this.gtxtIdDicount.Size = new System.Drawing.Size(221, 44);
             this.gtxtIdDicount.TabIndex = 28;
-            this.gtxtIdDicount.Text = "Mã giảm giá";
             this.gtxtIdDicount.TextOffsetX = 10;
             // 
             // txtID
@@ -824,7 +823,7 @@ namespace QuanLyQuanTraSua
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(393, 722);
+            this.tabControl1.Size = new System.Drawing.Size(393, 794);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
@@ -835,7 +834,7 @@ namespace QuanLyQuanTraSua
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(385, 674);
+            this.tabPage1.Size = new System.Drawing.Size(385, 746);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -854,7 +853,7 @@ namespace QuanLyQuanTraSua
             this.tabControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(379, 670);
+            this.tabControl2.Size = new System.Drawing.Size(379, 742);
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl2.TabIndex = 0;
             // 
@@ -866,7 +865,7 @@ namespace QuanLyQuanTraSua
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(371, 632);
+            this.tabPage3.Size = new System.Drawing.Size(371, 704);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Tất Cả";
             // 
@@ -876,7 +875,7 @@ namespace QuanLyQuanTraSua
             this.flpTatCa.Location = new System.Drawing.Point(3, 2);
             this.flpTatCa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpTatCa.Name = "flpTatCa";
-            this.flpTatCa.Size = new System.Drawing.Size(365, 628);
+            this.flpTatCa.Size = new System.Drawing.Size(365, 700);
             this.flpTatCa.TabIndex = 0;
             // 
             // tabPage7
@@ -886,7 +885,7 @@ namespace QuanLyQuanTraSua
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(371, 632);
+            this.tabPage7.Size = new System.Drawing.Size(371, 704);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Trà Sữa";
             // 
@@ -896,7 +895,7 @@ namespace QuanLyQuanTraSua
             this.flpTraSua.Location = new System.Drawing.Point(0, 0);
             this.flpTraSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpTraSua.Name = "flpTraSua";
-            this.flpTraSua.Size = new System.Drawing.Size(371, 632);
+            this.flpTraSua.Size = new System.Drawing.Size(371, 704);
             this.flpTraSua.TabIndex = 0;
             // 
             // tabPage6
@@ -907,7 +906,7 @@ namespace QuanLyQuanTraSua
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage6.Size = new System.Drawing.Size(371, 632);
+            this.tabPage6.Size = new System.Drawing.Size(371, 704);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Hồng Trà";
             // 
@@ -917,7 +916,7 @@ namespace QuanLyQuanTraSua
             this.flpHongTra.Location = new System.Drawing.Point(3, 2);
             this.flpHongTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpHongTra.Name = "flpHongTra";
-            this.flpHongTra.Size = new System.Drawing.Size(365, 628);
+            this.flpHongTra.Size = new System.Drawing.Size(365, 700);
             this.flpHongTra.TabIndex = 1;
             // 
             // tabPage4
@@ -928,7 +927,7 @@ namespace QuanLyQuanTraSua
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(371, 632);
+            this.tabPage4.Size = new System.Drawing.Size(371, 704);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Sinh Tố";
             // 
@@ -938,7 +937,7 @@ namespace QuanLyQuanTraSua
             this.flpSinhTo.Location = new System.Drawing.Point(3, 2);
             this.flpSinhTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpSinhTo.Name = "flpSinhTo";
-            this.flpSinhTo.Size = new System.Drawing.Size(365, 628);
+            this.flpSinhTo.Size = new System.Drawing.Size(365, 700);
             this.flpSinhTo.TabIndex = 1;
             // 
             // tabPage5
@@ -949,7 +948,7 @@ namespace QuanLyQuanTraSua
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(371, 632);
+            this.tabPage5.Size = new System.Drawing.Size(371, 704);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Nước Ép";
             // 
@@ -959,7 +958,7 @@ namespace QuanLyQuanTraSua
             this.flpNuocEp.Location = new System.Drawing.Point(3, 2);
             this.flpNuocEp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpNuocEp.Name = "flpNuocEp";
-            this.flpNuocEp.Size = new System.Drawing.Size(365, 628);
+            this.flpNuocEp.Size = new System.Drawing.Size(365, 700);
             this.flpNuocEp.TabIndex = 1;
             // 
             // tabPage2
@@ -972,7 +971,7 @@ namespace QuanLyQuanTraSua
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(385, 674);
+            this.tabPage2.Size = new System.Drawing.Size(385, 746);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách order";
             // 
@@ -1119,7 +1118,7 @@ namespace QuanLyQuanTraSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1571, 722);
+            this.ClientSize = new System.Drawing.Size(1571, 794);
             this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTongQuan";
