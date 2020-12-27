@@ -406,7 +406,6 @@ D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmLogin.resources
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain1.resources
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMatHang.resources
-D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmOpenPDF.resources
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTaiKhoan.resources
 D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmThongKe.resources
