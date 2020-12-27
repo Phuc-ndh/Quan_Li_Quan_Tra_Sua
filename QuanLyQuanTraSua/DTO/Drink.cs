@@ -67,11 +67,6 @@ namespace DTO
             this._Name = r["Name"].ToString();
             this._Price = (int)r["Price"];
             this._idCategory = (int)r["idCategory"];
-            if (r["Image"] is DBNull)
-            {
-                this._image = new byte[0];
-            }
-            else
             this._image = (byte[])r["Image"];
         }
     }
