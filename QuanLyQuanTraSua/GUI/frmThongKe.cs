@@ -283,14 +283,14 @@ namespace QuanLyQuanTraSua
             lblNumber.Visible = true;
             if (dateReport)
             {
-                lblIncomeMoney.Text = "Doanh thu ngày " + _day.ToString() + " tháng " + _month.ToString() + " năm " + _year.ToString() + ": " + incomeMoney.ToString();
-                lblNumber.Text = "Số tiền thu được trong ngày: " + numberSell.ToString();
+                lblIncomeMoney.Text = "Doanh thu ngay " + _day.ToString() + " thang " + _month.ToString() + " nam " + _year.ToString() + ": " + incomeMoney.ToString();
+                lblNumber.Text = "So tien thu duoc trong ngay: " + numberSell.ToString();
             } else
             {
                 if (monthReport)
                 {
-                    lblIncomeMoney.Text = "Doanh thu tháng " + _month.ToString() + ": " + incomeMoney.ToString();
-                    lblNumber.Text = "Số tiền thu được trong tháng: " + numberSell.ToString();
+                    lblIncomeMoney.Text = "Doanh thu thang " + _month.ToString() + ": " + incomeMoney.ToString();
+                    lblNumber.Text = "So tien thu duoc trong thang: " + numberSell.ToString();
                 }
             }
         }
