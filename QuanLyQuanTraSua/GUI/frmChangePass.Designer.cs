@@ -29,6 +29,7 @@ namespace QuanLyQuanTraSua
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangePass));
             this.gunaGroupBoxThongTinMH = new Guna.UI.WinForms.GunaGroupBox();
             this.btnCancel = new FontAwesome.Sharp.IconButton();
@@ -37,7 +38,11 @@ namespace QuanLyQuanTraSua
             this.txtNewPass = new Guna.UI.WinForms.GunaTextBox();
             this.txtReNewPass = new Guna.UI.WinForms.GunaTextBox();
             this.txtCurrentPass = new Guna.UI.WinForms.GunaTextBox();
+            this.pnlMove = new System.Windows.Forms.Panel();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaGroupBoxThongTinMH.SuspendLayout();
+            this.pnlMove.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaGroupBoxThongTinMH
@@ -48,6 +53,7 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.BackColor = System.Drawing.Color.Transparent;
             this.gunaGroupBoxThongTinMH.BaseColor = System.Drawing.Color.White;
             this.gunaGroupBoxThongTinMH.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaGroupBoxThongTinMH.Controls.Add(this.pnlMove);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.btnCancel);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.btnChangePass);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.panel1);
@@ -60,7 +66,7 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.Location = new System.Drawing.Point(-1, 0);
             this.gunaGroupBoxThongTinMH.Name = "gunaGroupBoxThongTinMH";
             this.gunaGroupBoxThongTinMH.Radius = 10;
-            this.gunaGroupBoxThongTinMH.Size = new System.Drawing.Size(396, 266);
+            this.gunaGroupBoxThongTinMH.Size = new System.Drawing.Size(385, 292);
             this.gunaGroupBoxThongTinMH.TabIndex = 23;
             this.gunaGroupBoxThongTinMH.Text = "Đổi password";
             this.gunaGroupBoxThongTinMH.TextLocation = new System.Drawing.Point(10, 8);
@@ -78,7 +84,7 @@ namespace QuanLyQuanTraSua
             this.btnCancel.IconColor = System.Drawing.Color.White;
             this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancel.IconSize = 28;
-            this.btnCancel.Location = new System.Drawing.Point(44, 218);
+            this.btnCancel.Location = new System.Drawing.Point(44, 235);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnCancel.Size = new System.Drawing.Size(129, 45);
@@ -100,7 +106,7 @@ namespace QuanLyQuanTraSua
             this.btnChangePass.IconColor = System.Drawing.Color.White;
             this.btnChangePass.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnChangePass.IconSize = 28;
-            this.btnChangePass.Location = new System.Drawing.Point(228, 218);
+            this.btnChangePass.Location = new System.Drawing.Point(228, 235);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnChangePass.Size = new System.Drawing.Size(129, 45);
@@ -116,7 +122,7 @@ namespace QuanLyQuanTraSua
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(30)))), ((int)(((byte)(88)))));
             this.panel1.Location = new System.Drawing.Point(1, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(28, 237);
+            this.panel1.Size = new System.Drawing.Size(20, 237);
             this.panel1.TabIndex = 22;
             // 
             // txtNewPass
@@ -131,7 +137,7 @@ namespace QuanLyQuanTraSua
             this.txtNewPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNewPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPass.ForeColor = System.Drawing.Color.Gray;
-            this.txtNewPass.Location = new System.Drawing.Point(44, 109);
+            this.txtNewPass.Location = new System.Drawing.Point(44, 113);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.PasswordChar = '\0';
             this.txtNewPass.Radius = 10;
@@ -157,7 +163,7 @@ namespace QuanLyQuanTraSua
             this.txtReNewPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtReNewPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReNewPass.ForeColor = System.Drawing.Color.Gray;
-            this.txtReNewPass.Location = new System.Drawing.Point(44, 165);
+            this.txtReNewPass.Location = new System.Drawing.Point(44, 169);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.PasswordChar = '\0';
             this.txtReNewPass.Radius = 10;
@@ -183,7 +189,7 @@ namespace QuanLyQuanTraSua
             this.txtCurrentPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCurrentPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCurrentPass.ForeColor = System.Drawing.Color.Gray;
-            this.txtCurrentPass.Location = new System.Drawing.Point(44, 53);
+            this.txtCurrentPass.Location = new System.Drawing.Point(44, 57);
             this.txtCurrentPass.Name = "txtCurrentPass";
             this.txtCurrentPass.PasswordChar = '\0';
             this.txtCurrentPass.Radius = 10;
@@ -197,20 +203,51 @@ namespace QuanLyQuanTraSua
             this.txtCurrentPass.Enter += new System.EventHandler(this.txtCurrentPass_Click);
             this.txtCurrentPass.Leave += new System.EventHandler(this.txtCurrentPass_Leave);
             // 
+            // pnlMove
+            // 
+            this.pnlMove.BackColor = System.Drawing.Color.Teal;
+            this.pnlMove.Controls.Add(this.lblClose);
+            this.pnlMove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnlMove.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMove.Location = new System.Drawing.Point(0, 0);
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.Size = new System.Drawing.Size(385, 31);
+            this.pnlMove.TabIndex = 23;
+            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.70588F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.Snow;
+            this.lblClose.Location = new System.Drawing.Point(353, 5);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(22, 22);
+            this.lblClose.TabIndex = 0;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // gunaElipse1
+            // 
+            this.gunaElipse1.TargetControl = this;
+            // 
             // frmChangePass
             // 
             this.AcceptButton = this.btnChangePass;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(395, 268);
+            this.ClientSize = new System.Drawing.Size(384, 294);
             this.Controls.Add(this.gunaGroupBoxThongTinMH);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmChangePass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmChangePass_Load);
             this.gunaGroupBoxThongTinMH.ResumeLayout(false);
+            this.pnlMove.ResumeLayout(false);
+            this.pnlMove.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +261,8 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btnCancel;
         private FontAwesome.Sharp.IconButton btnChangePass;
+        private System.Windows.Forms.Panel pnlMove;
+        private System.Windows.Forms.Label lblClose;
+        private Guna.UI.WinForms.GunaElipse gunaElipse1;
     }
 }

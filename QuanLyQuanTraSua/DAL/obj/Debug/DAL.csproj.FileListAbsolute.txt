@@ -54,3 +54,21 @@ C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.AccessControl.xml
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Permissions.xml
 C:\Users\HS\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Principal.Windows.xml
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DAL.pdb
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\FontAwesome.Sharp.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.AccessControl.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Permissions.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Principal.Windows.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\DTO.pdb
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.AccessControl.xml
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Permissions.xml
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\bin\Debug\System.Security.Principal.Windows.xml
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.dll
+D:\QLQTS\quan 27-12 10-51pm\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\DAL\obj\Debug\DAL.pdb
