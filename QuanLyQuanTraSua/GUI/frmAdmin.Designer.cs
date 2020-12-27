@@ -29,17 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdmin));
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.gbtnDelete = new Guna.UI.WinForms.GunaGradientTileButton();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gbtnDelete = new Guna.UI.WinForms.GunaGradientTileButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -83,11 +84,22 @@
             this.panel2.Size = new System.Drawing.Size(600, 46);
             this.panel2.TabIndex = 77;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Thông tin các tài khoản";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Location = new System.Drawing.Point(9, 51);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(582, 202);
             this.panel1.TabIndex = 78;
@@ -96,7 +108,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 7);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(582, 195);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -107,10 +119,37 @@
             this.panel3.Controls.Add(this.buttonEdit);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Location = new System.Drawing.Point(9, 271);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(581, 85);
             this.panel3.TabIndex = 79;
+            // 
+            // gbtnDelete
+            // 
+            this.gbtnDelete.AnimationHoverSpeed = 0.07F;
+            this.gbtnDelete.AnimationSpeed = 0.03F;
+            this.gbtnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.gbtnDelete.BaseColor1 = System.Drawing.Color.SlateBlue;
+            this.gbtnDelete.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gbtnDelete.BorderColor = System.Drawing.Color.Black;
+            this.gbtnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gbtnDelete.FocusedColor = System.Drawing.Color.Empty;
+            this.gbtnDelete.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
+            this.gbtnDelete.ForeColor = System.Drawing.Color.White;
+            this.gbtnDelete.Image = null;
+            this.gbtnDelete.ImageSize = new System.Drawing.Size(52, 52);
+            this.gbtnDelete.Location = new System.Drawing.Point(326, 19);
+            this.gbtnDelete.Name = "gbtnDelete";
+            this.gbtnDelete.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
+            this.gbtnDelete.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
+            this.gbtnDelete.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gbtnDelete.OnHoverForeColor = System.Drawing.Color.White;
+            this.gbtnDelete.OnHoverImage = null;
+            this.gbtnDelete.OnPressedColor = System.Drawing.Color.Black;
+            this.gbtnDelete.Size = new System.Drawing.Size(229, 50);
+            this.gbtnDelete.TabIndex = 66;
+            this.gbtnDelete.Text = "Xóa";
+            this.gbtnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // buttonEdit
             // 
@@ -148,44 +187,6 @@
             // 
             this.gunaElipse1.TargetControl = this;
             // 
-            // gbtnDelete
-            // 
-            this.gbtnDelete.AnimationHoverSpeed = 0.07F;
-            this.gbtnDelete.AnimationSpeed = 0.03F;
-            this.gbtnDelete.BackColor = System.Drawing.Color.Transparent;
-            this.gbtnDelete.BaseColor1 = System.Drawing.Color.SlateBlue;
-            this.gbtnDelete.BaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.gbtnDelete.BorderColor = System.Drawing.Color.Black;
-            this.gbtnDelete.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gbtnDelete.FocusedColor = System.Drawing.Color.Empty;
-            this.gbtnDelete.Font = new System.Drawing.Font("Segoe UI Light", 15.75F);
-            this.gbtnDelete.ForeColor = System.Drawing.Color.White;
-            this.gbtnDelete.Image = null;
-            this.gbtnDelete.ImageSize = new System.Drawing.Size(52, 52);
-            this.gbtnDelete.Location = new System.Drawing.Point(326, 19);
-            this.gbtnDelete.Name = "gbtnDelete";
-            this.gbtnDelete.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
-            this.gbtnDelete.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
-            this.gbtnDelete.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gbtnDelete.OnHoverForeColor = System.Drawing.Color.White;
-            this.gbtnDelete.OnHoverImage = null;
-            this.gbtnDelete.OnPressedColor = System.Drawing.Color.Black;
-            this.gbtnDelete.Size = new System.Drawing.Size(229, 50);
-            this.gbtnDelete.TabIndex = 66;
-            this.gbtnDelete.Text = "Xóa";
-            this.gbtnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.11765F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Thông tin các tài khoản";
-            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,7 +197,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdmin";
