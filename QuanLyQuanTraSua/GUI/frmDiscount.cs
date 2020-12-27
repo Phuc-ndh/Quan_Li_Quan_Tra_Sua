@@ -31,7 +31,6 @@ namespace QuanLyQuanTraSua
             ////panelButton.Size = new Size(gunaGroupBoxThongTinMH.Width, panelThongTinMH.Height * 125 / 1000);
             panelButton.Size = new Size(gunaGroupBoxThongTinGG.Width * 90 / 100, panelThongTinGG.Height * 110 / 1000);
             ////btnSua.Size = new Size(panelButton.Width * 8610 / 10000 / 3, panelButton.Height);
-            btnSua.Size = new Size(panelButton.Width * 7610 / 10000 / 3, panelButton.Height);
             btnThem.Size = new Size(panelButton.Width * 7999 / 10000 / 3, panelButton.Height);
             btnXoa.Size = new Size(panelButton.Width * 7610 / 10000 / 3, panelButton.Height);
             ////
@@ -40,14 +39,12 @@ namespace QuanLyQuanTraSua
             ////MessageBox.Show(typeof(splitContainer2.Panel1.Width)+"");
             for (int j = 0; j < x; j++)
                 fontsiz += 1;
-            btnSua.Font = new Font("Microsoft Sans Serif", fontsiz);
             btnThem.Font = new Font("Microsoft Sans Serif", fontsiz);
             btnXoa.Font = new Font("Microsoft Sans Serif", fontsiz);
             ////
             btnThem.Location = new Point(0, 0);
             ////btnSua.Location = new Point(btnThem.Width + panelButton.Width * 695 / 10000, 0);
-            btnSua.Location = new Point((panelButton.Width - btnSua.Width) / 2, 0);
-            btnXoa.Location = new Point(btnSua.Width * 2 + panelButton.Width * 2 * 695 / 10000, 0);
+            //btnXoa.Location = new Point(btnSua.Width * 2 + panelButton.Width * 2 * 695 / 10000, 0);
             gunaGroupBoxThongTinGG.Location = new Point((panelThongTinGG.Width - gunaGroupBoxThongTinGG.Width) / 2, panelThongTinGG.Height * 1444 / 10000);
             ////panelButton.Location = gunaGroupBoxThongTinMH.Location;
             ////panelButton.Location = new Point(gunaGroupBoxThongTinMH.Location.X, gunaGroupBoxThongTinMH.Location.Y + gunaGroupBoxThongTinMH.Height);

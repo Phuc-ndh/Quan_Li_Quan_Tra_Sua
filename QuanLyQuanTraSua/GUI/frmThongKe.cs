@@ -16,14 +16,10 @@ namespace QuanLyQuanTraSua
 {
     public partial class frmThongKe : Form
     {
+        string filePath = Application.StartupPath;
         public frmThongKe()
         {
             InitializeComponent();
-
-            // xoa dum file tmp hoac anh trong do cx dc
-            //File.Delete("tmp");
-            // tao lai file tmp
-            //File.Create("tmp");
         }
         public void CanChinhViTri()
         {
@@ -207,6 +203,7 @@ namespace QuanLyQuanTraSua
         // nut bao cao theo ngay
         private void gnbtnDateReport_Click(object sender, EventArgs e)
         {
+            gbtnReport.Enabled = true;
             hideChart();
             dt = new DataTable();
 
@@ -223,6 +220,7 @@ namespace QuanLyQuanTraSua
         // nut bao cao theo thang
         private void gnbtnMonthReport_Click(object sender, EventArgs e)
         {
+            gbtnReport.Enabled = true;
             hideChart();
             dt = new DataTable();
             gbtnPrint.Enabled = false;
@@ -328,7 +326,7 @@ namespace QuanLyQuanTraSua
             }
             catch (Exception)
             {
-                MessageBox.Show("Loi");
+                MessageBox.Show("Lỗi");
             }
             
             if (dateReport)

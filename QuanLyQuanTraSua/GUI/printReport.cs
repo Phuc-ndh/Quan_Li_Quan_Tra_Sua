@@ -50,8 +50,7 @@ namespace QuanLyQuanTraSua
         {
             
             PdfDocument pdfDocument = new PdfDocument();
-            
-            Bitmap bmSell = new Bitmap("tmp/sell_percent_tmp" + i.ToString() + ".jpg");
+            Bitmap bmSell = new Bitmap(("tmp/sell_percent_tmp" + i.ToString() + ".jpg"));
             Bitmap bmMoney = new Bitmap("tmp/money_percent_tmp" + i.ToString() + ".jpg");
             Bitmap bmSellMoney = new Bitmap("tmp/sell_money_tmp" + i.ToString() + ".jpg");
 
