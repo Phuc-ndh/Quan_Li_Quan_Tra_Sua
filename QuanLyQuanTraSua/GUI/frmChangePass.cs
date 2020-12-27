@@ -71,98 +71,98 @@ namespace QuanLyQuanTraSua
             this.Close();
         }
 
-        private void focusTextBox()
-        {
-            if (txtCurrentPass.Focused == true)
-            {
-                pnlCurrentPass.BackColor = Color.Aqua;
-                pnlNewPass.BackColor = Color.White;
-                pnlReType.BackColor = Color.White;
-            } else
-            {
-                if (txtNewPass.Focused == true)
-                {
-                    pnlCurrentPass.BackColor = Color.White;
-                    pnlNewPass.BackColor = Color.Aqua;
-                    pnlReType.BackColor = Color.White;
-                } else
-                {
-                    if (txtReNewPass.Focused == true)
-                    {
-                        pnlCurrentPass.BackColor = Color.White;
-                        pnlNewPass.BackColor = Color.White;
-                        pnlReType.BackColor = Color.Aqua;
-                    }
-                }
-            }
-        }
-
         private void frmChangePass_Load(object sender, EventArgs e)
         {
-            pnlCurrentPass.BackColor = Color.White;
-            pnlNewPass.BackColor = Color.White;
-            pnlReType.BackColor = Color.White;
         }
 
         private void txtCurrentPass_TextChanged(object sender, EventArgs e)
         {
-            pnlCurrentPass.ForeColor = Color.Aqua;
-            pnlCurrentPass.BackColor = Color.Aqua;
-
-            pnlNewPass.BackColor = Color.White;
-            pnlReType.BackColor = Color.White;
-            txtNewPass.ForeColor = Color.Gray;
-            txtReNewPass.ForeColor = Color.Gray;
+            if (!(txtCurrentPass.Text == "Mật Khẩu Hiện Tại" || txtCurrentPass.Text == ""))
+            {
+                txtCurrentPass.PasswordChar = '*';
+            }
+            txtCurrentPass.ForeColor = Color.Black;
         }
 
         private void txtNewPass_TextChanged(object sender, EventArgs e)
         {
-            //pnlNewPass.ForeColor = Color.Aqua;
-            pnlNewPass.BackColor = Color.Aqua;
-
-            pnlCurrentPass.BackColor = Color.White;
-            pnlReType.BackColor = Color.White;
-            txtReNewPass.ForeColor = Color.Gray;
-            txtNewPass.ForeColor = Color.Gray;
+            if (!(txtNewPass.Text == "Mật Khẩu Mới" || txtNewPass.Text == ""))
+            {
+                txtNewPass.PasswordChar = '*';
+            }
+            txtNewPass.ForeColor = Color.Black;
         }
 
         private void txtReNewPass_TextChanged(object sender, EventArgs e)
         {
-            //pnlReType.ForeColor = Color.Aqua;
-            pnlReType.BackColor = Color.Aqua;
-
-            pnlNewPass.BackColor = Color.White;
-            pnlReType.BackColor = Color.White;
-            txtNewPass.ForeColor = Color.Gray;
-            txtReNewPass.ForeColor = Color.Gray;
-
+            if (!(txtReNewPass.Text == "Nhập Lại Mật Khẩu Mới" || txtReNewPass.Text == ""))
+            {
+                txtReNewPass.PasswordChar = '*';
+            }
+            txtReNewPass.ForeColor = Color.Black;
         }
 
         private void txtCurrentPass_Click(object sender, EventArgs e)
         {
-            if (txtCurrentPass.Text == "Password hiện tại")
+            if (txtCurrentPass.Text == "Mật Khẩu Hiện Tại")
             {
                 txtCurrentPass.Clear();
-                focusTextBox(); 
             }
         }
 
         private void txtNewPass_Click(object sender, EventArgs e)
         {
-            if (txtNewPass.Text == "Password mới")
+            if (txtNewPass.Text == "Mật Khẩu Mới")
             {
                 txtNewPass.Clear();
-                focusTextBox();
             }
         }
 
         private void txtReNewPass_Click(object sender, EventArgs e)
         {
-            if (txtReNewPass.Text == "Nhập lại pasword mới")
+            if (txtReNewPass.Text == "Nhập Lại Mật Khẩu Mới")
             {
                 txtReNewPass.Clear();
-                focusTextBox();
             }
+        }
+
+        private void txtCurrentPass_Leave(object sender, EventArgs e)
+        {
+            if (txtCurrentPass.Text == "")
+            {
+                txtCurrentPass.Text = "Mật Khẩu Hiện Tại";
+                txtCurrentPass.PasswordChar = default;
+            }
+            if (txtCurrentPass.Text == "Mật Khẩu Hiện Tại")
+                txtCurrentPass.ForeColor = Color.Gray;
+            else
+                txtCurrentPass.ForeColor = Color.Black;
+        }
+
+        private void txtNewPass_Leave(object sender, EventArgs e)
+        {
+            if (txtNewPass.Text == "")
+            {
+                txtNewPass.Text = "Mật Khẩu Mới";
+                txtNewPass.PasswordChar = default;
+            }
+            if (txtNewPass.Text == "Mật Khẩu Mới")
+                txtNewPass.ForeColor = Color.Gray;
+            else
+                txtNewPass.ForeColor = Color.Black;
+        }
+
+        private void txtReNewPass_Leave(object sender, EventArgs e)
+        {
+            if (txtReNewPass.Text == "")
+            {
+                txtReNewPass.Text = "Nhập Lại Mật Khẩu Mới";
+                txtReNewPass.PasswordChar = default;
+            }
+            if (txtReNewPass.Text == "Nhập Lại Mật Khẩu Mới")
+                txtReNewPass.ForeColor = Color.Gray;
+            else
+                txtReNewPass.ForeColor = Color.Black;
         }
     }
 }

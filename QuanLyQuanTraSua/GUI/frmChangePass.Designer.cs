@@ -33,9 +33,6 @@ namespace QuanLyQuanTraSua
             this.btnCancel = new FontAwesome.Sharp.IconButton();
             this.btnChangePass = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlReType = new System.Windows.Forms.Panel();
-            this.pnlNewPass = new System.Windows.Forms.Panel();
-            this.pnlCurrentPass = new System.Windows.Forms.Panel();
             this.txtNewPass = new Guna.UI.WinForms.GunaTextBox();
             this.txtReNewPass = new Guna.UI.WinForms.GunaTextBox();
             this.txtCurrentPass = new Guna.UI.WinForms.GunaTextBox();
@@ -53,9 +50,6 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.Controls.Add(this.btnCancel);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.btnChangePass);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.panel1);
-            this.gunaGroupBoxThongTinMH.Controls.Add(this.pnlReType);
-            this.gunaGroupBoxThongTinMH.Controls.Add(this.pnlNewPass);
-            this.gunaGroupBoxThongTinMH.Controls.Add(this.pnlCurrentPass);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.txtNewPass);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.txtReNewPass);
             this.gunaGroupBoxThongTinMH.Controls.Add(this.txtCurrentPass);
@@ -63,7 +57,7 @@ namespace QuanLyQuanTraSua
             this.gunaGroupBoxThongTinMH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaGroupBoxThongTinMH.LineColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBoxThongTinMH.Location = new System.Drawing.Point(-1, 0);
-            this.gunaGroupBoxThongTinMH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaGroupBoxThongTinMH.Margin = new System.Windows.Forms.Padding(4);
             this.gunaGroupBoxThongTinMH.Name = "gunaGroupBoxThongTinMH";
             this.gunaGroupBoxThongTinMH.Radius = 10;
             this.gunaGroupBoxThongTinMH.Size = new System.Drawing.Size(627, 327);
@@ -85,7 +79,7 @@ namespace QuanLyQuanTraSua
             this.btnCancel.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCancel.IconSize = 28;
             this.btnCancel.Location = new System.Drawing.Point(59, 268);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.btnCancel.Size = new System.Drawing.Size(172, 55);
@@ -108,7 +102,7 @@ namespace QuanLyQuanTraSua
             this.btnChangePass.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnChangePass.IconSize = 28;
             this.btnChangePass.Location = new System.Drawing.Point(304, 268);
-            this.btnChangePass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangePass.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.btnChangePass.Size = new System.Drawing.Size(172, 55);
@@ -123,38 +117,10 @@ namespace QuanLyQuanTraSua
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(30)))), ((int)(((byte)(88)))));
             this.panel1.Location = new System.Drawing.Point(1, 37);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(37, 292);
             this.panel1.TabIndex = 22;
-            // 
-            // pnlReType
-            // 
-            this.pnlReType.BackColor = System.Drawing.Color.Aqua;
-            this.pnlReType.Location = new System.Drawing.Point(75, 249);
-            this.pnlReType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlReType.Name = "pnlReType";
-            this.pnlReType.Size = new System.Drawing.Size(384, 4);
-            this.pnlReType.TabIndex = 24;
-            // 
-            // pnlNewPass
-            // 
-            this.pnlNewPass.BackColor = System.Drawing.Color.Aqua;
-            this.pnlNewPass.Location = new System.Drawing.Point(75, 176);
-            this.pnlNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlNewPass.Name = "pnlNewPass";
-            this.pnlNewPass.Size = new System.Drawing.Size(384, 4);
-            this.pnlNewPass.TabIndex = 23;
-            // 
-            // pnlCurrentPass
-            // 
-            this.pnlCurrentPass.BackColor = System.Drawing.Color.Aqua;
-            this.pnlCurrentPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlCurrentPass.Location = new System.Drawing.Point(72, 110);
-            this.pnlCurrentPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pnlCurrentPass.Name = "pnlCurrentPass";
-            this.pnlCurrentPass.Size = new System.Drawing.Size(384, 4);
-            this.pnlCurrentPass.TabIndex = 22;
             // 
             // txtNewPass
             // 
@@ -167,18 +133,21 @@ namespace QuanLyQuanTraSua
             this.txtNewPass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtNewPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtNewPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNewPass.Location = new System.Drawing.Point(59, 132);
-            this.txtNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNewPass.ForeColor = System.Drawing.Color.Gray;
+            this.txtNewPass.Location = new System.Drawing.Point(59, 134);
+            this.txtNewPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.PasswordChar = '\0';
             this.txtNewPass.Radius = 10;
             this.txtNewPass.SelectedText = "";
             this.txtNewPass.Size = new System.Drawing.Size(417, 46);
             this.txtNewPass.TabIndex = 1;
-            this.txtNewPass.Text = "Password mới";
+            this.txtNewPass.Text = "Mật Khẩu Mới";
             this.txtNewPass.TextOffsetX = 10;
             this.txtNewPass.TextChanged += new System.EventHandler(this.txtNewPass_TextChanged);
             this.txtNewPass.Click += new System.EventHandler(this.txtNewPass_Click);
+            this.txtNewPass.Enter += new System.EventHandler(this.txtNewPass_Click);
+            this.txtNewPass.Leave += new System.EventHandler(this.txtNewPass_Leave);
             // 
             // txtReNewPass
             // 
@@ -191,18 +160,21 @@ namespace QuanLyQuanTraSua
             this.txtReNewPass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtReNewPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtReNewPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtReNewPass.ForeColor = System.Drawing.Color.Gray;
             this.txtReNewPass.Location = new System.Drawing.Point(59, 203);
-            this.txtReNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReNewPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.PasswordChar = '\0';
             this.txtReNewPass.Radius = 10;
             this.txtReNewPass.SelectedText = "";
             this.txtReNewPass.Size = new System.Drawing.Size(417, 46);
             this.txtReNewPass.TabIndex = 2;
-            this.txtReNewPass.Text = "Nhập lại pasword mới";
+            this.txtReNewPass.Text = "Nhập Lại Mật Khẩu Mới";
             this.txtReNewPass.TextOffsetX = 10;
             this.txtReNewPass.TextChanged += new System.EventHandler(this.txtReNewPass_TextChanged);
             this.txtReNewPass.Click += new System.EventHandler(this.txtReNewPass_Click);
+            this.txtReNewPass.Enter += new System.EventHandler(this.txtReNewPass_Click);
+            this.txtReNewPass.Leave += new System.EventHandler(this.txtReNewPass_Leave);
             // 
             // txtCurrentPass
             // 
@@ -215,18 +187,21 @@ namespace QuanLyQuanTraSua
             this.txtCurrentPass.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtCurrentPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtCurrentPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentPass.ForeColor = System.Drawing.Color.Gray;
             this.txtCurrentPass.Location = new System.Drawing.Point(59, 65);
-            this.txtCurrentPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCurrentPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurrentPass.Name = "txtCurrentPass";
             this.txtCurrentPass.PasswordChar = '\0';
             this.txtCurrentPass.Radius = 10;
             this.txtCurrentPass.SelectedText = "";
             this.txtCurrentPass.Size = new System.Drawing.Size(417, 46);
             this.txtCurrentPass.TabIndex = 0;
-            this.txtCurrentPass.Text = "Password hiện tại";
+            this.txtCurrentPass.Text = "Mật Khẩu Hiện Tại";
             this.txtCurrentPass.TextOffsetX = 10;
             this.txtCurrentPass.TextChanged += new System.EventHandler(this.txtCurrentPass_TextChanged);
             this.txtCurrentPass.Click += new System.EventHandler(this.txtCurrentPass_Click);
+            this.txtCurrentPass.Enter += new System.EventHandler(this.txtCurrentPass_Click);
+            this.txtCurrentPass.Leave += new System.EventHandler(this.txtCurrentPass_Leave);
             // 
             // frmChangePass
             // 
@@ -236,7 +211,7 @@ namespace QuanLyQuanTraSua
             this.CancelButton = this.btnCancel;
             this.ClientSize = new System.Drawing.Size(625, 330);
             this.Controls.Add(this.gunaGroupBoxThongTinMH);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmChangePass";
             this.Text = "frmChangePass";
             this.Load += new System.EventHandler(this.frmChangePass_Load);
@@ -252,9 +227,6 @@ namespace QuanLyQuanTraSua
         private Guna.UI.WinForms.GunaTextBox txtReNewPass;
         private Guna.UI.WinForms.GunaTextBox txtCurrentPass;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel pnlCurrentPass;
-        private System.Windows.Forms.Panel pnlReType;
-        private System.Windows.Forms.Panel pnlNewPass;
         private FontAwesome.Sharp.IconButton btnCancel;
         private FontAwesome.Sharp.IconButton btnChangePass;
     }

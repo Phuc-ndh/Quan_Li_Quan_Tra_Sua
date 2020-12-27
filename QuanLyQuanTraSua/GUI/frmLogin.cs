@@ -27,8 +27,8 @@ namespace QuanLyQuanTraSua
                 this.Show();
                 //--
                 currentUser = null;
-                txtUsername.Text = "Username";
-                txtPassword.Text = "Password";
+                txtUsername.Text = "Tên Đăng Nhập";
+                txtPassword.Text = "Mật Khẩu";
                 txtPassword.PasswordChar = default;
                 txtUsername.Focus();
             }
