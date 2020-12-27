@@ -26,7 +26,6 @@ C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\o
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmLogin.resources
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMain1.resources
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmMatHang.resources
-C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmOpenPDF.resources
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmSignUp.resources
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmTaiKhoan.resources
 C:\Users\ASUS STRIX\Documents\GitHub\Quan_Li_Quan_Tra_Sua\QuanLyQuanTraSua\GUI\obj\Debug\QuanLyQuanTraSua.frmThongKe.resources

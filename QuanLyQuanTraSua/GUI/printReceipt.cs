@@ -71,12 +71,12 @@ namespace QuanLyQuanTraSua
                 g.DrawString(address, font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ten nhan vien
-                point = point + 40;
-                g.DrawString("Nhan vien: " + idNhanvien, font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                //point = point + 40;
+                //g.DrawString("Nhan vien: " + idNhanvien, font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ten id hoa don
-                point = point + 20;
-                g.DrawString("Hoa don: " + billBus.getIdBill().ToString(), font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                //point = point + 20;
+                //g.DrawString("Hoa don: " + billBus.getIdBill().ToString(), font_regular, XBrushes.Black, new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 // in ngay tren hoa don
                 point = point + 40;

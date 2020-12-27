@@ -44,9 +44,7 @@ namespace QuanLyQuanTraSua
             this.gbtnCheckDiscount = new Guna.UI.WinForms.GunaButton();
             this.labelValueDiscount = new System.Windows.Forms.Label();
             this.gtxtIdDicount = new Guna.UI.WinForms.GunaTextBox();
-            this.fabtnSearch = new FontAwesome.Sharp.IconButton();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.gtxtSearch = new Guna.UI.WinForms.GunaTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fabtnGoTo1 = new FontAwesome.Sharp.IconButton();
             this.fabtnHuy = new FontAwesome.Sharp.IconButton();
@@ -153,14 +151,12 @@ namespace QuanLyQuanTraSua
             this.panel1.Controls.Add(this.gbtnCheckDiscount);
             this.panel1.Controls.Add(this.labelValueDiscount);
             this.panel1.Controls.Add(this.gtxtIdDicount);
-            this.panel1.Controls.Add(this.fabtnSearch);
             this.panel1.Controls.Add(this.txtID);
-            this.panel1.Controls.Add(this.gtxtSearch);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 817);
             this.panel1.TabIndex = 14;
@@ -178,7 +174,7 @@ namespace QuanLyQuanTraSua
             this.gtxtValueDiscount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtValueDiscount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtValueDiscount.Location = new System.Drawing.Point(481, 764);
-            this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtValueDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtValueDiscount.Name = "gtxtValueDiscount";
             this.gtxtValueDiscount.PasswordChar = '\0';
             this.gtxtValueDiscount.Radius = 8;
@@ -201,7 +197,7 @@ namespace QuanLyQuanTraSua
             this.gbtnCheckDiscount.Image = null;
             this.gbtnCheckDiscount.ImageSize = new System.Drawing.Size(20, 20);
             this.gbtnCheckDiscount.Location = new System.Drawing.Point(245, 763);
-            this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbtnCheckDiscount.Margin = new System.Windows.Forms.Padding(4);
             this.gbtnCheckDiscount.Name = "gbtnCheckDiscount";
             this.gbtnCheckDiscount.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(79)))), ((int)(((byte)(229)))));
             this.gbtnCheckDiscount.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -240,7 +236,7 @@ namespace QuanLyQuanTraSua
             this.gtxtIdDicount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtIdDicount.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtIdDicount.Location = new System.Drawing.Point(16, 762);
-            this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtIdDicount.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtIdDicount.Name = "gtxtIdDicount";
             this.gtxtIdDicount.PasswordChar = '\0';
             this.gtxtIdDicount.Radius = 8;
@@ -249,22 +245,6 @@ namespace QuanLyQuanTraSua
             this.gtxtIdDicount.TabIndex = 28;
             this.gtxtIdDicount.Text = "Mã giảm giá";
             this.gtxtIdDicount.TextOffsetX = 10;
-            // 
-            // fabtnSearch
-            // 
-            this.fabtnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(177)))), ((int)(((byte)(186)))));
-            this.fabtnSearch.FlatAppearance.BorderSize = 0;
-            this.fabtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fabtnSearch.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.fabtnSearch.IconColor = System.Drawing.Color.Black;
-            this.fabtnSearch.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.fabtnSearch.IconSize = 35;
-            this.fabtnSearch.Location = new System.Drawing.Point(1185, 97);
-            this.fabtnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.fabtnSearch.Name = "fabtnSearch";
-            this.fabtnSearch.Size = new System.Drawing.Size(48, 39);
-            this.fabtnSearch.TabIndex = 24;
-            this.fabtnSearch.UseVisualStyleBackColor = false;
             // 
             // txtID
             // 
@@ -277,29 +257,6 @@ namespace QuanLyQuanTraSua
             this.txtID.TabIndex = 23;
             this.txtID.TabStop = false;
             this.txtID.Visible = false;
-            // 
-            // gtxtSearch
-            // 
-            this.gtxtSearch.BackColor = System.Drawing.Color.Transparent;
-            this.gtxtSearch.BaseColor = System.Drawing.Color.White;
-            this.gtxtSearch.BorderColor = System.Drawing.Color.Silver;
-            this.gtxtSearch.BorderSize = 3;
-            this.gtxtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtxtSearch.FocusedBaseColor = System.Drawing.Color.White;
-            this.gtxtSearch.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gtxtSearch.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gtxtSearch.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gtxtSearch.Location = new System.Drawing.Point(899, 96);
-            this.gtxtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtxtSearch.Name = "gtxtSearch";
-            this.gtxtSearch.PasswordChar = '\0';
-            this.gtxtSearch.Radius = 8;
-            this.gtxtSearch.SelectedText = "";
-            this.gtxtSearch.Size = new System.Drawing.Size(275, 44);
-            this.gtxtSearch.TabIndex = 21;
-            this.gtxtSearch.Text = "Tìm kiếm";
-            this.gtxtSearch.TextOffsetX = 10;
-            this.gtxtSearch.Click += new System.EventHandler(this.gtxtSearch_Click);
             // 
             // groupBox1
             // 
@@ -318,9 +275,9 @@ namespace QuanLyQuanTraSua
             this.groupBox1.Controls.Add(this.lblSoLuong);
             this.groupBox1.Controls.Add(this.lblTenMatHang);
             this.groupBox1.Location = new System.Drawing.Point(899, 143);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(275, 358);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
@@ -335,7 +292,7 @@ namespace QuanLyQuanTraSua
             this.fabtnGoTo1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.fabtnGoTo1.IconSize = 30;
             this.fabtnGoTo1.Location = new System.Drawing.Point(140, 193);
-            this.fabtnGoTo1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fabtnGoTo1.Margin = new System.Windows.Forms.Padding(4);
             this.fabtnGoTo1.Name = "fabtnGoTo1";
             this.fabtnGoTo1.Size = new System.Drawing.Size(40, 37);
             this.fabtnGoTo1.TabIndex = 25;
@@ -354,7 +311,7 @@ namespace QuanLyQuanTraSua
             this.fabtnHuy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnHuy.IconSize = 22;
             this.fabtnHuy.Location = new System.Drawing.Point(145, 286);
-            this.fabtnHuy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fabtnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.fabtnHuy.Name = "fabtnHuy";
             this.fabtnHuy.Size = new System.Drawing.Size(108, 47);
             this.fabtnHuy.TabIndex = 25;
@@ -375,7 +332,7 @@ namespace QuanLyQuanTraSua
             this.fabtnThem.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnThem.IconSize = 22;
             this.fabtnThem.Location = new System.Drawing.Point(20, 286);
-            this.fabtnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fabtnThem.Margin = new System.Windows.Forms.Padding(4);
             this.fabtnThem.Name = "fabtnThem";
             this.fabtnThem.Size = new System.Drawing.Size(108, 47);
             this.fabtnThem.TabIndex = 25;
@@ -397,7 +354,7 @@ namespace QuanLyQuanTraSua
             this.gtxtGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtGia.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtGia.Location = new System.Drawing.Point(25, 122);
-            this.gtxtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtGia.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtGia.Name = "gtxtGia";
             this.gtxtGia.PasswordChar = '\0';
             this.gtxtGia.Radius = 10;
@@ -415,7 +372,7 @@ namespace QuanLyQuanTraSua
             this.gunaNumeric1.Font = new System.Drawing.Font("Segoe UI", 9.882353F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaNumeric1.ForeColor = System.Drawing.Color.Gray;
             this.gunaNumeric1.Location = new System.Drawing.Point(27, 193);
-            this.gunaNumeric1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaNumeric1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaNumeric1.Maximum = ((long)(9999999));
             this.gunaNumeric1.Minimum = ((long)(1));
             this.gunaNumeric1.Name = "gunaNumeric1";
@@ -438,7 +395,7 @@ namespace QuanLyQuanTraSua
             this.gtxtTenMatHang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtTenMatHang.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtTenMatHang.Location = new System.Drawing.Point(25, 47);
-            this.gtxtTenMatHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtTenMatHang.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtTenMatHang.Name = "gtxtTenMatHang";
             this.gtxtTenMatHang.PasswordChar = '\0';
             this.gtxtTenMatHang.Radius = 10;
@@ -455,7 +412,7 @@ namespace QuanLyQuanTraSua
             this.btnGiam.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnGiam.ForeColor = System.Drawing.Color.White;
             this.btnGiam.Location = new System.Drawing.Point(152, 286);
-            this.btnGiam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGiam.Margin = new System.Windows.Forms.Padding(4);
             this.btnGiam.Name = "btnGiam";
             this.btnGiam.Size = new System.Drawing.Size(101, 47);
             this.btnGiam.TabIndex = 16;
@@ -472,7 +429,7 @@ namespace QuanLyQuanTraSua
             this.btnThem.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(25, 286);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(101, 47);
             this.btnThem.TabIndex = 18;
@@ -485,7 +442,7 @@ namespace QuanLyQuanTraSua
             this.txtGia.Enabled = false;
             this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.Location = new System.Drawing.Point(25, 123);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
             this.txtGia.Size = new System.Drawing.Size(229, 29);
@@ -507,7 +464,7 @@ namespace QuanLyQuanTraSua
             // 
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDown1.Location = new System.Drawing.Point(25, 193);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -528,7 +485,7 @@ namespace QuanLyQuanTraSua
             this.txtTenMatHang.Enabled = false;
             this.txtTenMatHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.29412F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenMatHang.Location = new System.Drawing.Point(25, 47);
-            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenMatHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenMatHang.Name = "txtTenMatHang";
             this.txtTenMatHang.ReadOnly = true;
             this.txtTenMatHang.Size = new System.Drawing.Size(229, 29);
@@ -572,7 +529,7 @@ namespace QuanLyQuanTraSua
             this.panel3.Controls.Add(this.gtxtTotalMoney);
             this.panel3.Controls.Add(this.fabtnThanhToan);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(835, 751);
             this.panel3.TabIndex = 22;
@@ -590,7 +547,7 @@ namespace QuanLyQuanTraSua
             this.gtxtMoneyChange.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtMoneyChange.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtMoneyChange.Location = new System.Drawing.Point(380, 694);
-            this.gtxtMoneyChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtMoneyChange.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtMoneyChange.Name = "gtxtMoneyChange";
             this.gtxtMoneyChange.PasswordChar = '\0';
             this.gtxtMoneyChange.Radius = 10;
@@ -637,7 +594,7 @@ namespace QuanLyQuanTraSua
             this.gtxtCustomerMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtCustomerMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtCustomerMoney.Location = new System.Drawing.Point(380, 623);
-            this.gtxtCustomerMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtCustomerMoney.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtCustomerMoney.Name = "gtxtCustomerMoney";
             this.gtxtCustomerMoney.PasswordChar = '\0';
             this.gtxtCustomerMoney.Radius = 10;
@@ -686,7 +643,7 @@ namespace QuanLyQuanTraSua
             this.gunaDataGridView1.EnableHeadersVisualStyles = false;
             this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView1.Location = new System.Drawing.Point(51, 96);
-            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaDataGridView1.Name = "gunaDataGridView1";
             this.gunaDataGridView1.ReadOnly = true;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -825,7 +782,7 @@ namespace QuanLyQuanTraSua
             this.gtxtTotalMoney.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gtxtTotalMoney.Font = new System.Drawing.Font("Segoe UI", 11.29412F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gtxtTotalMoney.Location = new System.Drawing.Point(380, 551);
-            this.gtxtTotalMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gtxtTotalMoney.Margin = new System.Windows.Forms.Padding(4);
             this.gtxtTotalMoney.Name = "gtxtTotalMoney";
             this.gtxtTotalMoney.PasswordChar = '\0';
             this.gtxtTotalMoney.Radius = 10;
@@ -847,7 +804,7 @@ namespace QuanLyQuanTraSua
             this.fabtnThanhToan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.fabtnThanhToan.IconSize = 33;
             this.fabtnThanhToan.Location = new System.Drawing.Point(639, 542);
-            this.fabtnThanhToan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fabtnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.fabtnThanhToan.Name = "fabtnThanhToan";
             this.fabtnThanhToan.Size = new System.Drawing.Size(185, 55);
             this.fabtnThanhToan.TabIndex = 25;
@@ -929,7 +886,7 @@ namespace QuanLyQuanTraSua
             this.tabPage7.Location = new System.Drawing.Point(4, 34);
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(368, 620);
+            this.tabPage7.Size = new System.Drawing.Size(371, 632);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Trà Sữa";
             // 
@@ -939,7 +896,7 @@ namespace QuanLyQuanTraSua
             this.flpTraSua.Location = new System.Drawing.Point(0, 0);
             this.flpTraSua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpTraSua.Name = "flpTraSua";
-            this.flpTraSua.Size = new System.Drawing.Size(368, 620);
+            this.flpTraSua.Size = new System.Drawing.Size(371, 632);
             this.flpTraSua.TabIndex = 0;
             // 
             // tabPage6
@@ -950,7 +907,7 @@ namespace QuanLyQuanTraSua
             this.tabPage6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage6.Size = new System.Drawing.Size(368, 620);
+            this.tabPage6.Size = new System.Drawing.Size(371, 632);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Hồng Trà";
             // 
@@ -960,7 +917,7 @@ namespace QuanLyQuanTraSua
             this.flpHongTra.Location = new System.Drawing.Point(3, 2);
             this.flpHongTra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpHongTra.Name = "flpHongTra";
-            this.flpHongTra.Size = new System.Drawing.Size(362, 616);
+            this.flpHongTra.Size = new System.Drawing.Size(365, 628);
             this.flpHongTra.TabIndex = 1;
             // 
             // tabPage4
@@ -971,7 +928,7 @@ namespace QuanLyQuanTraSua
             this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage4.Size = new System.Drawing.Size(368, 620);
+            this.tabPage4.Size = new System.Drawing.Size(371, 632);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Sinh Tố";
             // 
@@ -981,7 +938,7 @@ namespace QuanLyQuanTraSua
             this.flpSinhTo.Location = new System.Drawing.Point(3, 2);
             this.flpSinhTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpSinhTo.Name = "flpSinhTo";
-            this.flpSinhTo.Size = new System.Drawing.Size(362, 616);
+            this.flpSinhTo.Size = new System.Drawing.Size(365, 628);
             this.flpSinhTo.TabIndex = 1;
             // 
             // tabPage5
@@ -992,7 +949,7 @@ namespace QuanLyQuanTraSua
             this.tabPage5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage5.Size = new System.Drawing.Size(368, 620);
+            this.tabPage5.Size = new System.Drawing.Size(371, 632);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "Nước Ép";
             // 
@@ -1002,7 +959,7 @@ namespace QuanLyQuanTraSua
             this.flpNuocEp.Location = new System.Drawing.Point(3, 2);
             this.flpNuocEp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flpNuocEp.Name = "flpNuocEp";
-            this.flpNuocEp.Size = new System.Drawing.Size(362, 616);
+            this.flpNuocEp.Size = new System.Drawing.Size(365, 628);
             this.flpNuocEp.TabIndex = 1;
             // 
             // tabPage2
@@ -1119,7 +1076,7 @@ namespace QuanLyQuanTraSua
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpDSOrder.Location = new System.Drawing.Point(0, 44);
-            this.flpDSOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flpDSOrder.Margin = new System.Windows.Forms.Padding(4);
             this.flpDSOrder.Name = "flpDSOrder";
             this.flpDSOrder.Size = new System.Drawing.Size(380, 580);
             this.flpDSOrder.TabIndex = 5;
@@ -1164,7 +1121,7 @@ namespace QuanLyQuanTraSua
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1571, 722);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTongQuan";
             this.Text = "Tổng Quan";
             this.Load += new System.EventHandler(this.frmTongQuan_Load);
@@ -1209,7 +1166,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private FontAwesome.Sharp.IconButton fabtnThanhToan;
-        private FontAwesome.Sharp.IconButton fabtnSearch;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl tabControl2;
@@ -1226,7 +1182,6 @@ namespace QuanLyQuanTraSua
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.FlowLayoutPanel flpDSOrder;
         private System.Windows.Forms.Button btnLamMoi;
-        private Guna.UI.WinForms.GunaTextBox gtxtSearch;
         private System.Windows.Forms.GroupBox groupBox1;
         private FontAwesome.Sharp.IconButton fabtnGoTo1;
         private FontAwesome.Sharp.IconButton fabtnHuy;

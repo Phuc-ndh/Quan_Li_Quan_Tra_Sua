@@ -131,10 +131,8 @@ namespace QuanLyQuanTraSua
 
         private void btnTongQuan_Click(object sender, EventArgs e)
         {
-            frmTongQuan fTQ = new frmTongQuan(parent.currentUser.Username);
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new frmTongQuan());
-
         }
         private void btnThongKe_Click(object sender, EventArgs e)
         {
