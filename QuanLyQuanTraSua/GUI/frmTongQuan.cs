@@ -144,7 +144,7 @@ namespace QuanLyQuanTraSua
             billBUS.insertBill(date, (int)totalPrice, valueDiscount);
             foreach (DataGridViewRow row in gunaDataGridView1.Rows)
             {
-                billBUS.insertBillInfo(Convert.ToString(row.Cells["columnTen"].Value), Convert.ToInt32(row.Cells["columnSoLuong"].Value), Convert.ToInt32(row.Cells["columnThanhTien"]) - Convert.ToInt32(row.Cells["columnThanhTien"])*valueDiscount/100);
+                billBUS.insertBillInfo((row.Cells["columnTen"].Value).ToString(), (row.Cells["columnID"].Value).ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value), Convert.ToInt32(row.Cells["columnThanhTien"].Value) - Convert.ToInt32(row.Cells["columnThanhTien"].Value)*valueDiscount/100);
                 listBillInfo.Add(new BillInfo(row.Cells["columnTen"].Value.ToString(), Convert.ToInt32(row.Cells["columnSoLuong"].Value)));
                 tempPrice += Convert.ToInt32(row.Cells["columnThanhTien"].Value);
             }

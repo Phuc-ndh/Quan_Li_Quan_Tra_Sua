@@ -83,11 +83,11 @@ namespace DAL
         }
 
         // them BillInfo theo _id
-        public bool insertBillInfo(string nameDrink, int quantity, int totalPrice)
+        public bool insertBillInfo(string nameDrink, string idDrink, int quantity, int totalPrice)
         {
             int id = this._id;
-            string query = "insert into BillInfo(idBill, nameDrink, quantity, totalPrice) values (@id, @idDrink, @quantity, @totalPrice)";
-            object[] value = new object[] { id, nameDrink, quantity, totalPrice};
+            string query = "insert into BillInfo(idBill, idDrink, nameDrink, quantity, totalPrice) values (@id, @idDrink, @nameDrink, @quantity, @totalPrice)";
+            object[] value = new object[] { id, idDrink, nameDrink, quantity, totalPrice};
             DBConnect db = new DBConnect();
             return (db.ExecuteNonQuery(query, value) > 0);
         }

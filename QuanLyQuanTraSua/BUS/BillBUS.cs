@@ -30,11 +30,11 @@ namespace BUS
             }
         }
 
-        public bool insertBillInfo(string nameDrink, int quantity, int totalPrice)
+        public bool insertBillInfo(string nameDrink, string idDrink, int quantity, int totalPrice)
         {
             try
             {
-                if (billDAL.insertBillInfo(nameDrink, quantity, totalPrice))
+                if (billDAL.insertBillInfo(nameDrink, idDrink,quantity, totalPrice))
                     return true;
                 else
                     return false;
