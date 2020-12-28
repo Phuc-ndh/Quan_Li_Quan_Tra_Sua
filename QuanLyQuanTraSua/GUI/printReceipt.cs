@@ -164,8 +164,10 @@ namespace QuanLyQuanTraSua
                         new XRect(0, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
                 point = point + 30;
 
+                g.DrawString("pass wifi:", font_regular, XBrushes.Black,
+                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLef;
                 g.DrawString(passWifi, font_regular, XBrushes.Black,
-                        new XRect(40, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
+                        new XRect(80, point, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLef;
 
                 string pathPdf = ConfigurationManager.AppSettings["Path"] + "receipt.pdf";
                 pdf.Save(pathPdf);
